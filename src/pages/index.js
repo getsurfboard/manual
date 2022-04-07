@@ -30,7 +30,7 @@ export default function Home() {
   return (
     <Layout
       title={``}
-      description="Description will go into a meta tag in <head />">
+      description="Documentation of Surfboard for Android">
       <HomepageHeader />
       <main>
         <HomepageFeatures />
