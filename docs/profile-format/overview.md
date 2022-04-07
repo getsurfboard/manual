@@ -2,7 +2,7 @@
 sidebar_position: 0
 ---
 
-# Template
+# Overview
 
 :::tip
 Surfboard follow [Surge](https://nssurge.com/)'s profile format
@@ -57,4 +57,4 @@ RULE-SET,https://ruleset.com/cn,DIRECT
 FINAL,Proxy
 ```
 
-You can read on for detailed definitions of the different sections
+You can read on for detailed definitions of different sections
