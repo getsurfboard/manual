@@ -254,64 +254,64 @@ sidebar_position: 5
 - fix crash
 - Support disable logcat output in settings
 
-### 2.5.9(102)
+### 2.5.9
 
 - Fix some memory/connection leak issue
 
-### 2.5.8(101)
+### 2.5.8
 
 - Fix vmess/netflix compatibility issue cause by ipv6
 - Fix crashes
 - Print warning log when reject traffic
 - Support scan ss/vmess/trojan/http/https/surfboard/surge/surge3 format qrcode
 
-### 2.5.7(100)
+### 2.5.7
 
 - Fix crashes
 - Improve vmess websocket compatibility
 - Update persian language
 
-### 2.5.6(99)
+### 2.5.6
 
 - Fix speedtest issue
 - Bug fixed
 
-### 2.5.5(98)
+### 2.5.5
 
 - update persian language
 - fix telegram using direct rule issue
 
-### 2.5.4(97)
+### 2.5.4
 
 - Fix auto group speed test not working
 - Reset all existed tcp connection when change proxy group selection
 - Avoid forward proxy traffic dead lock
 - Fix crash cause by long file name
 
-### 2.5.3(96)
+### 2.5.3
 
 - Fix speed test issue
 - Support basic auth in profile url
 
-### 2.5.2(95)
+### 2.5.2
 
 - Fix speedtest issue
 
-### 2.5.1(94)
+### 2.5.1
 
 - Fix speed test not stable issue
 - Fix fetching public IP error when use with other VPN
 - Add VMESS AEAD hint when first use
 - Add warning when new profile subscribe url is from localhost
 
-### 2.5.0(93)
+### 2.5.0
 
 - Fix WebDAV synchronize issue with box.com
 - Update dashboard UI
 - Update maxmind geoip2lite library
 - Bug fixed
 
-### 2.4.9(92)
+### 2.4.9
 
 - Add WebDAV synchronize support
 - Fix crash when restart VPN after rename profile
@@ -319,7 +319,7 @@ sidebar_position: 5
 - Improve save profile speed
 - Fix update profile last modify time no changing
 
-### 2.4.8(91)
+### 2.4.8
 
 - Improve ui compatibility with tablet devices
 - Add network speed display on status bar icon
@@ -327,7 +327,7 @@ sidebar_position: 5
 - Prompt to restart VPN when selecting profile
 - Bug fixed
 
-### 2.4.7(90)
+### 2.4.7
 
 - Fix profile import issue cause by policy-regex-filter
 - Improve profile name guess imported by url
@@ -336,11 +336,11 @@ sidebar_position: 5
 - Update sample.conf
 - Bug fixed
 
-### 2.4.6(89)
+### 2.4.6
 
 - Bug fixed
 
-### 2.4.5(88)
+### 2.4.5
 
 - Support policy-regex-filter and hidden in proxy group
 - Fix global outbound make network unavailable
@@ -349,20 +349,20 @@ sidebar_position: 5
 - Update UI
 - Bug fixed
 
-### 2.4.4(87)
+### 2.4.4
 
 - Support udp-relay in socks5/shadowsocks/vmess/trojan proxy
 - Fix import vmess url failed if contains slash
 - Fix some crash issue
 
-### 2.4.3(86)
+### 2.4.3
 
 - Improve traffic throughput
 - Update bypass apps ui, add search support
 - Fix ss proxy with domain cause stop VPN failed
 - Update UI
 
-### 2.4.2(85)
+### 2.4.2
 
 - Fix policy path issue
 - Add Indonesian support
@@ -370,12 +370,12 @@ sidebar_position: 5
 - Fix huge profile cause crash
 - Only use English app entrance name
 
-### 2.4.1(84)
+### 2.4.1
 
 - Fix gradle 7.0.1 cause R8 error
 - Update libuv/v2fly library
 
-### 2.4.0(83)
+### 2.4.0
 Fix socks5 proxy not working without authorization
 Add policy-path support
 Support surge3:///install-config?url=xxx
@@ -383,7 +383,7 @@ Support enhanced mode domain rules
 Support decode http/socks5 proxy as TLS-based proxy
 Update GEOIP library
 
-### 2.3.5(82)
+### 2.3.5
 
 - Fix some profile import issue, support more import format
 - Fix column size not synchronize between proxy group tabs
@@ -391,7 +391,7 @@ Update GEOIP library
 - Don't count speedometer into active tcp connection count
 - Change UI back to 4 tabs in main ui
 
-### 2.3.4(81)
+### 2.3.4
 
 - Add fuzzy search in recent requests ui
 - Update item ui in recent requests
@@ -401,14 +401,14 @@ Update GEOIP library
 - Support switch app launcher title to english
 - Support proxy column size switch
 
-### 2.3.3(80)
+### 2.3.3
 
 - Add active connection count display in dashboard
 - Support vmess:// and ss:// url
 - Add Profile FileProvider support
 - Add VMESS AEAD support settings
 
-### 2.3.2(79)
+### 2.3.2
 
 - Support vmess AEAD
 - Support long press to copy traffic info in recent request list
@@ -416,11 +416,11 @@ Update GEOIP library
 - Fix profile modify not working
 - Update translation
 
-### 2.3.1(78)
+### 2.3.1
 
 - Fix open vpn failed with rule-set profile
 
-### 2.3.0(77)
+### 2.3.0
 
 - Add skip-proxy config support
 - Fix change global proxy not working when VPN is on
@@ -431,25 +431,25 @@ Update GEOIP library
 - Fix long profile list selection duplicate issue
 - Bug fixed
 
-### 2.2.1(76)
+### 2.2.1
 
 - Add skip TLS verify setting
 - Fix whitelist mode not working issue
 
-### 2.2.0(75)
+### 2.2.0
 
 - Add bypass config support
 - Reduce APK size
 - Add proxy_test_url support
 - Add profile sample in profile list menu
 
-### 2.1.0(74)
+### 2.1.0
 
 - Add recent request support
 - Add profile viewer(not support editing yet)
 - Integrate QRCode scanner, not need to download zxing scanner
 
-### 2.0.2(73)
+### 2.0.2
 
 - Update all locale app name to [Surfboard]
 - Fix crash issue on Android 7.0 and lower version
@@ -458,7 +458,7 @@ Update GEOIP library
 - Fix crash when vmess proxy name boxed with double quote
 - Fix UI issue
 
-### 0.9.19(50)
+### 0.9.19
 
 - Fix network metered issue on Android 10
 - Fix speed test issue
@@ -467,14 +467,14 @@ Update GEOIP library
 - Remember proxygroup toggle state
 - Avoid displaying toast when fetch toast failed
 
-### 0.9.18(49)
+### 0.9.18
 
 - Rewrite tcp handler for better memory usage
 - Add proxygroup toggle function
 - Add Notification Channel Setting entrance
 - Bug fix
 
-### 0.9.16(47)
+### 0.9.16
 
 - Fix ss tcp speedtest issue
 - Add Tile and app shortcut support
@@ -482,12 +482,12 @@ Update GEOIP library
 - Update speedtest ui
 - Bugs fixed
 
-### 0.9.14(45)
+### 0.9.14
 
 - Improve throughput performance(Up to 300Mbps+)
 - Bugs fixed
 
-### 0.9.13(44)
+### 0.9.13
 
 - Fix second launch crash issue
 - Update proxy group grid ui
