@@ -8,7 +8,6 @@
 import React, {useEffect} from 'react';
 import Layout from '@theme/Layout';
 
-import cannyScript from './cannyScript';
 import clsx from 'clsx';
 import styles from './styles.module.css';
 

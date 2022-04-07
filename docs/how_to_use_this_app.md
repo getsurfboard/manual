@@ -14,7 +14,7 @@ Surfboard support Surge profile format
 
 Write your own profile file meet your requirement and import the profile file into this app. 
 
-You can refer to the profile format documentation [here](/docs/profile-format/template)
+You can refer to the profile format documentation [here](/docs/profile-format/overview)
 
 ## Start VPN
 
