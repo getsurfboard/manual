@@ -2,7 +2,7 @@
 sidebar_position: 2
 ---
 
-# #!MANAGED-CONFIG
+# `#!MANAGED-CONFIG`
 
 ```
 #!MANAGED-CONFIG http://test.com/surfboard.conf interval=60 strict=true

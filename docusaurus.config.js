@@ -58,7 +58,12 @@ const config = {
           {
             to: '/blog',
             label: 'Blog',
-            position: 'left'
+            position: 'left',
+          },
+          {
+            to: '/feature-requests',
+            label: 'Feature requests',
+            position: 'left',
           },
           {
             href: 'https://github.com/getsurfboard/manual',
