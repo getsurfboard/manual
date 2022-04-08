@@ -26,17 +26,17 @@ ProxySOCKS5TLS = socks5-tls, 1.2.3.4, 443, username, password, skip-cert-verify=
 
 ## Params
 
-| Name             | Value                 | Mandatory | Note                                                                                          |
-|------------------|-----------------------|-----------|-----------------------------------------------------------------------------------------------|
-| proxy name       | -                     | true      |                                                                                               |
-| protocol         | socks5<br/>socks5-tls | true      |                                                                                               |
-| host             | -                     | true      | support domain and ip format                                                                  |
-| port             | 0-65535               | true      |                                                                                               |
-| username         | -                     | false     |                                                                                               |
-| password         | -                     | false     |                                                                                               |
-| skip-cert-verify | true<br/>false        | false     | use with SOCKS5-TLS proxy, <br/>enable if proxy doesn't have a valid TLS certificate          |
-| sni              |                       | false     | use with SOCKS5-TLS proxy, <br/>useable only when the SNI value is the same as the host value |
+| Name             | Value                 | Mandatory | Note                                                                                                                 |
+|------------------|-----------------------|-----------|----------------------------------------------------------------------------------------------------------------------|
+| proxy name       | -                     | true      |                                                                                                                      |
+| protocol         | socks5<br/>socks5-tls | true      |                                                                                                                      |
+| host             | -                     | true      | Support domain and ip format                                                                                         |
+| port             | 0-65535               | true      |                                                                                                                      |
+| username         | -                     | false     |                                                                                                                      |
+| password         | -                     | false     |                                                                                                                      |
+| skip-cert-verify | true<br/>false        | false     | Usable if protocol is socks5-tls<br/>set to true if proxy doesn't have a valid TLS certificate                       |
+| sni              |                       | false     | Usable if protocol is socks5-tls<br/>definition is unnecessary when the SNI value is the same as the host value      |
 
 :::tip
-To test with SOCKS5-TLS proxy, try [https://github.com/ginuerzh/gost](https://github.com/ginuerzh/gost), which can a create SOCKS-TLS proxy out of the box
+To test with SOCKS5-TLS proxy, please try to use [https://github.com/ginuerzh/gost](https://github.com/ginuerzh/gost), which can a create SOCKS-TLS proxy out of the box
 :::

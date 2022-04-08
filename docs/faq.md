@@ -36,7 +36,7 @@ Please check the following entries:
 
 ### Whether protocol defined in profile is supported
 
-Check the [protocol supported list](/docs/supported_protocol)
+Check the [protocol supported list](/docs/profile-format/proxy)
 
 ### Reset bypass config
 

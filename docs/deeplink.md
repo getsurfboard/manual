@@ -28,6 +28,6 @@ surfboard:///start
 surfboard:///stop
 ```
 
-::: tip
+:::tip
 Some of [Surge's deeplink format](https://manual.nssurge.com/others/url-scheme.html) is also supported, just change `surfboard:///` to `surge:///` or `surge3:///`, everything will work as usual.
 :::

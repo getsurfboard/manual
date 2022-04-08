@@ -28,13 +28,13 @@ ProxyHTTPS = https, 1.2.3.4, 443, username, password, skip-cert-verify=true, sni
 
 ## Params
 
-| Name             | Value          | Mandatory | Note                                                                                             |
-|------------------|----------------|-----------|--------------------------------------------------------------------------------------------------|
-| proxy name       | -              | true      |                                                                                                  |
-| protocol         | http<br/>https | true      |                                                                                                  |
-| host             | -              | true      | support domain and ip format                                                                     |
-| port             | 0-65535        | true      |                                                                                                  |
-| username         | -              | false     |                                                                                                  |
-| password         | -              | false     |                                                                                                  |
-| skip-cert-verify | true<br/>false | false     | use with HTTPS proxy, enable if proxy doesn't have a valid TLS certificate                       |
-| sni              |                | false     | use with HTTPS proxy, definition is unnecessary when the SNI value is the same as the host value |
+| Name             | Value          | Mandatory | Note                                                                                                            |
+|------------------|----------------|-----------|-----------------------------------------------------------------------------------------------------------------|
+| proxy name       | -              | true      |                                                                                                                 |
+| protocol         | http<br/>https | true      |                                                                                                                 |
+| host             | -              | true      | Support domain and ip format                                                                                    |
+| port             | 0-65535        | true      |                                                                                                                 |
+| username         | -              | false     |                                                                                                                 |
+| password         | -              | false     |                                                                                                                 |
+| skip-cert-verify | true<br/>false | false     | Usable if protocol is https<br/>set to true if proxy doesn't have a valid TLS certificate                       |
+| sni              |                | false     | Usable if protocol is https<br/>definition is unnecessary when the SNI value is the same as the host value      |
