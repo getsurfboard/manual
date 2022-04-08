@@ -23,7 +23,7 @@ const FeatureList = [
 
 function Feature({Png, title}) {
   return (
-    <div className={clsx('col col--3')}>
+    <div className={clsx('col col--4')}>
       <div className="text--center">
         <img src={Png} className={styles.featureImg} role="img" />
       </div>
