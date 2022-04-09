@@ -37,4 +37,4 @@ ProxyHTTPS = https, 1.2.3.4, 443, username, password, skip-cert-verify=true, sni
 | username         | -              | false     |                                                                                                                 |
 | password         | -              | false     |                                                                                                                 |
 | skip-cert-verify | true<br/>false | false     | Usable if protocol is https<br/>set to true if proxy doesn't have a valid TLS certificate                       |
-| sni              |                | false     | Usable if protocol is https<br/>definition is unnecessary when the SNI value is the same as the host value      |
+| sni              | -              | false     | Usable if protocol is https<br/>definition is unnecessary when the SNI value is the same as the host value      |
