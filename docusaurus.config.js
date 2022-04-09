@@ -42,6 +42,16 @@ const config = {
       }),
     ],
   ],
+  themes: [
+    [
+      require.resolve("@easyops-cn/docusaurus-search-local"),
+      {
+        hashed: true,
+        language: ["en"],
+        highlightSearchTermsOnTargetPage: false
+      },
+    ]
+  ],
   plugins: [
     [
       '@docusaurus/plugin-pwa',
@@ -157,7 +167,7 @@ const config = {
         disableSwitch: false,
         respectPrefersColorScheme: true,
       }
-    }),
+    })
 };
 
 module.exports = config;
