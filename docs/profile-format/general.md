@@ -46,7 +46,7 @@ skip-proxy = {ip}, {ip/mask}, {domain}, {wildcard domain}, ...
 ```
 
 :::note
-Due to system restriction, traffic match `skip-proxy` still be handled by VpnService, but treated like [DIRECT](/docs/profile-format/proxy/built_in_proxy#direct) rule
+Due to system restriction, traffic match `skip-proxy` still be handled by VpnService, but treated like [DIRECT](/docs/profile-format/proxy/built-in-proxy/direct) rule
 :::
 
 ## `proxy-test-url`
