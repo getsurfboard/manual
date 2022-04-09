@@ -26,7 +26,7 @@ Please subjectively perceive whether the battery consumption has increased signi
 
 Please try to use bypass config in the 'tools' tab. Filtering/allowing some app traffic into VPN can reduce battery consumption.
 
-:::tip
+:::caution
 Use bypass config settings only if you know what are you doing. Incorrect configuration may cause some applications to not work properly
 :::
 

@@ -2,7 +2,7 @@
 
 Proxy is a proxy service definition which can be used as network traffic's destination.
 
-Traffic which match rules defined in [[Rule]](/) section will be redirected to specified proxy.
+Traffic which match rules defined in [[Rule]](/docs/profile-format/rule) section will be redirected to specified proxy.
 
 Proxy can be also included in [[Proxy Group]](/docs/profile-format/proxygroup) definition.
 
