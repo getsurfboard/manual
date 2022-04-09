@@ -19,7 +19,7 @@ dns-server = system, 8.8.8.8, 8.8.4.4, 9.9.9.9:9953
 # Specify route rule and domain rule, matching traffic will not be redirected or rejected.
 skip-proxy = 127.0.0.1, 192.168.0.0/16, 10.0.0.0/8, 172.16.0.0/12, 100.64.0.0/10, localhost, *.local, www.baidu.com //444
 
-# Test url used by [url-test](/) and manually node speed test.
+# Test url used by url-test and manually node speed test.
 proxy-test-url = http://www.gstatic.com/generate_204
 
 # Match domain won't get fake ip dns response
