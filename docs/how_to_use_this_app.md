@@ -19,3 +19,11 @@ You can refer to the profile format documentation [here](/docs/profile-format/ov
 ## Start VPN
 
 TODO
+
+## Change proxy group selection
+
+TODO
+
+## Speed test
+
+TODO

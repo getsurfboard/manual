@@ -19,6 +19,14 @@ const FeatureList = [
     title: 'Tools for debug',
     Png: require('@site/static/img/tools.png').default,
   },
+  {
+    title: 'Dark mode support',
+    Png: require('@site/static/img/dark_mode.png').default,
+  },
+  {
+    title: 'More to explore...',
+    Png: require('@site/static/img/settings.png').default,
+  },
 ];
 
 function Feature({Png, title}) {

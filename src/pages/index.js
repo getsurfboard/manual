@@ -17,7 +17,7 @@ function HomepageHeader() {
           <Link
             className="button button--secondary button--lg"
             to="/docs/installation">
-            Start using Surfboard
+            Explore more
           </Link>
         </div>
       </div>
