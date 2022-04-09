@@ -1,18 +1,8 @@
 ---
-sidebar_position: 0
+sidebar_position: 1
 ---
 
-# Built-in proxy
-
-## Direct
-
-```ini title="Rule sample combined with direct proxy"
-DOMAIN,www.apple.com,DIRECT
-```
-
-Traffic match Direct proxy will be sent directly, without any redirection or modification.
-
-## Reject
+# Reject
 
 ```ini title="Rule sample combined with reject proxy"
 DOMAIN,www.google.com,REJECT

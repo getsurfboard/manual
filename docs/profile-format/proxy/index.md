@@ -1,8 +1,12 @@
 # `[Proxy]`
 
-Proxy is generally used combined with [Rule](/) and [ProxyGroup](/)
+Proxy is a proxy service definition which can be used as network traffic's destination.
 
-Currently protocol below is supported:
+Traffic which match rules defined in [[Rule]](/) section will be redirected to specified proxy.
+
+Proxy can be also included in [[Proxy Group]](/docs/profile-format/proxygroup) definition.
+
+Currently proxy protocol below is supported:
 
 - [HTTP/HTTPS](/docs/profile-format/proxy/external-proxy/http)
 - [SOCKS5/SOCKS5-TLS](/docs/profile-format/proxy/external-proxy/socks5)
