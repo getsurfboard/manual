@@ -10,6 +10,8 @@ A group of proxies, user can change selected proxy manually, even when VPN is st
 
 ## Sample
 
+### Profile sample
+
 ```ini
 [Proxy Group]
 SelectGroup = select, ProxyHTTP, ProxyHTTPS, DIRECT, REJECT
@@ -18,6 +20,18 @@ SelectGroup = select, ProxyHTTP, ProxyHTTPS, DIRECT, REJECT
 # traffic match 'www.google.com' will be redirect through SelectGroup's selected proxy
 DOMAIN, www.google.com, SelectGroup
 ```
+
+### Policy path sample
+
+```ini
+ProxyHTTP = http, 1.2.3.4, 443, username, password
+ProxyHTTPS = https, 1.2.3.4, 443, username, password, skip-cert-verify=true, sni=www.google.com
+ProxySOCKS5 = socks5, 1.2.3.4, 443, username, password, udp-relay=false
+```
+
+Just like [[Proxy]](/docs/profile-format/proxy) Section definition but without section header in it
+
+Use policy path can separate proxies and rules definition, and reduce profile complexity.
 
 ## Format
 

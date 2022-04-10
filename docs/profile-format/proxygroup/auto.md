@@ -21,6 +21,8 @@ Auto select group selection can not be changed manually
 
 ## Sample
 
+### Profile sample
+
 ```ini
 [Proxy Group]
 AutoTestGroup = url-test, ProxySOCKS5, ProxySOCKS5TLS, url=http://www.gstatic.com/generate_204, interval=600, tolerance=100, timeout=5, hidden=true
@@ -29,6 +31,18 @@ AutoTestGroup = url-test, ProxySOCKS5, ProxySOCKS5TLS, url=http://www.gstatic.co
 # traffic match 'www.google.com' will be redirect through AutoTestGroup's selected proxy
 DOMAIN, www.google.com, AutoTestGroup
 ```
+
+### Policy path sample
+
+```ini
+ProxyHTTP = http, 1.2.3.4, 443, username, password
+ProxyHTTPS = https, 1.2.3.4, 443, username, password, skip-cert-verify=true, sni=www.google.com
+ProxySOCKS5 = socks5, 1.2.3.4, 443, username, password, udp-relay=false
+```
+
+Just like [[Proxy]](/docs/profile-format/proxy) Section definition but without section header in it.
+
+Use policy path can separate proxies and rules definition, and reduce profile complexity. 
 
 ## Format
 
