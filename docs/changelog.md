@@ -4,6 +4,14 @@ sidebar_position: 5
 
 # ChangeLog
 
+### 2.9.4
+
+- Add AppCenter & breakpad
+- Revert outbound UI
+- Add new manual entrance
+- Change public ip fetching api
+- Update translation
+
 ### 2.9.3
 
 - Fix local proxy address in use crash
