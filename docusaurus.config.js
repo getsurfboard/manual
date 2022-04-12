@@ -120,11 +120,11 @@ const config = {
         style: 'dark',
         links: [
           {
-            title: 'Docs',
+            title: 'Sponsor',
             items: [
               {
-                label: 'Tutorial',
-                to: '/docs/installation',
+                label: 'EEVPN',
+                to: 'https://www.eevpn.cc/#/register?code=AQbio0JT',
               },
             ],
           },
