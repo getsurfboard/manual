@@ -4,6 +4,15 @@ sidebar_position: 5
 
 # ChangeLog
 
+### 2.9.5
+
+- Add traffic statistics card in dashboard(only count a single session)
+- Add traffic statistics mode in setting, affect notifications, traffic card 
+- Toggle notification tile without closing panel
+- Support Google Play In App Update
+- Update libuv to 1.44.1
+- Update translation
+
 ### 2.9.4
 
 - Add AppCenter & breakpad
