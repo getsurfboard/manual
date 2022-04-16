@@ -4,6 +4,13 @@ sidebar_position: 5
 
 # ChangeLog
 
+### 2.9.6
+
+- Profile editor: performance improve, add more highlight support
+- add `internet-test-url` support
+- Compatible with vmess proxy whose ws header value wrapped with quotes
+- Update translation
+
 ### 2.9.5
 
 - Add traffic statistics card in dashboard(only count a single session)
