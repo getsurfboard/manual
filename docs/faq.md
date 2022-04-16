@@ -77,3 +77,9 @@ Similarly, Surfboard will try its best to support the protocol standards support
 At the same time, I personally believe that blindly supporting as many protocols as possible will not bring additional benefits, but will increase the difficulty of application maintenance.
 
 If you want to use a protocol that Surfboard does not support, please consider using other applications that support more complete protocols, such as [Clash](https://github.com/Kr328/ClashForAndroid) and [V2rayNG](https://github.com/2dust/v2rayNG), they are all very good applications.
+
+## Why speed test delay is higher than expected
+
+Surfboard use `HTTP HEAD` to make a node speed test just like Surge. The first speed test delay is always higher because there is no node's dns cache. Second run will be lower because dns query duration is removed due to existence of dns cache.
+
+Devices with poor CPU will get higher delay also.
