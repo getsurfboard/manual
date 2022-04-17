@@ -4,6 +4,12 @@ sidebar_position: 5
 
 # ChangeLog
 
+### 2.9.7
+
+- Add `udp-policy-not-supported-behaviour` support
+- Rewrite external resource manager
+
+
 ### 2.9.6
 
 - Profile editor: performance improve, add more highlight support
