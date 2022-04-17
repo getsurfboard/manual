@@ -34,6 +34,9 @@ http-listen = 0.0.0.0:1234
 # Establish a socks5 proxy server on your device and provide proxy service in specified ip
 socks5-listen = 127.0.0.1:1235
 
+# If proxy not support udp relay, use DIRECT or REJECT instead
+udp-policy-not-supported-behaviour = DIRECT
+
 [Host]
 # map 'abc.com' to '1.2.3.4'
 abc.com = 1.2.3.4
