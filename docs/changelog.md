@@ -4,6 +4,11 @@ sidebar_position: 5
 
 # ChangeLog
 
+### 2.9.10
+
+- Support override `http-listen` and `socks5-listen` in profiles
+- Support HTTP 30X redirection when fetching external resource
+
 ### 2.9.9
 
 - Fix SS url base64 decode error
