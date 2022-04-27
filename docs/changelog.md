@@ -4,6 +4,14 @@ sidebar_position: 5
 
 # ChangeLog
 
+### 2.9.9
+
+- Fix SS url base64 decode error
+- Add Google Play AAB support
+- Use online sponsor page
+- Update translation
+- Bug fixed
+
 ### 2.9.8
 
 - Bug fixed
