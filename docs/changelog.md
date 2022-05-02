@@ -4,6 +4,19 @@ sidebar_position: 5
 
 # ChangeLog
 
+### 2.9.11
+
+- Use mlkit qrcode scanning instead of zxing
+- Add Developer Options UI
+  - Support viewing memory usage, trigger garbage collect and export memory snapshot
+  - Support exporting log file
+- Unify browser open method
+- Add translate contributor list
+- Update translation
+- Fix some vmess uri import failed
+- Support HTTP 301 in external resource management
+- Support Android 13 themed app icon
+
 ### 2.9.10
 
 - Support override `http-listen` and `socks5-listen` in profiles
