@@ -4,6 +4,11 @@ sidebar_position: 5
 
 # ChangeLog
 
+### 2.9.12
+
+- Fix public ip card random crash issue
+- Fix devices without camera can not install issue
+
 ### 2.9.11
 
 - Use mlkit qrcode scanning instead of zxing
