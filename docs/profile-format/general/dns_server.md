@@ -23,5 +23,5 @@ dns-server = system, {dns server}[:port], ...
 
 :::tip
 - If `dns-server` is not assigned, `system` will be used
-- Currently [DoH](https://en.wikipedia.org/wiki/DNS_over_HTTPS) and [DoT](https://en.wikipedia.org/wiki/DNS_over_TLS) is not supported yet
+- Currently [DoT](https://en.wikipedia.org/wiki/DNS_over_TLS) is not supported yet
 :::
