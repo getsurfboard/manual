@@ -4,6 +4,12 @@ sidebar_position: 5
 
 # ChangeLog
 
+### 2.10.0
+
+- Add `doh-server` support
+- Add fcm diagnostics entrance in developer options
+- Update translation
+
 ### 2.9.12
 
 - Fix public ip card random crash issue
