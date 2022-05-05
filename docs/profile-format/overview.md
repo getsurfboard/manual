@@ -16,6 +16,9 @@ Surge's profile documentation can be viewed [here](https://manual.nssurge.com/)
 # Specify dns server used by application
 dns-server = system, 8.8.8.8, 8.8.4.4, 9.9.9.9:9953
 
+# Specify doh server used by application
+doh-server = https://9.9.9.9/dns-query
+
 # Specify route rule and domain rule, matching traffic will not be redirected or rejected.
 skip-proxy = 127.0.0.1, 192.168.0.0/16, 10.0.0.0/8, 172.16.0.0/12, 100.64.0.0/10, localhost, *.local, www.baidu.com //444
 
