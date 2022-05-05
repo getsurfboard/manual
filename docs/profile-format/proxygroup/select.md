@@ -52,3 +52,7 @@ Use policy path can separate proxies and rules definition, and reduce profile co
 :::tip
 {proxies} and {policy-path} can be used together in the same proxy group
 :::
+
+:::tip
+You can use a profile url as policy path url, only proxy part of the profile will be used
+:::

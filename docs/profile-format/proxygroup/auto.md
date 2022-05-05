@@ -65,7 +65,7 @@ Use policy path can separate proxies and rules definition, and reduce profile co
 | hidden              | true<br/>false  | false     | Whether to display this proxy group in user interface, even set to false, this group will still take effect.                                                                                                                                                                                     |
 
 :::caution
-Only **HTTP** scheme url is allowed, **HTTPS** and any other types of scheme url will not be supported.
+Only **HTTP** scheme url is allowed as test url, **HTTPS** and any other types of scheme url will not be supported.
 :::
 
 :::tip
@@ -74,4 +74,8 @@ Only **HTTP** scheme url is allowed, **HTTPS** and any other types of scheme url
 
 :::tip
 `fallback` type proxy group is also supported, but will be treated like 'select' currently.
+:::
+
+:::tip
+You can use a profile url as policy path url, only proxy part of the profile will be used
 :::
