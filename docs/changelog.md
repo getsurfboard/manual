@@ -4,6 +4,16 @@ sidebar_position: 5
 
 # ChangeLog
 
+### 2.10.1
+
+- Support profile url as policy path url
+- Fix profile editor save failed still show as success
+- Fix network unavailable if use global outbound with zero proxies profile
+- Remove override vmess aead setting, please use [vmess-aead](/docs/profile-format/proxy/external-proxy/vmess) in profile instead 
+- Change profile list sort to natural order
+- Add more protocol recognize in logcat and recent requests
+- Update translation
+
 ### 2.10.0
 
 - Add `doh-server` support
