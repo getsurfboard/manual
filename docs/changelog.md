@@ -4,6 +4,10 @@ sidebar_position: 5
 
 # ChangeLog
 
+### 2.10.2
+
+- Change default vmess-aead value to true
+
 ### 2.10.1
 
 - Support profile url as policy path url
