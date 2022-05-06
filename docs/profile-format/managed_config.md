@@ -16,6 +16,7 @@ Profile with managed config defined be can updated automatically in the backgrou
 - `interval`: profile interval update time
     - format: number
     - unit: second
+    - minimum value: 900 (15 minutes)
 - `strict`: profile that have not been updated within the specified time are not allowed to be used
     - format: boolean
 

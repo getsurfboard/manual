@@ -39,7 +39,7 @@ ProxyVMess = vmess, 1.2.3.4, 8000, username=0233d11c-15a4-47d3-ade3-48ffca0ce119
 | ws-headers       | -                | false     | Value format: <code>Header-1:value-1\|Header-2:value-2</code><br/>Key and value is divided by colon<br/>Entries are divided by vertical bar<br/>Usable only when ws set to true |
 | skip-cert-verify | true<br/>false   | false     | Usable if tls is true<br/>set to true if proxy doesn't have a valid TLS certificate                                                                                             |
 | sni              | -                | false     | Usable if tls is true<br/>definition is unnecessary when the SNI value is the same as the host value                                                                            |
-| vmess-aead       | true<br/>false   | false     | Default value: false                                                                                                                                                            |
+| vmess-aead       | true<br/>false   | false     | Default value: true                                                                                                                                                            |
 
 :::caution
 `vmess-aead` is still an unconfirmed standard of Surge profile format, format may be changed in the future
