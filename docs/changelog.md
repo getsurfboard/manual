@@ -4,6 +4,16 @@ sidebar_position: 5
 
 # ChangeLog
 
+### 2.11.0
+
+- Support change theme palette(If you have better color recommended, please contact me)
+- Support override [doh-server](https://getsurfboard.com/docs/profile-format/general/doh_server) config in setting
+- Improve VPN start speed when using huge profile
+- Support toggle offline/disabled app display in bypass app list
+- Fix fetch profile timeout if contains self url as policy path url
+- Improve recent requests list performance, support fast scroll
+- Update translation
+
 ### 2.10.2
 
 - Change default vmess-aead value to true
