@@ -4,6 +4,14 @@ sidebar_position: 5
 
 # ChangeLog
 
+### 2.11.1
+
+- Add allowing bypass VPN setting
+- Disable text highlight in embedded profile editor to improve performance
+- New theme setting ui, support devices lower than Android 12
+- Bug fixed
+- Update translation
+
 ### 2.11.0
 
 - Support change theme palette(If you have better color recommended, please contact me)
