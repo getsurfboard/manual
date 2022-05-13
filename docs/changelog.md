@@ -4,6 +4,16 @@ sidebar_position: 5
 
 # ChangeLog
 
+### 2.11.2
+
+- Bring better wildcard match for skip-proxy, always-real-ip and host rule
+- Add vpn toggle toast
+- Improve public ip api usability
+- Change editor newline symbol for better compatibility
+- Fix theme setting crash on lower version devies
+- Fix change theme not working on lower version devices
+- Fix self traffic handle error
+
 ### 2.11.1
 
 - Add allowing bypass VPN setting
