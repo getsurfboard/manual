@@ -4,6 +4,13 @@ sidebar_position: 5
 
 # ChangeLog
 
+### 2.11.3
+
+- Support drag and drop feature in profile list ui
+- Add wireshark sshdump support in tools list
+- Add DnsPod DoH server in embedded profile template
+- Bug fixed
+
 ### 2.11.2
 
 - Bring better wildcard match for skip-proxy, always-real-ip and host rule
