@@ -12,17 +12,6 @@ sidebar_position: 100
 
 Register link: [https://www.eevpn.cc/](https://www.eevpn.cc/#/register?code=AQbio0JT)
 
-## [ByWave](https://byw.tv/aff.php?aff=18555)
-
-- 全站 IEPL 专线机场，SS/VMess协议
-- 10Gbps广港高防IEPL接入
-- 单节点多服务器负载
-- 支持一次性流量包
-- 支持流媒体解锁
-- 支持工作室/企业团队定制方案
-
-Register link: [https://byw.tv/](https://byw.tv/aff.php?aff=18555)
-
 ## [AntLink](https://antlink.icu/#/register?code=WFI2vSZm)
 
 - 中转价格 专线服务
