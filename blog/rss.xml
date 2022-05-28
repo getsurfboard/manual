@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+    <channel>
+        <title>Surfboard Manual Blog</title>
+        <link>https://getsurfboard.com/blog</link>
+        <description>Surfboard Manual Blog</description>
+        <lastBuildDate>Wed, 06 Apr 2022 00:00:00 GMT</lastBuildDate>
+        <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
+        <generator>https://github.com/jpmonette/feed</generator>
+        <language>en</language>
+        <item>
+            <title><![CDATA[Why develop Surfboard]]></title>
+            <link>https://getsurfboard.com/blog/why-develop-surfboard</link>
+            <guid>why-develop-surfboard</guid>
+            <pubDate>Wed, 06 Apr 2022 00:00:00 GMT</pubDate>
+            <description><![CDATA[Before]]></description>
+            <content:encoded><![CDATA[<h3 class="anchor anchorWithStickyNavbar_mojV" id="before">Before<a class="hash-link" href="#before" title="Direct link to heading">​</a></h3><p>In the beginning, I was a loyal user of <a href="https://play.google.com/store/apps/details?id=com.github.shadowsocks" target="_blank" rel="noopener noreferrer">Shadowsocks</a>, and I used the app almost 24 hours a day, enjoying the freedom to browse the Internet without being locked into a circle that others have set up for you.</p><p>One day, I found that when Shadowsocks is turned on, all UDP packets sent by the device will be discarded (I believe that shadowsocks no longer has this problem). This results in that I need to manually close shadowsocks every time before playing the game, and after the game is over, I need to manually open shadowsocks again. This is indeed a little inconvenient.</p><h3 class="anchor anchorWithStickyNavbar_mojV" id="first-version">First Version<a class="hash-link" href="#first-version" title="Direct link to heading">​</a></h3><p>So, an idea came to my mind, why not make a VPN application according to my own needs? Thus, the first version of the simple application was born, which I named 'SS_NG', inspired by 'Shadowsocks + Next Generation'. Its user interface and functionality are simple and crude, but it does exactly what it needs to do: forward traffic using the shadowsocks protocol and avoid blocking UDP traffic. It soon replaced the Shadowsocks app on my device as the 24/7 VPN app on my device.</p><h3 class="anchor anchorWithStickyNavbar_mojV" id="inspiration">Inspiration<a class="hash-link" href="#inspiration" title="Direct link to heading">​</a></h3><p>Later, I bought a MacBook Pro and an iPhone and started using the Surge app. Since I started using Surge, I have been impressed by this app, Surge has the following advantages:</p><ul><li>Beautifully designed</li><li>Lots of features</li><li>Stable and smooth</li><li>Well-tailored configuration rules</li><li>Multi-platform support</li><li>...</li></ul><p>Although a large number of excellent similar applications have emerged on the iOS platform, in my opinion, Surge is still the best VPN application for Apple platform in my opinion.</p><h3 class="anchor anchorWithStickyNavbar_mojV" id="nowadays">Nowadays<a class="hash-link" href="#nowadays" title="Direct link to heading">​</a></h3><p>Later, my mobile device was switched back to the Android platform again, but the Android platform did not have a VPN application compatible with the Surge configuration, so I picked up the old SS_NG project and rebuilt it according to the design idea of ​​Surge. , the new application has the following features:</p><ul><li>Compatible with Surge's configuration format</li><li>Rich chart/record viewing function</li><li>Support remote node group/rule group/agent group switching</li><li>...</li></ul><p>I named it 'Surfboard', the first three letters are the same as Surge, and the surfboard is also related to surfing the Internet. At the same time, this application is no longer a private entertainment project of mine, but a public application product that can be used by all users who want to surf freely.</p>]]></content:encoded>
+            <category>surfboard</category>
+        </item>
+    </channel>
+</rss>
