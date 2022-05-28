@@ -4,6 +4,18 @@ sidebar_position: 5
 
 # ChangeLog
 
+### 2.11.4
+
+- Add GMS QRCode scanner support
+- Improve dns ip display outside mainland China
+- Fix public ip display issue
+- Update profile menu item sequence
+- Fix DoH server verify exception
+- Add Android TV App entrance(still using mobile ui)
+- Add private ip card in dashboard
+- Update GEOIP library
+- Add more theme support
+
 ### 2.11.3
 
 - Support drag and drop feature in profile list ui
