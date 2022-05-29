@@ -4,6 +4,13 @@ sidebar_position: 5
 
 # ChangeLog
 
+### 2.12.0
+
+- Add google api availability checking
+- Add invalid managed config url faq entrance
+- Disable sshdump on android 7 and lower
+- Support dynamic change ui translation on the fly
+
 ### 2.11.4
 
 - Add GMS QRCode scanner support
