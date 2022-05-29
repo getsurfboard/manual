@@ -83,3 +83,15 @@ If you want to use a protocol that Surfboard does not support, please consider u
 Surfboard use `HTTP HEAD` to make a node speed test just like Surge. The first speed test delay is always higher because there is no node's dns cache. Second run will be lower because dns query duration is removed due to existence of dns cache.
 
 Devices with poor CPU will get higher delay also.
+
+## Why app prompt 'The imported profile contains an invalid update URL' when adding a new profile
+
+Surge format support update profile automatically if you have define a [managed-config](/docs/profile-format/managed_config) at the first line of the profile.
+
+If profile contain an invalid managed config url, surfboard will raise a prompt like this to the user.
+
+:::tip
+99.99% of this situation is because the host of the url is a local address, for example: 127.0.0.1.
+
+If you use some non-standard profile converters, you may encounter such issues. Please consider using other converters to circumvent this issues.
+:::
