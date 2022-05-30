@@ -4,6 +4,10 @@ sidebar_position: 5
 
 # ChangeLog
 
+### 2.12.1
+
+- Fix google api availability checking crash
+
 ### 2.12.0
 
 - Add google api availability checking
