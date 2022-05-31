@@ -4,6 +4,11 @@ sidebar_position: 5
 
 # ChangeLog
 
+### 2.12.2
+
+- Move google api checking to tools list
+- Update tools list ui
+
 ### 2.12.1
 
 - Fix google api availability checking crash
