@@ -8,6 +8,7 @@ sidebar_position: 2
 
 ```ini
 PROCESS-NAME,com.android.vending,Proxy
+PROCESS-NAME,*google*,Proxy
 ```
 
 ## Format
@@ -18,10 +19,10 @@ PROCESS-NAME, {package name}, {target proxy}
 
 ## Param
 
-| Name         | Value | Mandatory | Note                                                             |
-|--------------|-------|-----------|------------------------------------------------------------------|
-| package name | -     | true      | Format: Android application package name                         |
-| target proxy | -     | true      | Specified proxy or proxy group must existed in profile           |
+| Name         | Value | Mandatory | Note                                                                               |
+|--------------|-------|-----------|------------------------------------------------------------------------------------|
+| package name | -     | true      | Format: Android application package name, support complete match or wildcard match |
+| target proxy | -     | true      | Specified proxy or proxy group must existed in profile                             |
 
 :::tip
 Android application package name can be queried by methods below:
