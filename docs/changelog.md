@@ -4,6 +4,12 @@ sidebar_position: 5
 
 # ChangeLog
 
+### 2.12.3
+
+- Support load-balance proxy group
+- Process rule support wildcard match
+- Bug fixed
+
 ### 2.12.2
 
 - Move google api checking to tools list
