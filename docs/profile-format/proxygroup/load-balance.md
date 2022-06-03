@@ -1,12 +1,14 @@
 ---
-sidebar_position: 0
+sidebar_position: 2
 ---
 
-# Manually select
+# Load balance
 
-A group of proxies, user can change selected proxy manually, only when VPN is started.
+A group of proxies, selection will be randomly chosen.
 
-- Reference: https://en.wikipedia.org/wiki/Regular_expression
+:::note
+Load balance group selection can not be changed manually
+:::
 
 ## Sample
 
@@ -14,11 +16,11 @@ A group of proxies, user can change selected proxy manually, only when VPN is st
 
 ```ini
 [Proxy Group]
-SelectGroup = select, ProxyHTTP, ProxyHTTPS, DIRECT, REJECT, hidden = false
+LoadBalanceGroup = load-balance, ProxyHTTP, ProxyHTTPS
 
 [Rule]
-# traffic match 'www.google.com' will be redirect through SelectGroup's selected proxy
-DOMAIN, www.google.com, SelectGroup
+# traffic match 'www.google.com' will be redirect through AutoTestGroup's selected proxy
+DOMAIN, www.google.com, LoadBalanceGroup
 ```
 
 ### Policy path sample
@@ -29,14 +31,14 @@ ProxyHTTPS = https, 1.2.3.4, 443, username, password, skip-cert-verify=true, sni
 ProxySOCKS5 = socks5, 1.2.3.4, 443, username, password, udp-relay=false
 ```
 
-Just like [[Proxy]](/docs/profile-format/proxy) Section definition but without section header in it
+Just like [[Proxy]](/docs/profile-format/proxy) Section definition but without section header in it.
 
-Use policy path can separate proxies and rules definition, and reduce profile complexity.
+Use policy path can separate proxies and rules definition, and reduce profile complexity. 
 
 ## Format
 
 ```ini
-{Group name} = select, {proxies, ...}, {policy-path}, {policy-regex-filter}, hidden = {hidden}
+{Group name} = load-balance, {proxies, ...}, {policy-path}, {policy-regex-filter}, hidden = {hidden}
 ```
 
 ## Param

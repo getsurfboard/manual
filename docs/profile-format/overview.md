@@ -90,6 +90,9 @@ AutoTestGroup = url-test, ProxySOCKS5, ProxySOCKS5TLS, url=http://www.gstatic.co
 ExternalGroup = select, policy-path=https://test.com/nodes.txt, policy-regex-filter=HK-.*
 AutoExternalGroup = url-test, policy-path=https://test.com/nodes.txt
 
+# proxy group whose selection is chosen randomly
+LoadBalanceGroup = load-balance, ProxyHTTP, ProxyHTTPS
+
 [Rule]
 # domain exact match 'www.apple.com' will be redirected to proxy named 'ProxyHTTP' in [Proxy] section 
 DOMAIN,www.apple.com,ProxyHTTP
@@ -111,6 +114,7 @@ GEOIP,US,REJECT
 
 # traffic sent by application whose package name is 'com.android.vending' will be sent to 'Proxy'
 PROCESS-NAME,com.android.vending,Proxy  # android package name
+PROCESS-NAME,*google*,Proxy             # android package name wildcard rule
 
 # traffic match external rules defined in 'https://ruleset.com/cn' will be sent to 'ProxyVMess'
 RULE-SET,https://ruleset.com/cn,ProxyVMess
