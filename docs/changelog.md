@@ -4,6 +4,11 @@ sidebar_position: 5
 
 # ChangeLog
 
+### 2.12.4
+
+- Improve tablet ui
+- Bug fixed
+
 ### 2.12.3
 
 - Support load-balance proxy group
