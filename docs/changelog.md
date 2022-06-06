@@ -4,6 +4,10 @@ sidebar_position: 5
 
 # ChangeLog
 
+### 2.12.5
+
+- Fix setting crash issue
+
 ### 2.12.4
 
 - Improve tablet ui
