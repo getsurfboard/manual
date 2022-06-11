@@ -4,6 +4,13 @@ sidebar_position: 5
 
 # ChangeLog
 
+### 2.12.6
+
+- update public ip batch fetch
+- support display flag emoji on public ip card
+- try to fix traffic loop is proxy host is ip format
+- better handle horizontal orientation
+
 ### 2.12.5
 
 - Fix setting crash issue
