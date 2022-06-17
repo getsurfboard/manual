@@ -4,6 +4,12 @@ sidebar_position: 5
 
 # ChangeLog
 
+### 2.13.0
+
+- Support DOMAIN-SET rule
+- Fix force-remote-dns setting not working for domain rules in RULE-SET
+- Add korean language support
+
 ### 2.12.6
 
 - update public ip batch fetch
