@@ -4,9 +4,9 @@ sidebar_position: 4
 
 # `internet-test-url`
 
-Test url used by [url-test](/docs/profile-format/proxygroup/auto) and manually node speed test.
+Test url used by [DIRECT](/docs/profile-format/proxy/built-in-proxy/direct) proxy
 
-[Direct proxy](/docs/profile-format/proxy/built-in-proxy/direct) will use this url. For non-direct proxy, please refer to [`proxy-test-url`](./proxy_test_url)
+For non-direct proxy, please refer to [`proxy-test-url`](./proxy_test_url)
 
 An `HTTP HEAD` request will be sent towards this url
 
