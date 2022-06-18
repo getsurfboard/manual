@@ -9,7 +9,7 @@ Domain Set is a remote url configuration, whose content is a collection of Domai
 Use Domain Set can greatly simplify the content complexity of profile which has a lot of domain rules in it,
 and also can reuse rules encapsulated by other contributors.
 
-Compare to [RULE-SET](/docs/profile-format/rule/ruleset), Domain set only support domain rule
+Compare to [RULE-SET](/docs/profile-format/rule/ruleset), Domain set only support domain type rules, but it will bring significant performance improvement
 
 ## Sample
 
@@ -41,7 +41,3 @@ DOMAIN-SET, {domain set url}, {target}
 |----------------|-------|-----------|--------------------------------------------------------|
 | domain set url | -     | true      |                                                        |
 | target         | -     | true      | Specified proxy or proxy group must existed in profile |
-
-:::tip
-Currently domain set will not bring any performance improvement compare to RULE-SET, it may be achieved in the future
-:::
