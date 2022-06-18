@@ -4,6 +4,11 @@ sidebar_position: 5
 
 # ChangeLog
 
+### 2.13.1
+
+- Improve DOMAIN-SET performance
+- Improve proxy group ui performance
+
 ### 2.13.0
 
 - Support DOMAIN-SET rule
