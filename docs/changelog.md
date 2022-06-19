@@ -4,6 +4,8 @@ sidebar_position: 5
 
 # ChangeLog
 
+- Optimize DOMAIN-SET memory usage 
+
 ### 2.13.1
 
 - Improve DOMAIN-SET performance
