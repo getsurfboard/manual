@@ -4,6 +4,12 @@ sidebar_position: 5
 
 # ChangeLog
 
+### 2.13.3
+
+- Add custom geoip database support
+
+### 2.13.2
+
 - Optimize DOMAIN-SET memory usage 
 
 ### 2.13.1
