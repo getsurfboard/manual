@@ -4,6 +4,13 @@ sidebar_position: 5
 
 # ChangeLog
 
+### 2.13.4
+
+- Fix tile not working on color os
+- Hide VPN notification badge icon
+- Fix timeout when applying 'force-remote-dns' on direct rule domain
+- Support decode 'persistent' param in load balanced group
+
 ### 2.13.3
 
 - Add custom geoip database support
