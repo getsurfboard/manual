@@ -4,6 +4,16 @@ sidebar_position: 5
 
 # ChangeLog
 
+### 2.14.0
+
+- Reduce VPN CPU usage
+- Add more notification settings
+- Add recommend doh server list
+- Add export log in tool list
+- Update embedded geoip library
+- Add document entry in external resources ui
+- Update translation
+
 ### 2.13.4
 
 - Fix tile not working on color os
