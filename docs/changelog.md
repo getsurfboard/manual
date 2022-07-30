@@ -4,6 +4,12 @@ sidebar_position: 5
 
 # ChangeLog
 
+### 2.15.0
+
+- Add new traffic list ui
+- Support websocket in trojan protocol
+- Revert to previous dark icon
+
 ### 2.14.0
 
 - Reduce VPN CPU usage
