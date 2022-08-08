@@ -4,6 +4,15 @@ sidebar_position: 5
 
 # ChangeLog
 
+### 2.15.1
+
+- Display native process memory consumption in developer ui
+- Add Nintendo Switch media import support(Android 10+)
+- Update shortcut icon shape
+- Move sshdump into vpn setting
+- Update translation
+- Bugfix
+
 ### 2.15.0
 
 - Add new traffic list ui
