@@ -19,7 +19,7 @@ ProxyTrojan = trojan, 192.168.20.6, 443, password=password1, udp-relay=false, sk
 ## Format
 
 ```ini
-{proxy name} = trojan, {host}, {port}, {password}, {udp-relay}, {skip-cert-verify}, {sni}, {ws}, {ws-path}, {ws-headers}
+{proxy name} = trojan, {server}, {port}, {password}, {udp-relay}, {skip-cert-verify}, {sni}, {ws}, {ws-path}, {ws-headers}
 ```
 
 ## Params
@@ -27,7 +27,7 @@ ProxyTrojan = trojan, 192.168.20.6, 443, password=password1, udp-relay=false, sk
 | Name             | Value          | Mandatory | Note                                                                                                                                                                            |
 |------------------|----------------|-----------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | proxy name       | -              | true      |                                                                                                                                                                                 |
-| host             | -              | true      | Support domain and ip format                                                                                                                                                    |
+| server           | -              | true      | Support domain and ip format                                                                                                                                                    |
 | port             | 0 - 65535      | true      |                                                                                                                                                                                 |
 | password         | -              | true      |                                                                                                                                                                                 |
 | udp-relay        | true<br/>false | false     | Default value: false                                                                                                                                                            |

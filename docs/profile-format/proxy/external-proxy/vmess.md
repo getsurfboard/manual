@@ -21,7 +21,7 @@ ProxyVMess = vmess, 1.2.3.4, 8000, username=0233d11c-15a4-47d3-ade3-48ffca0ce119
 ## Format
 
 ```ini
-{proxy name} = vmess, {host}, {port}, {username}, {udp-relay}, {ws}, {tls}, {ws-path}, {ws-headers}, {skip-cert-verify}, {sni}, {vmess-aead}
+{proxy name} = vmess, {server}, {port}, {username}, {udp-relay}, {ws}, {tls}, {ws-path}, {ws-headers}, {skip-cert-verify}, {sni}, {vmess-aead}
 ```
 
 ## Params
@@ -29,7 +29,7 @@ ProxyVMess = vmess, 1.2.3.4, 8000, username=0233d11c-15a4-47d3-ade3-48ffca0ce119
 | Name             | Value            | Mandatory | Note                                                                                                                                                                            |
 |------------------|------------------|-----------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | proxy name       | -                | true      |                                                                                                                                                                                 |
-| host             | -                | true      | Support domain and ip format                                                                                                                                                    |
+| server           | -                | true      | Support domain and ip format                                                                                                                                                    |
 | port             | 0 - 65535        | true      |                                                                                                                                                                                 |
 | username         | -                | true      | UUID format                                                                                                                                                                     |
 | udp-relay        | true<br/>false   | false     | Default value: false                                                                                                                                                            |

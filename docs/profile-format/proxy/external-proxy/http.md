@@ -23,7 +23,7 @@ ProxyHTTPS = https, 1.2.3.4, 443, username, password, skip-cert-verify=true, sni
 ## Format
 
 ```ini
-{proxy name} = {protocol}, {host}, {port}, {username}, {password}, {skip-cert-verify}, {sni}
+{proxy name} = {protocol}, {server}, {port}, {username}, {password}, {skip-cert-verify}, {sni}
 ```
 
 ## Params
@@ -32,7 +32,7 @@ ProxyHTTPS = https, 1.2.3.4, 443, username, password, skip-cert-verify=true, sni
 |------------------|----------------|-----------|-----------------------------------------------------------------------------------------------------------------|
 | proxy name       | -              | true      |                                                                                                                 |
 | protocol         | http<br/>https | true      |                                                                                                                 |
-| host             | -              | true      | Support domain and ip format                                                                                    |
+| server           | -              | true      | Support domain and ip format                                                                                    |
 | port             | 0-65535        | true      |                                                                                                                 |
 | username         | -              | false     |                                                                                                                 |
 | password         | -              | false     |                                                                                                                 |
