@@ -4,6 +4,14 @@ sidebar_position: 5
 
 # ChangeLog
 
+### 2.15.2
+
+- Try fix connection count issue by not using protect api
+- Add unsupported YAML format profile detection
+- Compatible with number value with unit suffix in profile content
+- Bug fixed
+- Update translation
+
 ### 2.15.1
 
 - Display native process memory consumption in developer ui
