@@ -4,6 +4,11 @@ sidebar_position: 5
 
 # ChangeLog
 
+### 2.15.3
+
+- Fix some memory leak issues
+- Fix bugs
+
 ### 2.15.2
 
 - Try fix connection count issue by not using protect api
