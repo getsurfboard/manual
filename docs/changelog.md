@@ -4,6 +4,12 @@ sidebar_position: 5
 
 # ChangeLog
 
+### 2.16.0
+
+- Fix connection count issue
+- Adapt to Android 13 notification permission request
+- Update start when boot logic
+
 ### 2.15.3
 
 - Fix some memory leak issues
