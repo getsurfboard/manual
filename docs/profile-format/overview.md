@@ -124,6 +124,9 @@ DOMAIN-SET,https://domainset.com/ad,REJECT
 
 # traffic doesn't match rules above will be sent to 'ProxyTrojan'
 FINAL,ProxyTrojan
+
+[Panel]
+PanelA = title="Panel Title", content="Panel Content\nSecondLine", style=info
 ```
 
 You can read on for detailed definitions of different sections
