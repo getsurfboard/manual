@@ -4,6 +4,11 @@ sidebar_position: 5
 
 # ChangeLog
 
+### 2.16.1
+
+- Support [panel](https://getsurfboard.com/docs/profile-format/panel/static)
+- Fix shadowsocks protocol crash issue
+
 ### 2.16.0
 
 - Fix connection count issue
