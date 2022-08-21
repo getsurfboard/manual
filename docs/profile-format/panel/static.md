@@ -4,6 +4,8 @@ sidebar_position: 0
 
 # Static panel
 
+Display panel info as profile menu entries, multiple panel can be put into a panel section, panel content will be refreshed as profile refreshed.
+
 ## Sample 
 
 ```ini
