@@ -4,6 +4,17 @@ sidebar_position: 5
 
 # ChangeLog
 
+### 2.16.2
+
+- Add profile sub menu support
+- Bug fixed
+- Adapt to Android 13 excludeRoute method
+- Add so library missing detect
+- Reduce suffix domain rule memory usage
+- Fix miui gesture bar color
+- Support long press ip card to copy ip
+- Update translation
+
 ### 2.16.1
 
 - Support [panel](https://getsurfboard.com/docs/profile-format/panel/static)
