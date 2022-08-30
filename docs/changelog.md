@@ -4,6 +4,12 @@ sidebar_position: 5
 
 # ChangeLog
 
+### 2.16.3
+
+- Bug fixed
+- Add vmess username format validate
+- Update switch preference ui
+
 ### 2.16.2
 
 - Add profile sub menu support
