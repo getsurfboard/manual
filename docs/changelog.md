@@ -4,6 +4,15 @@ sidebar_position: 5
 
 # ChangeLog
 
+### 2.16.4
+
+- Fix some oom issue
+- Fix speed curve frozen when speed is zero
+- Update translation
+- Update embedded geoip library
+- Display LAN ip in local ip card ui
+- Respect ruleSet/domainSet sequence
+
 ### 2.16.3
 
 - Bug fixed
