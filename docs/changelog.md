@@ -4,6 +4,17 @@ sidebar_position: 5
 
 # ChangeLog
 
+### 2.16.5
+
+- Fix OOM issue cause by doh function
+- Adapt to Android 13 per-app language settings
+- Fix empty local proxy card issue
+- Add OOM monitor debug function
+- Make panel dialog content url and email clickable
+- Reduce apk size
+- Disable hide vpn notification setting on MIUI
+- Support click sshdump bar in dashboard to open vpn settings
+
 ### 2.16.4
 
 - Fix some oom issue
