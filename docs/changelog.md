@@ -4,6 +4,13 @@ sidebar_position: 5
 
 # ChangeLog
 
+### 2.17.0
+
+- Dashboard: now you can long press to hide card, or toggle card visibility in the top right menu
+- Add public ip visibility toggle animation
+- Update some displayed text
+- Remove some profile url format checking for better compatibility
+
 ### 2.16.5
 
 - Fix OOM issue cause by doh function
