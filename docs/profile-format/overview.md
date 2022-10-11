@@ -90,6 +90,9 @@ AutoTestGroup = url-test, ProxySOCKS5, ProxySOCKS5TLS, url=http://www.gstatic.co
 ExternalGroup = select, policy-path=https://test.com/nodes.txt, policy-regex-filter=HK-.*
 AutoExternalGroup = url-test, policy-path=https://test.com/nodes.txt
 
+# proxy group which contains all proxy under [Proxy] section
+AllProxies = select, include-all-proxies = true
+
 # proxy group whose selection is chosen randomly
 LoadBalanceGroup = load-balance, ProxyHTTP, ProxyHTTPS
 
