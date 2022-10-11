@@ -4,6 +4,14 @@ sidebar_position: 5
 
 # ChangeLog
 
+### 2.17.1
+
+- Support `include-all-proxies` standard in proxy group
+- Improve UI compatibility with Samsung tablet sidebar
+- Improve UI compatibility with Android 13 foldable phone bottom bar
+- Add bottomBar support in profile editor
+- Bug fixed
+
 ### 2.17.0
 
 - Dashboard: now you can long press to hide card, or toggle card visibility in the top right menu
