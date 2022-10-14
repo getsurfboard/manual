@@ -96,6 +96,9 @@ AllProxies = select, include-all-proxies = true
 # proxy group whose selection is chosen randomly
 LoadBalanceGroup = load-balance, ProxyHTTP, ProxyHTTPS
 
+# proxy group just like url-test but follow 'first come first served' rule
+FallbackGroup = fallback, ProxySOCKS5, ProxySOCKS5TLS, url=http://www.gstatic.com/generate_204, interval=600, timeout=5
+
 [Rule]
 # domain exact match 'www.apple.com' will be redirected to proxy named 'ProxyHTTP' in [Proxy] section 
 DOMAIN,www.apple.com,ProxyHTTP

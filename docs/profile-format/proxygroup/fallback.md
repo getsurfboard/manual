@@ -2,21 +2,16 @@
 sidebar_position: 1
 ---
 
-# Auto select
+# Fallback
 
-A group of proxies with a test url in it.
+A group of proxies with a test url in it, just like [Auto select](./auto) group.
 
-After VPN started, a `HTTP HEAD` request will be sent towards the test url, delay will be recorded when success response reach.
+Unlike auto select group, the selection change will take effect immediately as long as any proxy test succeeds.
 
-Proxy with the shortest delay will be the selection of the group.
-
-The test will be triggered at intervals constantly.
-
-- Reference: https://en.wikipedia.org/wiki/Regular_expression
-- Reference: https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods/HEAD
+Therefore, proxies order is critical in a fallback group, you should put better proxies first.
 
 :::note
-Auto select group selection can not be changed manually
+Fallback group selection can not be changed manually
 :::
 
 ## Sample
@@ -25,11 +20,11 @@ Auto select group selection can not be changed manually
 
 ```ini
 [Proxy Group]
-AutoTestGroup = url-test, ProxySOCKS5, ProxySOCKS5TLS, url=http://www.gstatic.com/generate_204, interval=600, tolerance=100, timeout=5, hidden=true
+FallbackGroup = fallback, ProxySOCKS5, ProxySOCKS5TLS, url=http://www.gstatic.com/generate_204, interval=600, timeout=5
 
 [Rule]
 # traffic match 'www.google.com' will be redirect through AutoTestGroup's selected proxy
-DOMAIN, www.google.com, AutoTestGroup
+DOMAIN, www.google.com, FallbackGroup
 ```
 
 ### Policy path sample
@@ -47,7 +42,7 @@ Use policy path can separate proxies and rules definition, and reduce profile co
 ## Format
 
 ```ini
-{group name} = url-test, {proxies, ...}, {policy-path}, {policy-regex-filter}, {url}, {interval}, {tolerance}, {timeout}, {hidden}, include-all-proxies = {include-all-proxies}
+{group name} = fallback, {proxies, ...}, {policy-path}, {policy-regex-filter}, {url}, {interval}, {timeout}, {hidden}, include-all-proxies = {include-all-proxies}
 ```
 
 ## Param
@@ -60,7 +55,6 @@ Use policy path can separate proxies and rules definition, and reduce profile co
 | policy-regex-filter | -               | false     | Usable if policy-path defined.<br/>A regular expression which will apply on proxy name in policy-path url content, only proxies which match expression will be reserved.                                                                                                                           |
 | url                 | http scheme url | false     | Test url which is used by HTTP HEAD request.<br/>If url is not defined, '<a href="/docs/profile-format/general/proxy_test_url">proxy-test-url</a>' defined in `[General]` section will be used.<br/>If 'proxy-test-url' is not defined either, 'http://www.gstatic.com/generate_204' will be used. |
 | interval            | -               | false     | Unit: seconds, define test trigger intervals. Default value: 600                                                                                                                                                                                                                                   |
-| tolerance           | -               | false     | Unit: millisecond<br/>Proxy selection is only changed when new selected proxy has a lower delay than previous proxy minus this value.<br/>Default value: 100                                                                                                                                       |
 | timeout             | -               | false     | Unit: seconds<br/>Test exceed this maximum allowed duration will be treated as failure.<br/>Default value: 5                                                                                                                                                                                       |
 | hidden              | true<br/>false  | false     | Whether to display this proxy group in user interface, even set to false, this group will still take effect.                                                                                                                                                                                       |
 | include-all-proxies | true<br/>false  | false     | Include all proxies under `[Proxy]` section, can be used with `policy-regex-filter` to filter some of the proxies                                                                                                                                                                                  |
