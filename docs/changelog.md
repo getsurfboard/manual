@@ -4,6 +4,13 @@ sidebar_position: 5
 
 # ChangeLog
 
+### 2.17.2
+
+- Support `fallback` group type
+- Improve Android TV experience
+- Update translation
+- Bug fixed
+
 ### 2.17.1
 
 - Support `include-all-proxies` standard in proxy group
