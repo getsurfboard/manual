@@ -11,6 +11,10 @@ sidebar_position: 2
 Managed config can be used to define an update url for current profile. 
 Profile with managed config defined be can updated automatically in the background
 
+:::caution
+Managed config must be defined in the first line of the profile
+:::
+
 ## Param
 
 - `interval`: profile interval update time
