@@ -4,6 +4,13 @@ sidebar_position: 5
 
 # ChangeLog
 
+### 2.17.3
+
+- Rewrite speedometer module
+  - Support synchronize test result between different tabs
+  - Support sort by default/delay/name
+  - Support auto sort after test finished
+
 ### 2.17.2
 
 - Support `fallback` group type
