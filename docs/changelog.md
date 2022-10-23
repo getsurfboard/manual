@@ -4,6 +4,16 @@ sidebar_position: 5
 
 # ChangeLog
 
+### 2.17.4
+
+- Fix no network sometime switch from mobile to wifi
+- Fix ProxyGroup tabs scrolling issue introduced in 2.17.3
+- Rerun url-test/fallback group speedometer when network changed
+- Improve save profile error message display
+- Fix speedometer direct test failed
+- Bug fixed
+- Update translation
+
 ### 2.17.3
 
 - Rewrite speedometer module
