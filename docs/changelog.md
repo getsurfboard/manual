@@ -4,6 +4,10 @@ sidebar_position: 5
 
 # ChangeLog
 
+### 2.17.5
+
+- Bug fixed
+
 ### 2.17.4
 
 - Fix no network sometime switch from mobile to wifi
