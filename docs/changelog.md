@@ -4,6 +4,11 @@ sidebar_position: 5
 
 # ChangeLog
 
+### 2.17.6
+
+- Modify some setting entrance
+- Bug fixed
+
 ### 2.17.5
 
 - Bug fixed
