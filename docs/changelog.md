@@ -4,6 +4,11 @@ sidebar_position: 5
 
 # ChangeLog
 
+### 2.18.0
+
+- Support UTLS
+- Support bypass config import/export
+
 ### 2.17.6
 
 - Modify some setting entrance
