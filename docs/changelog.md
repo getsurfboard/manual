@@ -4,6 +4,12 @@ sidebar_position: 5
 
 # ChangeLog
 
+### 2.18.1
+
+- Fix STUN NAT
+- Update translation
+- Bug fixed
+
 ### 2.18.0
 
 - Support UTLS
