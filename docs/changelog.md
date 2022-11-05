@@ -4,6 +4,16 @@ sidebar_position: 5
 
 # ChangeLog
 
+### 2.18.2
+
+- Support share profile via qrcode
+- Dashboard ui support dynamic column size, add back NavigationRailView
+- Try to fix 'too many open files' issue
+- Add fd count display in developer options ui
+- Reduce APK size
+- Support unofficial allowInsecure param in trojan uri
+- Bug fixed
+
 ### 2.18.1
 
 - Fix STUN NAT
