@@ -4,6 +4,12 @@ sidebar_position: 5
 
 # ChangeLog
 
+### 2.18.3
+
+- Improve embedded profile editor performance on huge profile
+- Fix crash
+- Update translation
+
 ### 2.18.2
 
 - Support share profile via qrcode
