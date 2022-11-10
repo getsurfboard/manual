@@ -4,6 +4,15 @@ sidebar_position: 5
 
 # ChangeLog
 
+### 2.18.4
+
+- `include-all-proxies` now will include all proxies in `[Proxy]` and `[Proxy Group]`, including external proxies
+- Add TCP keep alive toggle for proxy in settings
+- Display last exit reason in developer options ui
+- Catch profile decode exception instead of returning success
+- Reduce APK size
+- Bug fixed
+
 ### 2.18.3
 
 - Improve embedded profile editor performance on huge profile
