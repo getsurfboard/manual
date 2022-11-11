@@ -24,15 +24,15 @@ ProxyTrojan = trojan, 192.168.20.6, 443, password=password1, udp-relay=false, sk
 
 ## Params
 
-| Name             | Value          | Mandatory | Note                                                                                                                                                                           |
-|------------------|----------------|-----------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| proxy name       | -              | true      |                                                                                                                                                                                |
-| server           | -              | true      | Support domain and ip format                                                                                                                                                   |
-| port             | 0 - 65535      | true      |                                                                                                                                                                                |
-| password         | -              | true      |                                                                                                                                                                                |
-| udp-relay        | true<br/>false | false     | Default value: false                                                                                                                                                           |
-| skip-cert-verify | true<br/>false | false     | Default value: false<br/>                                                                                                                                                      |
-| sni              | -              | false     | Definition is unnecessary when the SNI value is the same as the host value                                                                                                     |
-| ws               | true<br/>false | false     | Default value: false                                                                                                                                                           |
-| ws-path          | -              | false     | Default value: /<br/>usable only when ws set to true                                                                                                                           |
-| ws-headers       | -              | false     | Value format: <code>Header-1:value-1|Header-2:value-2</code><br/>Key and value is divided by colon<br/>Entries are divided by vertical bar<br/>Usable only when ws set to true |
+| Name             | Value          | Mandatory | Note                                                                                                                                                                            |
+|------------------|----------------|-----------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| proxy name       | -              | true      |                                                                                                                                                                                 |
+| server           | -              | true      | Support domain and ip format                                                                                                                                                    |
+| port             | 0 - 65535      | true      |                                                                                                                                                                                 |
+| password         | -              | true      |                                                                                                                                                                                 |
+| udp-relay        | true<br/>false | false     | Default value: false                                                                                                                                                            |
+| skip-cert-verify | true<br/>false | false     | Default value: false<br/>                                                                                                                                                       |
+| sni              | -              | false     | Definition is unnecessary when the SNI value is the same as the host value                                                                                                      |
+| ws               | true<br/>false | false     | Default value: false                                                                                                                                                            |
+| ws-path          | -              | false     | Default value: /<br/>usable only when ws set to true                                                                                                                            |
+| ws-headers       | -              | false     | Value format: <code>Header-1:value-1\|Header-2:value-2</code><br/>Key and value is divided by colon<br/>Entries are divided by vertical bar<br/>Usable only when ws set to true |
