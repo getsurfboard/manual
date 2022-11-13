@@ -9,6 +9,11 @@ Rule Set is a remote url configuration, whose content is a collection of Rule, b
 Use Rule Set can greatly simplify the content complexity of profile which has a lot of rules in it, 
 and also can reuse rules encapsulated by other contributors.
 
+:::tip
+Define a large number of rules in a rule set will significantly reduce the efficiency of rule matching.
+In this scenario, we strongly recommend you switch to the [Domain Set](./domainset) standard.
+:::
+
 ## Sample
 
 ### Rule Set definition

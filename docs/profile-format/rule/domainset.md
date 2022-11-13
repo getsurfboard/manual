@@ -41,3 +41,10 @@ DOMAIN-SET, {domain set url}, {target}
 |----------------|-------|-----------|--------------------------------------------------------|
 | domain set url | -     | true      |                                                        |
 | target         | -     | true      | Specified proxy or proxy group must existed in profile |
+
+## Comparison with Rule Set
+
+| Rule Type  | Rule count | Complete match time(lower is better) | Rule Type Support Level    | Memory consumption |
+|------------|------------|--------------------------------------|----------------------------|--------------------|
+| Domain Set | 134430     | 17500 ns                             | Complete                   | Low                |
+| Rule Set   | 134430     | 11840167 ns                          | Only domain type supported | High               |
