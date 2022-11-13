@@ -4,6 +4,13 @@ sidebar_position: 5
 
 # ChangeLog
 
+### 2.18.5
+
+- Fix TCP KeepAlive toggle not working
+- Add session id in logcat
+- Update translation
+- Improve profile import
+
 ### 2.18.4
 
 - `include-all-proxies` now will include all proxies in `[Proxy]` and `[Proxy Group]`, including external proxies
