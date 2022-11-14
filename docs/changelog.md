@@ -4,6 +4,10 @@ sidebar_position: 5
 
 # ChangeLog
 
+### 2.18.6
+
+- Bug fixed
+
 ### 2.18.5
 
 - Fix TCP KeepAlive toggle not working
