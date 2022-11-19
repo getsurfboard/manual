@@ -4,6 +4,17 @@ sidebar_position: 5
 
 # ChangeLog
 
+### 2.18.7
+
+- Support test-timeout param
+- DomainSet use binary search list instead of hashMap, search speed will be slower, but memory consumption will also be lower
+- Apply some skip-proxy rules on tun interface on Android 13+
+- Re-enable recent request entrance
+- Fix some ui issue on 7 inch tablet
+- Bug fixed
+- Fix ss proxy server domain not query through DOH
+- Fix DNS query log error
+
 ### 2.18.6
 
 - Bug fixed
