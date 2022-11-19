@@ -46,5 +46,5 @@ DOMAIN-SET, {domain set url}, {target}
 
 | Rule Type  | Rule count | Complete match time(lower is better) | Rule Type Support Level    | Memory consumption |
 |------------|------------|--------------------------------------|----------------------------|--------------------|
-| Domain Set | 134430     | 17500 ns                             | Complete                   | Low                |
-| Rule Set   | 134430     | 11840167 ns                          | Only domain type supported | High               |
+| Domain Set | 134430     | 51667 ns                             | Complete                   | High               |
+| Rule Set   | 134430     | 24339083 ns                          | Only domain type supported | Low                |
