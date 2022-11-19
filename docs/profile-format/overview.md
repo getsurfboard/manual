@@ -28,6 +28,9 @@ proxy-test-url = http://www.gstatic.com/generate_204
 # Test url used by url-test and manually node speed test. Direct proxy will use this url.
 internet-test-url = http://www.gstatic.cn/generate_204
 
+# Timeout for all connectivity test
+test-timeout = 5
+
 # Match domain won't get fake ip dns response
 always-real-ip = *.srv.nintendo.net, *.stun.playstation.net, xbox.*.microsoft.com, *.xboxlive.com
 
