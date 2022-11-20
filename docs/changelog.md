@@ -4,6 +4,10 @@ sidebar_position: 5
 
 # ChangeLog
 
+### 2.18.8
+
+- Fix Android 13+ issue introduce in 2.18.7
+
 ### 2.18.7
 
 - Support test-timeout param
