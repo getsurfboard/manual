@@ -4,6 +4,16 @@ sidebar_position: 5
 
 # ChangeLog
 
+### 2.19.0
+
+- Fix fd leak causeb by IPC protect
+- Fix OOM caused by editor
+- Enlarge proxy list item maximum width
+- Bypass list support case-insensitive search
+- Support detect multiple proxies with the same name but not equals to each other
+- Bug fixed
+- Update translation
+
 ### 2.18.8
 
 - Fix Android 13+ issue introduce in 2.18.7
