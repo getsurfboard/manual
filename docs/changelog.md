@@ -4,6 +4,15 @@ sidebar_position: 5
 
 # ChangeLog
 
+### 2.19.1
+
+- Add batch update profiles support
+- Add pin profiles support
+- Add back bypass vpn toggle setting
+- Support display network error info when import profile failed due to fetch external resource failure
+- Bug fixed
+- Fix some translation
+
 ### 2.19.0
 
 - Fix fd leak causeb by IPC protect
