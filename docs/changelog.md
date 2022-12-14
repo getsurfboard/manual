@@ -4,6 +4,14 @@ sidebar_position: 5
 
 # ChangeLog
 
+### 2.19.2
+
+- Improve trojan/vmess uri compatibility
+- Fix UI overlay issue
+- Upload bypass vpn setting description for better understanding
+- Fix Android TV speed test icon not focusable
+- Bug fixed
+
 ### 2.19.1
 
 - Add batch update profiles support
