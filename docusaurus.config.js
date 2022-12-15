@@ -139,10 +139,6 @@ const config = {
                 label: 'Blog',
                 to: '/blog',
               },
-              {
-                label: 'Donate',
-                href: '/docs/donate',
-              },
             ],
           },
         ],
