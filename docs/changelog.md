@@ -4,6 +4,21 @@ sidebar_position: 5
 
 # ChangeLog
 
+### 2.19.3
+
+- Fix profile item menu not focusable on tv devices
+- Update profile editor library version
+- Add detection for TLS handshake failure due to Client/Server time mismatch
+- Add divider for toolbar
+- Update handler ui for bottom sheet
+- Always show label in bottom navigation bar (as you wish)
+- Support use editor to view external resource content(policy path/rule set/domain set)
+- Fix vpn time ticker got running when vpn is not started
+- Update some ui detail for android tv devices
+- Fix duplicated notification action
+- Fix proxy list align issue
+- Add cloudflare speed test entrance in tools list
+
 ### 2.19.2
 
 - Improve trojan/vmess uri compatibility
