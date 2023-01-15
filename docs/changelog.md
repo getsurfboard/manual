@@ -4,6 +4,19 @@ sidebar_position: 5
 
 # ChangeLog
 
+### 2.19.4
+
+- Support query ip location on tool list
+- Support scan qrcode from gallery
+- Catch WebView core missing exception
+- Automatically restart VPN when switching selected profile
+- Change QRCode library to reduce APK size
+- Support display external resource timeout message when fetching profile
+- Update translation
+- Allow copy url in settings
+- Fix UI issues
+- Bug fixed
+
 ### 2.19.3
 
 - Fix profile item menu not focusable on tv devices
