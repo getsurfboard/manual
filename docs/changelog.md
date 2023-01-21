@@ -4,6 +4,17 @@ sidebar_position: 5
 
 # ChangeLog
 
+### 2.20.0
+
+- Update profile list ui:
+  - Add suggestion chip
+  - Add sponsors entrance in footer
+  - Add manual entrance when empty
+- Add app widget support: public ip, dns and private ip
+- Update app shortcut icon
+- GeoIP library now support auto update
+- Bug fixed
+
 ### 2.19.4
 
 - Support query ip location on tool list
