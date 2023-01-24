@@ -131,6 +131,27 @@ RULE-SET,https://ruleset.com/cn,ProxyVMess
 # traffic match external domain rules defined in 'https://domainset.com/ad' will be rejected'
 DOMAIN-SET,https://domainset.com/ad,REJECT
 
+# traffic sent using wifi whose ssid name is 'CMCC' will be rejected
+SUBNET,SSID:CMCC,REJECT
+
+# traffic sent using wifi whose bssid is 'F4-98-A0-73-3A-5B' will be sent directly
+SUBNET,BSSID:F4-98-A0-73-3A-5B,DIRECT
+
+# traffic sent through a router whose ip is '192.168.1.1' will be sent directly
+SUBNET,ROUTER:192.168.1.1,DIRECT
+
+# traffic sent using wifi will be sent directly
+SUBNET,TYPE:WIFI,DIRECT
+
+# traffic sent using wired network will be sent directly
+SUBNET,TYPE:WIRED,DIRECT
+
+# traffic sent using mobile network will be sent through 'SelectGroup'
+SUBNET,TYPE:CELLULAR,SelectGroup
+
+# traffic sent using mobile network whose MCC is 100 and MNC is 200, will be sent directly
+SUBNET,MCCMNC:100-200,DIRECT
+
 # traffic doesn't match rules above will be sent to 'ProxyTrojan'
 FINAL,ProxyTrojan
 
