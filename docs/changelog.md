@@ -4,6 +4,12 @@ sidebar_position: 5
 
 # ChangeLog
 
+### 2.20.1
+
+- Profile content: add subnet type rules support
+- About settings: add new version checking in non-googleplay installation
+- Bug fixed
+
 ### 2.20.0
 
 - Update profile list ui:
