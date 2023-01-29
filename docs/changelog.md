@@ -4,6 +4,12 @@ sidebar_position: 5
 
 # ChangeLog
 
+### 2.20.2
+
+- Profile content: add [subnet type rules](https://getsurfboard.com/docs/profile-format/rule/subnet) support
+- About settings: add new version checking in non-googleplay installation
+- Bug fixed
+
 ### 2.20.1
 
 - Profile content: add subnet type rules support
