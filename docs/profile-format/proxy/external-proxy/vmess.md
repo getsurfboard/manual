@@ -15,13 +15,13 @@ sidebar_position: 3
 ## Sample
 
 ```ini
-ProxyVMess = vmess, 1.2.3.4, 8000, username=0233d11c-15a4-47d3-ade3-48ffca0ce119, udp-relay=false, ws=true, tls=true, ws-path=/v2, ws-headers=X-Header-1:value|X-Header-2:value, skip-cert-verify=true, sni=www.google.com, vmess-aead=true
+ProxyVMess = vmess, 5.udemy.com, 8080, username=b27a7cb7-d281-428f-8000-7d20e51cb6fa, udp-relay=false, ws=true, tls=true, ws-path=/v2, ws-headers=X-Header-1:value|X-Header-2:value, skip-cert-verify=true, sni=sg2.flashssh.net, vmess-aead=true
 ```
 
 ## Format
 
 ```ini
-{proxy name} = vmess, {server}, {port}, {username}, {udp-relay}, {ws}, {tls}, {ws-path}, {ws-headers}, {skip-cert-verify}, {sni}, {vmess-aead}
+sg2.flashssh.net  = vmess, 5.udemy.com, 8080, username=b27a7cb7-d281-428f-8000-7d20e51cb6fa, tls=false, ws=true, ws-path=/FlowSSH, sni=sg2.flashssh.net , ws-headers=Host:sg2.flashssh.net , skip-cert-verify=1, tfo=true, udp-relay=true
 ```
 
 ## Params
