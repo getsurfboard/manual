@@ -4,6 +4,10 @@ sidebar_position: 5
 
 # ChangeLog
 
+### 2.20.5
+
+- Bug fix
+
 ### 2.20.4
 
 - Fix in app update crashing
