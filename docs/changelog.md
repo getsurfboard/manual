@@ -4,6 +4,20 @@ sidebar_position: 5
 
 # ChangeLog
 
+### 2.20.5
+
+- Bug fix
+
+### 2.20.4
+
+- Fix in app update crashing
+
+### 2.20.3
+
+- Add changelog entrance in app
+- Allow to be installed in sdcard
+- Bug fix
+
 ### 2.20.2
 
 - Profile content: add [subnet type rules](https://getsurfboard.com/docs/profile-format/rule/subnet) support
