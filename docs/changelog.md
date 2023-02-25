@@ -4,6 +4,14 @@ sidebar_position: 5
 
 # ChangeLog
 
+### 2.20.6
+
+- Support bypass TLS verification when fetching profiles and external resources
+- Print package name in dns log
+- Avoid toasting when starting vpn
+- Fix subnet rule bugs
+- Bug fix
+
 ### 2.20.5
 
 - Bug fix
