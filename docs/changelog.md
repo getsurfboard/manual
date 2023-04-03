@@ -4,6 +4,11 @@ sidebar_position: 5
 
 # ChangeLog
 
+### 2.20.7
+
+- Bug fixed
+- Update translation
+
 ### 2.20.6
 
 - Support bypass TLS verification when fetching profiles and external resources
