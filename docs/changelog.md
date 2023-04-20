@@ -4,6 +4,15 @@ sidebar_position: 5
 
 # ChangeLog
 
+### 2.20.8
+
+- Fix import profile compatibility issue
+- Avoid close ui when toggle tile
+- Fix update profile notify issue
+- Fix private ip and dns not display when starting vpn from tile
+- Improve geoip compatibility
+- Bug fixed
+
 ### 2.20.7
 
 - Bug fixed
