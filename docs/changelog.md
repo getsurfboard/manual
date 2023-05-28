@@ -4,6 +4,12 @@ sidebar_position: 5
 
 # ChangeLog
 
+### 2.20.9
+
+- Bug fixed
+- Display private ip in sshdump card
+- Improve vmess uri compatibility
+
 ### 2.20.8
 
 - Fix import profile compatibility issue
