@@ -4,6 +4,12 @@ sidebar_position: 5
 
 # ChangeLog
 
+### 2.20.10
+
+- Bug fixed
+- Ignore invalid proxy when importing multiple uri
+- Remove sponsor entrance
+
 ### 2.20.9
 
 - Bug fixed
