@@ -4,6 +4,17 @@ sidebar_position: 5
 
 # ChangeLog
 
+### 2.21.0
+
+- Support some misc rule. 
+  - with `IN-PORT` and `SRC-IP`, now you can control traffic from lan proxy more easily.
+  - For more info, please check [manual](https://getsurfboard.com/docs/profile-format/rule/misc)
+- Add compact profile list support
+- Unify menu icon ui
+- Update bottom sheet peek height
+- Display remote client info from lan proxy in logcat
+- Adapt to Android 14
+
 ### 2.20.10
 
 - Bug fixed
