@@ -14,22 +14,22 @@ Surge's profile documentation can be viewed [here](https://manual.nssurge.com/)
 #!MANAGED-CONFIG http://test.com/surfboard.conf interval=60 strict=true # subscribe profile url and auto update config
 [General]
 # Specify dns server used by application
-dns-server = system, 8.8.8.8, 8.8.4.4, 9.9.9.9:9953
+dns-server = system, 1.1.1.1,8.8.8.8, 8.8.4.4, 9.9.9.9:9953
 
 # Specify doh server used by application
-doh-server = https://9.9.9.9/dns-query
+doh-server = https://1.1.1.1/dns-query
 
 # Specify route rule and domain rule, matching traffic will not be redirected or rejected.
 skip-proxy = 127.0.0.1, 192.168.0.0/16, 10.0.0.0/8, 172.16.0.0/12, 100.64.0.0/10, localhost, *.local, www.baidu.com //444
 
 # Test url used by url-test and manually node speed test. Redirect proxy will use this url.
-proxy-test-url = http://www.gstatic.com/generate_204
+proxy-test-url = http://www.apple.com/library/test/success.html
 
 # Test url used by url-test and manually node speed test. Direct proxy will use this url.
-internet-test-url = http://www.gstatic.cn/generate_204
+internet-test-url = http://www.apple.com/library/test/success.html
 
 # Timeout for all connectivity test
-test-timeout = 5
+test-timeout = 2
 
 # Match domain won't get fake ip dns response
 always-real-ip = *.srv.nintendo.net, *.stun.playstation.net, xbox.*.microsoft.com, *.xboxlive.com
