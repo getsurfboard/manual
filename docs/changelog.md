@@ -4,6 +4,12 @@ sidebar_position: 5
 
 # ChangeLog
 
+### 2.21.1
+
+- Support `force-remote-dns` and `enhanced-mode` in `PROCESS-NAME` rules
+- Fix tile click not working on Android 14
+- Bug fixed
+
 ### 2.21.0
 
 - Support some misc rule. 
