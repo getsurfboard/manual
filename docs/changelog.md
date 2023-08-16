@@ -4,6 +4,11 @@ sidebar_position: 5
 
 # ChangeLog
 
+### 2.21.2
+
+- Support auto zoom in gms qrcode scanner
+- Bug fixed
+
 ### 2.21.1
 
 - Support `force-remote-dns` and `enhanced-mode` in `PROCESS-NAME` rules
