@@ -4,6 +4,11 @@ sidebar_position: 5
 
 # ChangeLog
 
+### 2.21.3
+
+- Support use ftp to modify profiles list
+- Bug fixed
+
 ### 2.21.2
 
 - Support auto zoom in gms qrcode scanner
