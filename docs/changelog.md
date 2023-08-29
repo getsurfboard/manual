@@ -4,6 +4,13 @@ sidebar_position: 5
 
 # ChangeLog
 
+### 2.21.4
+
+- Fix switch media import crash introduced in previous version
+- Improve vpn open speed
+- Bug fixed
+- Update translation
+
 ### 2.21.3
 
 - Support use ftp to modify profiles list
