@@ -42,7 +42,7 @@ Use policy path can separate proxies and rules definition, and reduce profile co
 ## Format
 
 ```ini
-{group name} = fallback, {proxies, ...}, {policy-path}, {policy-regex-filter}, {url}, {interval}, {timeout}, {hidden}, include-all-proxies = {include-all-proxies}
+{group name} = fallback, {proxies, ...}, {policy-path}, {policy-regex-filter}, {url}, {interval}, {timeout}, hidden = {hidden}, include-all-proxies = {include-all-proxies}, include-other-group = "{include-other-group}"
 ```
 
 ## Param
@@ -52,19 +52,20 @@ Use policy path can separate proxies and rules definition, and reduce profile co
 | group name          | -               | true      | name of group, will be used like a key to the group                                                                                                                                                                                                                                                |
 | proxies             | -               | true      | A list of proxy name defined in `[Proxy]` section, divided by comma                                                                                                                                                                                                                                |
 | policy-path         | -               | false     | A list of proxy defined in url content<br/>Content format will be presented below                                                                                                                                                                                                                  |
-| policy-regex-filter | -               | false     | Usable if policy-path defined.<br/>A regular expression which will apply on proxy name in policy-path url content, only proxies which match expression will be reserved.  Be aware this is a complete matching regular expression.                                                                 |
+| policy-regex-filter | -               | false     | Usable if policy-path/include-all-proxies/include-other-group defined.<br/>A regular expression which will apply on proxy name, only proxies which match expression will be reserved. Be aware this is a complete matching regular expression.                                                     |
 | url                 | http scheme url | false     | Test url which is used by HTTP HEAD request.<br/>If url is not defined, '<a href="/docs/profile-format/general/proxy_test_url">proxy-test-url</a>' defined in `[General]` section will be used.<br/>If 'proxy-test-url' is not defined either, 'http://www.gstatic.com/generate_204' will be used. |
 | interval            | -               | false     | Unit: seconds, define test trigger intervals. Default value: 600                                                                                                                                                                                                                                   |
 | timeout             | -               | false     | Unit: seconds<br/>Test exceed this maximum allowed duration will be treated as failure.<br/>Default value: 5                                                                                                                                                                                       |
 | hidden              | true<br/>false  | false     | Whether to display this proxy group in user interface, even set to false, this group will still take effect.                                                                                                                                                                                       |
 | include-all-proxies | true<br/>false  | false     | Include all proxies defined in whole profile, can be used with `policy-regex-filter` to filter some of the proxies                                                                                                                                                                                 |
+| include-other-group | -               | false     | Include proxies from other group specified by name, can by used with `policy-regex-filter` to filter some of the proxies, group name can be more than one and split by comma                                                                                                                       |
 
 :::caution
 Only **HTTP** scheme url is allowed as test url, **HTTPS** and any other types of scheme url will not be supported.
 :::
 
 :::tip
-{proxies} and {policy-path} can be used together in the same proxy group
+`proxies`, `policy-path`, `include-all-proxies` and `include-other-group` can be used together in the same proxy group
 :::
 
 :::tip
