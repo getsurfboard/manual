@@ -4,6 +4,14 @@ sidebar_position: 5
 
 # ChangeLog
 
+### 2.21.5
+
+- Fix change theme not working on some devices
+- Fix public ip card display ipv6 format address
+- Update translation
+- Fix window background color error
+- Bug fixed
+
 ### 2.21.4
 
 - Fix switch media import crash introduced in previous version
