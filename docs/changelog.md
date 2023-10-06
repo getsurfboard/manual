@@ -4,6 +4,14 @@ sidebar_position: 5
 
 # ChangeLog
 
+### 2.22.0
+
+- Add wireguard proxy support
+- Add `include-other-group` support
+- Ignore ponte proxy
+- Update embedded geoip library
+- Bug fixed
+
 ### 2.21.5
 
 - Fix change theme not working on some devices
