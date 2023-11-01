@@ -4,6 +4,11 @@ sidebar_position: 5
 
 # ChangeLog
 
+### 2.22.1
+
+ - Add pure dark theme support
+ - Bug fixed
+
 ### 2.22.0
 
 - Add wireguard proxy support
