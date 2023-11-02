@@ -4,6 +4,10 @@ sidebar_position: 5
 
 # ChangeLog
 
+### 2.22.2
+
+- Bug fixed
+
 ### 2.22.1
 
  - Add pure dark theme support
