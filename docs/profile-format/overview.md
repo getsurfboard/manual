@@ -82,6 +82,16 @@ ProxyVMess = vmess, 1.2.3.4, 8000, username=0233d11c-15a4-47d3-ade3-48ffca0ce119
 # trojan proxy, trojan grpc is not supported
 ProxyTrojan = trojan, 192.168.20.6, 443, password=password1, udp-relay=false, skip-cert-verify=true, sni=www.google.com
 
+# wireguard proxy
+ProxyWireguard = wireguard, section-name = HomeServer
+
+[WireGuard HomeServer]
+private-key = sDEZLACT3zgNCS0CyClgcBC2eYROqYrwLT4wdtAJj3s=
+self-ip = 10.0.2.2
+dns-server = 8.8.8.8
+mtu = 1280
+peer = (public-key = fWO8XS9/nwUQcqnkfBpKeqIqbzclQ6EKP20Pgvzwclg=, allowed-ips = 0.0.0.0/0, endpoint = 192.168.20.6:51820)
+
 [Proxy Group]
 # proxy group whose selected proxy can be changed manually
 SelectGroup = select, ProxyHTTP, ProxyHTTPS, DIRECT, REJECT

@@ -13,3 +13,4 @@ Currently proxy protocol below is supported:
 - [Shadowsocks](/docs/profile-format/proxy/external-proxy/shadowsocks)
 - [VMESS](/docs/profile-format/proxy/external-proxy/vmess)
 - [Trojan](/docs/profile-format/proxy/external-proxy/trojan)
+- [Wireguard](/docs/profile-format/proxy/external-proxy/wireguard)
