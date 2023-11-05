@@ -4,6 +4,13 @@ sidebar_position: 5
 
 # ChangeLog
 
+### 2.22.3
+
+- Make dynamic color theme support pure dark
+- Improve profile compatibility
+- Synchronize proxy test result in different proxy group 
+- Bug fix
+
 ### 2.22.2
 
 - Bug fixed
