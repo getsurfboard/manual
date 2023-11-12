@@ -4,6 +4,14 @@ sidebar_position: 5
 
 # ChangeLog
 
+### 2.22.4
+
+- Fix dns query issue on Android 14
+- Fix proxy group speedtest not working issue
+- Fix some vmess proxy not working issue
+
+Issue above was introduced in 2.22.1 and 2.22.3
+
 ### 2.22.3
 
 - Make dynamic color theme support pure dark
