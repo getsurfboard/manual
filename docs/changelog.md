@@ -4,6 +4,14 @@ sidebar_position: 5
 
 # ChangeLog
 
+### 2.22.5
+
+- Support sort mode in bypass config
+- Fix tile issue
+- Add mtu option in settings
+- Fix ssid/bssid issue when surfboard is in background
+- Make `policy-regex-filter` support partial match with `include-all-proxies` and `include-other-group`
+
 ### 2.22.4
 
 - Fix dns query issue on Android 14
