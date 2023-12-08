@@ -4,6 +4,11 @@ sidebar_position: 5
 
 # ChangeLog
 
+### 2.22.6
+
+- Add NAT detection tool
+- Bug fixed
+
 ### 2.22.5
 
 - Support sort mode in bypass config
