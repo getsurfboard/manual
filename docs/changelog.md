@@ -4,6 +4,13 @@ sidebar_position: 5
 
 # ChangeLog
 
+### 2.22.7
+
+- Use DNS over HTTPS in profile fetcher to handle dns pollution issues
+- Add masked from recent task option
+- Add hide from recent task option
+- Bug fixed
+
 ### 2.22.6
 
 - Add NAT detection tool
