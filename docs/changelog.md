@@ -4,6 +4,11 @@ sidebar_position: 5
 
 # ChangeLog
 
+### 2.22.8
+
+- Fix public ip value issue
+- Fix theme display issue
+
 ### 2.22.7
 
 - Use DNS over HTTPS in profile fetcher to handle dns pollution issues
