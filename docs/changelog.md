@@ -4,6 +4,12 @@ sidebar_position: 5
 
 # ChangeLog
 
+### 2.22.9
+
+- Improve accessibility compatibility
+- Improve profile compatibility
+- Bug fixed
+
 ### 2.22.8
 
 - Fix public ip value issue
