@@ -4,6 +4,17 @@ sidebar_position: 5
 
 # ChangeLog
 
+### 2.23.0
+
+- Add ARMv8 crypto extension support to improve ss throughput performance
+- Add udp label in proxy list to indicate udp relay support
+- Support Android 12L+ activity embedding
+- Update Japanese/Korean language translation
+- Improve profile compatibility, make include-all-proxies only include proxies under [Proxy] section
+- Improve profile import error prompt
+- Fix simple-obfs slightly memory leak
+- Bug fixed
+
 ### 2.22.9
 
 - Improve accessibility compatibility
