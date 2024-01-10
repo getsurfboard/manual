@@ -4,6 +4,11 @@ sidebar_position: 5
 
 # ChangeLog
 
+### 2.23.1
+
+- Improve profile compatibility
+- Bug fixed
+
 ### 2.23.0
 
 - Add ARMv8 crypto extension support to improve ss throughput performance
