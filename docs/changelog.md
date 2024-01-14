@@ -4,6 +4,12 @@ sidebar_position: 5
 
 # ChangeLog
 
+### 2.23.2
+
+- Support `preshared-key` param in wireguard
+- Improve profile compatibility
+- Improve accessibility compatibility
+
 ### 2.23.1
 
 - Improve profile compatibility
