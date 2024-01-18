@@ -4,6 +4,12 @@ sidebar_position: 5
 
 # ChangeLog
 
+### 2.23.3
+
+- Add manual edit host ui
+- Improve dns response printing
+- Change accessibility mode back to manually 
+
 ### 2.23.2
 
 - Support `preshared-key` param in wireguard
