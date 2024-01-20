@@ -6,7 +6,7 @@ sidebar_position: 5
 
 ### 2.23.3
 
-- Add manual edit host ui
+- Add manually edit host ui
 - Improve dns response printing
 - Change accessibility mode back to manually 
 
