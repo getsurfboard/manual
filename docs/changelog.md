@@ -4,6 +4,13 @@ sidebar_position: 5
 
 # ChangeLog
 
+### 2.23.4
+
+- Make recursive `include-other-group` not rely on defined sequence
+- Fix dialog transition
+- Fix LAN multicast sometime not working if `udp-policy-not-supported-behaviour` set to `REJECT`
+- Fix external resource manually fetch failed cause crash
+
 ### 2.23.3
 
 - Add manually edit host ui
