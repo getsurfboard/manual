@@ -4,6 +4,12 @@ sidebar_position: 5
 
 # ChangeLog
 
+### 2.24.0
+
+- Fix DoH not working issue
+- Fix tablet not display profile content in landscape
+- Bug fixed
+
 ### 2.23.4
 
 - Make recursive `include-other-group` not rely on defined sequence
