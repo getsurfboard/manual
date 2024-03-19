@@ -4,6 +4,15 @@ sidebar_position: 5
 
 # ChangeLog
 
+### 2.24.1
+
+- Fix VPN start failed if include wireguard proxy
+- Add compatible mode in bypass config list, fix list item click issue
+- Add more profile content checking
+- Replace some toast with snackbar
+- Include hidden proxy group proxies in global mode by default
+- Bug fixed
+
 ### 2.24.0
 
 - Fix DoH not working issue
