@@ -1,6 +1,7 @@
 ---
 sidebar_position: 0
----
+---doh-server = https://9.9.9.9/dns-query
+
 
 # Overview
 
