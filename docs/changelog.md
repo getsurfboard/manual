@@ -4,6 +4,17 @@ sidebar_position: 5
 
 # ChangeLog
 
+### 2.24.2
+
+- Display proxy group name in log
+- Support modify profile fetch timeout in setting
+- Support temporarily disable bypass mode and remember config
+- Bypass list sort mode config now will be remember
+- Improve profile compatibility
+- Reduce apk size
+- Remove GMS qrcode scanner
+- Bug fixed
+
 ### 2.24.1
 
 - Fix VPN start failed if include wireguard proxy
