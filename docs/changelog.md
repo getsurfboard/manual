@@ -4,6 +4,10 @@ sidebar_position: 5
 
 # ChangeLog
 
+### tv-1.0.0
+
+- First version
+
 ### 2.24.3
 
 - Display proxy group name in log
