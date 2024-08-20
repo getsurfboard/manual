@@ -4,6 +4,13 @@ sidebar_position: 5
 
 # ChangeLog
 
+### mobile-2.24.4
+
+- Add location permission explanation to meet google play policy requirement
+- Adapt to Android 15
+- Update translation
+- Bug fixed
+
 ### tv-1.0.0
 
 - First version
