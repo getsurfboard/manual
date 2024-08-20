@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkmanual=self.webpackChunkmanual||[]).push([[7472],{5513:e=>{e.exports=JSON.parse('{"title":"Recent posts","items":[{"title":"Why develop Surfboard","permalink":"/blog/why-develop-surfboard"}]}')}}]);
