@@ -10,7 +10,7 @@ You can get the Surfboard application from these sources:
 - Google Play Open Beta: [https://play.google.com/apps/testing/com.getsurfboard](https://play.google.com/apps/testing/com.getsurfboard)
 - Telegram Channel: [https://t.me/surfboardnews](https://t.me/surfboardnews)
 - APKPure: [https://apkpure.com/surfboard/com.getsurfboard](https://apkpure.com/surfboard/com.getsurfboard)
-- Github release: [https://github.com/getsurfboard/surfboard/releases/latest](https://github.com/getsurfboard/surfboard/releases/latest)
+- Github release: [https://github.com/getsurfboard/surfboard/releases](https://github.com/getsurfboard/surfboard/releases)
 
 :::tip
 - Apps distributed by Google Play and Telegram channels are generally the same.
