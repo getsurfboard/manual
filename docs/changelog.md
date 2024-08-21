@@ -4,6 +4,12 @@ sidebar_position: 5
 
 # ChangeLog
 
+### tv-1.0.1
+
+- Add launcher entrance for non leanback devices
+- Add public IP display support
+- Fix delete last profile crash
+
 ### mobile-2.24.4
 
 - Add location permission explanation to meet google play policy requirement
