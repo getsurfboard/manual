@@ -4,6 +4,11 @@ sidebar_position: 5
 
 # ChangeLog
 
+### tv-1.0.2
+
+- Fix setting crash on Android 8.0
+- Update translation
+
 ### tv-1.0.1
 
 - Add launcher entrance for non leanback devices
