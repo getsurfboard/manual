@@ -1,21 +1,21 @@
 ---
-sidebar_position: 0
+侧栏_position:0
 ---
 
-# Installation
+#安装
 
-You can get the Surfboard application from these sources:
+你可以从以下来源获得冲浪板应用程序：
 
-- Google Play: [https://play.google.com/store/apps/details?id=com.getsurfboard](https://play.google.com/store/apps/details?id=com.getsurfboard)
-- Google Play Open Beta: [https://play.google.com/apps/testing/com.getsurfboard](https://play.google.com/apps/testing/com.getsurfboard)
-- Telegram Channel: [https://t.me/surfboardnews](https://t.me/surfboardnews)
+-Google Play:[https://play.google.com/store/apps/details?id=com.getsurfboard](https://play.google.com/store/apps/details?id=com.getsurfboard)
+-Google Play公开测试版：[https://play.google.com/apps/testing/com.getsurfboard](https://play.google.com/apps/testing/com.getsurfboard)
+-电报频道：[https://t.me/surfboardnews](https://t.me/surfboardnews)
 - APKPure: [https://apkpure.com/surfboard/com.getsurfboard](https://apkpure.com/surfboard/com.getsurfboard)
-- Github release: [https://github.com/getsurfboard/surfboard/releases](https://github.com/getsurfboard/surfboard/releases)
+-Github发行版：[https://github.com/getsurfboard/surfboard/releases](https://github.com/getsurfboard/surfboard/releases)
 
 :::tip
-- Apps distributed by Google Play and Telegram channels are generally the same.
+-Google Play和Telegram频道发布的应用程序大体上是相同的。
 
-- Apps distributed by Google Play are generally relatively stable, but update less frequently.
+-Google Play分发的App一般相对稳定，但更新频率较低。
 
 - Telegram channels are updated more frequently, but there may be unknown issues.
 
