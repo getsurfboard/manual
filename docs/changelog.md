@@ -4,6 +4,16 @@ sidebar_position: 5
 
 # ChangeLog
 
+### mobile-2.24.5
+
+- Fix Android 15 crash in some subpages
+- Update geoip library file
+- Update translation
+
+### tv-1.0.3 
+
+- Support profile fetch timeout config
+
 ### tv-1.0.2
 
 - Fix setting crash on Android 8.0
