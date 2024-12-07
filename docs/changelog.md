@@ -4,6 +4,10 @@ sidebar_position: 5
 
 # ChangeLog
 
+### mobile-2.24.6
+
+- Fix wireshark sshdump crash
+
 ### mobile-2.24.5
 
 - Fix Android 15 crash in some subpages
