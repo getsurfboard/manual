@@ -4,6 +4,11 @@ sidebar_position: 5
 
 # ChangeLog
 
+### mobile-2.24.7
+
+- Support display panel entrance in profile list actions
+- Update proxy group select ui
+
 ### mobile-2.24.6
 
 - Fix wireshark sshdump crash
