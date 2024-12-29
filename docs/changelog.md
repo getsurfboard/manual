@@ -4,6 +4,10 @@ sidebar_position: 5
 
 # ChangeLog
 
+### mobile-2.24.8
+
+- Bug fixed
+
 ### mobile-2.24.7
 
 - Support display panel entrance in profile list actions
