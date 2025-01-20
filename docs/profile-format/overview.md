@@ -165,6 +165,9 @@ SUBNET,TYPE:CELLULAR,SelectGroup
 # traffic sent using mobile network whose MCC is 100 and MNC is 200, will be sent directly
 SUBNET,MCCMNC:100-200,DIRECT
 
+# reject quic, fallback to tls
+PROTOCOL,QUIC,REJECT
+
 # traffic doesn't match rules above will be sent to 'ProxyTrojan'
 FINAL,ProxyTrojan
 
