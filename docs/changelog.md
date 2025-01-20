@@ -4,6 +4,14 @@ sidebar_position: 5
 
 # ChangeLog
 
+### mobile-2.24.9
+
+- Integrate conscrypt to enable tls 1.3 support on lower version of android
+- Add notification chronometer toggle setting
+- Add misc rule protocol quic support
+- Fix logcat viewer ui issue on android 15+
+- Update integrated geoip library file
+
 ### mobile-2.24.8
 
 - Bug fixed
