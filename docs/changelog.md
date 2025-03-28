@@ -4,6 +4,10 @@ sidebar_position: 5
 
 # ChangeLog
 
+### mobile-2.24.10
+
+- Fix crash
+
 ### mobile-2.24.9
 
 - Integrate conscrypt to enable tls 1.3 support on lower version of android
