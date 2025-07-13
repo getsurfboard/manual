@@ -4,6 +4,19 @@ sidebar_position: 5
 
 # ChangeLog
 
+### mobile-2.25.0
+
+- Support Android 16
+- Update public IP fetching API
+- Enable FTP server on lower version Android
+- Fix logcat viewer open animation
+- Fix splash screen & app theme
+- Update embedded geoip library
+- Support 16KB page size
+- Unify toolbar divider/elevation/color
+- Fix launch screen theme
+- Update translation
+
 ### mobile-2.24.10
 
 - Fix crash
