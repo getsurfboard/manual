@@ -1,68 +1,68 @@
 ---
-sidebar_position: 0
+侧栏位置：0
 ---
 
-# Overview
+#概述
 
-:::tip
-Surfboard follow [Surge](https://nssurge.com/)'s profile format
+**小费
+冲浪板跟随[激增](https://nssurge.com/)的配置文件格式
 
-Surge's profile documentation can be viewed [here](https://manual.nssurge.com/)
+可以查看Surge的配置文件[在这里](https://manual.nssurge.com/)
 :::
 
-```ini
-#!MANAGED-CONFIG http://test.com/surfboard.conf interval=60 strict=true # subscribe profile url and auto update config
-[General]
-# Specify dns server used by application
-dns-server = system, 8.8.8.8, 8.8.4.4, 9.9.9.9:9953
+```INI
+#！MANAGED-CONFIG http://test.com/surfboard.conf间隔=60严格=true#订阅配置文件url和自动更新配置
+[概述]
+#指定应用程序使用的dns服务器
+dns-server=系统，8.8.8.8，8.8.4.4，9.9.9:9953
 
-# Specify doh server used by application
-doh-server = https://9.9.9.9/dns-query
+#指定应用程序使用的doh服务器
+doh-server=https://9.9.9.9/dns-query
 
-# Specify route rule and domain rule, matching traffic will not be redirected or rejected.
-skip-proxy = 127.0.0.1, 192.168.0.0/16, 10.0.0.0/8, 172.16.0.0/12, 100.64.0.0/10, localhost, *.local, www.baidu.com //444
+#指定路由规则和域规则，匹配的流量不会被重定向或拒绝。
+skip-proxy=127.0.0.1，192.168.0.0/16,10.0.0.0/8，172.16.0.0/12，100.64.0.0/10，localhost，*.local，www.baidu.com//444
 
-# Test url used by url-test and manually node speed test. Redirect proxy will use this url.
-proxy-test-url = http://www.gstatic.com/generate_204
+#url测试和手动节点速度测试使用的测试url。重定向代理将使用此url。
+proxy-test-url=http://www.gstatic.com/generate_204
 
-# Test url used by url-test and manually node speed test. Direct proxy will use this url.
-internet-test-url = http://www.gstatic.cn/generate_204
+#url-test和手动节点速度测试使用的test url。直接代理将使用此url。
+internet-test-url=http://www.gstatic.cn/generate_204
 
-# Timeout for all connectivity test
-test-timeout = 5
+#所有连通性测试超时
+测试超时=5
 
-# Match domain won't get fake ip dns response
-always-real-ip = *.srv.nintendo.net, *.stun.playstation.net, xbox.*.microsoft.com, *.xboxlive.com
+#匹配域不会得到虚假的ip dns响应
+always-real-ip=*.srv.nintendo.net，*.stun.playstation.net，xbox.*.microsoft.com，*.xboxlive.com
 
-# Establish a http proxy server on your device and provide proxy service in specified ip
-http-listen = 0.0.0.0:1234
+#在您的设备上建立http代理服务器，并在指定的ip中提供代理服务
+http-listen=0.0.0.0:1234
 
-# Establish a socks5 proxy server on your device and provide proxy service in specified ip
-socks5-listen = 127.0.0.1:1235
+#在您的设备上建立socks5代理服务器，并在指定的ip中提供代理服务
+socks5-listen=127.0.0.1:1235
 
-# If proxy not support udp relay, use DIRECT or REJECT instead
-udp-policy-not-supported-behaviour = DIRECT
+#如果代理不支持udp中继，请改用直接或拒绝
+udp-policy-not-supported-behavior=DIRECT
 
-[Host]
-# map 'abc.com' to '1.2.3.4'
-abc.com = 1.2.3.4
+[主机]
+#将“abc.com”映射到“1.2.3.4”
+ABC.com=1.2.3.4
 
-# map any domain end with '.dev' to '6.7.8.9'
-*.dev = 6.7.8.9
+#将任何以“.dev”结尾的域映射到“6.7.8.9”
+*.dev=6.7.8.9
 
-# alias 'bar.com' dns query result to 'foo.com'
-foo.com = bar.com
+#alias'bar.com'dns查询结果到'foo.com'
+foo.com=bar.com
 
-# assign '8.8.8.8' as dns server for 'bar.com'
-bar.com = server:8.8.8.8
+#assign'8.8.8.8'为'bar.com'的dns伺服器
+bar.com=服务器：8.8.8.8
 
-[Proxy]
-# build in policy
-On = direct
-Off = reject
+[代理]
+#内置策略
+on=直接
+off=拒绝
 
-# http proxy
-ProxyHTTP = http, 1.2.3.4, 443, username, password
+#http代理
+ProxyHTTP=http，1.2.3.4，443，用户名，密码
 
 # https proxy
 ProxyHTTPS = https, 1.2.3.4, 443, username, password, skip-cert-verify=true, sni=www.google.com
