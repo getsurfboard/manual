@@ -24,11 +24,11 @@ SUBNET,{type}:{value},{target proxy}
 
 ## Param
 
-| Name         | Value                                                                                                                            | Mandatory | Note                                                                |
-|--------------|----------------------------------------------------------------------------------------------------------------------------------|-----------|---------------------------------------------------------------------|
-| type         | SSID<br/>BSSID<br/>ROUTER<br/>TYPE<br/>MCCMNC                                                                                    | true      | SSID and BSSID require GPS permission on most newer android devices |
-| value        | SSID: ssid name<br/>BSSID: bssid value(MAC address)<br/>ROUTER: gateway ip<br/>TYPE: WIFI/WIRED/CELLULAR<br/>MCCMNC: {mcc}-{mnc} | true      | ROUTER rule will only take effect under wifi or wired network       |
-| target proxy | -                                                                                                                                | true      | Specified proxy or proxy group must existed in profile              |
+| Name         | Value                                                                                                                              | Mandatory | Note                                                                |
+|--------------|------------------------------------------------------------------------------------------------------------------------------------|-----------|---------------------------------------------------------------------|
+| type         | SSID<br/>BSSID<br/>ROUTER<br/>TYPE<br/>MCCMNC                                                                                      | true      | SSID and BSSID require GPS permission on most newer android devices |
+| value        | SSID: ssid name<br/>BSSID: bssid value(MAC address)<br/>ROUTER: gateway ip<br/>TYPE: WIFI/WIRED/CELLULAR<br/>MCCMNC: \{mcc}-\{mnc} | true      | ROUTER rule will only take effect under wifi or wired network       |
+| target proxy | -                                                                                                                                  | true      | Specified proxy or proxy group must existed in profile              |
 
 :::tip
 MCC and MNC value can be query in [https://mcc-mnc-list.com/list](https://mcc-mnc-list.com/list)

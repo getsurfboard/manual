@@ -26,7 +26,7 @@ IP-CIDR6,2001:db8:abcd:8000::/50,DIRECT
 | Name         | Value                | Mandatory | Note                                                             |
 |--------------|----------------------|-----------|------------------------------------------------------------------|
 | type         | IP-CIDR<br/>IP-CIDR6 | true      | IP-CIDR works on IPv4 traffic<br/>IP-CIDR6 works on IPv6 traffic |
-| route        | -                    | true      | Format: {IP}/{mask}, mask is in prefix format                    |
+| route        | -                    | true      | Format: \{IP}/\{mask}, mask is in prefix format                  |
 | target proxy | -                    | true      | Specified proxy or proxy group must existed in profile           |
 
 :::caution
