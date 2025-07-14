@@ -4,6 +4,12 @@ sidebar_position: 5
 
 # ChangeLog
 
+### mobile-2.25.1
+
+- Fix statusBar/navigationBar color before android 15
+- Fix launch screen size & cropping
+- Homepage adapt to display cutout
+
 ### mobile-2.25.0
 
 - Support Android 16
