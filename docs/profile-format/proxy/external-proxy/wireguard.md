@@ -35,7 +35,7 @@ private-key = {private key}
 self-ip = {self ip}
 dns-server = {dns server ip}
 mtu = {mtu size}
-peer = (public-key = {public key}, allowed-ips = {allowed ip routes}, endpoint = {endpoint address})
+peer = (public-key = {public key}, allowed-ips = {allowed ip routes}, endpoint = {endpoint address}, keepalive = {keepalive seconds})
 ```
 
 ## Params
@@ -51,3 +51,4 @@ peer = (public-key = {public key}, allowed-ips = {allowed ip routes}, endpoint =
 | public key        | base64 encoded format     | true      |                                           |
 | allowed ip routes | IPv4 route format         | true      |                                           |
 | endpoint address  | IPv4 IP:PORT format       | true      |                                           |
+| keepalive seconds | integer greater than zero | false     | 0 means disable keepalive                 |
