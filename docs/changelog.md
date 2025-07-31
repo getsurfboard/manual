@@ -4,6 +4,13 @@ sidebar_position: 5
 
 # ChangeLog
 
+### mobile-2.25.2
+
+- Support keepalive param in wireguard proxy
+- Support transparent three dots navigation bar
+- Fix crashing in lower version android
+- Support keep app data when uninstalling
+
 ### mobile-2.25.1
 
 - Fix statusBar/navigationBar color before android 15
