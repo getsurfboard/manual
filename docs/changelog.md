@@ -4,6 +4,14 @@ sidebar_position: 5
 
 # ChangeLog
 
+### mobile-2.25.3
+
+- Support long press to view proxy info in proxy list
+- Use material you style loading indicator instead of progress bar
+- Fix pure dark theme not working
+- Add dashboard empty ui
+- Prompt add quick tile after vpn started
+
 ### mobile-2.25.2
 
 - Support keepalive param in wireguard proxy
