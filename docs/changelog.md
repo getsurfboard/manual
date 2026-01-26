@@ -4,6 +4,17 @@ sidebar_position: 5
 
 # ChangeLog
 
+### mobile-2.25.4
+
+- New Features
+  - Added built-in app updater.
+  - Support proxy names in single/double quotes.
+- Changes
+  - Minimum OS: Android 7.0+ (Dropped 5.x & 6.0).
+  - Updated built-in GeoIP database.
+- Fixes
+  - Fixed LoadingIndicator UI issues.
+
 ### mobile-2.25.3
 
 - Support long press to view proxy info in proxy list
