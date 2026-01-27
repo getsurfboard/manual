@@ -4,6 +4,13 @@ sidebar_position: 5
 
 # ChangeLog
 
+### mobile-2.25.5
+
+- New Features
+  - Support multiple DoH server in profile, Surfboard will queries domain in parallel and uses the fastest response.
+- Fixes
+  - Fix version checker time display error.
+
 ### mobile-2.25.4
 
 - New Features
