@@ -4,13 +4,13 @@ sidebar_position: 9
 
 # `test-timeout`
 
-Timeout used for all connectivity test
+Timeout used for all connectivity tests.
 
-Unit: Seconds
+Unit: seconds
 
 Default value: 5
 
-## Sample
+## Example
 
 ```ini
 test-timeout = 3

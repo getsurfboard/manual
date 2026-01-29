@@ -4,7 +4,7 @@ sidebar_position: 6
 
 # `http-listen`
 
-Establish a http proxy server on your device and provide proxy service in specified ip
+Establishes an HTTP proxy server on your device and provides proxy service at the specified IP.
 
 ## References
 
@@ -12,7 +12,7 @@ Establish a http proxy server on your device and provide proxy service in specif
 - https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods/CONNECT
 - https://en.wikipedia.org/wiki/Proxy_server#Web_proxy_servers
 
-## Sample
+## Example
 
 ```ini
 http-listen = 0.0.0.0:1234
@@ -25,5 +25,5 @@ http-listen = {ip}:{port}
 ```
 
 :::tip
-If you want to provide proxy service in your LAN, you should use `0.0.0.0` as `ip` param, use `127.0.0.1` will provide proxy service on your device only.
+To provide proxy service to your LAN, use `0.0.0.0` as the `ip` parameter. Using `127.0.0.1` restricts the service to the local device only.
 :::

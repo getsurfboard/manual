@@ -4,7 +4,7 @@ sidebar_position: 0
 
 # HTTP/HTTPS
 
-## Protocol standard
+## Protocol Standard
 
 - https://en.wikipedia.org/wiki/HTTP_tunnel
 - https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods/CONNECT
@@ -13,7 +13,7 @@ sidebar_position: 0
 - https://en.wikipedia.org/wiki/HTTPS
 - https://en.wikipedia.org/wiki/Server_Name_Indication
 
-## Sample
+## Example
 
 ```ini
 ProxyHTTP = http, 1.2.3.4, 443, username, password
@@ -26,15 +26,15 @@ ProxyHTTPS = https, 1.2.3.4, 443, username, password, skip-cert-verify=true, sni
 {proxy name} = {protocol}, {server}, {port}, {username}, {password}, {skip-cert-verify}, {sni}
 ```
 
-## Params
+## Parameters
 
 | Name             | Value          | Mandatory | Note                                                                                                            |
 |------------------|----------------|-----------|-----------------------------------------------------------------------------------------------------------------|
 | proxy name       | -              | true      |                                                                                                                 |
 | protocol         | http<br/>https | true      |                                                                                                                 |
-| server           | -              | true      | Support domain and ip format                                                                                    |
+| server           | -              | true      | Supports domain and IP formats.                                                                                    |
 | port             | 0-65535        | true      |                                                                                                                 |
 | username         | -              | false     |                                                                                                                 |
 | password         | -              | false     |                                                                                                                 |
-| skip-cert-verify | true<br/>false | false     | Usable if protocol is https<br/>set to true if proxy doesn't have a valid TLS certificate                       |
-| sni              | -              | false     | Usable if protocol is https<br/>definition is unnecessary when the SNI value is the same as the host value      |
+| skip-cert-verify | true<br/>false | false     | Applicable if protocol is https.<br/>Set to true if the proxy does not have a valid TLS certificate.                       |
+| sni              | -              | false     | Applicable if protocol is https.<br/>Definition is unnecessary if the SNI value matches the host value.      |

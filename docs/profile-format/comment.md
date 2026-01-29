@@ -4,29 +4,29 @@ sidebar_position: 1
 
 # `// Comment`
 
-Currently only following comment format is supported:
+Currently, only the following comment formats are supported:
 
-### Line begin with `;`
+### Lines beginning with `;`
 
 ```ini
 ;this is a comment
 ```
 
-### Line begin with `//`
+### Lines beginning with `//`
 
 ```ini
 // this is also a comment
 ```
 
-### Line begin with `#`
+### Lines beginning with `#`
 
 ```ini
 # comment again
 ```
 
-### Comment at the end of the line
+### Inline Comments
 
-You can also add comment to the end of the line
+You can also add comments at the end of a line.
 
 ```ini
 http-listen = 0.0.0.0:1234 // don't use port number less than 1024

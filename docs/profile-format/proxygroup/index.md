@@ -1,7 +1,7 @@
 # `[Proxy Group]`
 
-Proxy Group is a group of proxies, with a selection to a proxy inside.
+A Proxy Group is a collection of proxies, with one proxy currently selected.
 
-Selection of proxy group can be changed manually or automatically.
+The selection within a proxy group can be changed manually or automatically.
 
-[Rule](/docs/profile-format/rule)'s destination can be set to a proxy group or single proxy.
+A [[Rule]](/docs/profile-format/rule)'s destination can be set to a proxy group or a single proxy.

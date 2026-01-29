@@ -4,7 +4,7 @@ sidebar_position: 0
 
 # Domain
 
-## Sample
+## Example
 
 ```ini
 DOMAIN, www.apple.com, ProxyHTTP, force-remote-dns
@@ -18,12 +18,12 @@ DOMAIN-KEYWORD, google, Proxy
 {type}, {domain rule}, {target proxy}[, force-remote-dns][, enhanced-mode]
 ```
 
-## Param
+## Parameters
 
 | Name             | Value                                            | Mandatory | Note                                                                                                                  |
 |------------------|--------------------------------------------------|-----------|-----------------------------------------------------------------------------------------------------------------------|
-| type             | DOMAIN<br/>DOMAIN-SUFFIX<br/>DOMAIN-KEYWORD<br/> | true      | DOMAIN means exact matching<br/>DOMAIN-SUFFIX means suffix matching<br/>DOMAIN-KEYWORK means keyword matching         |
+| type             | DOMAIN<br/>DOMAIN-SUFFIX<br/>DOMAIN-KEYWORD<br/> | true      | DOMAIN: Exact matching.<br/>DOMAIN-SUFFIX: Suffix matching.<br/>DOMAIN-KEYWORD: Keyword matching.         |
 | domain rule      | -                                                | true      |                                                                                                                       |
-| target proxy     | -                                                | true      | Specified proxy or proxy group must existed in profile                                                                |
-| force-remote-dns | true<br/>false                                   | false     | Default value: false<br/>If set to true, DNS query will triggered in the remote proxy                                 |
-| enhanced-mode    | true<br/>false                                   | false     | Default value: false<br/>If set to true, a fake ip will be returned in DNS query                                      |
+| target proxy     | -                                                | true      | The specified proxy or proxy group must exist in the profile.                                                                |
+| force-remote-dns | true<br/>false                                   | false     | Default value: false.<br/>If set to true, the DNS query will be triggered on the remote proxy.                                 |
+| enhanced-mode    | true<br/>false                                   | false     | Default value: false.<br/>If set to true, a fake IP will be returned in the DNS query.                                      |

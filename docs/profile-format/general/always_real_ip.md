@@ -4,11 +4,11 @@ sidebar_position: 5
 
 # `always-real-ip`
 
-In some scenarios, domain DNS query will response with a fake ip which match `198.18.0.0/16`. Generally it will not cause any issues.
+In some scenarios, domain DNS queries will respond with a fake IP matching `198.18.0.0/16`. Generally, this will not cause any issues.
 
-If you encounter some network issue due to this feature, you can specify `always-real-ip` to bypass this hack.
+If you encounter network issues due to this feature, you can specify `always-real-ip` to bypass this behavior.
 
-## Sample
+## Example
 
 ```ini
 always-real-ip = *.srv.nintendo.net, *.stun.playstation.net, xbox.*.microsoft.com, *.xboxlive.com
@@ -21,7 +21,7 @@ always-real-ip = {domain}, {wildcard domain}, ...
 ```
 
 :::tip
-Currently we observe that the Google Voice dialing problem can be resolved by using `always-real-ip`, please try sample below:
+We have observed that Google Voice dialing issues can be resolved by using `always-real-ip`. Please try the example below:
 
 ```ini
 always-real-ip = stun.l.google.com

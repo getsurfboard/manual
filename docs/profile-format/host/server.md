@@ -2,9 +2,9 @@
 sidebar_position: 3
 ---
 
-# Assign dns server for specified domain
+# Assign DNS Server
 
-## Sample
+## Example
 
 ```ini title="DNS query will be sent to 8.8.8.8"
 bar.com = server:8.8.8.8

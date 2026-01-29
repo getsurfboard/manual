@@ -4,7 +4,7 @@ sidebar_position: 0
 
 # Global Proxy
 
-All traffic on device will be redirected to specified proxy
+All device traffic will be redirected to the specified proxy.
 
 ```ini
 [Proxy]

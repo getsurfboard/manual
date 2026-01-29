@@ -4,94 +4,95 @@ sidebar_position: 6
 
 # FAQ
 
-## Update profile automatically?
+## Does Surfboard support automatic profile updates?
 
-Surfboard support update profiles automatically, even when app is in background.
+Yes, Surfboard supports automatic profile updates, even when the app is running in the background.
 
-It is achieved through defining a [managed-config](/docs/profile-format/managed_config) at the first line of the profile
+This is achieved by defining a [managed-config](/docs/profile-format/managed_config) line at the beginning of the profile:
 
 ```
 #!MANAGED-CONFIG http://test.com/surge.conf interval=60 strict=true
 ```
 
-## High battery consumption?
+## Is battery consumption high?
 
-By default, Surfboard will take over the whole system's network traffic handling.
+By default, Surfboard handles all network traffic for the system.
 
-On some ROMs, the battery consumption of other applications due to the network transmission will be counted on Surfboard.
+On some systems, the battery consumption attributed to network transmission by other applications may be counted towards Surfboard.
 
-Please subjectively perceive whether the battery consumption has increased significantly after turning on Surfboard, instead of only referring to the battery consumption percentage displayed in the system settings.
+Please judge the actual battery impact based on your usage time and device performance, rather than relying solely on the battery consumption percentage displayed in system settings.
 
-## How to reduce battery consumption?
+## How can I reduce battery consumption?
 
-Please try to use bypass config in the 'tools' tab. Filtering/allowing some app traffic into VPN can reduce battery consumption.
+You can use the **Bypass** configuration in the 'Tools' tab. Excluding specific applications from the VPN (or only including necessary ones) can reduce battery consumption.
 
 :::caution
-Use bypass config settings only if you know what are you doing. Incorrect configuration may cause some applications to not work properly
+Only modify bypass configurations if you understand the implications. Incorrect settings may cause some applications to malfunction.
 :::
 
-## Analyzing network issues
+## How do I analyze network issues?
 
-Please check the following entries:
+Please check the following:
 
-### Whether protocol defined in profile is supported
+### 1. Is the protocol supported?
 
-Check the [protocol supported list](/docs/profile-format/proxy)
+Check the [supported protocols list](/docs/profile-format/proxy).
 
-### Reset bypass config
+### 2. Reset Bypass Configuration
 
-Uncheck all entries in bypass config
+Uncheck all entries in the bypass configuration to ensure no apps are inadvertently blocked or allowed.
 
-### Try global outbound mode
+### 3. Try Global Outbound Mode
 
-You can change outbound mode in the dashboard UI.
+Switch to **Global** outbound mode in the dashboard.
 
-If global outbound mode is working, it may be caused by following issue:
-
+If Global mode works, the issue might be caused by:
 - DNS poisoning
-- Profile rules
+- Incorrect profile rules
 
-## Why not support these Surge standard
+## Why are certain Surge standards not supported?
 
-### MITM
+### MITM (Man-in-the-Middle)
 
-After Android 7.0, [Google drop support for trusting custom CAs installed by user](https://android-developers.googleblog.com/2016/07/changes-to-trusted-certificate.html). MITM is only achieved on rooted devices after that.
+Since Android 7.0, [Google has removed support for trusting user-installed CAs](https://android-developers.googleblog.com/2016/07/changes-to-trusted-certificate.html) by default. Consequently, MITM functionality is only achievable on rooted devices.
 
 ### `USER-AGENT`
 
-User-Agent info is only available on plaintext HTTP traffic or by MITM. 
+User-Agent information is only available in plaintext HTTP traffic or via MITM decryption.
 
-Since MITM is not achievable anymore and most of the traffic on the Internet today is based on https, 
-support for `USER-AGENT` is impossible and unnecessary on Android platform.
+Since MITM is not standard on Android and most internet traffic is now HTTPS, supporting `USER-AGENT` rules is largely impossible and unnecessary on the Android platform.
 
 ### `URL-REGEX`
 
-Just like `USER-AGENT` rule mention above, `URL-REGEX` is only achievable by MITM.
+Similar to the `USER-AGENT` rule, `URL-REGEX` matching requires MITM to inspect the URL of HTTPS requests, which is not feasible without root access and CA installation.
 
-## Why not support SSR/Trojan gRPC/VLESS/Xray/...
+## Why are protocols like SSR, Trojan gRPC, VLESS, or Xray not supported?
 
-Surfboard has always followed the Surge configuration format as a standard. 
+Surfboard adheres strictly to the Surge configuration format standard.
 
-Similarly, Surfboard will try its best to support the protocol standards supported by Surge, but will not actively support protocols not supported by Surge to avoid the problem of standard fragmentation.
+Surfboard aims to support protocols that are standard in Surge to strictly avoid fragmentation.
 
-At the same time, I personally believe that blindly supporting as many protocols as possible will not bring additional benefits, but will increase the difficulty of application maintenance.
+We believe that blindly supporting every available protocol does not necessarily bring additional benefits and can increase the difficulty of maintaining the application.
 
-If you want to use a protocol that Surfboard does not support, please consider using other applications that support more complete protocols, such as [Clash](https://github.com/Kr328/ClashForAndroid) and [V2rayNG](https://github.com/2dust/v2rayNG), they are all very good applications.
+If you require protocols that Surfboard does not support, please consider using other excellent applications such as [Clash for Android](https://github.com/Kr328/ClashForAndroid) or [v2rayNG](https://github.com/2dust/v2rayNG).
 
-## Why speed test delay is higher than expected
+## Why is the speed test latency higher than expected?
 
-Surfboard use `HTTP HEAD` to make a node speed test just like Surge. The first speed test delay is always higher because there is no node's dns cache. Second run will be lower because dns query duration is removed due to existence of dns cache.
+Surfboard uses `HTTP HEAD` requests to test node speed, similar to Surge.
 
-Devices with poor CPU will get higher delay also.
+- **First Test:** The latency is usually higher because there is no DNS cache for the node.
+- **Subsequent Tests:** Latency should be lower as the DNS query time is eliminated due to caching.
 
-## Why app prompt 'The imported profile contains an invalid update URL' when adding a new profile
+Note that devices with weaker CPUs may also experience slightly higher processing latency.
 
-Surge format support update profile automatically if you have define a [managed-config](/docs/profile-format/managed_config) at the first line of the profile.
+## Why do I see "The imported profile contains an invalid update URL"?
 
-If profile contain an invalid managed config url, surfboard will raise a prompt like this to the user.
+The Surge format supports automatic updates if a [managed-config](/docs/profile-format/managed_config) line is defined at the top of the profile.
+
+If the profile contains an invalid URL in this config, Surfboard will prompt this warning.
 
 :::tip
-99.99% of this situation is because the host of the url is a local address, for example: 127.0.0.1.
+This usually happens if the URL host is a local address (e.g., `127.0.0.1`).
 
-If you use some non-standard profile converters, you may encounter such issues. Please consider using other converters to circumvent this issues.
+If you are using a third-party profile converter, this may be a bug in their conversion process. Please consider using a different converter or contacting the provider.
 :::

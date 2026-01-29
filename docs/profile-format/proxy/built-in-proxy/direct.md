@@ -4,8 +4,8 @@ sidebar_position: 0
 
 # Direct
 
-```ini title="Rule sample combined with direct proxy"
+```ini title="Rule example combined with Direct proxy"
 DOMAIN,www.apple.com,DIRECT
 ```
 
-Traffic match Direct proxy will be sent directly, without any redirection or modification.
+Traffic matching the Direct proxy will be sent directly, without any redirection or modification.

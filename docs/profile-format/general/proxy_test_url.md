@@ -4,15 +4,15 @@ sidebar_position: 3
 
 # `proxy-test-url`
 
-Test url used by [url-test](/docs/profile-format/proxygroup/auto) and manually node speed test.
+Test URL used by [url-test](/docs/profile-format/proxygroup/auto) and manual node speed tests.
 
-Non-direct proxy will use this url. For [direct proxy](/docs/profile-format/proxy/built-in-proxy/direct), please refer to [`internet-test-url`](./internet_test_url)
+Non-direct proxies will use this URL. For [direct proxy](/docs/profile-format/proxy/built-in-proxy/direct), please refer to [`internet-test-url`](./internet_test_url).
 
-An `HTTP HEAD` request will be sent towards this url
+An `HTTP HEAD` request is sent to this URL.
 
-An `HTTP/1.1 204 No Content` response is expected.
+A response of `HTTP/1.1 204 No Content` is expected.
 
-## Sample
+## Example
 
 ```ini
 proxy-test-url = http://www.gstatic.com/generate_204
@@ -25,11 +25,11 @@ proxy-test-url = {http_url}
 ```
 
 :::tip
-`url` should start with `http://`, `https://` or other scheme uri is not supported
+The URL must start with `http://`. `https://` or other schemes are not supported.
 :::
 
 :::tip
-You can emulate proxy test by using command below:
+You can emulate the proxy test using the command below:
 ```shell
 curl -I http://www.gstatic.com/generate_204
 ```

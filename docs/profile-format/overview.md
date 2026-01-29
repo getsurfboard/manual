@@ -5,9 +5,9 @@ sidebar_position: 0
 # Overview
 
 :::tip
-Surfboard follow [Surge](https://nssurge.com/)'s profile format
+Surfboard follows [Surge](https://nssurge.com/)'s profile format.
 
-Surge's profile documentation can be viewed [here](https://manual.nssurge.com/)
+Surge's profile documentation can be viewed [here](https://manual.nssurge.com/).
 :::
 
 ```ini
@@ -28,36 +28,36 @@ proxy-test-url = http://www.gstatic.com/generate_204
 # Test url used by url-test and manually node speed test. Direct proxy will use this url.
 internet-test-url = http://www.gstatic.cn/generate_204
 
-# Timeout for all connectivity test
+# Timeout for all connectivity tests
 test-timeout = 5
 
-# Match domain won't get fake ip dns response
+# Matched domains won't get fake ip dns response
 always-real-ip = *.srv.nintendo.net, *.stun.playstation.net, xbox.*.microsoft.com, *.xboxlive.com
 
-# Establish a http proxy server on your device and provide proxy service in specified ip
+# Establish an http proxy server on your device and provide proxy service at specified ip
 http-listen = 0.0.0.0:1234
 
-# Establish a socks5 proxy server on your device and provide proxy service in specified ip
+# Establish a socks5 proxy server on your device and provide proxy service at specified ip
 socks5-listen = 127.0.0.1:1235
 
-# If proxy not support udp relay, use DIRECT or REJECT instead
+# If proxy does not support udp relay, use DIRECT or REJECT instead
 udp-policy-not-supported-behaviour = DIRECT
 
 [Host]
-# map 'abc.com' to '1.2.3.4'
+# Maps 'abc.com' to '1.2.3.4'
 abc.com = 1.2.3.4
 
-# map any domain end with '.dev' to '6.7.8.9'
+# Maps any domain ending with '.dev' to '6.7.8.9'
 *.dev = 6.7.8.9
 
-# alias 'bar.com' dns query result to 'foo.com'
+# Aliases 'bar.com' dns query result to 'foo.com'
 foo.com = bar.com
 
-# assign '8.8.8.8' as dns server for 'bar.com'
+# Assigns '8.8.8.8' as dns server for 'bar.com'
 bar.com = server:8.8.8.8
 
 [Proxy]
-# build in policy
+# Built-in policy
 On = direct
 Off = reject
 
@@ -93,86 +93,86 @@ mtu = 1280
 peer = (public-key = fWO8XS9/nwUQcqnkfBpKeqIqbzclQ6EKP20Pgvzwclg=, allowed-ips = 0.0.0.0/0, endpoint = 192.168.20.6:51820, keepalive = 30)
 
 [Proxy Group]
-# proxy group whose selected proxy can be changed manually
+# A proxy group where the selected proxy can be changed manually
 SelectGroup = select, ProxyHTTP, ProxyHTTPS, DIRECT, REJECT
 
-# proxy group whose selected proxy can be decided based on url test result automatically
+# A proxy group where the selected proxy is decided automatically based on url test results
 AutoTestGroup = url-test, ProxySOCKS5, ProxySOCKS5TLS, url=http://www.gstatic.com/generate_204, interval=600, tolerance=100, timeout=5, hidden=true
 
-# proxy group with a external proxies list url
+# A proxy group with an external proxies list url
 ExternalGroup = select, policy-path=https://test.com/nodes.txt, policy-regex-filter=HK-.*
 AutoExternalGroup = url-test, policy-path=https://test.com/nodes.txt
 
-# proxy group which contains all proxy under [Proxy] section
+# A proxy group which contains all proxies under the [Proxy] section
 AllProxies = select, include-all-proxies = true
 
-# proxy group which contains all proxy from other group by name
+# A proxy group which contains all proxies from other groups by name
 IncludeOtherGroup = select, include-other-group = "SelectGroup, ExternalGroup", policy-regex-filter=Proxy.*
 
-# proxy group whose selection is chosen randomly
+# A proxy group whose selection is chosen randomly
 LoadBalanceGroup = load-balance, ProxyHTTP, ProxyHTTPS
 
-# proxy group just like url-test but follow 'first come first served' rule
+# A proxy group just like url-test but follows 'first come first served' rule
 FallbackGroup = fallback, ProxySOCKS5, ProxySOCKS5TLS, url=http://www.gstatic.com/generate_204, interval=600, timeout=5
 
 [Rule]
-# domain exact match 'www.apple.com' will be redirected to proxy named 'ProxyHTTP' in [Proxy] section 
+# Domain exact match 'www.apple.com' will be redirected to proxy named 'ProxyHTTP' in [Proxy] section
 DOMAIN,www.apple.com,ProxyHTTP
 
-# domain exact match 'www.google.com' will be redirected to proxy group named 'SelectGroup' in [Proxy Group] section
+# Domain exact match 'www.google.com' will be redirected to proxy group named 'SelectGroup' in [Proxy Group] section
 DOMAIN,www.google.com,SelectGroup
 
-# domain ends with 'apple.com' will be redirected to 'Proxy', DNS query of this domain will triggered in the remote proxy
+# Domain ending with 'apple.com' will be redirected to 'Proxy', DNS query of this domain will trigger in the remote proxy
 DOMAIN-SUFFIX,apple.com,Proxy,force-remote-dns
 
-# domain contains 'google' keyword will be redirected to 'Proxy', a fake ip will be returned in DNS query
+# Domain containing 'google' keyword will be redirected to 'Proxy', a fake ip will be returned in DNS query
 DOMAIN-KEYWORD,google,Proxy,enhanced-mode
 
-# destination ip match route '192.168.0.0/16' will be sent directly
+# Destination ip matching route '192.168.0.0/16' will be sent directly
 IP-CIDR,192.168.0.0/16,DIRECT
 
-# destination ip located in United State will be rejected
+# Destination ip located in United States will be rejected
 GEOIP,US,REJECT
 
-# traffic sent by application whose package name is 'com.android.vending' will be sent to 'Proxy'
+# Traffic sent by application whose package name is 'com.android.vending' will be sent to 'Proxy'
 PROCESS-NAME,com.android.vending,Proxy  # android package name
 PROCESS-NAME,*google*,Proxy             # android package name wildcard rule
 
-# traffic match external rules defined in 'https://ruleset.com/cn' will be sent to 'ProxyVMess'
+# Traffic matching external rules defined in 'https://ruleset.com/cn' will be sent to 'ProxyVMess'
 RULE-SET,https://ruleset.com/cn,ProxyVMess
 
-# traffic match external domain rules defined in 'https://domainset.com/ad' will be rejected'
+# Traffic matching external domain rules defined in 'https://domainset.com/ad' will be rejected
 DOMAIN-SET,https://domainset.com/ad,REJECT
 
-# traffic sent using wifi whose ssid name is 'CMCC' will be rejected
+# Traffic sent using wifi whose ssid name is 'CMCC' will be rejected
 SUBNET,SSID:CMCC,REJECT
 
-# traffic sent using wifi whose bssid is 'F4-98-A0-73-3A-5B' will be sent directly
+# Traffic sent using wifi whose bssid is 'F4-98-A0-73-3A-5B' will be sent directly
 SUBNET,BSSID:F4-98-A0-73-3A-5B,DIRECT
 
-# traffic sent through a router whose ip is '192.168.1.1' will be sent directly
+# Traffic sent through a router whose ip is '192.168.1.1' will be sent directly
 SUBNET,ROUTER:192.168.1.1,DIRECT
 
-# traffic sent using wifi will be sent directly
+# Traffic sent using wifi will be sent directly
 SUBNET,TYPE:WIFI,DIRECT
 
-# traffic sent using wired network will be sent directly
+# Traffic sent using wired network will be sent directly
 SUBNET,TYPE:WIRED,DIRECT
 
-# traffic sent using mobile network will be sent through 'SelectGroup'
+# Traffic sent using mobile network will be sent through 'SelectGroup'
 SUBNET,TYPE:CELLULAR,SelectGroup
 
-# traffic sent using mobile network whose MCC is 100 and MNC is 200, will be sent directly
+# Traffic sent using mobile network whose MCC is 100 and MNC is 200, will be sent directly
 SUBNET,MCCMNC:100-200,DIRECT
 
-# reject quic, fallback to tls
+# Reject quic, fallback to tls
 PROTOCOL,QUIC,REJECT
 
-# traffic doesn't match rules above will be sent to 'ProxyTrojan'
+# Traffic matching no rules above will be sent to 'ProxyTrojan'
 FINAL,ProxyTrojan
 
 [Panel]
 PanelA = title="Panel Title", content="Panel Content\nSecondLine", style=info
 ```
 
-You can read on for detailed definitions of different sections
+You can read on for detailed definitions of different sections.

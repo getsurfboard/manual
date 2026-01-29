@@ -4,7 +4,7 @@ sidebar_position: 1
 
 # Local Server
 
-Bind domain to a local server ip without configuring DNS resolution
+Binds a domain to a local server IP without configuring DNS resolution.
 
 ```ini
 [Host]

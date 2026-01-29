@@ -4,15 +4,15 @@ sidebar_position: 4
 
 # `internet-test-url`
 
-Test url used by [DIRECT](/docs/profile-format/proxy/built-in-proxy/direct) proxy
+Test URL used by the [DIRECT](/docs/profile-format/proxy/built-in-proxy/direct) proxy.
 
-For non-direct proxy, please refer to [`proxy-test-url`](./proxy_test_url)
+For non-direct proxies, please refer to [`proxy-test-url`](./proxy_test_url).
 
-An `HTTP HEAD` request will be sent towards this url
+An `HTTP HEAD` request is sent to this URL.
 
-An `HTTP/1.1 204 No Content` response is expected.
+A response of `HTTP/1.1 204 No Content` is expected.
 
-## Sample
+## Example
 
 ```ini
 internet-test-url = http://www.gstatic.cn/generate_204
@@ -25,11 +25,11 @@ internet-test-url = {http_url}
 ```
 
 :::tip
-`url` should start with `http://`, `https://` or other scheme uri is not supported
+The URL must start with `http://`. `https://` or other schemes are not supported.
 :::
 
 :::tip
-You can emulate proxy test by using command below:
+You can emulate the proxy test using the command below:
 ```shell
 curl -I http://www.gstatic.cn/generate_204
 ```

@@ -4,25 +4,24 @@ sidebar_position: 3
 
 # Rule Set
 
-Rule Set is a remote url configuration, whose content is a collection of Rule, but without target definition in it.
+A Rule Set is a remote URL configuration containing a collection of rules, but without a target definition.
 
-Use Rule Set can greatly simplify the content complexity of profile which has a lot of rules in it, 
-and also can reuse rules encapsulated by other contributors.
+Using a Rule Set can greatly simplify the content of profiles containing many rules and allows for reusing rules created by other contributors.
 
 :::tip
-Define a large number of rules in a rule set will significantly reduce the efficiency of rule matching.
-In this scenario, we strongly recommend you switch to the [Domain Set](./domainset) standard.
+Defining a large number of rules in a Rule Set will significantly reduce the efficiency of rule matching.
+In this scenario, we strongly recommend switching to the [Domain Set](./domainset) standard.
 :::
 
-## Sample
+## Example
 
-### Rule Set definition
+### Rule Set Definition
 
 ```ini
 RULE-SET,https://ruleset.com/cn,ProxyVMess
 ```
 
-### Remote Rule Set content sample
+### Remote Rule Set Content Example
 
 ```ini
 DOMAIN,www.apple.com
@@ -33,7 +32,7 @@ IP-CIDR,192.168.0.0/16
 GEOIP,US
 ```
 
-You can see that there is no target definition in it, all matching traffic will use proxy 'ProxyVMess' as target
+Note that there is no target definition included. All matching traffic will use the proxy 'ProxyVMess' as the target.
 
 ## Format
 
@@ -41,9 +40,9 @@ You can see that there is no target definition in it, all matching traffic will 
 RULE-SET, {rule set url}, {target}
 ```
 
-## Param
+## Parameters
 
 | Name         | Value | Mandatory | Note                                                   |
 |--------------|-------|-----------|--------------------------------------------------------|
 | rule set url | -     | true      |                                                        |
-| target       | -     | true      | Specified proxy or proxy group must existed in profile |
+| target       | -     | true      | The specified proxy or proxy group must exist in the profile. |

@@ -4,7 +4,7 @@ sidebar_position: 5
 
 # Subnet
 
-## Sample
+## Example
 
 ```ini
 SUBNET,SSID:CMCC,REJECT
@@ -22,13 +22,14 @@ SUBNET,MCCMNC:100-200,DIRECT
 SUBNET,{type}:{value},{target proxy}
 ```
 
-## Param
+## Parameters
 
 | Name         | Value                                                                                                                              | Mandatory | Note                                                                |
 |--------------|------------------------------------------------------------------------------------------------------------------------------------|-----------|---------------------------------------------------------------------|
-| type         | SSID<br/>BSSID<br/>ROUTER<br/>TYPE<br/>MCCMNC                                                                                      | true      | SSID and BSSID require GPS permission on most newer android devices |
-| value        | SSID: ssid name<br/>BSSID: bssid value(MAC address)<br/>ROUTER: gateway ip<br/>TYPE: WIFI/WIRED/CELLULAR<br/>MCCMNC: \{mcc}-\{mnc} | true      | ROUTER rule will only take effect under wifi or wired network       |
-| target proxy | -                                                                                                                                  | true      | Specified proxy or proxy group must existed in profile              |
+| type         | SSID<br/>BSSID<br/>ROUTER<br/>TYPE<br/>MCCMNC                                                                                      | true      | SSID and BSSID require location permissions on most newer Android devices. |
+| value        | SSID: ssid name<br/>BSSID: bssid value (MAC address)<br/>ROUTER: Gateway IP<br/>TYPE: WIFI/WIRED/CELLULAR<br/>MCCMNC: \{mcc}-\{mnc} | true      | ROUTER rule will only take effect under WiFi or wired networks.       |
+| target proxy | -                                                                                                                                  | true      | The specified proxy or proxy group must exist in the profile.              |
 
 :::tip
-MCC and MNC value can be query in [https://mcc-mnc-list.com/list](https://mcc-mnc-list.com/list)
+MCC and MNC values can be found at [https://mcc-mnc-list.com/list](https://mcc-mnc-list.com/list).
+:::

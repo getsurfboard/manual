@@ -6,1291 +6,1291 @@ sidebar_position: 5
 
 ### mobile-2.25.5
 
-- New Features
-  - Support multiple DoH server in profile, Surfboard will queries domain in parallel and uses the fastest response.
-- Fixes
-  - Fix version checker time display error.
+- **New Features**
+  - Added support for multiple DoH servers in a profile. Surfboard queries domains in parallel and uses the fastest response.
+- **Fixes**
+  - Fixed version checker time display error.
 
 ### mobile-2.25.4
 
-- New Features
+- **New Features**
   - Added built-in app updater.
-  - Support proxy names in single/double quotes.
-- Changes
+  - Added support for proxy names enclosed in single/double quotes.
+- **Changes**
   - Minimum OS: Android 7.0+ (Dropped 5.x & 6.0).
   - Updated built-in GeoIP database.
-- Fixes
+- **Fixes**
   - Fixed LoadingIndicator UI issues.
 
 ### mobile-2.25.3
 
-- Support long press to view proxy info in proxy list
-- Use material you style loading indicator instead of progress bar
-- Fix pure dark theme not working
-- Add dashboard empty ui
-- Prompt add quick tile after vpn started
+- Added support for long-pressing to view proxy info in the proxy list.
+- Implemented Material You style loading indicator instead of a progress bar.
+- Fixed pure dark theme not working.
+- Added dashboard empty state UI.
+- Prompt to add quick tile after VPN starts.
 
 ### mobile-2.25.2
 
-- Support keepalive param in wireguard proxy
-- Support transparent three dots navigation bar
-- Fix crashing in lower version android
-- Support keep app data when uninstalling
+- Added support for the `keepalive` parameter in WireGuard proxies.
+- Added support for a transparent three-dots navigation bar.
+- Fixed crashing on lower Android versions.
+- Added support for keeping app data when uninstalling.
 
 ### mobile-2.25.1
 
-- Fix statusBar/navigationBar color before android 15
-- Fix launch screen size & cropping
-- Homepage adapt to display cutout
+- Fixed statusBar/navigationBar color issues on versions prior to Android 15.
+- Fixed launch screen size and cropping.
+- Adapted homepage to display cutouts.
 
 ### mobile-2.25.0
 
-- Support Android 16
-- Update public IP fetching API
-- Enable FTP server on lower version Android
-- Fix logcat viewer open animation
-- Fix splash screen & app theme
-- Update embedded geoip library
-- Support 16KB page size
-- Unify toolbar divider/elevation/color
-- Fix launch screen theme
-- Update translation
+- Added support for Android 16.
+- Updated public IP fetching API.
+- Enabled FTP server on lower Android versions.
+- Fixed logcat viewer open animation.
+- Fixed splash screen and app theme.
+- Updated embedded GeoIP library.
+- Added support for 16KB page size.
+- Unified toolbar divider/elevation/color.
+- Fixed launch screen theme.
+- Updated translations.
 
 ### mobile-2.24.10
 
-- Fix crash
+- Fixed a crash.
 
 ### mobile-2.24.9
 
-- Integrate conscrypt to enable tls 1.3 support on lower version of android
-- Add notification chronometer toggle setting
-- Add misc rule protocol quic support
-- Fix logcat viewer ui issue on android 15+
-- Update integrated geoip library file
+- Integrated Conscrypt to enable TLS 1.3 support on lower Android versions.
+- Added notification chronometer toggle setting.
+- Added QUIC protocol support for MISC rules.
+- Fixed logcat viewer UI issues on Android 15+.
+- Updated integrated GeoIP library file.
 
 ### mobile-2.24.8
 
-- Bug fixed
+- Bug fixes.
 
 ### mobile-2.24.7
 
-- Support display panel entrance in profile list actions
-- Update proxy group select ui
+- Added support for displaying panel entrance in profile list actions.
+- Updated proxy group selection UI.
 
 ### mobile-2.24.6
 
-- Fix wireshark sshdump crash
+- Fixed Wireshark sshdump crash.
 
 ### mobile-2.24.5
 
-- Fix Android 15 crash in some subpages
-- Update geoip library file
-- Update translation
+- Fixed Android 15 crash in some subpages.
+- Updated GeoIP library file.
+- Updated translations.
 
 ### tv-1.0.3 
 
-- Support profile fetch timeout config
+- Added support for profile fetch timeout configuration.
 
 ### tv-1.0.2
 
-- Fix setting crash on Android 8.0
-- Update translation
+- Fixed settings crash on Android 8.0.
+- Updated translations.
 
 ### tv-1.0.1
 
-- Add launcher entrance for non leanback devices
-- Add public IP display support
-- Fix delete last profile crash
+- Added launcher entrance for non-Leanback devices.
+- Added support for public IP display.
+- Fixed crash when deleting the last profile.
 
 ### mobile-2.24.4
 
-- Add location permission explanation to meet google play policy requirement
-- Adapt to Android 15
-- Update translation
-- Bug fixed
+- Added location permission explanation to meet Google Play policy requirements.
+- Adapted to Android 15.
+- Updated translations.
+- Bug fixes.
 
 ### tv-1.0.0
 
-- First version
+- First version.
 
 ### 2.24.3
 
-- Display proxy group name in log
-- Support modify profile fetch timeout in setting
-- Support temporarily disable bypass mode and remember config
-- Bypass list sort mode config now will be remember
-- Improve profile compatibility
-- Reduce apk size
-- Remove GMS qrcode scanner
-- Bug fixed
+- Display proxy group name in logs.
+- Added support for modifying profile fetch timeout in settings.
+- Added support for temporarily disabling bypass mode and remembering the configuration.
+- Bypass list sort mode configuration is now remembered.
+- Improved profile compatibility.
+- Reduced APK size.
+- Removed GMS QRCode scanner.
+- Bug fixes.
 
 ### 2.24.2
 
-- Display proxy group name in log
-- Support modify profile fetch timeout in setting
-- Support temporarily disable bypass mode and remember config
-- Bypass list sort mode config now will be remember
-- Improve profile compatibility
-- Reduce apk size
-- Remove GMS qrcode scanner
-- Bug fixed
+- Display proxy group name in logs.
+- Added support for modifying profile fetch timeout in settings.
+- Added support for temporarily disabling bypass mode and remembering the configuration.
+- Bypass list sort mode configuration is now remembered.
+- Improved profile compatibility.
+- Reduced APK size.
+- Removed GMS QRCode scanner.
+- Bug fixes.
 
 ### 2.24.1
 
-- Fix VPN start failed if include wireguard proxy
-- Add compatible mode in bypass config list, fix list item click issue
-- Add more profile content checking
-- Replace some toast with snackbar
-- Include hidden proxy group proxies in global mode by default
-- Bug fixed
+- Fixed VPN start failure if a WireGuard proxy is included.
+- Added compatible mode in bypass config list; fixed list item click issues.
+- Added more profile content checks.
+- Replaced some toasts with snackbars.
+- Included hidden proxy group proxies in global mode by default.
+- Bug fixes.
 
 ### 2.24.0
 
-- Fix DoH not working issue
-- Fix tablet not display profile content in landscape
-- Bug fixed
+- Fixed DoH not working issue.
+- Fixed tablet issue where profile content was not displayed in landscape.
+- Bug fixes.
 
 ### 2.23.4
 
-- Make recursive `include-other-group` not rely on defined sequence
-- Fix dialog transition
-- Fix LAN multicast sometime not working if `udp-policy-not-supported-behaviour` set to `REJECT`
-- Fix external resource manually fetch failed cause crash
+- Made recursive `include-other-group` independent of definition sequence.
+- Fixed dialog transition.
+- Fixed LAN multicast sometimes not working if `udp-policy-not-supported-behaviour` was set to `REJECT`.
+- Fixed crash caused by manual external resource fetch failure.
 
 ### 2.23.3
 
-- Add manually edit host ui
-- Improve dns response printing
-- Change accessibility mode back to manually 
+- Added UI for manually editing hosts.
+- Improved DNS response printing.
+- Changed accessibility mode back to manual.
 
 ### 2.23.2
 
-- Support `preshared-key` param in wireguard
-- Improve profile compatibility
-- Improve accessibility compatibility
+- Added support for `preshared-key` parameter in WireGuard.
+- Improved profile compatibility.
+- Improved accessibility compatibility.
 
 ### 2.23.1
 
-- Improve profile compatibility
-- Bug fixed
+- Improved profile compatibility.
+- Bug fixes.
 
 ### 2.23.0
 
-- Add ARMv8 crypto extension support to improve ss throughput performance
-- Add udp label in proxy list to indicate udp relay support
-- Support Android 12L+ activity embedding
-- Update Japanese/Korean language translation
-- Improve profile compatibility, make include-all-proxies only include proxies under [Proxy] section
-- Improve profile import error prompt
-- Fix simple-obfs slightly memory leak
-- Bug fixed
+- Added ARMv8 crypto extension support to improve SS throughput performance.
+- Added UDP label in proxy list to indicate UDP relay support.
+- Added support for Android 12L+ activity embedding.
+- Updated Japanese/Korean translations.
+- Improved profile compatibility; `include-all-proxies` now only includes proxies under the `[Proxy]` section.
+- Improved profile import error prompts.
+- Fixed slight memory leak in simple-obfs.
+- Bug fixes.
 
 ### 2.22.9
 
-- Improve accessibility compatibility
-- Improve profile compatibility
-- Bug fixed
+- Improved accessibility compatibility.
+- Improved profile compatibility.
+- Bug fixes.
 
 ### 2.22.8
 
-- Fix public ip value issue
-- Fix theme display issue
+- Fixed public IP value issue.
+- Fixed theme display issue.
 
 ### 2.22.7
 
-- Use DNS over HTTPS in profile fetcher to handle dns pollution issues
-- Add masked from recent task option
-- Add hide from recent task option
-- Bug fixed
+- Used DNS over HTTPS in profile fetcher to handle DNS pollution issues.
+- Added "Masked from recent tasks" option.
+- Added "Hide from recent tasks" option.
+- Bug fixes.
 
 ### 2.22.6
 
-- Add NAT detection tool
-- Bug fixed
+- Added NAT detection tool.
+- Bug fixes.
 
 ### 2.22.5
 
-- Support sort mode in bypass config
-- Fix tile issue
-- Add mtu option in settings
-- Fix ssid/bssid issue when surfboard is in background
-- Make `policy-regex-filter` support partial match with `include-all-proxies` and `include-other-group`
+- Added support for sort mode in bypass config.
+- Fixed tile issue.
+- Added MTU option in settings.
+- Fixed SSID/BSSID issue when Surfboard is in the background.
+- Made `policy-regex-filter` support partial matching with `include-all-proxies` and `include-other-group`.
 
 ### 2.22.4
 
-- Fix dns query issue on Android 14
-- Fix proxy group speedtest not working issue
-- Fix some vmess proxy not working issue
+- Fixed DNS query issue on Android 14.
+- Fixed proxy group speed test not working.
+- Fixed issues with some VMess proxies.
 
-Issue above was introduced in 2.22.1 and 2.22.3
+Issues above were introduced in 2.22.1 and 2.22.3.
 
 ### 2.22.3
 
-- Make dynamic color theme support pure dark
-- Improve profile compatibility
-- Synchronize proxy test result in different proxy group 
-- Bug fix
+- Enabled support for pure dark in dynamic color themes.
+- Improved profile compatibility.
+- Synchronized proxy test results across different proxy groups.
+- Bug fixes.
 
 ### 2.22.2
 
-- Bug fixed
+- Bug fixes.
 
 ### 2.22.1
 
- - Add pure dark theme support
- - Bug fixed
+ - Added pure dark theme support.
+ - Bug fixes.
 
 ### 2.22.0
 
-- Add wireguard proxy support
-- Add `include-other-group` support
-- Ignore ponte proxy
-- Update embedded geoip library
-- Bug fixed
+- Added WireGuard proxy support.
+- Added `include-other-group` support.
+- Ignored Ponte proxy.
+- Updated embedded GeoIP library.
+- Bug fixes.
 
 ### 2.21.5
 
-- Fix change theme not working on some devices
-- Fix public ip card display ipv6 format address
-- Update translation
-- Fix window background color error
-- Bug fixed
+- Fixed theme change not working on some devices.
+- Fixed public IP card displaying IPv6 address format.
+- Updated translations.
+- Fixed window background color error.
+- Bug fixes.
 
 ### 2.21.4
 
-- Fix switch media import crash introduced in previous version
-- Improve vpn open speed
-- Bug fixed
-- Update translation
+- Fixed Switch media import crash introduced in the previous version.
+- Improved VPN opening speed.
+- Bug fixes.
+- Updated translations.
 
 ### 2.21.3
 
-- Support use ftp to modify profiles list
-- Bug fixed
+- Added support for using FTP to modify profiles list.
+- Bug fixes.
 
 ### 2.21.2
 
-- Support auto zoom in gms qrcode scanner
-- Bug fixed
+- Added support for auto-zoom in GMS QRCode scanner.
+- Bug fixes.
 
 ### 2.21.1
 
-- Support `force-remote-dns` and `enhanced-mode` in `PROCESS-NAME` rules
-- Fix tile click not working on Android 14
-- Bug fixed
+- Supported `force-remote-dns` and `enhanced-mode` in `PROCESS-NAME` rules.
+- Fixed tile click not working on Android 14.
+- Bug fixes.
 
 ### 2.21.0
 
-- Support some misc rule. 
-  - with `IN-PORT` and `SRC-IP`, now you can control traffic from lan proxy more easily.
-  - For more info, please check [manual](https://getsurfboard.com/docs/profile-format/rule/misc)
-- Add compact profile list support
-- Unify menu icon ui
-- Update bottom sheet peek height
-- Display remote client info from lan proxy in logcat
-- Adapt to Android 14
+- Added support for some MISC rules. 
+  - With `IN-PORT` and `SRC-IP`, you can now control traffic from LAN proxies more easily.
+  - For more info, please check the [manual](https://getsurfboard.com/docs/profile-format/rule/misc).
+- Added support for compact profile list.
+- Unified menu icon UI.
+- Updated bottom sheet peek height.
+- Displayed remote client info from LAN proxy in logcat.
+- Adapted to Android 14.
 
 ### 2.20.10
 
-- Bug fixed
-- Ignore invalid proxy when importing multiple uri
-- Remove sponsor entrance
+- Bug fixes.
+- Ignored invalid proxies when importing multiple URIs.
+- Removed sponsor entrance.
 
 ### 2.20.9
 
-- Bug fixed
-- Display private ip in sshdump card
-- Improve vmess uri compatibility
+- Bug fixes.
+- Displayed private IP in sshdump card.
+- Improved VMess URI compatibility.
 
 ### 2.20.8
 
-- Fix import profile compatibility issue
-- Avoid close ui when toggle tile
-- Fix update profile notify issue
-- Fix private ip and dns not display when starting vpn from tile
-- Improve geoip compatibility
-- Bug fixed
+- Fixed import profile compatibility issues.
+- Avoided closing UI when toggling tile.
+- Fixed update profile notification issue.
+- Fixed private IP and DNS not displaying when starting VPN from tile.
+- Improved GeoIP compatibility.
+- Bug fixes.
 
 ### 2.20.7
 
-- Bug fixed
-- Update translation
+- Bug fixes.
+- Updated translations.
 
 ### 2.20.6
 
-- Support bypass TLS verification when fetching profiles and external resources
-- Print package name in dns log
-- Avoid toasting when starting vpn
-- Fix subnet rule bugs
-- Bug fix
+- Supported bypassing TLS verification when fetching profiles and external resources.
+- Printed package name in DNS log.
+- Avoided toasting when starting VPN.
+- Fixed subnet rule bugs.
+- Bug fixes.
 
 ### 2.20.5
 
-- Bug fix
+- Bug fixes.
 
 ### 2.20.4
 
-- Fix in app update crashing
+- Fixed in-app update crashing.
 
 ### 2.20.3
 
-- Add changelog entrance in app
-- Allow to be installed in sdcard
-- Bug fix
+- Added changelog entrance in-app.
+- Allowed installation on SD card.
+- Bug fixes.
 
 ### 2.20.2
 
-- Profile content: add [subnet type rules](https://getsurfboard.com/docs/profile-format/rule/subnet) support
-- About settings: add new version checking in non-googleplay installation
-- Bug fixed
+- Profile content: Added support for [subnet type rules](https://getsurfboard.com/docs/profile-format/rule/subnet).
+- About settings: Added new version checking for non-Google Play installations.
+- Bug fixes.
 
 ### 2.20.1
 
-- Profile content: add subnet type rules support
-- About settings: add new version checking in non-googleplay installation
-- Bug fixed
+- Profile content: Added support for subnet type rules.
+- About settings: Added new version checking for non-Google Play installations.
+- Bug fixes.
 
 ### 2.20.0
 
-- Update profile list ui:
-  - Add suggestion chip
-  - Add sponsors entrance in footer
-  - Add manual entrance when empty
-- Add app widget support: public ip, dns and private ip
-- Update app shortcut icon
-- GeoIP library now support auto update
-- Bug fixed
+- Updated profile list UI:
+  - Added suggestion chip.
+  - Added sponsors entrance in footer.
+  - Added manual entrance when empty.
+- Added app widget support: Public IP, DNS, and Private IP.
+- Updated app shortcut icon.
+- GeoIP library now supports auto-update.
+- Bug fixes.
 
 ### 2.19.4
 
-- Support query ip location on tool list
-- Support scan qrcode from gallery
-- Catch WebView core missing exception
-- Automatically restart VPN when switching selected profile
-- Change QRCode library to reduce APK size
-- Support display external resource timeout message when fetching profile
-- Update translation
-- Allow copy url in settings
-- Fix UI issues
-- Bug fixed
+- Supported querying IP location in tool list.
+- Supported scanning QRCode from gallery.
+- Caught WebView core missing exception.
+- Automatically restart VPN when switching selected profile.
+- Changed QRCode library to reduce APK size.
+- Supported displaying external resource timeout messages when fetching profiles.
+- Updated translations.
+- Allowed copying URL in settings.
+- Fixed UI issues.
+- Bug fixes.
 
 ### 2.19.3
 
-- Fix profile item menu not focusable on tv devices
-- Update profile editor library version
-- Add detection for TLS handshake failure due to Client/Server time mismatch
-- Add divider for toolbar
-- Update handler ui for bottom sheet
-- Always show label in bottom navigation bar (as you wish)
-- Support use editor to view external resource content(policy path/rule set/domain set)
-- Fix vpn time ticker got running when vpn is not started
-- Update some ui detail for android tv devices
-- Fix duplicated notification action
-- Fix proxy list align issue
-- Add cloudflare speed test entrance in tools list
+- Fixed profile item menu focus issue on TV devices.
+- Updated profile editor library version.
+- Added detection for TLS handshake failure due to Client/Server time mismatch.
+- Added toolbar divider.
+- Updated handler UI for bottom sheet.
+- Always show labels in bottom navigation bar.
+- Supported using editor to view external resource content (policy path/rule set/domain set).
+- Fixed VPN time ticker running when VPN is not started.
+- Updated UI details for Android TV devices.
+- Fixed duplicated notification actions.
+- Fixed proxy list alignment issue.
+- Added Cloudflare speed test entrance in tools list.
 
 ### 2.19.2
 
-- Improve trojan/vmess uri compatibility
-- Fix UI overlay issue
-- Upload bypass vpn setting description for better understanding
-- Fix Android TV speed test icon not focusable
-- Bug fixed
+- Improved Trojan/VMess URI compatibility.
+- Fixed UI overlay issue.
+- Uploaded bypass VPN setting description for better understanding.
+- Fixed Android TV speed test icon focus issue.
+- Bug fixes.
 
 ### 2.19.1
 
-- Add batch update profiles support
-- Add pin profiles support
-- Add back bypass vpn toggle setting
-- Support display network error info when import profile failed due to fetch external resource failure
-- Bug fixed
-- Fix some translation
+- Added support for batch updating profiles.
+- Added support for pinning profiles.
+- Re-added bypass VPN toggle setting.
+- Supported displaying network error info when import profile failed due to external resource failure.
+- Bug fixes.
+- Fixed some translations.
 
 ### 2.19.0
 
-- Fix fd leak causeb by IPC protect
-- Fix OOM caused by editor
-- Enlarge proxy list item maximum width
-- Bypass list support case-insensitive search
-- Support detect multiple proxies with the same name but not equals to each other
-- Bug fixed
-- Update translation
+- Fixed FD leak caused by IPC protect.
+- Fixed OOM caused by editor.
+- Enlarged proxy list item maximum width.
+- Bypass list supports case-insensitive search.
+- Supported detecting multiple proxies with the same name but different content.
+- Bug fixes.
+- Updated translations.
 
 ### 2.18.8
 
-- Fix Android 13+ issue introduce in 2.18.7
+- Fixed Android 13+ issue introduced in 2.18.7.
 
 ### 2.18.7
 
-- Support test-timeout param
-- DomainSet use binary search list instead of hashMap, search speed will be slower, but memory consumption will also be lower
-- Apply some skip-proxy rules on tun interface on Android 13+
-- Re-enable recent request entrance
-- Fix some ui issue on 7 inch tablet
-- Bug fixed
-- Fix ss proxy server domain not query through DOH
-- Fix DNS query log error
+- Supported `test-timeout` parameter.
+- DomainSet uses binary search list instead of HashMap; search speed is slower, but memory consumption is lower.
+- Applied some `skip-proxy` rules on TUN interface on Android 13+.
+- Re-enabled recent request entrance.
+- Fixed UI issues on 7-inch tablets.
+- Bug fixes.
+- Fixed SS proxy server domain not querying through DoH.
+- Fixed DNS query log error.
 
 ### 2.18.6
 
-- Bug fixed
+- Bug fixes.
 
 ### 2.18.5
 
-- Fix TCP KeepAlive toggle not working
-- Add session id in logcat
-- Update translation
-- Improve profile import
+- Fixed TCP KeepAlive toggle not working.
+- Added session ID in logcat.
+- Updated translations.
+- Improved profile import.
 
 ### 2.18.4
 
-- `include-all-proxies` now will include all proxies in `[Proxy]` and `[Proxy Group]`, including external proxies
-- Add TCP keep alive toggle for proxy in settings
-- Display last exit reason in developer options ui
-- Catch profile decode exception instead of returning success
-- Reduce APK size
-- Bug fixed
+- `include-all-proxies` now includes all proxies in `[Proxy]` and `[Proxy Group]`, including external proxies.
+- Added TCP keep-alive toggle for proxies in settings.
+- Displayed last exit reason in developer options UI.
+- Caught profile decode exception instead of returning success.
+- Reduced APK size.
+- Bug fixes.
 
 ### 2.18.3
 
-- Improve embedded profile editor performance on huge profile
-- Fix crash
-- Update translation
+- Improved embedded profile editor performance on huge profiles.
+- Fixed crashes.
+- Updated translations.
 
 ### 2.18.2
 
-- Support share profile via qrcode
-- Dashboard ui support dynamic column size, add back NavigationRailView
-- Try to fix 'too many open files' issue
-- Add fd count display in developer options ui
-- Reduce APK size
-- Support unofficial allowInsecure param in trojan uri
-- Bug fixed
+- Supported sharing profile via QRCode.
+- Dashboard UI supports dynamic column size; added back NavigationRailView.
+- Attempted to fix 'too many open files' issue.
+- Added FD count display in developer options UI.
+- Reduced APK size.
+- Supported unofficial `allowInsecure` parameter in Trojan URI.
+- Bug fixes.
 
 ### 2.18.1
 
-- Fix STUN NAT
-- Update translation
-- Bug fixed
+- Fixed STUN NAT.
+- Updated translations.
+- Bug fixes.
 
 ### 2.18.0
 
-- Support UTLS
-- Support bypass config import/export
+- Supported UTLS.
+- Supported bypass config import/export.
 
 ### 2.17.6
 
-- Modify some setting entrance
-- Bug fixed
+- Modified some setting entrances.
+- Bug fixes.
 
 ### 2.17.5
 
-- Bug fixed
+- Bug fixes.
 
 ### 2.17.4
 
-- Fix no network sometime switch from mobile to wifi
-- Fix ProxyGroup tabs scrolling issue introduced in 2.17.3
-- Rerun url-test/fallback group speedometer when network changed
-- Improve save profile error message display
-- Fix speedometer direct test failed
-- Bug fixed
-- Update translation
+- Fixed issue where network sometimes did not switch from mobile to WiFi.
+- Fixed ProxyGroup tabs scrolling issue introduced in 2.17.3.
+- Reruns url-test/fallback group speedometer when network changes.
+- Improved save profile error message display.
+- Fixed speedometer direct test failure.
+- Bug fixes.
+- Updated translations.
 
 ### 2.17.3
 
-- Rewrite speedometer module
-  - Support synchronize test result between different tabs
-  - Support sort by default/delay/name
-  - Support auto sort after test finished
+- Rewrote speedometer module.
+  - Supports synchronizing test results between different tabs.
+  - Supports sorting by default/delay/name.
+  - Supports auto-sorting after test finishes.
 
 ### 2.17.2
 
-- Support `fallback` group type
-- Improve Android TV experience
-- Update translation
-- Bug fixed
+- Supported `fallback` group type.
+- Improved Android TV experience.
+- Updated translations.
+- Bug fixes.
 
 ### 2.17.1
 
-- Support `include-all-proxies` standard in proxy group
-- Improve UI compatibility with Samsung tablet sidebar
-- Improve UI compatibility with Android 13 foldable phone bottom bar
-- Add bottomBar support in profile editor
-- Bug fixed
+- Supported `include-all-proxies` standard in proxy group.
+- Improved UI compatibility with Samsung tablet sidebar.
+- Improved UI compatibility with Android 13 foldable phone bottom bar.
+- Added bottomBar support in profile editor.
+- Bug fixes.
 
 ### 2.17.0
 
-- Dashboard: now you can long press to hide card, or toggle card visibility in the top right menu
-- Add public ip visibility toggle animation
-- Update some displayed text
-- Remove some profile url format checking for better compatibility
+- Dashboard: Long press to hide card, or toggle card visibility in the top right menu.
+- Added public IP visibility toggle animation.
+- Updated some displayed text.
+- Removed some profile URL format checks for better compatibility.
 
 ### 2.16.5
 
-- Fix OOM issue cause by doh function
-- Adapt to Android 13 per-app language settings
-- Fix empty local proxy card issue
-- Add OOM monitor debug function
-- Make panel dialog content url and email clickable
-- Reduce apk size
-- Disable hide vpn notification setting on MIUI
-- Support click sshdump bar in dashboard to open vpn settings
+- Fixed OOM issue caused by DoH function.
+- Adapted to Android 13 per-app language settings.
+- Fixed empty local proxy card issue.
+- Added OOM monitor debug function.
+- Made panel dialog content URL and email clickable.
+- Reduced APK size.
+- Disabled "Hide VPN notification" setting on MIUI.
+- Supported clicking sshdump bar in dashboard to open VPN settings.
 
 ### 2.16.4
 
-- Fix some oom issue
-- Fix speed curve frozen when speed is zero
-- Update translation
-- Update embedded geoip library
-- Display LAN ip in local ip card ui
-- Respect ruleSet/domainSet sequence
+- Fixed some OOM issues.
+- Fixed speed curve freezing when speed is zero.
+- Updated translations.
+- Updated embedded GeoIP library.
+- Displayed LAN IP in local IP card UI.
+- Respected ruleSet/domainSet sequence.
 
 ### 2.16.3
 
-- Bug fixed
-- Add vmess username format validate
-- Update switch preference ui
+- Bug fixes.
+- Added VMess username format validation.
+- Updated switch preference UI.
 
 ### 2.16.2
 
-- Add profile sub menu support
-- Bug fixed
-- Adapt to Android 13 excludeRoute method
-- Add so library missing detect
-- Reduce suffix domain rule memory usage
-- Fix miui gesture bar color
-- Support long press ip card to copy ip
-- Update translation
+- Added profile sub-menu support.
+- Bug fixes.
+- Adapted to Android 13 `excludeRoute` method.
+- Added SO library missing detection.
+- Reduced suffix domain rule memory usage.
+- Fixed MIUI gesture bar color.
+- Supported long-press on IP card to copy IP.
+- Updated translations.
 
 ### 2.16.1
 
-- Support [panel](https://getsurfboard.com/docs/profile-format/panel/static)
-- Fix shadowsocks protocol crash issue
+- Supported [panel](https://getsurfboard.com/docs/profile-format/panel/static).
+- Fixed Shadowsocks protocol crash issue.
 
 ### 2.16.0
 
-- Fix connection count issue
-- Adapt to Android 13 notification permission request
-- Update start when boot logic
+- Fixed connection count issue.
+- Adapted to Android 13 notification permission request.
+- Updated "Start on Boot" logic.
 
 ### 2.15.3
 
-- Fix some memory leak issues
-- Fix bugs
+- Fixed some memory leak issues.
+- Fixed bugs.
 
 ### 2.15.2
 
-- Try fix connection count issue by not using protect api
-- Add unsupported YAML format profile detection
-- Compatible with number value with unit suffix in profile content
-- Bug fixed
-- Update translation
+- Tried to fix connection count issue by not using protect API.
+- Added unsupported YAML format profile detection.
+- Compatible with number values with unit suffixes in profile content.
+- Bug fixes.
+- Updated translations.
 
 ### 2.15.1
 
-- Display native process memory consumption in developer ui
-- Add Nintendo Switch media import support(Android 10+)
-- Update shortcut icon shape
-- Move sshdump into vpn setting
-- Update translation
-- Bugfix
+- Displayed native process memory consumption in developer UI.
+- Added Nintendo Switch media import support (Android 10+).
+- Updated shortcut icon shape.
+- Moved sshdump into VPN settings.
+- Updated translations.
+- Bug fixes.
 
 ### 2.15.0
 
-- Add new traffic list ui
-- Support websocket in trojan protocol
-- Revert to previous dark icon
+- Added new traffic list UI.
+- Supported websocket in Trojan protocol.
+- Reverted to previous dark icon.
 
 ### 2.14.0
 
-- Reduce VPN CPU usage
-- Add more notification settings
-- Add recommend doh server list
-- Add export log in tool list
-- Update embedded geoip library
-- Add document entry in external resources ui
-- Update translation
+- Reduced VPN CPU usage.
+- Added more notification settings.
+- Added recommended DoH server list.
+- Added export log in tool list.
+- Updated embedded GeoIP library.
+- Added document entry in external resources UI.
+- Updated translations.
 
 ### 2.13.4
 
-- Fix tile not working on color os
-- Hide VPN notification badge icon
-- Fix timeout when applying 'force-remote-dns' on direct rule domain
-- Support decode 'persistent' param in load balanced group
+- Fixed tile not working on ColorOS.
+- Hidden VPN notification badge icon.
+- Fixed timeout when applying 'force-remote-dns' on direct rule domain.
+- Supported decoding 'persistent' param in load-balanced group.
 
 ### 2.13.3
 
-- Add custom geoip database support
+- Added custom GeoIP database support.
 
 ### 2.13.2
 
-- Optimize DOMAIN-SET memory usage 
+- Optimized DOMAIN-SET memory usage.
 
 ### 2.13.1
 
-- Improve DOMAIN-SET performance
-- Improve proxy group ui performance
+- Improved DOMAIN-SET performance.
+- Improved proxy group UI performance.
 
 ### 2.13.0
 
-- Support DOMAIN-SET rule
-- Fix force-remote-dns setting not working for domain rules in RULE-SET
-- Add korean language support
+- Supported DOMAIN-SET rule.
+- Fixed force-remote-dns setting not working for domain rules in RULE-SET.
+- Added Korean language support.
 
 ### 2.12.6
 
-- update public ip batch fetch
-- support display flag emoji on public ip card
-- try to fix traffic loop is proxy host is ip format
-- better handle horizontal orientation
+- Updated public IP batch fetch.
+- Supported displaying flag emoji on public IP card.
+- Tried to fix traffic loop if proxy host is IP format.
+- Better handling of horizontal orientation.
 
 ### 2.12.5
 
-- Fix setting crash issue
+- Fixed setting crash issue.
 
 ### 2.12.4
 
-- Improve tablet ui
-- Bug fixed
+- Improved tablet UI.
+- Bug fixes.
 
 ### 2.12.3
 
-- Support load-balance proxy group
-- Process rule support wildcard match
-- Bug fixed
+- Supported load-balance proxy group.
+- Process rule supported wildcard matching.
+- Bug fixes.
 
 ### 2.12.2
 
-- Move google api checking to tools list
-- Update tools list ui
+- Moved Google API checking to tools list.
+- Updated tools list UI.
 
 ### 2.12.1
 
-- Fix google api availability checking crash
+- Fixed Google API availability checking crash.
 
 ### 2.12.0
 
-- Add google api availability checking
-- Add invalid managed config url faq entrance
-- Disable sshdump on android 7 and lower
-- Support dynamic change ui translation on the fly
+- Added Google API availability checking.
+- Added invalid managed config URL FAQ entrance.
+- Disabled sshdump on Android 7 and lower.
+- Supported dynamic UI translation changes on the fly.
 
 ### 2.11.4
 
-- Add GMS QRCode scanner support
-- Improve dns ip display outside mainland China
-- Fix public ip display issue
-- Update profile menu item sequence
-- Fix DoH server verify exception
-- Add Android TV App entrance(still using mobile ui)
-- Add private ip card in dashboard
-- Update GEOIP library
-- Add more theme support
+- Added GMS QRCode scanner support.
+- Improved DNS IP display outside mainland China.
+- Fixed public IP display issue.
+- Updated profile menu item sequence.
+- Fixed DoH server verification exception.
+- Added Android TV App entrance (still using mobile UI).
+- Added private IP card in dashboard.
+- Updated GeoIP library.
+- Added more theme support.
 
 ### 2.11.3
 
-- Support drag and drop feature in profile list ui
-- Add wireshark sshdump support in tools list
-- Add DnsPod DoH server in embedded profile template
-- Bug fixed
+- Supported drag and drop feature in profile list UI.
+- Added Wireshark sshdump support in tools list.
+- Added DnsPod DoH server in embedded profile template.
+- Bug fixes.
 
 ### 2.11.2
 
-- Bring better wildcard match for skip-proxy, always-real-ip and host rule
-- Add vpn toggle toast
-- Improve public ip api usability
-- Change editor newline symbol for better compatibility
-- Fix theme setting crash on lower version devies
-- Fix change theme not working on lower version devices
-- Fix self traffic handle error
+- Better wildcard match for `skip-proxy`, `always-real-ip`, and host rules.
+- Added VPN toggle toast.
+- Improved public IP API usability.
+- Changed editor newline symbol for better compatibility.
+- Fixed theme setting crash on lower version devices.
+- Fixed change theme not working on lower version devices.
+- Fixed self-traffic handle error.
 
 ### 2.11.1
 
-- Add allowing bypass VPN setting
-- Disable text highlight in embedded profile editor to improve performance
-- New theme setting ui, support devices lower than Android 12
-- Bug fixed
-- Update translation
+- Added allowing bypass VPN setting.
+- Disabled text highlight in embedded profile editor to improve performance.
+- New theme setting UI; supports devices lower than Android 12.
+- Bug fixes.
+- Updated translations.
 
 ### 2.11.0
 
-- Support change theme palette(If you have better color recommended, please contact me)
-- Support override [doh-server](https://getsurfboard.com/docs/profile-format/general/doh_server) config in setting
-- Improve VPN start speed when using huge profile
-- Support toggle offline/disabled app display in bypass app list
-- Fix fetch profile timeout if contains self url as policy path url
-- Improve recent requests list performance, support fast scroll
-- Update translation
+- Supported changing theme palette.
+- Supported overriding [doh-server](https://getsurfboard.com/docs/profile-format/general/doh_server) config in settings.
+- Improved VPN start speed when using huge profiles.
+- Supported toggling offline/disabled app display in bypass app list.
+- Fixed fetch profile timeout if it contains self URL as policy path URL.
+- Improved recent requests list performance; supports fast scroll.
+- Updated translations.
 
 ### 2.10.2
 
-- Change default vmess-aead value to true
+- Changed default `vmess-aead` value to true.
 
 ### 2.10.1
 
-- Support profile url as policy path url
-- Fix profile editor save failed still show as success
-- Fix network unavailable if use global outbound with zero proxies profile
-- Remove override vmess aead setting, please use [vmess-aead](/docs/profile-format/proxy/external-proxy/vmess) in profile instead 
-- Change profile list sort to natural order
-- Add more protocol recognize in logcat and recent requests
-- Update translation
+- Supported profile URL as policy path URL.
+- Fixed profile editor save failed still showing as success.
+- Fixed network unavailable if using global outbound with zero proxies profile.
+- Removed override `vmess-aead` setting; please use [vmess-aead](/docs/profile-format/proxy/external-proxy/vmess) in profile instead.
+- Changed profile list sort to natural order.
+- Added more protocol recognition in logcat and recent requests.
+- Updated translations.
 
 ### 2.10.0
 
-- Add `doh-server` support
-- Add fcm diagnostics entrance in developer options
-- Update translation
+- Added `doh-server` support.
+- Added FCM diagnostics entrance in developer options.
+- Updated translations.
 
 ### 2.9.12
 
-- Fix public ip card random crash issue
-- Fix devices without camera can not install issue
+- Fixed public IP card random crash issue.
+- Fixed installation issue on devices without a camera.
 
 ### 2.9.11
 
-- Use mlkit qrcode scanning instead of zxing
-- Add Developer Options UI
-  - Support viewing memory usage, trigger garbage collect and export memory snapshot
-  - Support exporting log file
-- Unify browser open method
-- Add translate contributor list
-- Update translation
-- Fix some vmess uri import failed
-- Support HTTP 301 in external resource management
-- Support Android 13 themed app icon
+- Used MLKit QRCode scanning instead of ZXing.
+- Added Developer Options UI:
+  - Support viewing memory usage, triggering garbage collection, and exporting memory snapshots.
+  - Support exporting log files.
+- Unified browser open method.
+- Added translator contributor list.
+- Updated translations.
+- Fixed some VMess URI import failures.
+- Supported HTTP 301 in external resource management.
+- Supported Android 13 themed app icons.
 
 ### 2.9.10
 
-- Support override `http-listen` and `socks5-listen` in profiles
-- Support HTTP 30X redirection when fetching external resource
+- Supported overriding `http-listen` and `socks5-listen` in profiles.
+- Supported HTTP 30X redirection when fetching external resources.
 
 ### 2.9.9
 
-- Fix SS url base64 decode error
-- Add Google Play AAB support
-- Use online sponsor page
-- Update translation
-- Bug fixed
+- Fixed SS URL Base64 decode error.
+- Added Google Play AAB support.
+- Used online sponsor page.
+- Updated translations.
+- Bug fixes.
 
 ### 2.9.8
 
-- Bug fixed
+- Bug fixes.
 
 ### 2.9.7
 
-- Add `udp-policy-not-supported-behaviour` support
-- Rewrite external resource manager
+- Added `udp-policy-not-supported-behaviour` support.
+- Rewrote external resource manager.
 
 ### 2.9.6
 
-- Profile editor: performance improve, add more highlight support
-- add `internet-test-url` support
-- Compatible with vmess proxy whose ws header value wrapped with quotes
-- Update translation
+- Profile editor: Performance improvements, added more highlight support.
+- Added `internet-test-url` support.
+- Compatible with VMess proxies whose WS header value is wrapped with quotes.
+- Updated translations.
 
 ### 2.9.5
 
-- Add traffic statistics card in dashboard(only count a single session)
-- Add traffic statistics mode in setting, affect notifications, traffic card 
-- Toggle notification tile without closing panel
-- Support Google Play In App Update
-- Update libuv to 1.44.1
-- Update translation
+- Added traffic statistics card in dashboard (counts only a single session).
+- Added traffic statistics mode in settings; affects notifications and traffic card.
+- Toggling notification tile without closing panel.
+- Supported Google Play In-App Update.
+- Updated libuv to 1.44.1.
+- Updated translations.
 
 ### 2.9.4
 
-- Add AppCenter & breakpad
-- Revert outbound UI
-- Add new manual entrance
-- Change public ip fetching api
-- Update translation
+- Added AppCenter & Breakpad.
+- Reverted outbound UI.
+- Added new manual entrance.
+- Changed public IP fetching API.
+- Updated translations.
 
 ### 2.9.3
 
-- Fix local proxy address in use crash
-- Update outbound mode card UI
-- Fix crash when upgrade from v1.2.4
+- Fixed crash when local proxy address is in use.
+- Updated outbound mode card UI.
+- Fixed crash when upgrading from v1.2.4.
 
 ### 2.9.2
 
-- Add local proxy support: http and socks5
-- Update dashboard UI
-- Enable lan traffic filter setting
+- Added local proxy support: HTTP and SOCKS5.
+- Updated dashboard UI.
+- Enabled LAN traffic filter setting.
 
 ### 2.9.1
 
-- Refetch public ip info when changing outbound mode
-- Fix change global proxy not update public ip info
-- Fix crash cause by vpn quick start twice
-- Fix crash when viewing huge ruleSet/policyPath list
-- Add ChangeLog dialog when click version code
-- Fix random GEOIP crash on Android 5/6
-- Add sponsors list
+- Refetched public IP info when changing outbound mode.
+- Fixed issue where changing global proxy did not update public IP info.
+- Fixed crash caused by VPN quick starting twice.
+- Fixed crash when viewing huge ruleSet/policyPath lists.
+- Added ChangeLog dialog when clicking version code.
+- Fixed random GeoIP crash on Android 5/6.
+- Added sponsors list.
 
 ### 2.9.0
 
-- Add DNS poisoning auto fix support
-- Fix tile not working on some devices
-- Small UI change
-- Bug fixed
+- Added auto-fix for DNS poisoning.
+- Fixed tile not working on some devices.
+- Small UI changes.
+- Bug fixes.
 
 ### 2.8.9
 
-- Fix profile serializable crash
-- Remove flurry
-- Use Crashlytics instead of Sentry
+- Fixed profile serializable crash.
+- Removed Flurry.
+- Used Crashlytics instead of Sentry.
 
 ### 2.8.8
 
-- Update translation
-- Fix splash screen top left corner frame
-- Optimize memory usage cause by huge profile/ruleSet/policyPath
-- Add quick change proxygroup selection ui
-- Improve editor launch performance
-- Add update profiles after vpn established toggle in settings
-- Bug fixed
+- Updated translations.
+- Fixed splash screen top-left corner frame.
+- Optimized memory usage caused by huge profile/ruleSet/policyPath.
+- Added quick change proxy group selection UI.
+- Improved editor launch performance.
+- Added setting to update profiles after VPN established.
+- Bug fixes.
 
 ### 2.8.7
 
-- Avoid open vpn cause adb wifi reconnect
-- Update all profiles after vpn started
-- Fix crash
-- Update translation
+- Avoided opening VPN causing ADB WiFi reconnect.
+- Updated all profiles after VPN started.
+- Fixed crash.
+- Updated translations.
 
 ### 2.8.6
 
-- Update translation
-- Bug fixed
+- Updated translations.
+- Bug fixes.
 
 ### 2.8.5
 
-- Add app shortcut support
-- Add deeplink support:
-- surfboard:///toggle
-- surfboard:///start
-- surfboard:///stop
-- surfboard:///install-config?url=[encoded_profile_url]
-- Bypass config support batch operation
-- Support setting to use external editor
-- Fix manually update profile no refresh last modified time
-- Add change language animation
+- Added app shortcut support.
+- Added Deeplink support:
+  - `surfboard:///toggle`
+  - `surfboard:///start`
+  - `surfboard:///stop`
+  - `surfboard:///install-config?url=[encoded_profile_url]`
+- Bypass config supports batch operations.
+- Supported setting to use external editor.
+- Fixed manual profile update not refreshing last modified time.
+- Added change language animation.
 
 ### 2.8.4
 
-- add more transition animation
-- make language change take effect without restart
-- update editor font
-- fix navigationbar overlay issue in some ui
-- update translation
-- bug fixed
+- Added more transition animations.
+- Language changes take effect without restart.
+- Updated editor font.
+- Fixed navigation bar overlay issue in some UIs.
+- Updated translations.
+- Bug fixes.
 
 ### 2.8.3
 
-- editor support some emacs key map: Ctrl + [Shift] + N/P/F/B/A/E
-- proxy list support scroll to selected proxy
-- update translation
-- fix menu item repeat issue
+- Editor supports some Emacs key maps: Ctrl + [Shift] + N/P/F/B/A/E.
+- Proxy list supports scrolling to selected proxy.
+- Updated translations.
+- Fixed menu item repeat issue.
 
 ### 2.8.2
 
-- Profile Editor
-
-    - Add highlight support
-    - Add redo/undo support
-    - Add new empty profile support
+- Profile Editor:
+    - Added highlight support.
+    - Added redo/undo support.
+    - Added new empty profile support.
 
 ### 2.8.1
 
-- Support embeded editor
-- Small UI change
+- Supported embedded editor.
+- Small UI changes.
 
 ### 2.8.0
 
-- Material Design 3
-- This version may be buggy and won't be release on Google Play until stable. Use on your own risk.
+- Material Design 3.
+- This version may be buggy and won't be released on Google Play until stable. Use at your own risk.
 
 ### 2.7.9
 
-- Bug fixed
+- Bug fixes.
 
 ### 2.7.8
 
-- Multiple proxy import now only support dividing with newline, space and vertical bar no longer supported
-- Update vietnamese translation
-- Fix crash
+- Multiple proxy import now only supports dividing with newline; space and vertical bar are no longer supported.
+- Updated Vietnamese translation.
+- Fixed crash.
 
 ### 2.7.7
 
-- Rewrite webdav synchronize module
-- Show profile update option even managed config url is invalid
-- Change vmess/trojan proxy default udp-relay value to false
-- Fix crash when updating invalid profile
-- Fix vmess uri compatibility
-- Bug fixed
+- Rewrote WebDAV synchronization module.
+- Show profile update option even if managed config URL is invalid.
+- Changed VMess/Trojan proxy default `udp-relay` value to false.
+- Fixed crash when updating invalid profiles.
+- Fixed VMess URI compatibility.
+- Bug fixes.
 
 ### 2.7.6
 
-- Remove direct/reject proxy in global proxy group
-- Clone profile as editable profile with managed config removed
-- Exclude unsupported proxy uri (like vless://xxx) when importing
-- Change default proxy column size to middle
+- Removed Direct/Reject proxy in global proxy group.
+- Cloned profile as editable profile with managed config removed.
+- Excluded unsupported proxy URIs (like `vless://xxx`) when importing.
+- Changed default proxy column size to middle.
 
 ### 2.7.5
 
-- Fix SAF editing not trigger profile list refresh
-- Bug fixed.
+- Fixed SAF editing not triggering profile list refresh.
+- Bug fixes.
 
 ### 2.7.4
 
-- Support vmess-aead param in vmess proxy config.
-- Add DoH detect.
-- Bug fixed.
-- Use vmess-aead param to define per-proxy AEAD setting, if param not defined in the profile, default value in the settings will be used.
-- For profile format detail, please check the sample profile in the top right corner of profile list.
+- Supported `vmess-aead` parameter in VMess proxy config.
+- Added DoH detection.
+- Bug fixes.
+- Use `vmess-aead` parameter to define per-proxy AEAD setting; if not defined, the default value in settings will be used.
+- For profile format details, please check the sample profile in the top right corner of the profile list.
 
 ### 2.7.3
 
-- Support Always-ON-VPN setting
-- Generate new profile name when reimporting existed profile
-- Improve ICMP/UDP traffic handle efficiency when using profile with tons of rules
-- Support hiding system apps in bypass config
-- Prompt restart VPN after bypass config changed
-- Add disable notification checking in settings
-- Fix active count flicking issue
-- Enable force-remote-dns by default
-- New profile update strategy
+- Supported Always-ON-VPN setting.
+- Generated new profile name when re-importing existing profile.
+- Improved ICMP/UDP traffic handling efficiency when using profiles with many rules.
+- Supported hiding system apps in bypass config.
+- Prompted to restart VPN after bypass config changed.
+- Added disable notification checking in settings.
+- Fixed active count flickering issue.
+- Enabled `force-remote-dns` by default.
+- New profile update strategy.
 
 ### 2.7.2
 
-- Support always-real-ip
-- Support decoding sni param and proxy name from trojan uri
-- Enable udp-relay in vmess/trojan proxy by default
-- Block DoT traffic by default
-- Update all profile when app launch
-- Support decoding internal.example.com = server:syslib in [Host] section
-- Support domain suffix in skip-proxy config
-- Improve import profile error prompt
-- Add always-real-ip = stun.l.google.com in [General] section to fix Google Voice Dialing issue, proxy must support relaying UDP traffic.
+- Supported `always-real-ip`.
+- Supported decoding SNI parameter and proxy name from Trojan URI.
+- Enabled `udp-relay` in VMess/Trojan proxy by default.
+- Blocked DoT traffic by default.
+- Updates all profiles when app launches.
+- Supported decoding `internal.example.com = server:syslib` in `[Host]` section.
+- Supported domain suffix in `skip-proxy` config.
+- Improved import profile error prompts.
+- Added `always-real-ip = stun.l.google.com` in `[General]` section to fix Google Voice dialing issue; proxy must support relaying UDP traffic.
 
 ### 2.7.1
 
-- Keep proxy order from proxygroup which contains policy path and normal proxies
-- Update translation
-- Bug fixed
+- Kept proxy order from proxy group which contains policy path and normal proxies.
+- Updated translations.
+- Bug fixes.
 
 ### 2.7.0
 
-- Improve profile name guessing when import from url
-- Fix rule count error when include multiple ruleset with same source
-- Remove disk cache when removing external resource
-- Fix ip type trojan proxy import issue
+- Improved profile name guessing when imported from URL.
+- Fixed rule count error when including multiple rulesets with the same source.
+- Removed disk cache when removing external resource.
+- Fixed IP type Trojan proxy import issue.
 
 ### 2.6.9
 
-- Improve huge profile compatibility
-- Improve TLS proxy compatibility
-- Improve profile decode speed
-- Treat REJECT-TINYGIF as REJECT rule (due to android not support MITM)
-- Add Surge manual entrance in tools tab
+- Improved huge profile compatibility.
+- Improved TLS proxy compatibility.
+- Improved profile decode speed.
+- Treated `REJECT-TINYGIF` as `REJECT` rule (due to Android not supporting MITM).
+- Added Surge manual entrance in tools tab.
 
 ### 2.6.8
 
-- Fix global group sequence not follow the profile content
-- Fix network speed display issue on 32bit devices
-- Reset all tcp connection when changing outbounds mode
-- Fix proxy count error in some policy path profiles
-- Fix some crashing when upgrade from GP version
-- Bug fixed
+- Fixed global group sequence not following profile content.
+- Fixed network speed display issue on 32-bit devices.
+- Reset all TCP connections when changing outbound mode.
+- Fixed proxy count error in some policy path profiles.
+- Fixed some crashes when upgrading from GP version.
+- Bug fixes.
 
 ### 2.6.7
 
-- Fix ruleSet/policyPath too huge cause crashing
-- Fix network error cause crashing
-- Fix custom uri scheme not working
+- Fixed ruleSet/policyPath too huge causing crashes.
+- Fixed network error causing crashes.
+- Fixed custom URI scheme not working.
 
 ### 2.6.6
 
-- Allow display invalid profiles, now you are free to delete or modify them
-- Change external resource manager entrance to lower location
-- Use force-remote-dns in global outbound mode by default
-- Cache dns cache when toggle vpn, change outbound mode and change proxy group selection
-- Support batch delete unused external resources
-- Bug fixed
+- Allowed displaying invalid profiles; you are free to delete or modify them.
+- Moved external resource manager entrance to a lower location.
+- Used `force-remote-dns` in global outbound mode by default.
+- Cached DNS cache when toggling VPN, changing outbound mode, and changing proxy group selection.
+- Supported batch deleting unused external resources.
+- Bug fixes.
 
 ### 2.6.5
 
-- Add external resources manage ui
-- Speed up notification bar tile toggle initial time
-- Use https://github.com/Loyalsoldier/geoip as embedded geoip library
-- Update url format validator
-- Bug fixed
+- Added external resources manage UI.
+- Speeded up notification bar tile toggle initial time.
+- Used https://github.com/Loyalsoldier/geoip as embedded GeoIP library.
+- Updated URL format validator.
+- Bug fixes.
 
 ### 2.6.4
 
-- Add Force remote dns toggle in settings
-- Scroll to new position when clone/rename profile
-- Check invalid vmess url format
-- Bug fixed
+- Added "Force remote dns" toggle in settings.
+- Scrolls to new position when cloning/renaming profile.
+- Checked invalid VMess URL format.
+- Bug fixes.
 
 ### 2.6.3
 
-- Add 'NEW' badge for new profile
-- Use FINAL rule to fetch public IP info if FINAL rule defined
-- ICMP: return fake ICMP reply if match FORWARD policy, return dest unreachable if match REJECT policy
-- Print debug info in logcat if click connection count card when VPN is opened
-- Little UI update
+- Added 'NEW' badge for new profiles.
+- Uses `FINAL` rule to fetch public IP info if `FINAL` rule is defined.
+- ICMP: return fake ICMP reply if matching FORWARD policy; return dest unreachable if matching REJECT policy.
+- Print debug info in logcat if clicking connection count card when VPN is opened.
+- Minor UI updates.
 
 ### 2.6.1
 
-- Traffic with not supported proto will be reject by default
-- UDP reject will be handled by return ICMP port unreachable by default
-- Warning invalid profile url when importing profile
-- Fix some connection count issue
-- Add more restart vpn prompt
-- Hide network speed statusbar icon toggle on MIUI devices
-- Bug fixed
+- Traffic with unsupported protocols will be rejected by default.
+- UDP reject will be handled by returning ICMP port unreachable by default.
+- Warned about invalid profile URLs when importing.
+- Fixed some connection count issues.
+- Added more restart VPN prompts.
+- Hidden network speed status bar icon toggle on MIUI devices.
+- Bug fixes.
 
 ### 2.6.0
 
-- fix crash
-- Support disable logcat output in settings
+- Fixed crash.
+- Supported disabling logcat output in settings.
 
 ### 2.5.9
 
-- Fix some memory/connection leak issue
+- Fixed some memory/connection leak issues.
 
 ### 2.5.8
 
-- Fix vmess/netflix compatibility issue cause by ipv6
-- Fix crashes
-- Print warning log when reject traffic
-- Support scan ss/vmess/trojan/http/https/surfboard/surge/surge3 format qrcode
+- Fixed VMess/Netflix compatibility issue caused by IPv6.
+- Fixed crashes.
+- Printed warning log when rejecting traffic.
+- Supported scanning ss/vmess/trojan/http/https/surfboard/surge/surge3 format QRCodes.
 
 ### 2.5.7
 
-- Fix crashes
-- Improve vmess websocket compatibility
-- Update persian language
+- Fixed crashes.
+- Improved VMess websocket compatibility.
+- Updated Persian language.
 
 ### 2.5.6
 
-- Fix speedtest issue
-- Bug fixed
+- Fixed speedtest issue.
+- Bug fixes.
 
 ### 2.5.5
 
-- update persian language
-- fix telegram using direct rule issue
+- Updated Persian language.
+- Fixed Telegram using direct rule issue.
 
 ### 2.5.4
 
-- Fix auto group speed test not working
-- Reset all existed tcp connection when change proxy group selection
-- Avoid forward proxy traffic dead lock
-- Fix crash cause by long file name
+- Fixed auto group speed test not working.
+- Reset all existing TCP connections when changing proxy group selection.
+- Avoided forward proxy traffic deadlock.
+- Fixed crash caused by long filenames.
 
 ### 2.5.3
 
-- Fix speed test issue
-- Support basic auth in profile url
+- Fixed speed test issue.
+- Supported Basic Auth in profile URL.
 
 ### 2.5.2
 
-- Fix speedtest issue
+- Fixed speed test issue.
 
 ### 2.5.1
 
-- Fix speed test not stable issue
-- Fix fetching public IP error when use with other VPN
-- Add VMESS AEAD hint when first use
-- Add warning when new profile subscribe url is from localhost
+- Fixed speed test instability.
+- Fixed fetching public IP error when used with other VPNs.
+- Added VMess AEAD hint when first used.
+- Added warning when new profile subscribe URL is from localhost.
 
 ### 2.5.0
 
-- Fix WebDAV synchronize issue with box.com
-- Update dashboard UI
-- Update maxmind geoip2lite library
-- Bug fixed
+- Fixed WebDAV synchronization issue with box.com.
+- Updated dashboard UI.
+- Updated MaxMind GeoIP2Lite library.
+- Bug fixes.
 
 ### 2.4.9
 
-- Add WebDAV synchronize support
-- Fix crash when restart VPN after rename profile
-- Fix fetch ip info failed after VPN established
-- Improve save profile speed
-- Fix update profile last modify time no changing
+- Added WebDAV synchronization support.
+- Fixed crash when restarting VPN after renaming profile.
+- Fixed fetching IP info failure after VPN established.
+- Improved save profile speed.
+- Fixed update profile last modified time not changing.
 
 ### 2.4.8
 
-- Improve ui compatibility with tablet devices
-- Add network speed display on status bar icon
-- Add Public IP visibility toggle
-- Prompt to restart VPN when selecting profile
-- Bug fixed
+- Improved UI compatibility with tablet devices.
+- Added network speed display on status bar icon.
+- Added Public IP visibility toggle.
+- Prompted to restart VPN when selecting profile.
+- Bug fixes.
 
 ### 2.4.7
 
-- Fix profile import issue cause by policy-regex-filter
-- Improve profile name guess imported by url
-- Fix UI tab double click issue
-- Fix profile name contains slash cause crash
-- Update sample.conf
-- Bug fixed
+- Fixed profile import issue caused by `policy-regex-filter`.
+- Improved profile name guessing from URL.
+- Fixed UI tab double click issue.
+- Fixed profile name containing slash causing crash.
+- Updated sample.conf.
+- Bug fixes.
 
 ### 2.4.6
 
-- Bug fixed
+- Bug fixes.
 
 ### 2.4.5
 
-- Support policy-regex-filter and hidden in proxy group
-- Fix global outbound make network unavailable
-- Hide notification in lockscreen
-- Make VMESS AEAD disable by default
-- Update UI
-- Bug fixed
+- Supported `policy-regex-filter` and `hidden` in proxy group.
+- Fixed global outbound making network unavailable.
+- Hidden notification in lockscreen.
+- Made VMess AEAD disabled by default.
+- Updated UI.
+- Bug fixes.
 
 ### 2.4.4
 
-- Support udp-relay in socks5/shadowsocks/vmess/trojan proxy
-- Fix import vmess url failed if contains slash
-- Fix some crash issue
+- Supported `udp-relay` in socks5/shadowsocks/vmess/trojan proxy.
+- Fixed import VMess URL failure if it contains a slash.
+- Fixed some crash issues.
 
 ### 2.4.3
 
-- Improve traffic throughput
-- Update bypass apps ui, add search support
-- Fix ss proxy with domain cause stop VPN failed
-- Update UI
+- Improved traffic throughput.
+- Updated bypass apps UI, added search support.
+- Fixed SS proxy with domain causing stop VPN failure.
+- Updated UI.
 
 ### 2.4.2
 
-- Fix policy path issue
-- Add Indonesian support
-- Improve profile decode performance
-- Fix huge profile cause crash
-- Only use English app entrance name
+- Fixed policy path issue.
+- Added Indonesian support.
+- Improved profile decode performance.
+- Fixed huge profile causing crash.
+- Only used English app entrance name.
 
 ### 2.4.1
 
-- Fix gradle 7.0.1 cause R8 error
-- Update libuv/v2fly library
+- Fixed Gradle 7.0.1 causing R8 error.
+- Updated libuv/v2fly library.
 
 ### 2.4.0
-Fix socks5 proxy not working without authorization
-Add policy-path support
-Support surge3:///install-config?url=xxx
-Support enhanced mode domain rules
-Support decode http/socks5 proxy as TLS-based proxy
-Update GEOIP library
+
+- Fixed SOCKS5 proxy not working without authorization.
+- Added policy-path support.
+- Supported `surge3:///install-config?url=xxx`.
+- Supported enhanced mode domain rules.
+- Supported decoding http/socks5 proxy as TLS-based proxy.
+- Updated GeoIP library.
 
 ### 2.3.5
 
-- Fix some profile import issue, support more import format
-- Fix column size not synchronize between proxy group tabs
-- Fix notification click not working
-- Don't count speedometer into active tcp connection count
-- Change UI back to 4 tabs in main ui
+- Fixed some profile import issues; supported more import formats.
+- Fixed column size not synchronizing between proxy group tabs.
+- Fixed notification click not working.
+- Don't count speedometer into active TCP connection count.
+- Changed UI back to 4 tabs in main UI.
 
 ### 2.3.4
 
-- Add fuzzy search in recent requests ui
-- Update item ui in recent requests
-- Sort bypass app by toggle state
-- Support trojan:// proxy url
-- Support import multiple proxy url divided by space, vertical line and enter
-- Support switch app launcher title to english
-- Support proxy column size switch
+- Added fuzzy search in recent requests UI.
+- Updated item UI in recent requests.
+- Sort bypass apps by toggle state.
+- Supported `trojan://` proxy URL.
+- Supported importing multiple proxy URLs divided by space, vertical line, and enter.
+- Supported switching app launcher title to English.
+- Supported proxy column size switch.
 
 ### 2.3.3
 
-- Add active connection count display in dashboard
-- Support vmess:// and ss:// url
-- Add Profile FileProvider support
-- Add VMESS AEAD support settings
+- Added active connection count display in dashboard.
+- Supported `vmess://` and `ss://` URLs.
+- Added Profile FileProvider support.
+- Added VMess AEAD support settings.
 
 ### 2.3.2
 
-- Support vmess AEAD
-- Support long press to copy traffic info in recent request list
-- Fix update profile last modify time not changing
-- Fix profile modify not working
-- Update translation
+- Supported VMess AEAD.
+- Supported long press to copy traffic info in recent request list.
+- Fixed update profile last modified time not changing.
+- Fixed profile modify not working.
+- Updated translations.
 
 ### 2.3.1
 
-- Fix open vpn failed with rule-set profile
+- Fixed open VPN failure with rule-set profile.
 
 ### 2.3.0
 
-- Add skip-proxy config support
-- Fix change global proxy not working when VPN is on
-- Add direct proxy in global outbound mode
-- Add tools tab
-- Support custom dns server port in dns-server config
-- Support decode 1/0 as Boolean in profile
-- Fix long profile list selection duplicate issue
-- Bug fixed
+- Added `skip-proxy` config support.
+- Fixed change global proxy not working when VPN is on.
+- Added direct proxy in global outbound mode.
+- Added tools tab.
+- Supported custom DNS server port in `dns-server` config.
+- Supported decoding 1/0 as Boolean in profile.
+- Fixed long profile list selection duplicate issue.
+- Bug fixes.
 
 ### 2.2.1
 
-- Add skip TLS verify setting
-- Fix whitelist mode not working issue
+- Added skip TLS verify setting.
+- Fixed whitelist mode not working issue.
 
 ### 2.2.0
 
-- Add bypass config support
-- Reduce APK size
-- Add proxy_test_url support
-- Add profile sample in profile list menu
+- Added bypass config support.
+- Reduced APK size.
+- Added `proxy_test_url` support.
+- Added profile sample in profile list menu.
 
 ### 2.1.0
 
-- Add recent request support
-- Add profile viewer(not support editing yet)
-- Integrate QRCode scanner, not need to download zxing scanner
+- Added recent request support.
+- Added profile viewer (editing not supported yet).
+- Integrated QRCode scanner, no need to download ZXing scanner.
 
 ### 2.0.2
 
-- Update all locale app name to [Surfboard]
-- Fix crash issue on Android 7.0 and lower version
-- Update light theme UI, support switch theme in settings
-- Fix global outbound speed test not working
-- Fix crash when vmess proxy name boxed with double quote
-- Fix UI issue
+- Updated all locale app names to [Surfboard].
+- Fixed crash issue on Android 7.0 and lower versions.
+- Updated light theme UI, supported switching theme in settings.
+- Fixed global outbound speed test not working.
+- Fixed crash when VMess proxy name is boxed with double quotes.
+- Fixed UI issues.
 
 ### 0.9.19
 
-- Fix network metered issue on Android 10
-- Fix speed test issue
-- Allow fetching profile using current profile
-- Add test-timeout/internet-test-url/proxy-test-url support
-- Remember proxygroup toggle state
-- Avoid displaying toast when fetch toast failed
+- Fixed network metered issue on Android 10.
+- Fixed speed test issue.
+- Allowed fetching profile using current profile.
+- Added `test-timeout`/`internet-test-url`/`proxy-test-url` support.
+- Remembered proxy group toggle state.
+- Avoided displaying toast when fetch toast failed.
 
 ### 0.9.18
 
-- Rewrite tcp handler for better memory usage
-- Add proxygroup toggle function
-- Add Notification Channel Setting entrance
-- Bug fix
+- Rewrote TCP handler for better memory usage.
+- Added proxy group toggle function.
+- Added Notification Channel Setting entrance.
+- Bug fixes.
 
 ### 0.9.16
 
-- Fix ss tcp speedtest issue
-- Add Tile and app shortcut support
-- Fix email feedback crash
-- Update speedtest ui
-- Bugs fixed
+- Fixed SS TCP speedtest issue.
+- Added Tile and app shortcut support.
+- Fixed email feedback crash.
+- Updated speedtest UI.
+- Bugs fixed.
 
 ### 0.9.14
 
-- Improve throughput performance(Up to 300Mbps+)
-- Bugs fixed
+- Improved throughput performance (Up to 300Mbps+).
+- Bugs fixed.
 
 ### 0.9.13
 
-- Fix second launch crash issue
-- Update proxy group grid ui
+- Fixed second launch crash issue.
+- Updated proxy group grid UI.

@@ -4,9 +4,9 @@ sidebar_position: 0
 
 # Exact Mapping
 
-## Sample
+## Example
 
-```ini title="map ip address to exact domain"
+```ini title="Maps IP address to an exact domain"
 abc.com = 1.2.3.4
 ```
 

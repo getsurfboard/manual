@@ -2,15 +2,15 @@
 sidebar_position: 5
 ---
 
-# Wireguard
+# WireGuard
 
-## Protocol standard
+## Protocol Standard
 
 - https://en.wikipedia.org/wiki/WireGuard
 
-## Sample
+## Example
 
-Unlike other proxy which can be defined in single line, wireguard proxy use a standalone config section to define proxy detail, and use section name to link proxy detail in proxy definition.
+Unlike other proxies defined in a single line, WireGuard proxies use a standalone configuration section for details, linked by the section name in the proxy definition.
 
 ```ini
 [Proxy]
@@ -38,17 +38,17 @@ mtu = {mtu size}
 peer = (public-key = {public key}, allowed-ips = {allowed ip routes}, endpoint = {endpoint address}, keepalive = {keepalive seconds})
 ```
 
-## Params
+## Parameters
 
 | Name              | Value                     | Mandatory | Note                                      |
 |-------------------|---------------------------|-----------|-------------------------------------------|
 | proxy name        | -                         | true      |                                           |
-| section name      | -                         | true      | Support domain and ip format              |
+| section name      | -                         | true      | Supports domain and IP formats.              |
 | private key       | base64 encoded format     | true      |                                           |
 | self ip           | IPv4 format               | true      |                                           |
-| dns server ip     | IPv4 format               | true      | Support multiple value divided with comma |
+| dns server ip     | IPv4 format               | true      | Supports multiple values separated by commas. |
 | mtu size          | integer greater than zero | true      |                                           |
 | public key        | base64 encoded format     | true      |                                           |
 | allowed ip routes | IPv4 route format         | true      |                                           |
 | endpoint address  | IPv4 IP:PORT format       | true      |                                           |
-| keepalive seconds | integer greater than zero | false     | 0 means disable keepalive                 |
+| keepalive seconds | integer greater than zero | false     | 0 means disable keepalive.                 |

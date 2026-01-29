@@ -1,12 +1,12 @@
 # `[Proxy]`
 
-Proxy is a proxy service definition which can be used as network traffic's destination.
+A Proxy definition specifies a service that can be used as a destination for network traffic.
 
-Traffic which match rules defined in [[Rule]](/docs/profile-format/rule) section will be redirected to specified proxy.
+Traffic matching rules defined in the [[Rule]](/docs/profile-format/rule) section will be redirected to the specified proxy.
 
-Proxy can be also included in [[Proxy Group]](/docs/profile-format/proxygroup) definition.
+Proxies can also be included in [[Proxy Group]](/docs/profile-format/proxygroup) definitions.
 
-Currently proxy protocol below is supported:
+The following proxy protocols are currently supported:
 
 - [HTTP/HTTPS](/docs/profile-format/proxy/external-proxy/http)
 - [SOCKS5/SOCKS5-TLS](/docs/profile-format/proxy/external-proxy/socks5)

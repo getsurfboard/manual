@@ -8,22 +8,22 @@ sidebar_position: 2
 #!MANAGED-CONFIG http://test.com/surfboard.conf interval=60 strict=true
 ```
 
-Managed config can be used to define an update url for current profile. 
-Profile with managed config defined be can updated automatically in the background
+Managed config is used to define an update URL for the current profile. 
+Profiles with a managed config can be updated automatically in the background.
 
 :::caution
-Managed config must be defined in the first line of the profile
+Managed config must be defined on the very first line of the profile.
 :::
 
-## Param
+## Parameters
 
-- `interval`: profile interval update time
-    - format: number
-    - unit: second
-    - minimum value: 900 (15 minutes)
-- `strict`: profile that have not been updated within the specified time are not allowed to be used
-    - format: boolean
+- `interval`: Profile update interval.
+    - Format: number
+    - Unit: seconds
+    - Minimum value: 900 (15 minutes)
+- `strict`: Determines if profiles that have not been updated within the specified time should be disabled.
+    - Format: boolean
 
 :::caution
-Currently Surfboard will ignore `strict` param definition and treat it like `false`
+Currently, Surfboard ignores the `strict` parameter and treats it as `false`.
 :::

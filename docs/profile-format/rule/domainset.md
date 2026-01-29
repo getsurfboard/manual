@@ -4,22 +4,21 @@ sidebar_position: 4
 
 # Domain Set
 
-Domain Set is a remote url configuration, whose content is a collection of Domain rules, but without target definition in it.
+A Domain Set is a remote URL configuration containing a collection of domain rules, but without a target definition.
 
-Use Domain Set can greatly simplify the content complexity of profile which has a lot of domain rules in it,
-and also can reuse rules encapsulated by other contributors.
+Using a Domain Set can greatly simplify the content of profiles containing many domain rules and allows for reusing rules created by other contributors.
 
-Compare to [RULE-SET](/docs/profile-format/rule/ruleset), Domain set only support domain type rules, but it will bring significant performance improvement
+Compared to [RULE-SET](/docs/profile-format/rule/ruleset), a Domain Set only supports domain-type rules, but it offers significant performance improvements.
 
-## Sample
+## Example
 
-### Domain Set definition
+### Domain Set Definition
 
 ```ini
 DOMAIN-SET,https://domainset.com/ad,REJECT
 ```
 
-### Remote Domain Set content sample
+### Remote Domain Set Content Example
 
 ```ini
 www.apple.com
@@ -27,7 +26,7 @@ google.com
 .google.com
 ```
 
-It should be noted that, `.google.com` will not only match `www.google.com` but also `google.com`
+Note that `.google.com` will match `www.google.com` as well as `google.com`.
 
 ## Format
 
@@ -35,16 +34,16 @@ It should be noted that, `.google.com` will not only match `www.google.com` but 
 DOMAIN-SET, {domain set url}, {target}
 ```
 
-## Param
+## Parameters
 
 | Name           | Value | Mandatory | Note                                                   |
 |----------------|-------|-----------|--------------------------------------------------------|
 | domain set url | -     | true      |                                                        |
-| target         | -     | true      | Specified proxy or proxy group must existed in profile |
+| target         | -     | true      | The specified proxy or proxy group must exist in the profile. |
 
 ## Comparison with Rule Set
 
-| Rule Type  | Rule count | Complete match time(lower is better) | Rule Type Support Level    | Memory consumption |
+| Rule Type  | Rule Count | Complete Match Time (lower is better) | Rule Type Support Level    | Memory Consumption |
 |------------|------------|--------------------------------------|----------------------------|--------------------|
 | Domain Set | 134430     | 51667 ns                             | Complete                   | High               |
 | Rule Set   | 134430     | 24339083 ns                          | Only domain type supported | Low                |

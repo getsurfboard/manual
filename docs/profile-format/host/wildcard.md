@@ -2,11 +2,11 @@
 sidebar_position: 1
 ---
 
-# Wildcard mapping
+# Wildcard Mapping
 
-## Sample
+## Example
 
-```ini title="map ip address to wildcard domain"
+```ini title="Maps IP address to a wildcard domain"
 *.dev = 6.7.8.9
 ```
 

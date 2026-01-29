@@ -4,9 +4,9 @@ sidebar_position: 8
 
 # `udp-policy-not-supported-behaviour`
 
-If proxy not support udp relay, use [DIRECT](/docs/profile-format/proxy/built-in-proxy/direct) or [REJECT](/docs/profile-format/proxy/built-in-proxy/reject) instead, default value is `REJECT`
+If a proxy does not support UDP relay, use [DIRECT](/docs/profile-format/proxy/built-in-proxy/direct) or [REJECT](/docs/profile-format/proxy/built-in-proxy/reject) instead. The default value is `REJECT`.
 
-### Sample
+### Example
 
 ```ini
 udp-policy-not-supported-behaviour = DIRECT
@@ -19,5 +19,5 @@ udp-policy-not-supported-behaviour = {DIRECT|REJECT}
 ```
 
 :::note
-Only DIRECT or REJECT is supported
+Only DIRECT or REJECT is supported.
 :::

@@ -4,11 +4,11 @@ sidebar_position: 7
 
 # Final
 
-Traffic doesn't match any other rules will match final rule if defined.
+Traffic that does not match any other rules will match the FINAL rule, if defined.
 
-In general, a profile should only include one final rule, and place it as the last one in rule section.
+In general, a profile should only include one final rule, placed as the last entry in the rule section.
 
-## Sample
+## Example
 
 ```ini
 FINAL, DIRECT
@@ -20,8 +20,8 @@ FINAL, DIRECT
 FINAL, {target}
 ```
 
-## Param
+## Parameters
 
 | Name         | Value | Mandatory | Note                                                   |
 |--------------|-------|-----------|--------------------------------------------------------|
-| target       | -     | true      | Specified proxy or proxy group must existed in profile |
+| target       | -     | true      | The specified proxy or proxy group must exist in the profile. |

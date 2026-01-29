@@ -1,7 +1,7 @@
 # `[Rule]`
 
-Rule is a collection of rules which will apply on network traffic.
+The Rule section defines a collection of rules applied to network traffic.
 
-Traffic which match rules defined in [Rule] section will be redirected to specified proxy or proxy group.
+Traffic matching rules defined in the `[Rule]` section will be redirected to the specified proxy or proxy group.
 
-Traffic will try to match rules in sequence according defined in the profile.
+Traffic is matched against rules sequentially as defined in the profile.

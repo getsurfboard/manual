@@ -2,9 +2,9 @@
 sidebar_position: 2
 ---
 
-# Firewall bypassing
+# Firewall Bypass
 
-Due to the complexity of the situation, the following examples are not guaranteed to solve all problems and are for reference only
+Due to the complexity of network environments, the following examples are for reference only and may not solve all issues.
 
 ```ini
 [General]

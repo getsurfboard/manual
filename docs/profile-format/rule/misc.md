@@ -4,7 +4,7 @@ sidebar_position: 6
 
 # Misc
 
-## Sample
+## Example
 
 ```ini
 DEST-PORT,80,DIRECT
@@ -19,11 +19,10 @@ PROTOCOL,HTTP,DIRECT
 {type},{value},{target_proxy}
 ```
 
-## Param
+## Parameters
 
 | Name         | Value                                                                                                                                            | Mandatory | Note                                                                                                                                                                                                  |
 |--------------|--------------------------------------------------------------------------------------------------------------------------------------------------|-----------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| type         | DEST-PORT<br/>SRC-IP<br/>IN-PORT<br/>PROTOCOL                                                                                                    | true      | `SRC-IP` is used to differentiate the client traffic received by the LAN proxy by the client IP<br/>`IN-PORT` is used to differentiate the client traffic received by the LAN proxy by the proxy port |
-| value        | DEST-PORT: destination port number<br/>SRC-IP: client ip address<br/>IN-PORT: lan proxy listen port number<br/>PROTOCOL: HTTP/HTTPS/TCP/UDP/QUIC | true      | PROTOCOL: DOH, DOH3, DOQ is not supported yet                                                                                                                                                         |
-| target proxy | -                                                                                                                                                | true      | Specified proxy or proxy group must existed in profile                                                                                                                                                |
-
+| type         | DEST-PORT<br/>SRC-IP<br/>IN-PORT<br/>PROTOCOL                                                                                                    | true      | `SRC-IP`: Used to differentiate client traffic received by the LAN proxy based on the client IP.<br/>`IN-PORT`: Used to differentiate client traffic received by the LAN proxy based on the proxy port. |
+| value        | DEST-PORT: Destination port number.<br/>SRC-IP: Client IP address.<br/>IN-PORT: LAN proxy listen port number.<br/>PROTOCOL: HTTP/HTTPS/TCP/UDP/QUIC. | true      | PROTOCOL: DoH, DoH3, and DoQ are not supported yet.                                                                                                                                                         |
+| target proxy | -                                                                                                                                                | true      | The specified proxy or proxy group must exist in the profile.                                                                                                                                                |

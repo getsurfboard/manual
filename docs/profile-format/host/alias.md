@@ -2,11 +2,11 @@
 sidebar_position: 2
 ---
 
-# Domain alias
+# Domain Alias
 
-## Sample
+## Example
 
-```ini title="alias domain query result to another"
+```ini title="Aliases domain query result to another"
 foo.com = bar.com
 ```
 
