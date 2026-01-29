@@ -7,34 +7,33 @@ tags: [surfboard]
 
 ### Before
 
-In the beginning, I was a loyal user of [Shadowsocks](https://play.google.com/store/apps/details?id=com.github.shadowsocks), and I used the app almost 24 hours a day, enjoying the freedom to browse the Internet without being locked into a circle that others have set up for you.
+Initially, I was a loyal user of [Shadowsocks](https://play.google.com/store/apps/details?id=com.github.shadowsocks), using it almost 24/7 to enjoy the freedom of an open internet without the constraints of a censored environment.
 
-One day, I found that when Shadowsocks is turned on, all UDP packets sent by the device will be discarded (I believe that shadowsocks no longer has this problem). This results in that I need to manually close shadowsocks every time before playing the game, and after the game is over, I need to manually open shadowsocks again. This is indeed a little inconvenient.
+I eventually noticed that when Shadowsocks was active, all outgoing UDP packets were being dropped (an issue I believe has since been resolved). This meant I had to manually disable Shadowsocks every time I wanted to play a game and re-enable it afterward—a tedious and inconvenient process.
 
 ### First Version
 
-So, an idea came to my mind, why not make a VPN application according to my own needs? Thus, the first version of the simple application was born, which I named 'SS_NG', inspired by 'Shadowsocks + Next Generation'. Its user interface and functionality are simple and crude, but it does exactly what it needs to do: forward traffic using the shadowsocks protocol and avoid blocking UDP traffic. It soon replaced the Shadowsocks app on my device as the 24/7 VPN app on my device.
+This led me to wonder: why not build a VPN app tailored to my specific needs? That’s how the first iteration, "SS_NG" (short for Shadowsocks Next Generation), came to life. While its UI and features were rudimentary, it served its purpose perfectly: forwarding traffic via the Shadowsocks protocol without blocking UDP. It quickly became my primary, always-on VPN app.
 
 ### Inspiration
 
-Later, I bought a MacBook Pro and an iPhone and started using the Surge app. Since I started using Surge, I have been impressed by this app, Surge has the following advantages:
+Later, after switching to a MacBook Pro and an iPhone, I discovered Surge. I was immediately impressed by its capabilities, particularly:
 
-- Beautifully designed
-- Lots of features
-- Stable and smooth
-- Well-tailored configuration rules
+- Beautiful design
+- Comprehensive feature set
+- Stability and performance
+- Granular configuration rules
 - Multi-platform support
-- ...
 
-Although a large number of excellent similar applications have emerged on the iOS platform, in my opinion, Surge is still the best VPN application for Apple platform in my opinion.
+In my view, Surge remains the premier VPN application for the Apple ecosystem.
 
 ### Nowadays
 
-Later, my mobile device was switched back to the Android platform again, but the Android platform did not have a VPN application compatible with the Surge configuration, so I picked up the old SS_NG project and rebuilt it according to the design idea of ​​Surge. , the new application has the following features:
+When I eventually returned to Android, I realized there wasn't a VPN app compatible with Surge configurations. This prompted me to revive the SS_NG project, rebuilding it with Surge’s design philosophy in mind. The new application features:
 
-- Compatible with Surge's configuration format
-- Rich chart/record viewing function
-- Support remote node group/rule group/agent group switching
+- Compatibility with Surge configuration formats
+- Detailed traffic analytics and logging
+- Support for remote node, rule, and proxy group switching
 - ...
 
-I named it 'Surfboard', the first three letters are the same as Surge, and the surfboard is also related to surfing the Internet. At the same time, this application is no longer a private entertainment project of mine, but a public application product that can be used by all users who want to surf freely.
+I named the new app "Surfboard"—sharing its first three letters with Surge while evoking the idea of "surfing" the web. Today, Surfboard has evolved from a personal side project into a public tool for anyone seeking a free and open internet experience.
