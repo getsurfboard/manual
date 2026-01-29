@@ -14,30 +14,29 @@
         <updated>2022-04-06T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[Before]]></summary>
         <content type="html"><![CDATA[<h3 class="anchor anchorWithStickyNavbar_LWe7" id="before">Before<a href="https://getsurfboard.com/blog/why-develop-surfboard#before" class="hash-link" aria-label="Direct link to Before" title="Direct link to Before">​</a></h3>
-<p>In the beginning, I was a loyal user of <a href="https://play.google.com/store/apps/details?id=com.github.shadowsocks" target="_blank" rel="noopener noreferrer">Shadowsocks</a>, and I used the app almost 24 hours a day, enjoying the freedom to browse the Internet without being locked into a circle that others have set up for you.</p>
-<p>One day, I found that when Shadowsocks is turned on, all UDP packets sent by the device will be discarded (I believe that shadowsocks no longer has this problem). This results in that I need to manually close shadowsocks every time before playing the game, and after the game is over, I need to manually open shadowsocks again. This is indeed a little inconvenient.</p>
+<p>Initially, I was a loyal user of <a href="https://play.google.com/store/apps/details?id=com.github.shadowsocks" target="_blank" rel="noopener noreferrer">Shadowsocks</a>, using it almost 24/7 to enjoy the freedom of an open internet without the constraints of a censored environment.</p>
+<p>I eventually noticed that when Shadowsocks was active, all outgoing UDP packets were being dropped (an issue I believe has since been resolved). This meant I had to manually disable Shadowsocks every time I wanted to play a game and re-enable it afterward—a tedious and inconvenient process.</p>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="first-version">First Version<a href="https://getsurfboard.com/blog/why-develop-surfboard#first-version" class="hash-link" aria-label="Direct link to First Version" title="Direct link to First Version">​</a></h3>
-<p>So, an idea came to my mind, why not make a VPN application according to my own needs? Thus, the first version of the simple application was born, which I named 'SS_NG', inspired by 'Shadowsocks + Next Generation'. Its user interface and functionality are simple and crude, but it does exactly what it needs to do: forward traffic using the shadowsocks protocol and avoid blocking UDP traffic. It soon replaced the Shadowsocks app on my device as the 24/7 VPN app on my device.</p>
+<p>This led me to wonder: why not build a VPN app tailored to my specific needs? That’s how the first iteration, "SS_NG" (short for Shadowsocks Next Generation), came to life. While its UI and features were rudimentary, it served its purpose perfectly: forwarding traffic via the Shadowsocks protocol without blocking UDP. It quickly became my primary, always-on VPN app.</p>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="inspiration">Inspiration<a href="https://getsurfboard.com/blog/why-develop-surfboard#inspiration" class="hash-link" aria-label="Direct link to Inspiration" title="Direct link to Inspiration">​</a></h3>
-<p>Later, I bought a MacBook Pro and an iPhone and started using the Surge app. Since I started using Surge, I have been impressed by this app, Surge has the following advantages:</p>
+<p>Later, after switching to a MacBook Pro and an iPhone, I discovered Surge. I was immediately impressed by its capabilities, particularly:</p>
 <ul>
-<li>Beautifully designed</li>
-<li>Lots of features</li>
-<li>Stable and smooth</li>
-<li>Well-tailored configuration rules</li>
+<li>Beautiful design</li>
+<li>Comprehensive feature set</li>
+<li>Stability and performance</li>
+<li>Granular configuration rules</li>
 <li>Multi-platform support</li>
-<li>...</li>
 </ul>
-<p>Although a large number of excellent similar applications have emerged on the iOS platform, in my opinion, Surge is still the best VPN application for Apple platform in my opinion.</p>
+<p>In my view, Surge remains the premier VPN application for the Apple ecosystem.</p>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="nowadays">Nowadays<a href="https://getsurfboard.com/blog/why-develop-surfboard#nowadays" class="hash-link" aria-label="Direct link to Nowadays" title="Direct link to Nowadays">​</a></h3>
-<p>Later, my mobile device was switched back to the Android platform again, but the Android platform did not have a VPN application compatible with the Surge configuration, so I picked up the old SS_NG project and rebuilt it according to the design idea of ​​Surge. , the new application has the following features:</p>
+<p>When I eventually returned to Android, I realized there wasn't a VPN app compatible with Surge configurations. This prompted me to revive the SS_NG project, rebuilding it with Surge’s design philosophy in mind. The new application features:</p>
 <ul>
-<li>Compatible with Surge's configuration format</li>
-<li>Rich chart/record viewing function</li>
-<li>Support remote node group/rule group/agent group switching</li>
+<li>Compatibility with Surge configuration formats</li>
+<li>Detailed traffic analytics and logging</li>
+<li>Support for remote node, rule, and proxy group switching</li>
 <li>...</li>
 </ul>
-<p>I named it 'Surfboard', the first three letters are the same as Surge, and the surfboard is also related to surfing the Internet. At the same time, this application is no longer a private entertainment project of mine, but a public application product that can be used by all users who want to surf freely.</p>]]></content>
+<p>I named the new app "Surfboard"—sharing its first three letters with Surge while evoking the idea of "surfing" the web. Today, Surfboard has evolved from a personal side project into a public tool for anyone seeking a free and open internet experience.</p>]]></content>
         <author>
             <name>Surfboard</name>
             <uri>https://t.me/getsurfboard</uri>
