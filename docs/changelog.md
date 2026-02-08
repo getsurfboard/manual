@@ -4,6 +4,12 @@ sidebar_position: 5
 
 # ChangeLog
 
+### mobile-2.26.0
+
+- **New Features**
+    - Added support for shadowsocks 2022(`2022-blake3-aes-128-gcm` & `2022-blake3-aes-256-gcm`) and hysteria2 proxy support
+    - Support Upload/Edit/Copy/Rename/Delete profile in new added web server in LAN, try it at the top right corner in profile list menu
+
 ### mobile-2.25.5
 
 - **New Features**
