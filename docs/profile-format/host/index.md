@@ -1,7 +1,7 @@
 # `[Host]`
 
-The Host section primarily handles DNS query/response mappings.
+The `[Host]` section is used to define static DNS mappings, allowing users to override default DNS resolution for specific domains or wildcard patterns.
 
-It is useful for testing a local server with a custom domain by mapping the local server's IP to the desired domain.
+This feature is particularly useful for local development, testing servers with custom domains, or forcing specific IP resolutions without modifying the system's global hosts file.
 
 Reference: https://en.wikipedia.org/wiki/Domain_Name_System

@@ -4,7 +4,10 @@ sidebar_position: 1
 
 # Reject
 
+The `REJECT` proxy is a built-in policy used to block specific traffic. It is commonly used for advertisement blocking or restricting access to certain domains.
+
 ```ini title="Rule example combined with Reject proxy"
+# Traffic to google.com will be blocked and reset
 DOMAIN,www.google.com,REJECT
 ```
 

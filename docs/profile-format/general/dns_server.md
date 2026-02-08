@@ -4,11 +4,12 @@ sidebar_position: 0
 
 # `dns-server`
 
-Specifies the DNS servers used by the application.
+Specifies the DNS servers used by the application for domain name resolution.
 
 ## Example
 
 ```ini
+# Specifies multiple DNS servers, including a system default and a custom port
 dns-server = system, 8.8.8.8, 8.8.4.4, 9.9.9.9:9953
 ```
 

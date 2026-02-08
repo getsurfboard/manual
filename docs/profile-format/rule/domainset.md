@@ -4,9 +4,7 @@ sidebar_position: 4
 
 # Domain Set
 
-A Domain Set is a remote URL configuration containing a collection of domain rules, but without a target definition.
-
-Using a Domain Set can greatly simplify the content of profiles containing many domain rules and allows for reusing rules created by other contributors.
+A Domain Set is a highly optimized remote configuration containing a large collection of domain rules. It is significantly more efficient than a standard Rule Set for large numbers of domain-based rules.
 
 Compared to [RULE-SET](/docs/profile-format/rule/ruleset), a Domain Set only supports domain-type rules, but it offers significant performance improvements.
 
@@ -15,7 +13,8 @@ Compared to [RULE-SET](/docs/profile-format/rule/ruleset), a Domain Set only sup
 ### Domain Set Definition
 
 ```ini
-DOMAIN-SET,https://domainset.com/ad,REJECT
+# Routes traffic matching domains in the remote ad-blocking list to REJECT
+DOMAIN-SET,https://example.com/ad_domains.txt,REJECT
 ```
 
 ### Remote Domain Set Content Example

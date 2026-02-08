@@ -4,7 +4,7 @@ sidebar_position: 6
 
 # `http-listen`
 
-Establishes an HTTP proxy server on your device and provides proxy service at the specified IP.
+Establishes a local HTTP proxy server on your device, allowing other applications or devices to route their traffic through Surfboard.
 
 ## References
 
@@ -15,6 +15,7 @@ Establishes an HTTP proxy server on your device and provides proxy service at th
 ## Example
 
 ```ini
+# Listens on all interfaces (0.0.0.0) at port 1234, making the proxy accessible to the LAN
 http-listen = 0.0.0.0:1234
 ```
 

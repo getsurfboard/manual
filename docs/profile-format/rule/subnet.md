@@ -2,18 +2,24 @@
 sidebar_position: 5
 ---
 
-# Subnet
+# Subnet Rules
+
+Subnet rules allow you to route traffic based on the current network environment, such as the Wi-Fi SSID, BSSID, or network type (Wi-Fi, Cellular, etc.).
 
 ## Example
 
 ```ini
+# Rejects traffic when connected to a specific Wi-Fi SSID
 SUBNET,SSID:CMCC,REJECT
+
+# Routes traffic directly when connected to a specific Wi-Fi BSSID (MAC address)
 SUBNET,BSSID:F4-98-A0-73-3A-5B,DIRECT
+
+# Routes traffic directly when connected to a specific router gateway IP
 SUBNET,ROUTER:192.168.1.1,DIRECT
+
+# Routes traffic directly when using any Wi-Fi connection
 SUBNET,TYPE:WIFI,DIRECT
-SUBNET,TYPE:WIRED,DIRECT
-SUBNET,TYPE:CELLULAR,SelectGroup
-SUBNET,MCCMNC:100-200,DIRECT
 ```
 
 ## Format

@@ -4,11 +4,12 @@ sidebar_position: 1
 
 # `doh-server`
 
-Specifies the [DoH (DNS over HTTPS)](https://en.wikipedia.org/wiki/DNS_over_HTTPS) servers used by the application.
+Specifies the [DoH (DNS over HTTPS)](https://en.wikipedia.org/wiki/DNS_over_HTTPS) servers used by the application to provide encrypted and authenticated DNS resolution.
 
 ## Example
 
 ```ini
+# Defines a single DoH server for encrypted DNS queries
 doh-server = https://9.9.9.9/dns-query
 ```
 

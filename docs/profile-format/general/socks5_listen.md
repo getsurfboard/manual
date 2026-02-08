@@ -4,7 +4,7 @@ sidebar_position: 7
 
 # `socks5-listen`
 
-Establishes a SOCKS5 proxy server on your device and provides proxy service at the specified IP.
+Establishes a local SOCKS5 proxy server on your device, providing a standardized proxy interface for compatible applications.
 
 ### References
 
@@ -14,6 +14,7 @@ Establishes a SOCKS5 proxy server on your device and provides proxy service at t
 ### Example
 
 ```ini
+# Listens only on the local loopback interface (127.0.0.1) at port 1235
 socks5-listen = 127.0.0.1:1235
 ```
 

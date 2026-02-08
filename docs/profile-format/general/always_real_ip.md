@@ -4,13 +4,12 @@ sidebar_position: 5
 
 # `always-real-ip`
 
-In some scenarios, domain DNS queries will respond with a fake IP matching `198.18.0.0/16`. Generally, this will not cause any issues.
-
-If you encounter network issues due to this feature, you can specify `always-real-ip` to bypass this behavior.
+Forces Surfboard to resolve specific domains to their actual IP addresses, bypassing the default fake IP behavior used for efficiency.
 
 ## Example
 
 ```ini
+# Ensures specific gaming and console services always resolve to their real IP addresses
 always-real-ip = *.srv.nintendo.net, *.stun.playstation.net, xbox.*.microsoft.com, *.xboxlive.com
 ```
 

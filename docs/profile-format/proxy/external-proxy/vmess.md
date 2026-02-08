@@ -4,6 +4,8 @@ sidebar_position: 3
 
 # VMESS
 
+VMESS is the primary protocol used by V2Ray for communication between clients and servers. Surfboard supports VMESS with TLS, WebSocket transport, and AEAD security.
+
 ## Protocol Standard
 
 - https://www.v2fly.org/en_US/developer/protocols/vmess.html
@@ -15,7 +17,8 @@ sidebar_position: 3
 ## Example
 
 ```ini
-ProxyVMess = vmess, 1.2.3.4, 8000, username=0233d11c-15a4-47d3-ade3-48ffca0ce119, udp-relay=false, ws=true, tls=true, ws-path=/v2, ws-headers=X-Header-1:value|X-Header-2:value, skip-cert-verify=true, sni=www.google.com, vmess-aead=true
+# VMess proxy configuration using WebSocket transport, TLS encryption, and AEAD
+ProxyVMess = vmess, 1.2.3.4, 8000, username=0233d11c-15a4-47d3-ade3-48ffca0ce119, udp-relay=false, ws=true, tls=true, ws-path=/v2, ws-headers=X-Header-1:value|X-Header-2:value, skip-cert-verify=true, sni=www.example.com, vmess-aead=true
 ```
 
 ## Format

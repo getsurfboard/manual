@@ -2,13 +2,20 @@
 sidebar_position: 2
 ---
 
-# Process
+# Process Rules
+
+Process rules (or Application rules) allow you to route traffic based on the Android application package name that initiated the request.
 
 ## Example
 
 ```ini
+# Routes traffic from the Google Play Store (exact package name match)
 PROCESS-NAME,com.android.vending,Proxy
+
+# Routes traffic from any application with 'google' in its package name
 PROCESS-NAME,*google*,Proxy
+
+# Routes Instagram traffic and forces remote DNS resolution
 PROCESS-NAME,com.instagram.android,Proxy,force-remote-dns
 ```
 

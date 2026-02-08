@@ -4,6 +4,8 @@ sidebar_position: 1
 
 # SOCKS5/SOCKS5-TLS
 
+SOCKS5 is a versatile proxy protocol that routes packets between a client and a server. Surfboard supports both standard SOCKS5 and the encrypted SOCKS5-TLS variant.
+
 ## Protocol Standard
 
 - https://datatracker.ietf.org/doc/html/rfc1928
@@ -14,8 +16,11 @@ sidebar_position: 1
 ## Example
 
 ```ini
+# Standard SOCKS5 proxy with authentication and UDP relay disabled
 ProxySOCKS5 = socks5, 1.2.3.4, 443, username, password, udp-relay=false
-ProxySOCKS5TLS = socks5-tls, 1.2.3.4, 443, username, password, skip-cert-verify=true, sni=www.google.com
+
+# Secure SOCKS5-TLS proxy with certificate verification bypass and custom SNI
+ProxySOCKS5TLS = socks5-tls, 1.2.3.4, 443, username, password, skip-cert-verify=true, sni=www.example.com
 ```
 
 ## Format

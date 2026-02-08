@@ -2,14 +2,23 @@
 sidebar_position: 6
 ---
 
-# Misc
+# Miscellaneous Rules
+
+Surfboard supports several other rule types for granular traffic control based on destination ports, source IPs, and network protocols.
 
 ## Example
 
 ```ini
+# Routes traffic to destination port 80 directly
 DEST-PORT,80,DIRECT
+
+# Routes traffic originating from a specific local client IP directly
 SRC-IP,192.168.20.100,DIRECT
+
+# Routes traffic received on a specific local listen port directly
 IN-PORT,6152,DIRECT
+
+# Routes all HTTP (TCP port 80) traffic directly
 PROTOCOL,HTTP,DIRECT
 ```
 

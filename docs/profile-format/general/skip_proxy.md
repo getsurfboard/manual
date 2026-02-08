@@ -4,12 +4,13 @@ sidebar_position: 2
 
 # `skip-proxy`
 
-Specifies route rules and domain rules. Matching traffic will not be redirected or rejected.
+Specifies a list of IP addresses, CIDR ranges, and domains that should bypass proxy rules and be connected to directly.
 
 ### Example
 
 ```ini
-skip-proxy = 127.0.0.1, 192.168.0.0/16, 10.0.0.0/8, 172.16.0.0/12, 100.64.0.0/10, localhost, *.local, www.baidu.com
+# Bypasses local addresses, private network ranges, and specific domains
+skip-proxy = 127.0.0.1, 192.168.0.0/16, 10.0.0.0/8, 172.16.0.0/12, 100.64.0.0/10, localhost, *.local, www.example.com
 ```
 
 ### Format

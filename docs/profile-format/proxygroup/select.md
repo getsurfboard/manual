@@ -4,7 +4,7 @@ sidebar_position: 0
 
 # Manual Select
 
-A group of proxies where the user can manually change the selected proxy when the VPN is started.
+The `select` group type allows users to manually choose their preferred proxy from a list of options within the Surfboard interface.
 
 - Reference: https://en.wikipedia.org/wiki/Regular_expression
 
@@ -14,10 +14,11 @@ A group of proxies where the user can manually change the selected proxy when th
 
 ```ini
 [Proxy Group]
+# A group allowing manual selection between multiple proxies and direct/reject policies
 SelectGroup = select, ProxyHTTP, ProxyHTTPS, DIRECT, REJECT, hidden = false
 
 [Rule]
-# Traffic matching 'www.google.com' will be redirected through SelectGroup's selected proxy
+# Traffic matching 'www.google.com' will be redirected through SelectGroup's currently selected proxy
 DOMAIN, www.google.com, SelectGroup
 ```
 

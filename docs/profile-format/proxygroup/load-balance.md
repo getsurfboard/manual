@@ -4,10 +4,10 @@ sidebar_position: 2
 
 # Load Balance
 
-A group of proxies where the selection is chosen randomly.
+The `load-balance` group type distributes traffic across multiple proxies randomly, helping to balance the load and prevent any single proxy from becoming a bottleneck.
 
 :::note
-Load Balance group selection cannot be changed manually.
+Load Balance group selection cannot be changed manually by the user.
 :::
 
 ## Example
@@ -16,10 +16,11 @@ Load Balance group selection cannot be changed manually.
 
 ```ini
 [Proxy Group]
+# Distributes traffic randomly between ProxyHTTP and ProxyHTTPS
 LoadBalanceGroup = load-balance, ProxyHTTP, ProxyHTTPS
 
 [Rule]
-# Traffic matching 'www.google.com' will be redirected through LoadBalanceGroup's selected proxy
+# Traffic matching 'www.google.com' will be balanced across the proxies in LoadBalanceGroup
 DOMAIN, www.google.com, LoadBalanceGroup
 ```
 

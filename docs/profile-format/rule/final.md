@@ -2,15 +2,16 @@
 sidebar_position: 7
 ---
 
-# Final
+# Final Rule
 
-Traffic that does not match any other rules will match the FINAL rule, if defined.
+The `FINAL` rule acts as a catch-all policy for any traffic that has not matched any of the preceding rules in the profile.
 
-In general, a profile should only include one final rule, placed as the last entry in the rule section.
+In general, a profile should only include one final rule, which MUST be placed as the very last entry in the rule section.
 
 ## Example
 
 ```ini
+# Routes all otherwise unmatched traffic directly
 FINAL, DIRECT
 ```
 

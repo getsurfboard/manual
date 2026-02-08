@@ -4,19 +4,17 @@ sidebar_position: 1
 
 # Auto Select
 
-A group of proxies with a test URL.
+The `url-test` group type automatically selects the proxy with the lowest latency by periodically testing a specified URL.
 
 After the VPN starts, an `HTTP HEAD` request is sent to the test URL. The latency is recorded when a successful response is received.
 
-The proxy with the lowest latency is selected for the group.
-
-The test runs at regular intervals.
+The proxy with the lowest latency is selected for the group. The test runs at regular intervals to ensure the best connection is always used.
 
 - Reference: https://en.wikipedia.org/wiki/Regular_expression
 - Reference: https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods/HEAD
 
 :::note
-Auto Select group selection cannot be changed manually.
+Auto Select group selection cannot be changed manually by the user.
 :::
 
 ## Example
@@ -25,10 +23,11 @@ Auto Select group selection cannot be changed manually.
 
 ```ini
 [Proxy Group]
+# Automatically selects the fastest proxy every 10 minutes based on latency to GStatic
 AutoTestGroup = url-test, ProxySOCKS5, ProxySOCKS5TLS, url=http://www.gstatic.com/generate_204, interval=600, tolerance=100, timeout=5, hidden=true
 
 [Rule]
-# Traffic matching 'www.google.com' will be redirected through AutoTestGroup's selected proxy
+# Traffic matching 'www.google.com' will be redirected through AutoTestGroup's automatically selected proxy
 DOMAIN, www.google.com, AutoTestGroup
 ```
 

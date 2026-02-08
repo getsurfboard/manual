@@ -4,11 +4,12 @@ sidebar_position: 8
 
 # `udp-policy-not-supported-behaviour`
 
-If a proxy does not support UDP relay, use [DIRECT](/docs/profile-format/proxy/built-in-proxy/direct) or [REJECT](/docs/profile-format/proxy/built-in-proxy/reject) instead. The default value is `REJECT`.
+Defines how Surfboard handles UDP traffic when the selected proxy policy does not support UDP relay.
 
 ### Example
 
 ```ini
+# Routes UDP traffic directly when the selected proxy does not support it
 udp-policy-not-supported-behaviour = DIRECT
 ```
 

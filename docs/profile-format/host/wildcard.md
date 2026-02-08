@@ -4,9 +4,12 @@ sidebar_position: 1
 
 # Wildcard Mapping
 
+Wildcard mapping allows you to map an entire subdomain tree to a single IP address using the `*` prefix.
+
 ## Example
 
 ```ini title="Maps IP address to a wildcard domain"
+# Maps all subdomains of .dev (e.g., app.dev, api.dev) to 6.7.8.9
 *.dev = 6.7.8.9
 ```
 

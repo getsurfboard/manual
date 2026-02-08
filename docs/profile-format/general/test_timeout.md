@@ -4,15 +4,12 @@ sidebar_position: 9
 
 # `test-timeout`
 
-Timeout used for all connectivity tests.
-
-Unit: seconds
-
-Default value: 5
+Specifies the maximum time in seconds Surfboard will wait for a response during connectivity and latency tests.
 
 ## Example
 
 ```ini
+# Sets the connectivity test timeout to 3 seconds
 test-timeout = 3
 ```
 

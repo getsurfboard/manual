@@ -4,7 +4,7 @@ sidebar_position: 3
 
 # Rule Set
 
-A Rule Set is a remote URL configuration containing a collection of rules, but without a target definition.
+A Rule Set is a collection of rules hosted at a remote URL. It allows for modular and reusable rule configurations, simplifying your profile.
 
 Using a Rule Set can greatly simplify the content of profiles containing many rules and allows for reusing rules created by other contributors.
 
@@ -18,7 +18,8 @@ In this scenario, we strongly recommend switching to the [Domain Set](./domainse
 ### Rule Set Definition
 
 ```ini
-RULE-SET,https://ruleset.com/cn,ProxyVMess
+# Fetches a remote list of rules and routes matching traffic to ProxyVMess
+RULE-SET,https://example.com/china_rules.conf,ProxyVMess
 ```
 
 ### Remote Rule Set Content Example

@@ -4,6 +4,8 @@ sidebar_position: 0
 
 # HTTP/HTTPS
 
+Surfboard supports both standard HTTP proxies and secure HTTPS (HTTP over TLS) proxies for routing traffic.
+
 ## Protocol Standard
 
 - https://en.wikipedia.org/wiki/HTTP_tunnel
@@ -16,8 +18,11 @@ sidebar_position: 0
 ## Example
 
 ```ini
+# Standard HTTP proxy without encryption
 ProxyHTTP = http, 1.2.3.4, 443, username, password
-ProxyHTTPS = https, 1.2.3.4, 443, username, password, skip-cert-verify=true, sni=www.google.com
+
+# Secure HTTPS proxy with TLS and SNI configuration
+ProxyHTTPS = https, 1.2.3.4, 443, username, password, skip-cert-verify=true, sni=www.example.com
 ```
 
 ## Format

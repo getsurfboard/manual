@@ -4,9 +4,12 @@ sidebar_position: 2
 
 # Domain Alias
 
+Domain aliasing (similar to a CNAME record) allows one domain to inherit the DNS resolution results of another domain.
+
 ## Example
 
 ```ini title="Aliases domain query result to another"
+# Resolves foo.com using the same IP address as bar.com
 foo.com = bar.com
 ```
 

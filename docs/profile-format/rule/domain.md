@@ -2,13 +2,20 @@
 sidebar_position: 0
 ---
 
-# Domain
+# Domain Rules
+
+Domain-based rules allow you to route traffic based on the domain name of the destination. Surfboard supports exact matches, suffix matches, and keyword matches.
 
 ## Example
 
 ```ini
+# Matches the exact domain www.apple.com and forces remote DNS resolution
 DOMAIN, www.apple.com, ProxyHTTP, force-remote-dns
+
+# Matches apple.com and all its subdomains, returning a fake IP locally
 DOMAIN-SUFFIX, apple.com, Proxy, enhanced-mode
+
+# Matches any domain containing the keyword 'google'
 DOMAIN-KEYWORD, google, Proxy
 ```
 

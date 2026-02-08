@@ -2,16 +2,23 @@
 sidebar_position: 1
 ---
 
-# IP
+# IP Rules
+
+IP-based rules allow for traffic routing based on the destination IP address or its geographic location (GeoIP).
 
 ## CIDR
+
+Classless Inter-Domain Routing (CIDR) rules match traffic against specific IP address ranges.
 
 Reference: https://en.wikipedia.org/wiki/Classless_Inter-Domain_Routing
 
 ### Example
 
 ```ini
+# Routes traffic to the 192.168.0.0/16 private network directly
 IP-CIDR,192.168.0.0/16,DIRECT
+
+# Routes IPv6 traffic to the specified CIDR range (currently ignored by Surfboard)
 IP-CIDR6,2001:db8:abcd:8000::/50,DIRECT
 ```
 

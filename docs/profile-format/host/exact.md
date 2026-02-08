@@ -4,9 +4,12 @@ sidebar_position: 0
 
 # Exact Mapping
 
+Exact mapping provides a direct one-to-one relationship between a specific domain and an IP address.
+
 ## Example
 
 ```ini title="Maps IP address to an exact domain"
+# Directly maps abc.com to the static IP 1.2.3.4
 abc.com = 1.2.3.4
 ```
 

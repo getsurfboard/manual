@@ -4,6 +4,8 @@ sidebar_position: 4
 
 # Trojan
 
+Trojan is a protocol designed to bypass internet censorship by imitating common protocols like HTTPS. Surfboard supports Trojan with optional WebSocket (WS) transport.
+
 ## Protocol Standard
 
 - https://trojan-gfw.github.io/trojan/protocol
@@ -13,7 +15,8 @@ sidebar_position: 4
 ## Example
 
 ```ini
-ProxyTrojan = trojan, 192.168.20.6, 443, password=password1, udp-relay=false, skip-cert-verify=true, sni=www.google.com, ws=true, ws-path=/index.html, ws-headers=X-Header-1:value|X-Header-2:value
+# Trojan proxy configuration with WebSocket transport and custom headers
+ProxyTrojan = trojan, 192.168.20.6, 443, password=password1, udp-relay=false, skip-cert-verify=true, sni=www.example.com, ws=true, ws-path=/index.html, ws-headers=X-Header-1:value|X-Header-2:value
 ```
 
 ## Format

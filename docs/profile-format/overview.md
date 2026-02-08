@@ -4,88 +4,94 @@ sidebar_position: 0
 
 # Overview
 
+This page provides a comprehensive overview of the Surfboard profile format. Surfboard's configuration system is designed for flexibility and power, allowing users to define sophisticated proxy rules and network behaviors.
+
 :::tip
 Surfboard follows [Surge](https://nssurge.com/)'s profile format.
 
 Surge's profile documentation can be viewed [here](https://manual.nssurge.com/).
 :::
 
+The following example demonstrates a complete profile structure, covering the primary sections: `[General]`, `[Host]`, `[Proxy]`, `[Proxy Group]`, `[Rule]`, and `[Panel]`.
+
 ```ini
-#!MANAGED-CONFIG http://test.com/surfboard.conf interval=60 strict=true # subscribe profile url and auto update config
+#!MANAGED-CONFIG http://test.com/surfboard.conf interval=60 strict=true # Remote configuration subscription with auto-update interval in minutes
+
 [General]
-# Specify dns server used by application
+# DNS server configuration. 'system' uses the device's default DNS.
 dns-server = system, 8.8.8.8, 8.8.4.4, 9.9.9.9:9953
 
-# Specify doh server used by application, support batch query through multiple servers
+# DNS over HTTPS (DoH) servers for encrypted DNS queries.
 doh-server = https://9.9.9.9/dns-query, https://1.1.1.1/dns-query
 
-# Specify route rule and domain rule, matching traffic will not be redirected or rejected.
-skip-proxy = 127.0.0.1, 192.168.0.0/16, 10.0.0.0/8, 172.16.0.0/12, 100.64.0.0/10, localhost, *.local, www.baidu.com //444
+# List of domains or IP ranges that bypass the proxy.
+skip-proxy = 127.0.0.1, 192.168.0.0/16, 10.0.0.0/8, 172.16.0.0/12, 100.64.0.0/10, localhost, *.local, www.example.com
 
-# Test url used by url-test and manually node speed test. Redirect proxy will use this url.
+# URL used to test latency for proxy connections.
 proxy-test-url = http://www.gstatic.com/generate_204
 
-# Test url used by url-test and manually node speed test. Direct proxy will use this url.
+# URL used to test latency for direct connections.
 internet-test-url = http://www.gstatic.cn/generate_204
 
-# Timeout for all connectivity tests
+# Timeout in seconds for connectivity tests.
 test-timeout = 5
 
-# Matched domains won't get fake ip dns response
+# Domains that should always resolve to their real IP, bypassing fake IP mechanisms.
 always-real-ip = *.srv.nintendo.net, *.stun.playstation.net, xbox.*.microsoft.com, *.xboxlive.com
 
-# Establish an http proxy server on your device and provide proxy service at specified ip
+# Internal HTTP proxy server address and port.
 http-listen = 0.0.0.0:1234
 
-# Establish a socks5 proxy server on your device and provide proxy service at specified ip
+# Internal SOCKS5 proxy server address and port.
 socks5-listen = 127.0.0.1:1235
 
-# If proxy does not support udp relay, use DIRECT or REJECT instead
+# Behavior when a proxy does not support UDP relay (DIRECT or REJECT).
 udp-policy-not-supported-behaviour = DIRECT
 
 [Host]
-# Maps 'abc.com' to '1.2.3.4'
+# Static IP mapping for specific domains.
 abc.com = 1.2.3.4
 
-# Maps any domain ending with '.dev' to '6.7.8.9'
+# Wildcard domain mapping.
 *.dev = 6.7.8.9
 
-# Aliases 'bar.com' dns query result to 'foo.com'
+# DNS alias (CNAME) mapping.
 foo.com = bar.com
 
-# Assigns '8.8.8.8' as dns server for 'bar.com'
+# Custom DNS server for a specific domain.
 bar.com = server:8.8.8.8
 
 [Proxy]
-# Built-in policy
+# Built-in policies.
 On = direct
 Off = reject
 
-# http proxy
+# HTTP proxy configuration.
 ProxyHTTP = http, 1.2.3.4, 443, username, password
 
-# https proxy
+# HTTPS proxy with TLS settings.
 ProxyHTTPS = https, 1.2.3.4, 443, username, password, skip-cert-verify=true, sni=www.google.com
 
-# socks5 proxy
+# SOCKS5 proxy configuration.
 ProxySOCKS5 = socks5, 1.2.3.4, 443, username, password, udp-relay=false
 
-# socks5 over tls proxy
+# SOCKS5 over TLS for enhanced security.
 ProxySOCKS5TLS = socks5-tls, 1.2.3.4, 443, username, password, skip-cert-verify=true, sni=www.google.com
 
-# shadowsocks proxy, simple-obfs supported
+# Shadowsocks proxy with optional obfuscation.
 ProxySS = ss, 1.2.3.4, 8000, encrypt-method=chacha20-ietf-poly1305, password=abcd1234, udp-relay=false, obfs=http, obfs-host=www.google.com, obfs-uri=/
 
-# vmess proxy, tls and websocket supported, pure tcp is not supported
+# VMess proxy for V2Ray protocols.
 ProxyVMess = vmess, 1.2.3.4, 8000, username=0233d11c-15a4-47d3-ade3-48ffca0ce119, udp-relay=false, ws=true, tls=true, ws-path=/v2, ws-headers=X-Header-1:value|X-Header-2:value, skip-cert-verify=true, sni=www.google.com, vmess-aead=true
 
-# trojan proxy, trojan grpc is not supported
+# Trojan proxy configuration.
 ProxyTrojan = trojan, 192.168.20.6, 443, password=password1, udp-relay=false, skip-cert-verify=true, sni=www.google.com
 
-# wireguard proxy
+# WireGuard VPN integration.
 ProxyWireguard = wireguard, section-name = HomeServer
 
 [WireGuard HomeServer]
+# Specific WireGuard interface and peer configuration.
 private-key = sDEZLACT3zgNCS0CyClgcBC2eYROqYrwLT4wdtAJj3s=
 self-ip = 10.0.2.2
 dns-server = 8.8.8.8
@@ -93,86 +99,61 @@ mtu = 1280
 peer = (public-key = fWO8XS9/nwUQcqnkfBpKeqIqbzclQ6EKP20Pgvzwclg=, allowed-ips = 0.0.0.0/0, endpoint = 192.168.20.6:51820, keepalive = 30)
 
 [Proxy Group]
-# A proxy group where the selected proxy can be changed manually
+# Manual selection group.
 SelectGroup = select, ProxyHTTP, ProxyHTTPS, DIRECT, REJECT
 
-# A proxy group where the selected proxy is decided automatically based on url test results
+# Automatic latency-based selection.
 AutoTestGroup = url-test, ProxySOCKS5, ProxySOCKS5TLS, url=http://www.gstatic.com/generate_204, interval=600, tolerance=100, timeout=5, hidden=true
 
-# A proxy group with an external proxies list url
-ExternalGroup = select, policy-path=https://test.com/nodes.txt, policy-regex-filter=HK-.*
-AutoExternalGroup = url-test, policy-path=https://test.com/nodes.txt
+# Group utilizing an external policy list.
+ExternalGroup = select, policy-path=https://example.com/nodes.txt, policy-regex-filter=HK-.*
 
-# A proxy group which contains all proxies under the [Proxy] section
+# Group that includes all defined proxies.
 AllProxies = select, include-all-proxies = true
 
-# A proxy group which contains all proxies from other groups by name
-IncludeOtherGroup = select, include-other-group = "SelectGroup, ExternalGroup", policy-regex-filter=Proxy.*
-
-# A proxy group whose selection is chosen randomly
+# Load balancing group for distributing traffic.
 LoadBalanceGroup = load-balance, ProxyHTTP, ProxyHTTPS
 
-# A proxy group just like url-test but follows 'first come first served' rule
+# Fallback group: switches to next proxy if current fails.
 FallbackGroup = fallback, ProxySOCKS5, ProxySOCKS5TLS, url=http://www.gstatic.com/generate_204, interval=600, timeout=5
 
 [Rule]
-# Domain exact match 'www.apple.com' will be redirected to proxy named 'ProxyHTTP' in [Proxy] section
+# Direct domain matching.
 DOMAIN,www.apple.com,ProxyHTTP
 
-# Domain exact match 'www.google.com' will be redirected to proxy group named 'SelectGroup' in [Proxy Group] section
-DOMAIN,www.google.com,SelectGroup
-
-# Domain ending with 'apple.com' will be redirected to 'Proxy', DNS query of this domain will trigger in the remote proxy
+# Domain suffix matching (covers all subdomains).
 DOMAIN-SUFFIX,apple.com,Proxy,force-remote-dns
 
-# Domain containing 'google' keyword will be redirected to 'Proxy', a fake ip will be returned in DNS query
+# Domain keyword matching.
 DOMAIN-KEYWORD,google,Proxy,enhanced-mode
 
-# Destination ip matching route '192.168.0.0/16' will be sent directly
+# IP range matching using CIDR notation.
 IP-CIDR,192.168.0.0/16,DIRECT
 
-# Destination ip located in United States will be rejected
+# Geolocation-based matching (e.g., ISO country code).
 GEOIP,US,REJECT
 
-# Traffic sent by application whose package name is 'com.android.vending' will be sent to 'Proxy'
-PROCESS-NAME,com.android.vending,Proxy  # android package name
-PROCESS-NAME,*google*,Proxy             # android package name wildcard rule
+# Application-based matching by process/package name.
+PROCESS-NAME,com.android.vending,Proxy
 
-# Traffic matching external rules defined in 'https://ruleset.com/cn' will be sent to 'ProxyVMess'
-RULE-SET,https://ruleset.com/cn,ProxyVMess
+# Rule matching traffic against an external rule set.
+RULE-SET,https://example.com/ruleset.conf,ProxyVMess
 
-# Traffic matching external domain rules defined in 'https://domainset.com/ad' will be rejected
-DOMAIN-SET,https://domainset.com/ad,REJECT
-
-# Traffic sent using wifi whose ssid name is 'CMCC' will be rejected
-SUBNET,SSID:CMCC,REJECT
-
-# Traffic sent using wifi whose bssid is 'F4-98-A0-73-3A-5B' will be sent directly
-SUBNET,BSSID:F4-98-A0-73-3A-5B,DIRECT
-
-# Traffic sent through a router whose ip is '192.168.1.1' will be sent directly
-SUBNET,ROUTER:192.168.1.1,DIRECT
-
-# Traffic sent using wifi will be sent directly
+# SSID/BSSID based rules for specific networks.
 SUBNET,TYPE:WIFI,DIRECT
 
-# Traffic sent using wired network will be sent directly
-SUBNET,TYPE:WIRED,DIRECT
-
-# Traffic sent using mobile network will be sent through 'SelectGroup'
-SUBNET,TYPE:CELLULAR,SelectGroup
-
-# Traffic sent using mobile network whose MCC is 100 and MNC is 200, will be sent directly
-SUBNET,MCCMNC:100-200,DIRECT
-
-# Reject quic, fallback to tls
+# Protocol-specific rules.
 PROTOCOL,QUIC,REJECT
 
-# Traffic matching no rules above will be sent to 'ProxyTrojan'
+# Default rule for traffic matching no other rules.
 FINAL,ProxyTrojan
 
 [Panel]
-PanelA = title="Panel Title", content="Panel Content\nSecondLine", style=info
+# Custom UI panel for displaying information or status.
+PanelA = title="Status Panel", content="System Online\nAll services operational", style=info
+```
+
+You can read on for detailed definitions of different sections.
 ```
 
 You can read on for detailed definitions of different sections.

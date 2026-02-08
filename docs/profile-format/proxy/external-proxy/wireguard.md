@@ -4,19 +4,23 @@ sidebar_position: 5
 
 # WireGuard
 
+WireGuard is an extremely simple yet fast and modern VPN that utilizes state-of-the-art cryptography. Surfboard provides native integration for WireGuard tunnels.
+
 ## Protocol Standard
 
 - https://en.wikipedia.org/wiki/WireGuard
 
 ## Example
 
-Unlike other proxies defined in a single line, WireGuard proxies use a standalone configuration section for details, linked by the section name in the proxy definition.
+Unlike other proxies defined in a single line, WireGuard proxies use a standalone configuration section for details, linked by the `section-name` in the proxy definition.
 
 ```ini
 [Proxy]
+# Definition that references a standalone WireGuard configuration section
 wireguard-home = wireguard, section-name = HomeServer
 
 [WireGuard HomeServer]
+# Specific interface and peer settings for the WireGuard tunnel
 private-key = sDEZLACT3zgNCS0CyClgcBC2eYROqYrwLT4wdtAJj3s=
 self-ip = 10.0.2.2
 dns-server = 8.8.8.8

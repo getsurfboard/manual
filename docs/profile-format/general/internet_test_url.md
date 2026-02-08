@@ -4,17 +4,16 @@ sidebar_position: 4
 
 # `internet-test-url`
 
-Test URL used by the [DIRECT](/docs/profile-format/proxy/built-in-proxy/direct) proxy.
+Defines the test URL used to verify connectivity for the [DIRECT](/docs/profile-format/proxy/built-in-proxy/direct) proxy.
 
 For non-direct proxies, please refer to [`proxy-test-url`](./proxy_test_url).
 
-An `HTTP HEAD` request is sent to this URL.
-
-A response of `HTTP/1.1 204 No Content` is expected.
+An `HTTP HEAD` request is sent to this URL. A response of `HTTP/1.1 204 No Content` is expected.
 
 ## Example
 
 ```ini
+# Specifies a reliable URL for testing direct internet connectivity
 internet-test-url = http://www.gstatic.cn/generate_204
 ```
 

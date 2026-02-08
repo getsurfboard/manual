@@ -14,3 +14,4 @@ The following proxy protocols are currently supported:
 - [VMESS](/docs/profile-format/proxy/external-proxy/vmess)
 - [Trojan](/docs/profile-format/proxy/external-proxy/trojan)
 - [Wireguard](/docs/profile-format/proxy/external-proxy/wireguard)
+- [Hysteria2](/docs/profile-format/proxy/external-proxy/hysteria2)

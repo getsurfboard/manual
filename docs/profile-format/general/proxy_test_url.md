@@ -4,17 +4,16 @@ sidebar_position: 3
 
 # `proxy-test-url`
 
-Test URL used by [url-test](/docs/profile-format/proxygroup/auto) and manual node speed tests.
+Defines the test URL used by [url-test](/docs/profile-format/proxygroup/auto) groups and manual node speed tests to determine proxy latency and availability.
 
 Non-direct proxies will use this URL. For [direct proxy](/docs/profile-format/proxy/built-in-proxy/direct), please refer to [`internet-test-url`](./internet_test_url).
 
-An `HTTP HEAD` request is sent to this URL.
-
-A response of `HTTP/1.1 204 No Content` is expected.
+An `HTTP HEAD` request is sent to this URL. A response of `HTTP/1.1 204 No Content` is expected.
 
 ## Example
 
 ```ini
+# Specifies a reliable URL for testing proxy connectivity and latency
 proxy-test-url = http://www.gstatic.com/generate_204
 ```
 

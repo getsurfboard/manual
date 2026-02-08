@@ -4,14 +4,14 @@ sidebar_position: 1
 
 # Fallback
 
-A group of proxies with a test URL, similar to the [Auto Select](./auto) group.
+The `fallback` group type ensures high availability by automatically switching to the next available proxy in the list if the current one fails.
 
 Unlike the Auto Select group, the selection change takes effect immediately as long as any proxy test succeeds.
 
-Therefore, proxy order is critical in a fallback group; you should place better proxies first.
+Therefore, proxy order is critical in a fallback group; you should place more reliable or faster proxies first.
 
 :::note
-Fallback group selection cannot be changed manually.
+Fallback group selection cannot be changed manually by the user.
 :::
 
 ## Example
@@ -20,10 +20,11 @@ Fallback group selection cannot be changed manually.
 
 ```ini
 [Proxy Group]
+# Switches to ProxySOCKS5TLS if ProxySOCKS5 fails the connectivity test
 FallbackGroup = fallback, ProxySOCKS5, ProxySOCKS5TLS, url=http://www.gstatic.com/generate_204, interval=600, timeout=5
 
 [Rule]
-# Traffic matching 'www.google.com' will be redirected through FallbackGroup's selected proxy
+# Traffic matching 'www.google.com' will be redirected through FallbackGroup's currently active proxy
 DOMAIN, www.google.com, FallbackGroup
 ```
 
