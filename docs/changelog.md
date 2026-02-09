@@ -4,6 +4,11 @@ sidebar_position: 5
 
 # ChangeLog
 
+### mobile-2.26.1
+
+- **Fixes**
+    - Fixed profile editor text selection not aligned in LAN profile manager website
+
 ### mobile-2.26.0
 
 - **New Features**
