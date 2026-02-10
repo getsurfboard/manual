@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkmanual=self.webpackChunkmanual||[]).push([[4542],{2148:e=>{e.exports=JSON.parse('{"authors":[{"name":"Surfboard","title":"Developer of Surfboard","url":"https://t.me/getsurfboard","imageURL":"https://github.com/getsurfboard.png","key":"surfboard","page":null,"count":1}]}')}}]);
