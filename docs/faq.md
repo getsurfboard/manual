@@ -22,6 +22,10 @@ On some systems, the battery consumption attributed to network transmission by o
 
 Please judge the actual battery impact based on your usage time and device performance, rather than relying solely on the battery consumption percentage displayed in system settings.
 
+## Why is data usage high in system settings?
+
+Since Surfboard takes over all network traffic for the system, all data transmitted by the device (whether it is routed through a proxy or sent directly) is processed by Surfboard. As a result, the system attributes all system-wide traffic to Surfboard, making its data usage appear much higher than it actually is.
+
 ## How can I reduce battery consumption?
 
 You can use the **Bypass** configuration in the 'Tools' tab. Excluding specific applications from the VPN (or only including necessary ones) can reduce battery consumption.
