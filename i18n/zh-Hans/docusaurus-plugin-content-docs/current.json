@@ -1,0 +1,50 @@
+{
+  "version.label": {
+    "message": "Next",
+    "description": "The label for version current"
+  },
+  "sidebar.tutorialSidebar.category.Profile format": {
+    "message": "配置文件格式",
+    "description": "The label for category 'Profile format' in sidebar 'tutorialSidebar'"
+  },
+  "sidebar.tutorialSidebar.category.[General]": {
+    "message": "常规",
+    "description": "The label for category '[General]' in sidebar 'tutorialSidebar'"
+  },
+  "sidebar.tutorialSidebar.category.[Host]": {
+    "message": "域名解析",
+    "description": "The label for category '[Host]' in sidebar 'tutorialSidebar'"
+  },
+  "sidebar.tutorialSidebar.category.[Proxy]": {
+    "message": "代理服务器",
+    "description": "The label for category '[Proxy]' in sidebar 'tutorialSidebar'"
+  },
+  "sidebar.tutorialSidebar.category.Built-in proxy": {
+    "message": "内置代理",
+    "description": "The label for category 'Built-in proxy' in sidebar 'tutorialSidebar'"
+  },
+  "sidebar.tutorialSidebar.category.External proxy": {
+    "message": "外部代理",
+    "description": "The label for category 'External proxy' in sidebar 'tutorialSidebar'"
+  },
+  "sidebar.tutorialSidebar.category.[Proxy Group]": {
+    "message": "策略组",
+    "description": "The label for category '[Proxy Group]' in sidebar 'tutorialSidebar'"
+  },
+  "sidebar.tutorialSidebar.category.[Rule]": {
+    "message": "规则",
+    "description": "The label for category '[Rule]' in sidebar 'tutorialSidebar'"
+  },
+  "sidebar.tutorialSidebar.category.[Panel]": {
+    "message": "面板",
+    "description": "The label for category '[Panel]' in sidebar 'tutorialSidebar'"
+  },
+  "sidebar.tutorialSidebar.category.Profile Example": {
+    "message": "配置示例",
+    "description": "The label for category 'Profile Example' in sidebar 'tutorialSidebar'"
+  },
+  "sidebar.tutorialSidebar.category.Agreement": {
+    "message": "相关协议",
+    "description": "The label for category 'Agreement' in sidebar 'tutorialSidebar'"
+  }
+}

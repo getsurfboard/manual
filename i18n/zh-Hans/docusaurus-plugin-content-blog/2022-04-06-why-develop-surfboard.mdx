@@ -1,0 +1,39 @@
+---
+slug: why-develop-surfboard
+title: 为什么要开发 Surfboard
+authors: [surfboard]
+tags: [surfboard]
+---
+
+### 在这之前
+
+最初，我是 [Shadowsocks](https://play.google.com/store/apps/details?id=com.github.shadowsocks) 的忠实用户，几乎 24/7 全天候使用它，以便在受限的网络环境中享受自由开放的互联网。
+
+后来我注意到，当 Shadowsocks 处于活动状态时，所有传出的 UDP 数据包都会被丢弃（我相信这个问题后来已经解决了）。这意味着每当我想要玩游戏时，我都必须手动禁用 Shadowsocks，玩完后再重新开启——这是一个非常乏味且不便的过程。
+
+### 第一个版本
+
+这让我开始思考：为什么不根据我的特定需求构建一个 VPN 应用呢？这就是第一个迭代版本 "SS_NG"（Shadowsocks Next Generation 的缩写）诞生的原因。虽然它的 UI 和功能还很简陋，但它完美地实现了我的目标：通过 Shadowsocks 协议转发流量且不阻塞 UDP。它很快就成为了我主要的、常驻后台的 VPN 应用。
+
+### 灵感来源
+
+后来，在换用 MacBook Pro 和 iPhone 之后，我发现了 Surge。我立刻被它的功能所打动，特别是：
+
+- 漂亮的设计
+- 全面的功能集
+- 稳定性和性能
+- 细粒度的配置规则
+- 多平台支持
+
+在我看来，Surge 仍然是 Apple 生态系统中首屈一指的 VPN 应用程序。
+
+### 现在
+
+当我最终回到 Android 平台时，我意识到还没有一个兼容 Surge 配置的 VPN 应用。这促使我重启了 SS_NG 项目，并以 Surge 的设计理念为核心进行了重构。新的应用程序具有以下特点：
+
+- 兼容 Surge 配置格式
+- 详细的流量分析和日志记录
+- 支持远程节点、规则和策略组切换
+- ...
+
+我将这个新应用命名为 "Surfboard"——它的前三个字母与 Surge 相同，同时唤起了在互联网上“冲浪”的意象。今天，Surfboard 已经从一个个人的侧边项目演变成了一个公共工具，供任何追求自由开放互联网体验的人使用。

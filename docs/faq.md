@@ -56,7 +56,7 @@ If Global mode works, the issue might be caused by:
 
 ## Why are certain Surge standards not supported?
 
-### MITM (Man-in-the-Middle)
+### MITM (Man-in-the-Middle) {#mitm}
 
 Since Android 7.0, [Google has removed support for trusting user-installed CAs](https://android-developers.googleblog.com/2016/07/changes-to-trusted-certificate.html) by default. Consequently, MITM functionality is only achievable on rooted devices.
 

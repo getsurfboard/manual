@@ -1,0 +1,26 @@
+{
+  "title": {
+    "message": "Surfboard 使用手册",
+    "description": "The title in the navbar"
+  },
+  "logo.alt": {
+    "message": "Surfboard 图标",
+    "description": "The alt text of navbar logo"
+  },
+  "item.label.Tutorial": {
+    "message": "教程",
+    "description": "Navbar item with label Tutorial"
+  },
+  "item.label.Blog": {
+    "message": "博客",
+    "description": "Navbar item with label Blog"
+  },
+  "item.label.Feature requests": {
+    "message": "功能请求",
+    "description": "Navbar item with label Feature requests"
+  },
+  "item.label.Manual Source": {
+    "message": "手册源码",
+    "description": "Navbar item with label Manual Source"
+  }
+}

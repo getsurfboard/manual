@@ -1,0 +1,26 @@
+{
+  "link.title.Community": {
+    "message": "社区",
+    "description": "The title of the footer links column with title=Community in the footer"
+  },
+  "link.title.More": {
+    "message": "更多",
+    "description": "The title of the footer links column with title=More in the footer"
+  },
+  "link.item.label.Telegram Channel": {
+    "message": "Telegram 频道",
+    "description": "The label of footer link with label=Telegram Channel linking to https://t.me/surfboardnews"
+  },
+  "link.item.label.Twitter": {
+    "message": "Twitter",
+    "description": "The label of footer link with label=Twitter linking to https://twitter.com/getsurfboard"
+  },
+  "link.item.label.Blog": {
+    "message": "博客",
+    "description": "The label of footer link with label=Blog linking to /blog"
+  },
+  "copyright": {
+    "message": "Copyright © 2026 Surfboard, Inc. 使用 Docusaurus 构建。",
+    "description": "The footer copyright"
+  }
+}

@@ -16,6 +16,11 @@ const config = {
   organizationName: 'getsurfboard', // Usually your GitHub org/user name.
   projectName: 'manual', // Usually your repo name.
 
+  i18n: {
+    defaultLocale: 'en',
+    locales: ['en', 'zh-Hans'],
+  },
+
   presets: [
     [
       'classic',
@@ -108,6 +113,10 @@ const config = {
             to: '/feature-requests',
             label: 'Feature requests',
             position: 'left',
+          },
+          {
+            type: 'localeDropdown',
+            position: 'right',
           },
           {
             href: 'https://github.com/getsurfboard/manual',
