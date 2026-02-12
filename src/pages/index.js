@@ -5,6 +5,7 @@ import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import styles from './index.module.css';
 import HomepageFeatures from '@site/src/components/HomepageFeatures';
+import Translate, {translate} from '@docusaurus/Translate';
 
 function HomepageHeader() {
   const {siteConfig} = useDocusaurusContext();
@@ -12,12 +13,18 @@ function HomepageHeader() {
     <header className={clsx('hero hero--primary', styles.heroBanner)}>
       <div className="container">
         <h1 className="hero__title">{siteConfig.title}</h1>
-        <p className="hero__subtitle">{siteConfig.tagline}</p>
+        <p className="hero__subtitle">
+          <Translate id="homepage.tagline">
+            {siteConfig.tagline}
+          </Translate>
+        </p>
         <div className={styles.buttons}>
           <Link
             className="button button--secondary button--lg"
             to="/docs/installation">
-            Explore more
+            <Translate id="homepage.explore_more">
+              Explore more
+            </Translate>
           </Link>
         </div>
       </div>
@@ -30,7 +37,10 @@ export default function Home() {
   return (
     <Layout
       title={``}
-      description="Documentation of Surfboard for Android">
+      description={translate({
+        message: 'Documentation of Surfboard for Android',
+        id: 'homepage.description',
+      })}>
       <HomepageHeader />
       <main>
         <HomepageFeatures />

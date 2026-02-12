@@ -4,6 +4,12 @@ sidebar_position: 5
 
 # 更新日志
 
+### mobile-2.26.2
+
+- **修复**
+  - 修复了 Hysteria2 端口跳跃
+  - 修复了 Hysteria2 类型在代理列表中不显示的问题
+
 ### mobile-2.26.1
 
 - **修复**

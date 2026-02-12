@@ -7,6 +7,7 @@
 
 import React, {useEffect} from 'react';
 import Layout from '@theme/Layout';
+import Translate, {translate} from '@docusaurus/Translate';
 
 import clsx from 'clsx';
 import styles from './styles.module.css';
@@ -24,7 +25,9 @@ function Feedback() {
   }, []);
 
   return (
-    <Layout title="Feedback" description="Docusaurus 2 Feature Requests page">
+    <Layout
+      title={translate({message: 'Feedback', id: 'feature-requests.title'})}
+      description={translate({message: 'Feature Requests', id: 'feature-requests.description'})}>
       <main
         className={clsx('container', 'margin-vert--lg', styles.main)}
         data-canny

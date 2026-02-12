@@ -1,30 +1,55 @@
 import React from 'react';
 import clsx from 'clsx';
 import styles from './styles.module.css';
+import Translate from '@docusaurus/Translate';
 
 const FeatureList = [
   {
-    title: 'Beautiful dashboard UI',
+    title: (
+      <Translate id="homepage.features.dashboard.title">
+        Beautiful dashboard UI
+      </Translate>
+    ),
     Png: require('@site/static/img/dashboard.png').default,
   },
   {
-    title: 'Profiles management',
+    title: (
+      <Translate id="homepage.features.profiles.title">
+        Profiles management
+      </Translate>
+    ),
     Png: require('@site/static/img/profiles.png').default,
   },
   {
-    title: 'Embeded editor',
+    title: (
+      <Translate id="homepage.features.editor.title">
+        Embeded editor
+      </Translate>
+    ),
     Png: require('@site/static/img/editor.png').default,
   },
   {
-    title: 'Tools for debug',
+    title: (
+      <Translate id="homepage.features.tools.title">
+        Tools for debug
+      </Translate>
+    ),
     Png: require('@site/static/img/tools.png').default,
   },
   {
-    title: 'Dark mode support',
+    title: (
+      <Translate id="homepage.features.dark_mode.title">
+        Dark mode support
+      </Translate>
+    ),
     Png: require('@site/static/img/dark_mode.png').default,
   },
   {
-    title: 'More to explore...',
+    title: (
+      <Translate id="homepage.features.more.title">
+        More to explore...
+      </Translate>
+    ),
     Png: require('@site/static/img/settings.png').default,
   },
 ];

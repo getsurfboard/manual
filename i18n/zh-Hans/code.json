@@ -360,5 +360,38 @@
   "theme.tags.tagsPageTitle": {
     "message": "标签",
     "description": "The title of the tag list page"
+  },
+  "homepage.tagline": {
+    "message": "Android 平台上的网络流量处理工具"
+  },
+  "homepage.explore_more": {
+    "message": "探索更多"
+  },
+  "homepage.description": {
+    "message": "Surfboard for Android 文档"
+  },
+  "homepage.features.dashboard.title": {
+    "message": "精美的仪表盘"
+  },
+  "homepage.features.profiles.title": {
+    "message": "配置文件管理"
+  },
+  "homepage.features.editor.title": {
+    "message": "内置编辑器"
+  },
+  "homepage.features.tools.title": {
+    "message": "调试工具"
+  },
+  "homepage.features.dark_mode.title": {
+    "message": "深色模式支持"
+  },
+  "homepage.features.more.title": {
+    "message": "更多功能等您探索..."
+  },
+  "feature-requests.title": {
+    "message": "功能反馈"
+  },
+  "feature-requests.description": {
+    "message": "功能反馈页面"
   }
 }
