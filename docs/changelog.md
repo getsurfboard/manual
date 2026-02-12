@@ -4,6 +4,12 @@ sidebar_position: 5
 
 # ChangeLog
 
+### mobile-2.26.2
+
+- **Fixes**
+  - Fixed Hysteria2 port-hopping
+  - Fixed Hysteria2 type not displayed in proxy list
+
 ### mobile-2.26.1
 
 - **Fixes**
