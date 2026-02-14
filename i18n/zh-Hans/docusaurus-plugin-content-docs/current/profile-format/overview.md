@@ -87,6 +87,12 @@ ProxyVMess = vmess, 1.2.3.4, 8000, username=0233d11c-15a4-47d3-ade3-48ffca0ce119
 # Trojan 代理配置。
 ProxyTrojan = trojan, 192.168.20.6, 443, password=password1, udp-relay=false, skip-cert-verify=true, sni=www.google.com
 
+# AnyTLS 代理配置。
+ProxyAnyTLS = anytls, 1.2.3.4, 443, password, skip-cert-verify=true, sni=abc.com, reuse=false
+
+# Hysteria2 代理配置。
+ProxyHysteria2 = hysteria2, 1.2.3.4, 443, password=pwd, download-bandwidth=100, port-hopping="1234;5000-6000", port-hopping-interval=30, skip-cert-verify=true, sni=example.com, udp-relay=true
+
 # WireGuard VPN 集成。
 ProxyWireguard = wireguard, section-name = HomeServer
 
