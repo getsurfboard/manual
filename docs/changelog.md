@@ -4,6 +4,15 @@ sidebar_position: 5
 
 # ChangeLog
 
+### mobile-2.27.0
+
+- **New Features**
+  - Added support for new proxy protocol anytls.
+  - Updated LAN profile editor UI: enlarged the editor and added line number display support.
+  - In-app profile editor now supports profile keyboard highlight.
+  - In-app profile editor now supports IME scroll animation on Android 11+ devices.
+  - Logcat & recent request UI now support displaying decoded IDN domains.
+
 ### mobile-2.26.2
 
 - **Fixes**
