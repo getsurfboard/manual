@@ -4,6 +4,13 @@ sidebar_position: 5
 
 # ChangeLog
 
+### mobile-2.27.1
+
+- **New Features**
+  - Added support for logical rules (AND, OR, NOT).
+  - Better handle profile content which wrap string value in quotes.
+  - Support import anytls:// uri directly.
+
 ### mobile-2.27.0
 
 - **New Features**
