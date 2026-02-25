@@ -136,6 +136,9 @@ DOMAIN-KEYWORD,google,Proxy,enhanced-mode
 # 使用 CIDR 表示法的 IP 范围匹配。
 IP-CIDR,192.168.0.0/16,DIRECT
 
+# 组合多个标准的逻辑规则。
+AND,((DOMAIN-SUFFIX,google.com),(DEST-PORT,443)),Proxy
+
 # 基于地理位置的匹配（例如 ISO 国家代码）。
 GEOIP,US,REJECT
 

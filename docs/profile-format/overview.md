@@ -136,6 +136,9 @@ DOMAIN-KEYWORD,google,Proxy,enhanced-mode
 # IP range matching using CIDR notation.
 IP-CIDR,192.168.0.0/16,DIRECT
 
+# Logical rule combining multiple criteria.
+AND,((DOMAIN-SUFFIX,google.com),(DEST-PORT,443)),Proxy
+
 # Geolocation-based matching (e.g., ISO country code).
 GEOIP,US,REJECT
 
@@ -157,9 +160,6 @@ FINAL,ProxyTrojan
 [Panel]
 # Custom UI panel for displaying information or status.
 PanelA = title="Status Panel", content="System Online\nAll services operational", style=info
-```
-
-You can read on for detailed definitions of different sections.
 ```
 
 You can read on for detailed definitions of different sections.
