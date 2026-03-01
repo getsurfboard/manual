@@ -93,6 +93,9 @@ ProxyAnyTLS = anytls, 1.2.3.4, 443, password, skip-cert-verify=true, sni=abc.com
 # Hysteria2 代理配置。
 ProxyHysteria2 = hysteria2, 1.2.3.4, 443, password=pwd, download-bandwidth=100, port-hopping="1234;5000-6000", port-hopping-interval=30, skip-cert-verify=true, sni=example.com, udp-relay=true
 
+# Snell 代理配置。
+ProxySnell = snell, 1.2.3.4, 443, psk=yourpsk, version=3, udp-relay=true
+
 # WireGuard VPN 集成。
 ProxyWireguard = wireguard, section-name = HomeServer
 

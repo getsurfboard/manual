@@ -1,0 +1,8 @@
+{
+  "track_id": "ss2022_doc_20260208",
+  "type": "feature",
+  "status": "new",
+  "created_at": "2026-02-08T18:58:00Z",
+  "updated_at": "2026-02-08T18:58:00Z",
+  "description": "update document for shadowsocks new protocol: 2022-blake3-aes-128-gcm & 2022-blake3-aes-256-gcm"
+}

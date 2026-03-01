@@ -15,3 +15,4 @@
 - [Trojan](/docs/profile-format/proxy/external-proxy/trojan)
 - [Wireguard](/docs/profile-format/proxy/external-proxy/wireguard)
 - [Hysteria2](/docs/profile-format/proxy/external-proxy/hysteria2)
+- [Snell](/docs/profile-format/proxy/external-proxy/snell)
