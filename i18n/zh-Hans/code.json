@@ -387,11 +387,5 @@
   },
   "homepage.features.more.title": {
     "message": "更多功能等您探索..."
-  },
-  "feature-requests.title": {
-    "message": "功能反馈"
-  },
-  "feature-requests.description": {
-    "message": "功能反馈页面"
   }
 }
