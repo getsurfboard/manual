@@ -110,11 +110,6 @@ const config = {
             position: 'left',
           },
           {
-            to: '/feature-requests',
-            label: 'Feature requests',
-            position: 'left',
-          },
-          {
             type: 'localeDropdown',
             position: 'right',
           },
