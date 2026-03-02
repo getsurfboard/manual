@@ -4,17 +4,22 @@ sidebar_position: 5
 
 # 更新日志
 
+### mobile-2.28.0
+
+- **新功能**
+  - 增加了对 [Snell](./profile-format/proxy/external-proxy/snell) 代理协议的支持。
+
 ### mobile-2.27.1
 
 - **新功能**
-  - 增加了对逻辑规则 (AND, OR, NOT) 的支持。
+  - 增加了对 [逻辑规则](./profile-format/rule/logical) (AND, OR, NOT) 的支持。
   - 更好地处理配置文件内容中被引号包裹的字符串值。
   - 支持直接导入 anytls:// URI。
 
 ### mobile-2.27.0
 
 - **新功能**
-  - 增加了对新代理协议 anytls 的支持。
+  - 增加了对 [anytls](./profile-format/proxy/external-proxy/anytls) 代理协议的支持。
   - 更新了局域网配置文件编辑器 UI：增大了编辑器并增加了行号显示支持。
   - 应用内配置文件编辑器现在支持配置文件关键字高亮。
   - 应用内配置文件编辑器现在支持在 Android 11+ 设备上使用 IME 滚动动画。
@@ -34,7 +39,7 @@ sidebar_position: 5
 ### mobile-2.26.0
 
 - **新功能**
-    - 增加了对 Shadowsocks 2022 (`2022-blake3-aes-128-gcm` & `2022-blake3-aes-256-gcm`) 和 Hysteria2 代理的支持
+    - 增加了对 Shadowsocks 2022 (`2022-blake3-aes-128-gcm` & `2022-blake3-aes-256-gcm`) 和 [Hysteria2](./profile-format/proxy/external-proxy/hysteria2) 代理的支持
     - 支持在局域网新增的 Web 服务器中上传/编辑/复制/重命名/删除配置文件，请在配置文件列表菜单的右上角尝试使用
 
 ### mobile-2.25.5
@@ -275,7 +280,7 @@ sidebar_position: 5
 
 ### 2.22.0
 
-- 增加了 WireGuard 代理支持。
+- 增加了 [WireGuard](./profile-format/proxy/external-proxy/wireguard) 代理支持。
 - 增加了 `include-other-group` 支持。
 - 忽略了 Ponte 代理。
 - 更新了嵌入式 GeoIP 库。
@@ -314,7 +319,7 @@ sidebar_position: 5
 
 ### 2.21.0
 
-- 增加了对部分 MISC 规则的支持。 
+- 增加了对部分 [MISC 规则](./profile-format/rule/misc) 的支持。 
   - 通过 `IN-PORT` 和 `SRC-IP`，你现在可以更轻松地控制来自局域网代理的流量。
   - 更多信息请查看 [手册](https://getsurfboard.com/zh-Hans/docs/profile-format/rule/misc)。
 - 增加了对紧凑型配置文件列表的支持。
@@ -373,13 +378,13 @@ sidebar_position: 5
 
 ### 2.20.2
 
-- 配置文件内容：增加了对 [子网类型规则](https://getsurfboard.com/zh-Hans/docs/profile-format/rule/subnet) 的支持。
+- 配置文件内容：增加了对 [子网类型规则](./profile-format/rule/subnet) 的支持。
 - 关于设置：为非 Google Play 安装增加了新版本检查。
 - 错误修复。
 
 ### 2.20.1
 
-- 配置文件内容：增加了对子网类型规则的支持。
+- 配置文件内容：增加了对 [子网类型规则](./profile-format/rule/subnet) 的支持。
 - 关于设置：为非 Google Play 安装增加了新版本检查。
 - 错误修复。
 
@@ -598,7 +603,7 @@ sidebar_position: 5
 
 ### 2.16.1
 
-- 支持 [面板 (Panel)](https://getsurfboard.com/zh-Hans/docs/profile-format/panel/static)。
+- 支持 [面板 (Panel)](./profile-format/panel/static)。
 - 修复了 Shadowsocks 协议崩溃问题。
 
 ### 2.16.0
@@ -667,7 +672,7 @@ sidebar_position: 5
 
 ### 2.13.0
 
-- 支持 DOMAIN-SET 规则。
+- 支持 [DOMAIN-SET](./profile-format/rule/domainset) 规则。
 - 修复了 RULE-SET 中域名规则的 force-remote-dns 设置不生效的问题。
 - 增加了韩语支持。
 

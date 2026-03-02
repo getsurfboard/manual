@@ -4,17 +4,22 @@ sidebar_position: 5
 
 # ChangeLog
 
+### mobile-2.28.0
+
+- **New Features**
+  - Added support for the [Snell](./profile-format/proxy/external-proxy/snell) proxy protocol.
+
 ### mobile-2.27.1
 
 - **New Features**
-  - Added support for logical rules (AND, OR, NOT).
+  - Added support for [logical rules](./profile-format/rule/logical) (AND, OR, NOT).
   - Better handle profile content which wrap string value in quotes.
   - Support import anytls:// uri directly.
 
 ### mobile-2.27.0
 
 - **New Features**
-  - Added support for new proxy protocol anytls.
+  - Added support for the [anytls](./profile-format/proxy/external-proxy/anytls) proxy protocol.
   - Updated LAN profile editor UI: enlarged the editor and added line number display support.
   - In-app profile editor now supports profile keyboard highlight.
   - In-app profile editor now supports IME scroll animation on Android 11+ devices.
@@ -34,7 +39,7 @@ sidebar_position: 5
 ### mobile-2.26.0
 
 - **New Features**
-    - Added support for shadowsocks 2022(`2022-blake3-aes-128-gcm` & `2022-blake3-aes-256-gcm`) and hysteria2 proxy support
+    - Added support for shadowsocks 2022(`2022-blake3-aes-128-gcm` & `2022-blake3-aes-256-gcm`) and [hysteria2](./profile-format/proxy/external-proxy/hysteria2) proxy support
     - Support Upload/Edit/Copy/Rename/Delete profile in new added web server in LAN, try it at the top right corner in profile list menu
 
 ### mobile-2.25.5
@@ -275,7 +280,7 @@ Issues above were introduced in 2.22.1 and 2.22.3.
 
 ### 2.22.0
 
-- Added WireGuard proxy support.
+- Added [WireGuard](./profile-format/proxy/external-proxy/wireguard) proxy support.
 - Added `include-other-group` support.
 - Ignored Ponte proxy.
 - Updated embedded GeoIP library.
@@ -314,7 +319,7 @@ Issues above were introduced in 2.22.1 and 2.22.3.
 
 ### 2.21.0
 
-- Added support for some MISC rules. 
+- Added support for some [MISC rules](./profile-format/rule/misc). 
   - With `IN-PORT` and `SRC-IP`, you can now control traffic from LAN proxies more easily.
   - For more info, please check the [manual](https://getsurfboard.com/docs/profile-format/rule/misc).
 - Added support for compact profile list.
@@ -373,13 +378,13 @@ Issues above were introduced in 2.22.1 and 2.22.3.
 
 ### 2.20.2
 
-- Profile content: Added support for [subnet type rules](https://getsurfboard.com/docs/profile-format/rule/subnet).
+- Profile content: Added support for [subnet type rules](./profile-format/rule/subnet).
 - About settings: Added new version checking for non-Google Play installations.
 - Bug fixes.
 
 ### 2.20.1
 
-- Profile content: Added support for subnet type rules.
+- Profile content: Added support for [subnet type rules](./profile-format/rule/subnet).
 - About settings: Added new version checking for non-Google Play installations.
 - Bug fixes.
 
@@ -596,9 +601,9 @@ Issues above were introduced in 2.22.1 and 2.22.3.
 - Supported long-press on IP card to copy IP.
 - Updated translations.
 
-### 2.16.1
+### mobile-2.16.1
 
-- Supported [panel](https://getsurfboard.com/docs/profile-format/panel/static).
+- Supported [panel](./profile-format/panel/static).
 - Fixed Shadowsocks protocol crash issue.
 
 ### 2.16.0
@@ -667,7 +672,7 @@ Issues above were introduced in 2.22.1 and 2.22.3.
 
 ### 2.13.0
 
-- Supported DOMAIN-SET rule.
+- Supported [DOMAIN-SET](./profile-format/rule/domainset) rule.
 - Fixed force-remote-dns setting not working for domain rules in RULE-SET.
 - Added Korean language support.
 
