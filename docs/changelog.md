@@ -4,6 +4,20 @@ sidebar_position: 5
 
 # ChangeLog
 
+### mobile-2.28.1
+
+- **New Features**
+  - **Profile Editor**: Added search support with highlight, navigation, and auto-scroll.
+  - **GeoIP**: Supported importing external `.mmdb` database files via system file picker.
+  - **DNS**: Supported multiple servers in DoH override config.
+  - **DNS**: Added TTL-based in-memory cache support for DoH resolver.
+  - **Proxy**: Supported Shadowsocks 2022 password with identity format (`password:identity`).
+- **Improvements**
+  - **Speedometer**: Improved core logic and correctly handle redirection response codes.
+  - **Profile List**: Optimized "NEW" label display logic to show only when content changes.
+  - **GeoIP**: Updated built-in GeoIP database file.
+  - **Translations**: Updated and improved all supported languages.
+
 ### mobile-2.28.0
 
 - **New Features**
