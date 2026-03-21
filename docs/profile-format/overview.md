@@ -48,6 +48,9 @@ socks5-listen = 127.0.0.1:1235
 # Behavior when a proxy does not support UDP relay (DIRECT or REJECT).
 udp-policy-not-supported-behaviour = DIRECT
 
+# Disable IPv6 support.
+ipv6 = false
+
 [Host]
 # Static IP mapping for specific domains.
 abc.com = 1.2.3.4
