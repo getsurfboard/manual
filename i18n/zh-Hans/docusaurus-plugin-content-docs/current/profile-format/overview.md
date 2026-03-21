@@ -48,6 +48,9 @@ socks5-listen = 127.0.0.1:1235
 # 当代理不支持 UDP 转发时的行为（DIRECT 或 REJECT）。
 udp-policy-not-supported-behaviour = DIRECT
 
+# 禁用 IPv6 支持。
+ipv6 = false
+
 [Host]
 # 特定域名的静态 IP 映射。
 abc.com = 1.2.3.4
