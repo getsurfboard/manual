@@ -4,6 +4,22 @@ sidebar_position: 5
 
 # ChangeLog
 
+### mobile-2.29.0
+
+- **New Features**
+  - **IPv6**: Full IPv6 support, supports proxy forwarding for TCP/UDP/ICMPv6 traffic.
+  - **IPv6**: Added IPv6 related configuration options in Override settings.
+- **Improvements**
+  - **Performance**: Optimized domain rule matching performance and DNS resolution efficiency.
+  - **Performance**: Improved multi-threading security and reduced JNI call overhead.
+  - **UI**: Fixed profile editor error message overflow issue.
+- **Fixes**
+  - Fixed duplicate IP display issue for local proxy addresses.
+  - Fixed ProfileEditorActivity OOM issue.
+  - Fixed DashboardFragment NPE issue.
+  - Fixed getFetchProfileTimeout number format exception.
+  - Standardized log tags.
+
 ### mobile-2.28.1
 
 - **New Features**
