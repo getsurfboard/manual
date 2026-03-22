@@ -4,6 +4,22 @@ sidebar_position: 5
 
 # 更新日志
 
+### mobile-2.29.0
+
+- **新功能**
+  - **IPv6**: 完整的 IPv6 支持，支持 TCP/UDP/ICMPv6 流量代理转发。
+  - **IPv6**: 在 Override 设置中添加了 IPv6 相关配置选项。
+- **改进**
+  - **性能**: 优化域名规则匹配性能和 DNS 解析效率。
+  - **性能**: 改进多线程安全性，减少 JNI 调用开销。
+  - **UI**: 修复配置文件编辑器错误信息溢出问题。
+- **修复**
+  - 修复本地代理地址显示重复 IP 的问题。
+  - 修复 ProfileEditorActivity OOM 问题。
+  - 修复 DashboardFragment NPE 问题。
+  - 修复 getFetchProfileTimeout 数字格式异常。
+  - 标准化日志标签。
+
 ### mobile-2.28.0
 
 - **新功能**
