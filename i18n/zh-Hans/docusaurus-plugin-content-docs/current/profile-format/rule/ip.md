@@ -18,7 +18,7 @@ CIDR 规则将流量与特定的 IP 地址范围进行匹配。
 # 将发往 192.168.0.0/16 私有网络的流量直接转发
 IP-CIDR,192.168.0.0/16,DIRECT
 
-# 将 IPv6 流量路由到指定的 CIDR 范围（目前 Surfboard 会忽略此规则）
+# 将 IPv6 流量路由到指定的 CIDR 范围
 IP-CIDR6,2001:db8:abcd:8000::/50,DIRECT
 ```
 
@@ -35,10 +35,6 @@ IP-CIDR6,2001:db8:abcd:8000::/50,DIRECT
 | type         | IP-CIDR<br/>IP-CIDR6 | 是      | IP-CIDR 适用于 IPv4 流量。<br/>IP-CIDR6 适用于 IPv6 流量。 |
 | route        | -                    | 是      | 格式：\{IP\}/\{mask\}，其中掩码采用 CIDR 前缀格式。                  |
 | target proxy | -                    | 是      | 指定的代理或策略组必须存在于配置文件中。           |
-
-:::caution 注意
-Surfboard 目前不支持 IPv6；`IP-CIDR6` 规则将被忽略。
-:::
 
 ## GEOIP (地理位置)
 
