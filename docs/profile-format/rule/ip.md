@@ -18,7 +18,7 @@ Reference: https://en.wikipedia.org/wiki/Classless_Inter-Domain_Routing
 # Routes traffic to the 192.168.0.0/16 private network directly
 IP-CIDR,192.168.0.0/16,DIRECT
 
-# Routes IPv6 traffic to the specified CIDR range (currently ignored by Surfboard)
+# Routes IPv6 traffic to the specified CIDR range
 IP-CIDR6,2001:db8:abcd:8000::/50,DIRECT
 ```
 
@@ -35,10 +35,6 @@ IP-CIDR6,2001:db8:abcd:8000::/50,DIRECT
 | type         | IP-CIDR<br/>IP-CIDR6 | true      | IP-CIDR works on IPv4 traffic.<br/>IP-CIDR6 works on IPv6 traffic. |
 | route        | -                    | true      | Format: \{IP}/\{mask}, where the mask is in CIDR prefix format.                  |
 | target proxy | -                    | true      | The specified proxy or proxy group must exist in the profile.           |
-
-:::caution
-IPv6 is currently not supported by Surfboard; `IP-CIDR6` rules will be ignored.
-:::
 
 ## GEOIP
 
