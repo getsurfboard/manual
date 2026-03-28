@@ -23,6 +23,7 @@ wireguard-home = wireguard, section-name = HomeServer
 # WireGuard 隧道的特定接口和对等端设置
 private-key = sDEZLACT3zgNCS0CyClgcBC2eYROqYrwLT4wdtAJj3s=
 self-ip = 10.0.2.2
+self-ip-v6 = fd00:abcd:1234::2
 dns-server = 8.8.8.8
 mtu = 1280
 peer = (public-key = fWO8XS9/nwUQcqnkfBpKeqIqbzclQ6EKP20Pgvzwclg=, allowed-ips = 0.0.0.0/0, endpoint = 192.168.20.6:51820)
@@ -37,6 +38,7 @@ peer = (public-key = fWO8XS9/nwUQcqnkfBpKeqIqbzclQ6EKP20Pgvzwclg=, allowed-ips =
 [WireGuard {section name}]
 private-key = {private key}
 self-ip = {self ip}
+self-ip-v6 = {self ipv6}
 dns-server = {dns server ip}
 mtu = {mtu size}
 peer = (public-key = {public key}, allowed-ips = {allowed ip routes}, endpoint = {endpoint address}, keepalive = {keepalive seconds})
@@ -50,6 +52,7 @@ peer = (public-key = {public key}, allowed-ips = {allowed ip routes}, endpoint =
 | section name      | -                         | 是      | 支持域名和 IP 格式。              |
 | private key       | base64 编码格式           | 是      |                                           |
 | self ip           | IPv4 格式                 | 是      |                                           |
+| self ip v6        | IPv6 格式                 | 否      |                                           |
 | dns server ip     | IPv4 格式                 | 是      | 支持以逗号分隔的多个值。 |
 | mtu size          | 大于零的整数              | 是      |                                           |
 | public key        | base64 编码格式           | 是      |                                           |
