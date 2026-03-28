@@ -26,7 +26,7 @@ self-ip = 10.0.2.2
 self-ip-v6 = fd00:abcd:1234::2
 dns-server = 8.8.8.8
 mtu = 1280
-peer = (public-key = fWO8XS9/nwUQcqnkfBpKeqIqbzclQ6EKP20Pgvzwclg=, allowed-ips = 0.0.0.0/0, endpoint = 192.168.20.6:51820)
+peer = (public-key = fWO8XS9/nwUQcqnkfBpKeqIqbzclQ6EKP20Pgvzwclg=, allowed-ips = "0.0.0.0/0, ::/0", endpoint = 192.168.20.6:51820)
 ```
 
 ## 格式
@@ -41,7 +41,7 @@ self-ip = {self ip}
 self-ip-v6 = {self ipv6}
 dns-server = {dns server ip}
 mtu = {mtu size}
-peer = (public-key = {public key}, allowed-ips = {allowed ip routes}, endpoint = {endpoint address}, keepalive = {keepalive seconds})
+peer = (public-key = {public key}, allowed-ips = "{allowed ip routes}", endpoint = {endpoint address}, keepalive = {keepalive seconds})
 ```
 
 ## 参数
@@ -53,9 +53,9 @@ peer = (public-key = {public key}, allowed-ips = {allowed ip routes}, endpoint =
 | private key       | base64 编码格式           | 是      |                                           |
 | self ip           | IPv4 格式                 | 是      |                                           |
 | self ip v6        | IPv6 格式                 | 否      |                                           |
-| dns server ip     | IPv4 格式                 | 是      | 支持以逗号分隔的多个值。 |
+| dns server ip     | IPv4 或 IPv6 格式         | 是      | 用于在隧道远端解析域名格式的转发目的地。支持以逗号分隔的多个值。 |
 | mtu size          | 大于零的整数              | 是      |                                           |
 | public key        | base64 编码格式           | 是      |                                           |
-| allowed ip routes | IPv4 路由格式             | 是      |                                           |
-| endpoint address  | IPv4 IP:端口 格式         | 是      |                                           |
+| allowed ip routes | IPv4 或 IPv6 路由格式     | 是      | 指定多个路由时需用引号包裹，例如 `"0.0.0.0/0, ::/0"`。 |
+| endpoint address  | IP:端口 格式              | 是      | 支持 IPv4 和 IPv6 地址。          |
 | keepalive seconds | 大于零的整数              | 否     | 0 表示禁用 Keepalive。                 |
