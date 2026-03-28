@@ -26,7 +26,7 @@ self-ip = 10.0.2.2
 self-ip-v6 = fd00:abcd:1234::2
 dns-server = 8.8.8.8
 mtu = 1280
-peer = (public-key = fWO8XS9/nwUQcqnkfBpKeqIqbzclQ6EKP20Pgvzwclg=, allowed-ips = 0.0.0.0/0, endpoint = 192.168.20.6:51820)
+peer = (public-key = fWO8XS9/nwUQcqnkfBpKeqIqbzclQ6EKP20Pgvzwclg=, allowed-ips = "0.0.0.0/0, ::/0", endpoint = 192.168.20.6:51820)
 ```
 
 ## Format
@@ -41,7 +41,7 @@ self-ip = {self ip}
 self-ip-v6 = {self ipv6}
 dns-server = {dns server ip}
 mtu = {mtu size}
-peer = (public-key = {public key}, allowed-ips = {allowed ip routes}, endpoint = {endpoint address}, keepalive = {keepalive seconds})
+peer = (public-key = {public key}, allowed-ips = "{allowed ip routes}", endpoint = {endpoint address}, keepalive = {keepalive seconds})
 ```
 
 ## Parameters
@@ -53,9 +53,9 @@ peer = (public-key = {public key}, allowed-ips = {allowed ip routes}, endpoint =
 | private key       | base64 encoded format     | true      |                                           |
 | self ip           | IPv4 format               | true      |                                           |
 | self ip v6        | IPv6 format               | false     |                                           |
-| dns server ip     | IPv4 format               | true      | Supports multiple values separated by commas. |
+| dns server ip     | IPv4 or IPv6 format       | true      | Used to resolve domain destinations through the tunnel on the remote server. Supports multiple values separated by commas. |
 | mtu size          | integer greater than zero | true      |                                           |
 | public key        | base64 encoded format     | true      |                                           |
-| allowed ip routes | IPv4 route format         | true      |                                           |
-| endpoint address  | IPv4 IP:PORT format       | true      |                                           |
+| allowed ip routes | IPv4 or IPv6 route format | true      | Use quotes when specifying multiple routes, e.g., `"0.0.0.0/0, ::/0"`. |
+| endpoint address  | IP:PORT format            | true      | Supports IPv4 and IPv6 addresses.          |
 | keepalive seconds | integer greater than zero | false     | 0 means disable keepalive.                 |
