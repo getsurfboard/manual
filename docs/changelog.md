@@ -4,6 +4,20 @@ sidebar_position: 5
 
 # ChangeLog
 
+### mobile-2.29.1
+
+- **New Features**
+  - **SplashScreen**: Added Android 12+ SplashScreen API support with animated vector icon.
+  - **Batch Import**: Support batch importing multiple profile files via SAF (Storage Access Framework) with concurrent parsing.
+  - **Hysteria2 URI**: Support importing Hysteria2 proxy directly via `hysteria2://` and `hy2://` URI schemes.
+  - **WireGuard**: Added IPv6 support and in-tunnel DNS resolution with TTL cache.
+- **Fixes**
+  - Fixed Snell connection error when using some PSK.
+  - Fixed false unsaved changes prompt in ProfileEditor after saving.
+  - Fixed crashes caused by double close issues in WireGuard.
+- **Improvements**
+  - Updated GeoIP database.
+
 ### mobile-2.29.0
 
 - **New Features**
