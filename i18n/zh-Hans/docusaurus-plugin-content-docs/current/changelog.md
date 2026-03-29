@@ -4,6 +4,20 @@ sidebar_position: 5
 
 # 更新日志
 
+### mobile-2.29.1
+
+- **新功能**
+  - **启动屏**: 添加 Android 12+ SplashScreen API 支持，带动画矢量图标。
+  - **批量导入**: 支持通过 SAF（存储访问框架）批量导入多个配置文件，支持并发解析。
+  - **Hysteria2 URI**: 支持通过 `hysteria2://` 和 `hy2://` URI 方案直接导入 Hysteria2 代理。
+  - **WireGuard**: 添加 IPv6 支持和隧道内 DNS 解析（带 TTL 缓存）。
+- **修复**
+  - 修复使用某些 PSK 时 Snell 连接失败的问题。
+  - 修复 ProfileEditor 保存后仍提示有未保存更改的问题。
+  - 修复 WireGuard 中重复关闭导致的崩溃问题。
+- **改进**
+  - 更新 GeoIP 数据库。
+
 ### mobile-2.29.0
 
 - **新功能**
