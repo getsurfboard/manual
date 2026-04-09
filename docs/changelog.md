@@ -4,6 +4,23 @@ sidebar_position: 5
 
 # ChangeLog
 
+### mobile-2.29.2
+
+- **New Features**
+  - **USER-AGENT Rule**: Support routing HTTP traffic based on User-Agent headers with wildcard pattern matching. Requires Android 10+ and VPN HTTP Proxy enabled.
+  - **Dashboard Interaction**: Tap network speed card to open traffic list sorted by speed; tap traffic usage card to open list sorted by total usage.
+  - **VPN HTTP Proxy Toggle**: New setting to enable/disable HTTP proxy functionality (Android 10+ only).
+  - **Recent Request Quick Access**: Network speed list now supports viewing request details directly.
+- **UI & Theme**
+  - New Material3 theme design.
+  - Fixed occasional theme switching issues.
+  - Fixed external resources menu opening animation.
+  - SSHDump settings now auto-scroll and highlight on navigation.
+- **Fixes**
+  - Fixed theme settings state loss issue.
+  - Improved Snell protocol compatibility.
+  - Optimized profile save logic to preserve partial configs.
+
 ### mobile-2.29.1
 
 - **New Features**
