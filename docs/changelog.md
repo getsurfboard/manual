@@ -4,6 +4,19 @@ sidebar_position: 5
 
 # ChangeLog
 
+### mobile-2.29.3
+
+- **New Features**
+  - **Smart Proxy Group**: Surge configuration files with `smart` proxy group type can now be imported (treated as `url-test`/`auto` type as a temporary compatibility solution).
+  - **DNS Host Rule Enhancement**: Host rules now apply to proxy server domains (previously only applied to target domains).
+  - **Custom DNS Port**: DNS server host rules now support custom port numbers.
+
+- **Fixes**
+  - Fixed traffic list auto-scrolling issue when data updates.
+
+- **Improvements**
+  - **Performance**: Fixed throughput degradation introduced in previous versions and further optimized network performance.
+
 ### mobile-2.29.2
 
 - **New Features**
