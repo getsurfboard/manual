@@ -4,6 +4,15 @@ sidebar_position: 5
 
 # ChangeLog
 
+### mobile-2.29.4
+
+- **UI & Theme**
+  - Aligned more UI components with Material 3 Expressive design (Dashboard, Profiles, ProxyGroups FABs, Hosts list, DoH override settings).
+
+- **Fixes**
+  - Fixed IPv6 DNS not being used.
+  - Fixed dynamic color theme not applying in MainActivity.
+
 ### mobile-2.29.3
 
 - **New Features**

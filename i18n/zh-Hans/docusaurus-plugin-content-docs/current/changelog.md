@@ -4,6 +4,15 @@ sidebar_position: 5
 
 # 更新日志
 
+### mobile-2.29.4
+
+- **UI 与主题**
+  - 更多界面组件适配 Material 3 Expressive 设计（Dashboard、Profiles、ProxyGroups FAB、Hosts 列表、DoH 覆盖设置）。
+
+- **修复**
+  - 修复 IPv6 DNS 未生效的问题。
+  - 修复动态主题在 MainActivity 未应用的问题。
+
 ### mobile-2.29.3
 
 - **新功能**
