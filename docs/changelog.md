@@ -4,6 +4,20 @@ sidebar_position: 5
 
 # ChangeLog
 
+### mobile-2.29.5
+
+- **New Features**
+  - **DoH Server in Host Rules**: DNS over HTTPS servers can now be configured in the `[Host]` section of profiles.
+  - **Proxy Group Icon URL Parsing**: Proxy groups now support parsing the `icon-url` parameter (UI display not yet supported).
+  - **Quoted Proxy Names**: Proxy names wrapped in quotes are now fully supported in lookup, validation, and UI display.
+
+- **Fixes**
+  - Fixed DNS leak caused by real IP queries.
+  - Fixed Volley queue bottleneck that slowed down external resource downloads.
+
+- **Improvements**
+  - Updated embedded GeoIP database.
+
 ### mobile-2.29.4
 
 - **UI & Theme**
