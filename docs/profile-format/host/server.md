@@ -28,9 +28,15 @@ example.com = server:192.168.1.100:5353
 *.cloud-nodes.com = server:140.205.1.13:1053
 ```
 
+```ini title="DNS over HTTPS (DoH) server"
+# Forces all DNS queries for baz.com to be resolved via Cloudflare DoH
+baz.com = server:https://cloudflare-dns.com/dns-query
+```
+
 ## Syntax
 
 - `server:<ip>` - Use default DNS port 53
 - `server:<ip>:<port>` - Use specified custom port
 - `server:system` - Use system DNS
 - `server:syslib` - Use system DNS library
+- `server:https://<host>/<path>` - Use DNS over HTTPS (DoH) server

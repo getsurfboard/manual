@@ -28,9 +28,15 @@ example.com = server:192.168.1.100:5353
 *.cloud-nodes.com = server:140.205.1.13:1053
 ```
 
+```ini title="DNS over HTTPS (DoH) 服务器"
+# 强制 baz.com 的所有 DNS 查询通过 Cloudflare DoH 进行解析
+baz.com = server:https://cloudflare-dns.com/dns-query
+```
+
 ## 语法
 
 - `server:<ip>` - 使用默认 DNS 端口 53
 - `server:<ip>:<port>` - 使用指定的自定义端口
 - `server:system` - 使用系统 DNS
 - `server:syslib` - 使用系统 DNS 库
+- `server:https://<host>/<path>` - 使用 DNS over HTTPS (DoH) 服务器
