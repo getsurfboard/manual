@@ -4,6 +4,16 @@ sidebar_position: 5
 
 # ChangeLog
 
+### mobile-2.29.6
+
+- **New Features**
+  - **Lower MTU Limit**: MTU can now be lowered down to 1400.
+  - **DoH Item in Host List**: Host list now supports adding DoH server entries.
+
+- **Fixes**
+  - Fixed several crash issues.
+  - Fixed OOM when decoding large profiles.
+
 ### mobile-2.29.5
 
 - **New Features**
