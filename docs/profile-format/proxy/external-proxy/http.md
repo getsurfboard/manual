@@ -43,3 +43,4 @@ ProxyHTTPS = https, 1.2.3.4, 443, username, password, skip-cert-verify=true, sni
 | password         | -              | false     |                                                                                                                 |
 | skip-cert-verify | true<br/>false | false     | Applicable if protocol is https.<br/>Set to true if the proxy does not have a valid TLS certificate.                       |
 | sni              | -              | false     | Applicable if protocol is https.<br/>Definition is unnecessary if the SNI value matches the host value.      |
+| underlying-proxy | -              | false     | Use a proxy or proxy group to connect another proxy (proxy chain). See [Common Parameters](/docs/profile-format/proxy#common-parameters). |

@@ -37,3 +37,4 @@ ProxyHysteria2 = hysteria2, 1.2.3.4, 443, password=pwd, download-bandwidth=100, 
 | skip-cert-verify      | true<br/>false | false     | Default value: false. Set to true if the proxy does not have a valid TLS certificate.                                              |
 | sni                   | -              | false     | Definition is unnecessary if the SNI value matches the host value.                                                                 |
 | udp-relay             | true<br/>false | false     | Default value: true. Enable or disable UDP relay.                                                                                  |
+| underlying-proxy | -              | false     | Use a proxy or proxy group to connect another proxy (proxy chain). See [Common Parameters](/docs/profile-format/proxy#common-parameters). |
