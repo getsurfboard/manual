@@ -41,6 +41,7 @@ ProxySOCKS5TLS = socks5-tls, 1.2.3.4, 443, username, password, skip-cert-verify=
 | password         | -                     | false     |                                                                                                                      |
 | skip-cert-verify | true<br/>false        | false     | Applicable if protocol is socks5-tls.<br/>Set to true if the proxy does not have a valid TLS certificate.                       |
 | sni              |                       | false     | Applicable if protocol is socks5-tls.<br/>Definition is unnecessary if the SNI value matches the host value.      |
+| underlying-proxy | -              | false     | Use a proxy or proxy group to connect another proxy (proxy chain). See [Common Parameters](/docs/profile-format/proxy#common-parameters). |
 
 :::tip
 To test with a SOCKS5-TLS proxy, please try using [https://github.com/ginuerzh/gost](https://github.com/ginuerzh/gost), which can create a SOCKS-TLS proxy out of the box.

@@ -23,6 +23,7 @@ AnyTLS is a proxy type that uses TLS for secure communication. It is a simple an
 | skip-cert-verify | true<br/>false   | false     | Set to true if the proxy does not have a valid TLS certificate. Default value: false.                                                                                             |
 | sni              | -                | false     | Server Name Indication. Definition is unnecessary if the SNI value matches the host value.                                                                            |
 | reuse            | true<br/>false   | false     | Whether to reuse connections. Default value: true.                                                                                                                               |
+| underlying-proxy | -              | false     | Use a proxy or proxy group to connect another proxy (proxy chain). See [Common Parameters](/docs/profile-format/proxy#common-parameters). |
 
 ## Example
 

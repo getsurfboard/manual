@@ -43,6 +43,7 @@ ProxyVMess = vmess, 1.2.3.4, 8000, username=0233d11c-15a4-47d3-ade3-48ffca0ce119
 | skip-cert-verify | true<br/>false   | false     | Applicable if tls is true.<br/>Set to true if the proxy does not have a valid TLS certificate.                                                                                             |
 | sni              | -                | false     | Applicable if tls is true.<br/>Definition is unnecessary if the SNI value matches the host value.                                                                            |
 | vmess-aead       | true<br/>false   | false     | Default value: true.                                                                                                                                                            |
+| underlying-proxy | -              | false     | Use a proxy or proxy group to connect another proxy (proxy chain). See [Common Parameters](/docs/profile-format/proxy#common-parameters). |
 
 :::caution
 `vmess-aead` is an unconfirmed standard in the Surge profile format; this may change in the future.
