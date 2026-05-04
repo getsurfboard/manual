@@ -43,3 +43,4 @@ ProxyHTTPS = https, 1.2.3.4, 443, username, password, skip-cert-verify=true, sni
 | password         | -              | 否     |                                                                                                                 |
 | skip-cert-verify | true<br/>false | 否     | 适用于协议为 https 的情况。<br/>如果代理没有有效的 TLS 证书，请设置为 true。                       |
 | sni              | -              | 否     | 适用于协议为 https 的情况。<br/>如果 SNI 值与 host 值一致，则无需定义。      |
+| underlying-proxy | -              | 否       | 通过一个代理来连接另一个代理（代理链）。值可以是另一个代理名称或策略组名称。参见 [通用参数](/docs/profile-format/proxy#通用参数)。 |

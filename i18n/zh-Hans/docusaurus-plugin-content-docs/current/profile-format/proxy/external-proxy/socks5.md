@@ -41,6 +41,7 @@ ProxySOCKS5TLS = socks5-tls, 1.2.3.4, 443, username, password, skip-cert-verify=
 | password         | -                     | 否     |                                                                                                                      |
 | skip-cert-verify | true<br/>false        | 否     | 适用于协议为 socks5-tls 的情况。<br/>如果代理没有有效的 TLS 证书，请设置为 true。                       |
 | sni              |                       | 否     | 适用于协议为 socks5-tls 的情况。<br/>如果 SNI 值与 host 值一致，则无需定义。      |
+| underlying-proxy | -              | 否       | 通过一个代理来连接另一个代理（代理链）。值可以是另一个代理名称或策略组名称。参见 [通用参数](/docs/profile-format/proxy#通用参数)。 |
 
 :::tip 提示
 如需测试 SOCKS5-TLS 代理，请尝试使用 [https://github.com/ginuerzh/gost](https://github.com/ginuerzh/gost)，它可以开箱即用地创建 SOCKS-TLS 代理。
