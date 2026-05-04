@@ -39,3 +39,4 @@ ProxyTrojan = trojan, 192.168.20.6, 443, password=password1, udp-relay=false, sk
 | ws               | true<br/>false | 否     | 默认值: false。                                                                                                                                                            |
 | ws-path          | -              | 否     | 默认值: /<br/>仅在 ws 设置为 true 时适用。                                                                                                                            |
 | ws-headers       | -              | 否     | 值格式：<code>Header-1:value-1\|Header-2:value-2</code><br/>键和值之间用冒号分隔。<br/>条目之间用竖线分隔。<br/>仅在 ws 设置为 true 时适用。 |
+| underlying-proxy | -              | 否       | 通过一个代理来连接另一个代理（代理链）。值可以是另一个代理名称或策略组名称。参见 [通用参数](/docs/profile-format/proxy#通用参数)。 |

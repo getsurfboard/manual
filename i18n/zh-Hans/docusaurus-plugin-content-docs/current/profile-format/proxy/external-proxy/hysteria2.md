@@ -37,3 +37,4 @@ ProxyHysteria2 = hysteria2, 1.2.3.4, 443, password=pwd, download-bandwidth=100, 
 | skip-cert-verify      | true<br/>false | 否     | 默认值: false。如果代理没有有效的 TLS 证书，请设置为 true。                                              |
 | sni                   | -              | 否     | 如果 SNI 值与 host 值一致，则无需定义。                                                                 |
 | udp-relay             | true<br/>false | 否     | 默认值: true。启用或禁用 UDP 转发。                                                                                  |
+| underlying-proxy | -              | 否       | 通过一个代理来连接另一个代理（代理链）。值可以是另一个代理名称或策略组名称。参见 [通用参数](/docs/profile-format/proxy#通用参数)。 |

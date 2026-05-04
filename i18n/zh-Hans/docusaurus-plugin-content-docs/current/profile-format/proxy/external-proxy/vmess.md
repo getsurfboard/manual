@@ -43,6 +43,7 @@ ProxyVMess = vmess, 1.2.3.4, 8000, username=0233d11c-15a4-47d3-ade3-48ffca0ce119
 | skip-cert-verify | true<br/>false   | 否     | 在 tls 为 true 时适用。<br/>如果代理没有有效的 TLS 证书，请设置为 true。                                                                                             |
 | sni              | -                | 否     | 在 tls 为 true 时适用。<br/>如果 SNI 值与 host 值一致，则无需定义。                                                                            |
 | vmess-aead       | true<br/>false   | 否     | 默认值: true。                                                                                                                                                            |
+| underlying-proxy | -              | 否       | 通过一个代理来连接另一个代理（代理链）。值可以是另一个代理名称或策略组名称。参见 [通用参数](/docs/profile-format/proxy#通用参数)。 |
 
 :::caution 注意
 `vmess-aead` 是 Surge 配置文件格式中一个未经证实的标准；未来可能会发生变化。
