@@ -4,6 +4,27 @@ sidebar_position: 5
 
 # ChangeLog
 
+### mobile-2.30.0
+
+- **New Features**
+  - **Underlying Proxy (Proxy Chain)**: Support configuring an underlying proxy for any proxy type, enabling proxy chaining.
+  - **Picture-in-Picture Speed Window**: Display real-time network speed in a floating PiP window. (Requires Android 8+)
+  - **Profile Editor Keyboard Shortcuts**: Readline-style shortcuts including Ctrl+T for character transpose, Ctrl+A/Ctrl+E for cursor movement.
+  - **HTTP Basic Auth for External Resources**: Support HTTP Basic Authentication in external resource URLs.
+
+- **Fixes**
+  - Fix cookie persistence for profile download requests.
+  - Fix crash when opening very large profiles in editor.
+  - Fix crash when editing DoH server after deletion during verification.
+  - Fix STUN NAT detection reliability.
+  - Fix LogcatViewer display in split-screen mode.
+
+- **Improvements**
+  - Optimized domain matching performance with C++ SuffixTree implementation.
+  - Improved profile loading speed by reducing unnecessary data decompression.
+  - Reduced memory usage in system monitoring panel.
+  - Updated embedded GeoIP database.
+
 ### mobile-2.29.6
 
 - **New Features**
