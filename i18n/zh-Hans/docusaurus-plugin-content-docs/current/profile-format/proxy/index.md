@@ -16,3 +16,11 @@
 - [Wireguard](/docs/profile-format/proxy/external-proxy/wireguard)
 - [Hysteria2](/docs/profile-format/proxy/external-proxy/hysteria2)
 - [Snell](/docs/profile-format/proxy/external-proxy/snell)
+
+## 通用参数
+
+以下参数适用于所有代理类型：
+
+| 名称 | 值 | 是否必填 | 备注 |
+|------|-----|----------|------|
+| underlying-proxy | - | 否 | 通过一个代理来连接另一个代理，即代理链。值可以是另一个代理名称或策略组名称（将使用该策略组当前选中的代理）。 |

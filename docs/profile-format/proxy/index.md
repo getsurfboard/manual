@@ -16,3 +16,11 @@ The following proxy protocols are currently supported:
 - [Wireguard](/docs/profile-format/proxy/external-proxy/wireguard)
 - [Hysteria2](/docs/profile-format/proxy/external-proxy/hysteria2)
 - [Snell](/docs/profile-format/proxy/external-proxy/snell)
+
+## Common Parameters
+
+The following parameter is supported by all proxy types:
+
+| Name | Value | Mandatory | Note |
+|------|-------|-----------|------|
+| underlying-proxy | - | false | Use a proxy or proxy group to connect another proxy, aka proxy chain. The value can be another proxy's name or a proxy group's name (the currently selected proxy in that group will be used). |
