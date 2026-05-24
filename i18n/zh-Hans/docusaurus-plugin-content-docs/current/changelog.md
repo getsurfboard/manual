@@ -239,6 +239,33 @@ sidebar_position: 5
 - 更新了 GeoIP 库文件。
 - 更新了翻译。
 
+### tv-1.1.0
+
+- 新功能
+  - 新增 Explorer 服务，支持通过二维码导入配置
+  - 仪表盘新增 DNS 和私网 IP 卡片
+  - 工具行新增速度测试入口
+  - 支持 Snell/AnyTLS/Hysteria2/Shadowsocks 2022 协议
+  - 支持 Smart 代理组类型（自动回退至 auto）
+  - 支持 underlying-proxy 代理链
+  - 支持所有 Host DNS 规则类型应用于代理域名
+  - 支持在 DNS 服务器 Host 规则中自定义端口
+  - 支持多个 DoH 服务器
+  - 支持在 Host 段落中自定义 DoH 服务器
+  - 支持导入 Hysteria2/hy2 和 anytls:// URI 链接
+  - 支持 IPv6
+  - 支持将 MTU 降低至 1400
+- 修复
+  - 修复代理组卡片标题行数不一致导致的 UI 错位
+  - 修复 IPv6 DNS 未被使用的问题
+- 改进
+  - 优化配置导入速度
+  - 减少内存占用
+  - 支持在旧版 Android 设备上使用 TLS 1.3（通过 Conscrypt）
+  - 显示代理名称时去除引号
+  - 更新翻译
+  - 更新 GeoIP 数据库
+
 ### tv-1.0.3 
 
 - 增加了对配置文件获取超时配置的支持。
