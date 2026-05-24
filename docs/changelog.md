@@ -253,6 +253,33 @@ sidebar_position: 5
 - Updated GeoIP library file.
 - Updated translations.
 
+### tv-1.1.0
+
+- New Features
+  - Added Explorer service with QR code for profile import
+  - Added DNS and Private IP cards to dashboard
+  - Added speed test entry to Tools row
+  - Support Snell/AnyTLS/Hysteria2/Shadowsocks 2022 protocol
+  - Support Smart proxy group type(fallback to auto)
+  - Support underlying-proxy to chain proxies
+  - Support all Host DNS rule types for proxy domains
+  - Support custom port in DNS server host rules
+  - Support multiple DoH servers
+  - Support DoH server definition in Host section
+  - Support importing Hysteria2/hy2 and anytls:// URI schemes
+  - Support IPv6
+  - Support lower MTU to 1400
+- Fixes
+  - Fixed proxy group card title to 2 lines for consistent item height
+  - Fixed IPv6 DNS not being used
+- Improvements
+  - Optimized profile import speed
+  - Reduced memory usage
+  - Support TLS 1.3 on older Android versions via Conscrypt
+  - Strip quotes when displaying proxy names
+  - Updated translations
+  - Updated GeoIP database
+
 ### tv-1.0.3 
 
 - Added support for profile fetch timeout configuration.
