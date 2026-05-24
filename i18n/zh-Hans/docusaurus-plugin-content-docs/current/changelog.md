@@ -6,7 +6,7 @@ sidebar_position: 5
 
 ### tv-1.1.0
 
-- 新功能
+- **新功能**
   - 新增 Explorer 服务，支持通过二维码导入配置
   - 仪表盘新增 DNS 和私网 IP 卡片
   - 工具行新增速度测试入口
@@ -20,10 +20,10 @@ sidebar_position: 5
   - 支持导入 Hysteria2/hy2 和 anytls:// URI 链接
   - 支持 IPv6
   - 支持将 MTU 降低至 1400
-- 修复
+- **修复**
   - 修复代理组卡片标题行数不一致导致的 UI 错位
   - 修复 IPv6 DNS 未被使用的问题
-- 改进
+- **改进**
   - 优化配置导入速度
   - 减少内存占用
   - 支持在旧版 Android 设备上使用 TLS 1.3（通过 Conscrypt）
