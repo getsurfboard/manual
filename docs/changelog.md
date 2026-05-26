@@ -4,6 +4,18 @@ sidebar_position: 5
 
 # ChangeLog
 
+### mobile-2.31.0
+- **Improvements**
+  - Optimized profile import speed.
+  - Added speed test warmup to reduce cold-start bias on measurement accuracy.
+- **Fixes**
+  - Fixed large domain-based rulesets (RULE-SET) not taking effect.
+  - Fixed incorrect parsing of trailing comment text in configuration lines.
+  - Fixed severely underreported rule counts for DOMAIN-SET and nested RULE-SET.
+  - Fixed compatibility issues with certain HTTPS proxy servers.
+  - Fixed mobile version checker incorrectly prompting for TV app updates.
+  - Updated built-in GeoIP database.
+
 ### tv-1.1.1
 
 - **Fixes**
