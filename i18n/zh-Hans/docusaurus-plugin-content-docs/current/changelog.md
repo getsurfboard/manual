@@ -4,6 +4,15 @@ sidebar_position: 5
 
 # 更新日志
 
+### tv-1.1.1
+
+- **修复**
+  - 修复部分 HTTPS 代理不可用的问题
+  - 修复配置文件中行尾注释解析错误的问题
+  - 修复 DOMAIN-SET 和嵌套 RULE-SET 规则数量统计不准确的问题
+  - 修复 mobile 版本检查器错误提示 tv 端更新的问题
+  - 修复部分 DOMAIN-SET/RULE-SET 不生效的问题
+
 ### tv-1.1.0
 
 - **新功能**
