@@ -4,6 +4,15 @@ sidebar_position: 5
 
 # ChangeLog
 
+### tv-1.1.1
+
+- **Fixes**
+  - Fixed some HTTPS proxies not working
+  - Fixed incorrect parsing of trailing comments in profile files
+  - Fixed inaccurate rule count for DOMAIN-SET and nested RULE-SET
+  - Fixed mobile version checker incorrectly prompting for TV app updates
+  - Fixed some DOMAIN-SET/RULE-SET not taking effect
+
 ### tv-1.1.0
 
 - **New Features**
