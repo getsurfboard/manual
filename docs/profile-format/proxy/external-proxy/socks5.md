@@ -20,13 +20,13 @@ SOCKS5 is a versatile proxy protocol that routes packets between a client and a 
 ProxySOCKS5 = socks5, 1.2.3.4, 443, username, password, udp-relay=false
 
 # Secure SOCKS5-TLS proxy with certificate verification bypass and custom SNI
-ProxySOCKS5TLS = socks5-tls, 1.2.3.4, 443, username, password, skip-cert-verify=true, sni=www.example.com
+ProxySOCKS5TLS = socks5-tls, 1.2.3.4, 443, username, password, skip-cert-verify=true, sni=www.example.com, server-cert-fingerprint-sha256=fac26f65c034829da42d740d23c4a7202475a3834f0ebaecae5f934adbbfd640
 ```
 
 ## Format
 
 ```ini
-{proxy name} = {protocol}, {server}, {port}, {username}, {password}, {skip-cert-verify}, {sni}
+{proxy name} = {protocol}, {server}, {port}, {username}, {password}, {skip-cert-verify}, {sni}, {server-cert-fingerprint-sha256}
 ```
 
 ## Parameters
@@ -41,6 +41,7 @@ ProxySOCKS5TLS = socks5-tls, 1.2.3.4, 443, username, password, skip-cert-verify=
 | password         | -                     | false     |                                                                                                                      |
 | skip-cert-verify | true<br/>false        | false     | Applicable if protocol is socks5-tls.<br/>Set to true if the proxy does not have a valid TLS certificate.                       |
 | sni              |                       | false     | Applicable if protocol is socks5-tls.<br/>Definition is unnecessary if the SNI value matches the host value.      |
+| server-cert-fingerprint-sha256 | -      | false     | Applicable if protocol is socks5-tls.<br/>SHA-256 fingerprint of the server certificate, hex-encoded (64 characters). Used for certificate pinning. Multiple fingerprints can be comma-separated. |
 | underlying-proxy | -              | false     | Use a proxy or proxy group to connect another proxy (proxy chain). See [Common Parameters](/docs/profile-format/proxy#common-parameters). |
 
 :::tip
