@@ -14,13 +14,13 @@ Hysteria2 is a high-performance proxy based on the QUIC protocol, designed for c
 
 ```ini
 # Hysteria2 proxy configuration with optional performance and security settings
-ProxyHysteria2 = hysteria2, 1.2.3.4, 443, password=pwd, download-bandwidth=100, port-hopping="1234;5000-6000", port-hopping-interval=30, skip-cert-verify=true, sni=example.com, udp-relay=true
+ProxyHysteria2 = hysteria2, 1.2.3.4, 443, password=pwd, download-bandwidth=100, port-hopping="1234;5000-6000", port-hopping-interval=30, skip-cert-verify=true, sni=example.com, server-cert-fingerprint-sha256=fac26f65c034829da42d740d23c4a7202475a3834f0ebaecae5f934adbbfd640, udp-relay=true
 ```
 
 ## Format
 
 ```ini
-{proxy name} = hysteria2, {server}, {port}, password={password}, download-bandwidth={bandwidth}, port-hopping={hopping}, port-hopping-interval={interval}, skip-cert-verify={skip}, sni={sni}, udp-relay={udp}
+{proxy name} = hysteria2, {server}, {port}, password={password}, download-bandwidth={bandwidth}, port-hopping={hopping}, port-hopping-interval={interval}, skip-cert-verify={skip}, sni={sni}, server-cert-fingerprint-sha256={fingerprint}, udp-relay={udp}
 ```
 
 ## Parameters
@@ -36,5 +36,6 @@ ProxyHysteria2 = hysteria2, 1.2.3.4, 443, password=pwd, download-bandwidth=100, 
 | port-hopping-interval | -              | false     | Interval for port hopping in seconds (e.g., `30`).                                                                                 |
 | skip-cert-verify      | true<br/>false | false     | Default value: false. Set to true if the proxy does not have a valid TLS certificate.                                              |
 | sni                   | -              | false     | Definition is unnecessary if the SNI value matches the host value.                                                                 |
+| server-cert-fingerprint-sha256 | -      | false     | SHA-256 fingerprint of the server certificate, hex-encoded (64 characters). Used for certificate pinning. Multiple fingerprints can be comma-separated. |
 | udp-relay             | true<br/>false | false     | Default value: true. Enable or disable UDP relay.                                                                                  |
 | underlying-proxy | -              | false     | Use a proxy or proxy group to connect another proxy (proxy chain). See [Common Parameters](/docs/profile-format/proxy#common-parameters). |
