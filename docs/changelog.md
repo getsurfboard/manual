@@ -4,6 +4,15 @@ sidebar_position: 5
 
 # ChangeLog
 
+### mobile-2.31.1
+- **New Features**
+  - **TLS Certificate Pinning**: Support `server-cert-fingerprint-sha256` parameter to pin server TLS certificates. Works with all TLS-based proxies (Trojan, VMess, Hysteria2, AnyTLS, Snell, HTTPS, SOCKS5-TLS).
+  - **Snell v4**: Support Snell v4 protocol.
+  - **Explorer URL Import**: Support importing profiles from URLs directly via the Explorer web service.
+  - **Block QUIC**: Support `block-quic` parameter to block QUIC (HTTP/3) traffic on specific proxies.
+- **Fixes**
+  - Fixed certain proxy configurations causing routing rules to not match correctly.
+
 ### mobile-2.31.0
 - **Improvements**
   - Optimized profile import speed.

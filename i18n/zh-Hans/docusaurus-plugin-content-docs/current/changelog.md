@@ -4,6 +4,15 @@ sidebar_position: 5
 
 # 更新日志
 
+### mobile-2.31.1
+- **新功能**
+  - **TLS 证书固定**：支持 `server-cert-fingerprint-sha256` 参数用于固定服务器 TLS 证书，适用于所有 TLS 类代理（Trojan、VMess、Hysteria2、AnyTLS、Snell、HTTPS、SOCKS5-TLS）。
+  - **Snell v4**：支持 Snell v4 协议。
+  - **Explorer URL 导入**：支持通过 Explorer 网页服务直接导入 URL 配置。
+  - **阻止 QUIC**：支持 `block-quic` 参数，针对特定代理阻止 QUIC（HTTP/3）流量。
+- **修复**
+  - 修复部分代理配置导致路由规则匹配不正确的问题。
+
 ### mobile-2.31.0
 - **改进**
   - 优化配置导入速度。
