@@ -4,7 +4,7 @@ sidebar_position: 0
 
 # 域名规则
 
-基于域名的规则允许你根据目标域名来路由流量。Surfboard 支持精确匹配、后缀匹配和关键词匹配。
+基于域名的规则允许你根据目标域名来路由流量。Surfboard 支持精确匹配、后缀匹配、关键词匹配和通配符匹配。
 
 ## 示例
 
@@ -17,6 +17,10 @@ DOMAIN-SUFFIX, apple.com, Proxy, enhanced-mode
 
 # 匹配任何包含关键词 'google' 的域名
 DOMAIN-KEYWORD, google, Proxy
+
+# 使用通配符匹配域名（* 匹配任意字符序列，? 匹配单个字符）
+DOMAIN-WILDCARD, *.google.com, Proxy
+DOMAIN-WILDCARD, ?.example.com, Proxy, enhanced-mode
 ```
 
 ## 格式
@@ -29,8 +33,8 @@ DOMAIN-KEYWORD, google, Proxy
 
 | 名称             | 值                                               | 是否必填 | 备注                                                                                                                  |
 |------------------|--------------------------------------------------|-----------|-----------------------------------------------------------------------------------------------------------------------|
-| type             | DOMAIN<br/>DOMAIN-SUFFIX<br/>DOMAIN-KEYWORD<br/> | 是      | DOMAIN: 精确匹配。<br/>DOMAIN-SUFFIX: 后缀匹配。<br/>DOMAIN-KEYWORD: 关键词匹配。         |
-| domain rule      | -                                                | 是      |                                                                                                                       |
+| type             | DOMAIN<br/>DOMAIN-SUFFIX<br/>DOMAIN-KEYWORD<br/>DOMAIN-WILDCARD | 是      | DOMAIN: 精确匹配。<br/>DOMAIN-SUFFIX: 后缀匹配。<br/>DOMAIN-KEYWORD: 关键词匹配。<br/>DOMAIN-WILDCARD: 使用 `*` 和 `?` 的通配符模式匹配。         |
+| domain rule      | -                                                | 是      | 对于 DOMAIN-WILDCARD，支持 `*`（任意字符序列）和 `?`（单个字符）。                                                                                          |
 | target proxy     | -                                                | 是      | 指定的代理或策略组必须存在于配置文件中。                                                                |
 | force-remote-dns | true<br/>false                                   | 否     | 默认值: false。<br/>如果设置为 true，DNS 查询将在远程代理上触发。                                 |
 | enhanced-mode    | true<br/>false                                   | 否     | 默认值: false。<br/>如果设置为 true，DNS 查询将返回 Fake IP。                                      |

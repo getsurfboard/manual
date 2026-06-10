@@ -139,6 +139,9 @@ DOMAIN-SUFFIX,apple.com,Proxy,force-remote-dns
 # 域名关键词匹配。
 DOMAIN-KEYWORD,google,Proxy,enhanced-mode
 
+# 使用 * 和 ? 通配符的域名匹配。
+DOMAIN-WILDCARD,*.google.com,Proxy
+
 # 使用 CIDR 表示法的 IP 范围匹配。
 IP-CIDR,192.168.0.0/16,DIRECT
 

@@ -139,6 +139,9 @@ DOMAIN-SUFFIX,apple.com,Proxy,force-remote-dns
 # Domain keyword matching.
 DOMAIN-KEYWORD,google,Proxy,enhanced-mode
 
+# Domain wildcard matching using * and ? patterns.
+DOMAIN-WILDCARD,*.google.com,Proxy
+
 # IP range matching using CIDR notation.
 IP-CIDR,192.168.0.0/16,DIRECT
 
