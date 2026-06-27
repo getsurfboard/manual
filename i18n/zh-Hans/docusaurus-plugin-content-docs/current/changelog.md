@@ -4,6 +4,17 @@ sidebar_position: 5
 
 # 更新日志
 
+### mobile-2.32.2
+- **新功能**
+  - **DOMAIN-WILDCARD 规则**：支持 DOMAIN-WILDCARD 规则类型，可使用通配符匹配域名。
+  - **Hysteria2 Salamander 密码**：支持 Hysteria2 代理的 `salamander-password` 参数。
+  - **土耳其语**：新增土耳其语支持。
+- **修复**
+  - 修复 Shadowsocks AEAD 缓冲区溢出导致崩溃的问题。
+  - 修复 ProfileEditor 部分语法高亮关键词缺失的问题。
+- **改进**
+  - 更新内置 GeoIP 数据库。
+
 ### mobile-2.31.1
 - **新功能**
   - **TLS 证书固定**：支持 `server-cert-fingerprint-sha256` 参数用于固定服务器 TLS 证书，适用于所有 TLS 类代理（Trojan、VMess、Hysteria2、AnyTLS、Snell、HTTPS、SOCKS5-TLS）。
