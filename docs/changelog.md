@@ -4,6 +4,17 @@ sidebar_position: 5
 
 # ChangeLog
 
+### mobile-2.32.2
+- **New Features**
+  - **DOMAIN-WILDCARD Rule**: Support DOMAIN-WILDCARD rule type for matching domain names with wildcards.
+  - **Salamander Password for Hysteria2**: Support `salamander-password` parameter for Hysteria2 proxy.
+  - **Turkish Language**: Add Turkish language support.
+- **Fixes**
+  - Fix Shadowsocks AEAD buffer overflow crash.
+  - Fix missing syntax highlighting keywords in ProfileEditor.
+- **Improvements**
+  - Update built-in GeoIP database.
+
 ### mobile-2.31.1
 - **New Features**
   - **TLS Certificate Pinning**: Support `server-cert-fingerprint-sha256` parameter to pin server TLS certificates. Works with all TLS-based proxies (Trojan, VMess, Hysteria2, AnyTLS, Snell, HTTPS, SOCKS5-TLS).
