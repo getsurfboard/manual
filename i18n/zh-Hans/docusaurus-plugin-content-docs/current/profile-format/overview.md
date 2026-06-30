@@ -58,6 +58,9 @@ abc.com = 1.2.3.4
 # 通配符域名映射。
 *.dev = 6.7.8.9
 
+# 多 IP 映射（A 记录返回两个 IPv4，AAAA 返回 IPv6）。
+multi-ip.example.com = 203.0.113.25, 2001:db8:12:77e::1
+
 # DNS 别名 (CNAME) 映射。
 foo.com = bar.com
 

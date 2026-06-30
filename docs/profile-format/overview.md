@@ -58,6 +58,9 @@ abc.com = 1.2.3.4
 # Wildcard domain mapping.
 *.dev = 6.7.8.9
 
+# Multi-IP mapping (A records return both IPv4, AAAA returns the IPv6).
+multi-ip.example.com = 203.0.113.25, 2001:db8:12:77e::1
+
 # DNS alias (CNAME) mapping.
 foo.com = bar.com
 
