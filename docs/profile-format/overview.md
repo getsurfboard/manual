@@ -58,6 +58,9 @@ abc.com = 1.2.3.4
 # Wildcard domain mapping.
 *.dev = 6.7.8.9
 
+# Multi-IP mapping (A records return both IPv4, AAAA returns the IPv6).
+jp.yanghui.name = 217.142.237.67, 2603:c023:12:977e:0:e657:98bd:b030
+
 # DNS alias (CNAME) mapping.
 foo.com = bar.com
 

@@ -4,13 +4,29 @@ sidebar_position: 0
 
 # Exact Mapping
 
-Exact mapping provides a direct one-to-one relationship between a specific domain and an IP address.
+Exact mapping provides a direct relationship between a specific domain and one or more IP addresses. Multiple IPs can be specified by separating them with commas.
 
 ## Example
+
+**Single IP:**
 
 ```ini title="Maps IP address to an exact domain"
 # Directly maps abc.com to the static IP 1.2.3.4
 abc.com = 1.2.3.4
+```
+
+**Multiple IPs (A records):**
+
+```ini title="Maps a domain to multiple IPv4 addresses"
+# Returns both IPs in a single DNS A-record response
+doh.pub = 120.53.53.53, 1.12.12.12
+```
+
+**Mixed IPv4 and IPv6:**
+
+```ini title="Maps a domain to both IPv4 and IPv6 addresses"
+# A queries return 217.142.237.67, AAAA queries return the IPv6 address
+jp.yanghui.name = 217.142.237.67, 2603:c023:12:977e:0:e657:98bd:b030
 ```
 
 ## Test

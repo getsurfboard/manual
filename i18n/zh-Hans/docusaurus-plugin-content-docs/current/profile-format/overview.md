@@ -58,6 +58,9 @@ abc.com = 1.2.3.4
 # 通配符域名映射。
 *.dev = 6.7.8.9
 
+# 多 IP 映射（A 记录返回两个 IPv4，AAAA 返回 IPv6）。
+jp.yanghui.name = 217.142.237.67, 2603:c023:12:977e:0:e657:98bd:b030
+
 # DNS 别名 (CNAME) 映射。
 foo.com = bar.com
 
