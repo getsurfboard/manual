@@ -4,6 +4,10 @@ sidebar_position: 5
 
 # 更新日志
 
+### mobile-2.32.3
+- **改进**
+  - 支持在单个 DNS 主机记录中输入多个 IP 地址（逗号分隔）。
+
 ### mobile-2.32.2
 - **新功能**
   - **DOMAIN-WILDCARD 规则**：支持 DOMAIN-WILDCARD 规则类型，可使用通配符匹配域名。

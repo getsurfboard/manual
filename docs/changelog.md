@@ -4,6 +4,10 @@ sidebar_position: 5
 
 # ChangeLog
 
+### mobile-2.32.3
+- **Improvements**
+  - Support entering multiple IP addresses (comma-separated) in single DNS host record.
+
 ### mobile-2.32.2
 - **New Features**
   - **DOMAIN-WILDCARD Rule**: Support DOMAIN-WILDCARD rule type for matching domain names with wildcards.
