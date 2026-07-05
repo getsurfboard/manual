@@ -4,6 +4,17 @@ sidebar_position: 5
 
 # ChangeLog
 
+### mobile-2.32.4
+- **New Features**
+  - **AnyTLS UDP Relay**: Support UDP relay for AnyTLS proxies.
+  - **UDP Proxy Chaining**: Support `underlying-proxy` to chain proxies for UDP traffic.
+- **Fixes**
+  - Fixed UDP proxy not updating when switching selections in a proxy group.
+- **Improvements**
+  - Improved speed test accuracy for proxies using `underlying-proxy`.
+  - Simplified proxy group list to a single-line layout.
+  - Updated built-in GeoIP database.
+
 ### mobile-2.32.3
 - **Improvements**
   - Support entering multiple IP addresses (comma-separated) in single DNS host record.

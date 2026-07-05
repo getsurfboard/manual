@@ -4,6 +4,17 @@ sidebar_position: 5
 
 # 更新日志
 
+### mobile-2.32.4
+- **新功能**
+  - **AnyTLS UDP 转发**：支持 AnyTLS 代理的 UDP 转发。
+  - **UDP 代理链**：支持通过 `underlying-proxy` 为 UDP 流量串联代理。
+- **修复**
+  - 修复在代理组中切换选择时 UDP 代理未更新的问题。
+- **改进**
+  - 改进使用 `underlying-proxy` 的代理的测速准确性。
+  - 简化代理组列表为单行布局。
+  - 更新内置 GeoIP 数据库。
+
 ### mobile-2.32.3
 - **改进**
   - 支持在单个 DNS 主机记录中输入多个 IP 地址（逗号分隔）。
