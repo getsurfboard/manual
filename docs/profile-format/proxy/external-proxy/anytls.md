@@ -24,6 +24,7 @@ AnyTLS is a proxy type that uses TLS for secure communication. It is a simple an
 | sni              | -                | false     | Server Name Indication. Definition is unnecessary if the SNI value matches the host value.                                                                            |
 | server-cert-fingerprint-sha256 | -      | false     | SHA-256 fingerprint of the server certificate, hex-encoded (64 characters). Used for certificate pinning. Multiple fingerprints can be comma-separated. |
 | reuse            | true<br/>false   | false     | Whether to reuse connections. Default value: true.                                                                                                                               |
+| udp-relay        | true<br/>false   | false     | Whether to relay UDP traffic (via UDP over TCP). Default value: true.                                                                                                             |
 | underlying-proxy | -              | false     | Use a proxy or proxy group to connect another proxy (proxy chain). See [Common Parameters](/docs/profile-format/proxy#common-parameters). |
 
 ## Example
