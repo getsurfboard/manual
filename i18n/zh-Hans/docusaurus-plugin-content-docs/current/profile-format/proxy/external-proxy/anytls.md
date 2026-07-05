@@ -24,6 +24,7 @@ AnyTLS 是一种使用 TLS 进行安全通信的代理类型。它是一种通�
 | sni              | -                 | 否     | 服务器名称指示 (Server Name Indication)。如果 SNI 值与 host 值匹配，则无需定义。                                                                            |
 | server-cert-fingerprint-sha256 | -      | 否     | 服务器证书的 SHA-256 指纹，十六进制编码（64 个字符）。用于证书固定 (certificate pinning)。多个指纹可用逗号分隔。 |
 | reuse            | true<br/>false    | 否     | 是否复用连接。默认值：true。                                                                                                                               |
+| udp-relay        | true<br/>false    | 否     | 是否转发 UDP 流量（通过 UDP over TCP 实现）。默认值：true。                                                                                                 |
 | underlying-proxy | -              | 否       | 通过一个代理来连接另一个代理（代理链）。值可以是另一个代理名称或策略组名称。参见 [通用参数](/docs/profile-format/proxy#通用参数)。 |
 
 ## Example
