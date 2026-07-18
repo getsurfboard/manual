@@ -4,6 +4,17 @@ sidebar_position: 5
 
 # 更新日志
 
+### mobile-2.33.0
+- **新功能**
+  - **TUIC v5**：支持 TUIC v5 代理协议。
+  - **[Host] 规则集**：`[Host]` 段支持 `DOMAIN-SET` 和 `RULE-SET` 条目，可为域名列表指定 DNS 服务器。
+- **修复**
+  - 修复空闲连接导致 CPU 持续占用和耗电的问题。
+  - 修复 AnyTLS/Trojan/VMess/Snell 代理通过仅支持 TCP 的 `underlying-proxy` 串联时 UDP 不可用的问题。
+- **改进**
+  - Profile 编辑器长行改为按字符边界换行。
+  - 提升 TCP 数据包转发性能。
+
 ### mobile-2.32.4
 - **新功能**
   - **AnyTLS UDP 转发**：支持 AnyTLS 代理的 UDP 转发。

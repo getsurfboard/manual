@@ -4,6 +4,17 @@ sidebar_position: 5
 
 # ChangeLog
 
+### mobile-2.33.0
+- **New Features**
+  - **TUIC v5**: Support TUIC v5 proxy protocol.
+  - **[Host] Rule Sets**: Support `DOMAIN-SET` and `RULE-SET` entries in the `[Host]` section for assigning DNS servers to domain lists.
+- **Fixes**
+  - Fixed idle connections causing continuous CPU usage and battery drain.
+  - Fixed UDP not working for AnyTLS/Trojan/VMess/Snell proxies when chained over a TCP-only `underlying-proxy`.
+- **Improvements**
+  - Profile editor now wraps long lines at character boundaries.
+  - Improved TCP packet forwarding performance.
+
 ### mobile-2.32.4
 - **New Features**
   - **AnyTLS UDP Relay**: Support UDP relay for AnyTLS proxies.
