@@ -15,6 +15,8 @@
 - [Trojan](/docs/profile-format/proxy/external-proxy/trojan)
 - [Wireguard](/docs/profile-format/proxy/external-proxy/wireguard)
 - [Hysteria2](/docs/profile-format/proxy/external-proxy/hysteria2)
+- [AnyTLS](/docs/profile-format/proxy/external-proxy/anytls)
+- [TUIC v5](/docs/profile-format/proxy/external-proxy/tuic-v5)
 - [Snell](/docs/profile-format/proxy/external-proxy/snell)
 
 ## 通用参数
