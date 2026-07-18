@@ -14,6 +14,7 @@ sidebar_position: 5
 - **Improvements**
   - Profile editor now wraps long lines at character boundaries.
   - Improved TCP packet forwarding performance.
+  - Updated built-in GeoIP database.
 
 ### mobile-2.32.4
 - **New Features**

@@ -14,6 +14,7 @@ sidebar_position: 5
 - **改进**
   - Profile 编辑器长行改为按字符边界换行。
   - 提升 TCP 数据包转发性能。
+  - 更新内置 GeoIP 数据库。
 
 ### mobile-2.32.4
 - **新功能**
