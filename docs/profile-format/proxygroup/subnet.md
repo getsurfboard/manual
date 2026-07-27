@@ -10,7 +10,7 @@ The `subnet` group type automatically selects a policy based on the current netw
 User cannot manually change the selection of a subnet group.
 :::
 
-Starting from Surge iOS 4.12.0 and Surge Mac 4.5.0, the SSID group was renamed to Subnet Group. The legacy `ssid` keyword is still supported and behaves identically to `subnet`.
+The legacy `ssid` keyword is still supported and behaves identically to `subnet`.
 
 ## Example
 
@@ -52,13 +52,13 @@ The legacy keyword `ssid` can be used in place of `subnet`.
 |---------------------|---------------|-----------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | group name          | -             | true      | Name of the group; serves as the key.                                                                                                                                                                              |
 | default             | proxy name    | true      | The policy used when no subnet expression matches.                                                                                                                                                                 |
-| TYPE:WIFI           | proxy name    | false     | The policy to use when connected to a WiFi network.                                                                                                                                                                |
-| TYPE:WIRED          | proxy name    | false     | The policy to use when connected to a wired (Ethernet) network.                                                                                                                                                    |
-| TYPE:CELLULAR       | proxy name    | false     | The policy to use when connected to a cellular (mobile data) network.                                                                                                                                              |
-| SSID:{ssid}         | proxy name    | false     | The policy to use when connected to a WiFi network with the specified SSID. Supports wildcard matching. Requires location permission.                                                                               |
-| BSSID:{bssid}       | proxy name    | false     | The policy to use when connected to a WiFi network with the specified BSSID. Supports wildcard matching. Requires location permission.                                                                              |
-| ROUTER:{ip}         | proxy name    | false     | The policy to use when the default gateway matches the specified IP address.                                                                                                                                       |
-| MCCMNC:{mcc}-{mnc}  | proxy name    | false     | The policy to use when connected to a cellular network with the specified MCC and MNC codes.                                                                                                                       |
+| `TYPE:WIFI`           | proxy name    | false     | The policy to use when connected to a WiFi network.                                                                                                                                                                |
+| `TYPE:WIRED`          | proxy name    | false     | The policy to use when connected to a wired (Ethernet) network.                                                                                                                                                    |
+| `TYPE:CELLULAR`       | proxy name    | false     | The policy to use when connected to a cellular (mobile data) network.                                                                                                                                              |
+| `SSID:{ssid}`         | proxy name    | false     | The policy to use when connected to a WiFi network with the specified SSID. Supports wildcard matching. Requires location permission.                                                                               |
+| `BSSID:{bssid}`       | proxy name    | false     | The policy to use when connected to a WiFi network with the specified BSSID. Supports wildcard matching. Requires location permission.                                                                              |
+| `ROUTER:{ip}`         | proxy name    | false     | The policy to use when the default gateway matches the specified IP address.                                                                                                                                       |
+| `MCCMNC:{mcc}-{mnc}`  | proxy name    | false     | The policy to use when connected to a cellular network with the specified MCC and MNC codes.                                                                                                                       |
 | hidden              | true<br/>false| false     | Whether to display this proxy group in the user interface. Even if set to false, the group still takes effect.                                                                                                     |
 | include-all-proxies | true<br/>false| false     | Includes all proxies defined in the profile. Can be used with `policy-regex-filter` to filter specific proxies.                                                                                                    |
 | include-other-group | -             | false     | Includes proxies from other groups specified by name. Can be used with `policy-regex-filter`. Multiple group names can be separated by commas.                                                                     |
