@@ -12,6 +12,9 @@ Our application requests background location permission(BACKGROUND_LOCATION) to 
 2. **SUBNET-BSSID Rule Support:**
    If you configure rules based on WiFi router MAC addresses (BSSID), we need this permission to identify specific WiFi access points.
 
+3. **Subnet Proxy Group with SSID/BSSID Conditions:**
+   If you configure a [subnet proxy group](/docs/profile-format/proxygroup/subnet) with SSID or BSSID conditions, we need this permission to match network conditions.
+
 ## Important Notes:
 - This permission is only used when you actively choose to use SUBNET-SSID or SUBNET-BSSID rules.
 - We do not use this permission for continuous location tracking or to collect your precise location information.

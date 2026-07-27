@@ -7,10 +7,13 @@ sidebar_position: 9
 我们的应用程序请求后台位置权限 (BACKGROUND_LOCATION) 以支持特定的高级网络规则功能，详见下文：
 
 1. **SUBNET-SSID 规则支持：**
-   当你选择使用基于 WiFi 网络名称 (SSID) 的规则时，我们需要此权限来识别你连接的 WiFi 网络。
+    当你选择使用基于 WiFi 网络名称 (SSID) 的规则时，我们需要此权限来识别你连接的 WiFi 网络。
 
 2. **SUBNET-BSSID 规则支持：**
-   如果你配置了基于 WiFi 路由器 MAC 地址 (BSSID) 的规则，我们需要此权限来识别特定的 WiFi 接入点。
+    如果你配置了基于 WiFi 路由器 MAC 地址 (BSSID) 的规则，我们需要此权限来识别特定的 WiFi 接入点。
+
+3. **带 SSID/BSSID 条件的子网策略组：**
+    如果你在[子网策略组](/docs/profile-format/proxygroup/subnet)中配置了 SSID 或 BSSID 条件，我们需要此权限来匹配网络条件。
 
 ## 重要提示：
 - 此权限仅在你主动选择使用 SUBNET-SSID 或 SUBNET-BSSID 规则时使用。
