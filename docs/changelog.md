@@ -4,6 +4,19 @@ sidebar_position: 5
 
 # ChangeLog
 
+### mobile-2.34.0
+- **New Features**
+  - **Backup & Restore**: Export app settings and proxy profiles to a password-protected archive and restore them on another device. Cross-version compatible.
+  - **Subnet Proxy Group**: Support the `subnet` group type, which automatically selects a proxy based on the current network environment (e.g. WiFi, cellular, SSID, gateway).
+  - **mDNS Resolution**: Resolve .local domains for third-party apps; multicast traffic is now sent directly.
+- **Fixes**
+  - Fixed crash when the built-in GeoIP database file is corrupted.
+  - Fixed crash when changing a proxy group after the VPN has stopped.
+  - Fixed crash when switching tabs during activity recreation.
+  - Kept system bars edge-to-edge in the proxy info dialog.
+- **Improvements**
+  - Improved the network speed chart display.
+
 ### mobile-2.33.0
 - **New Features**
   - **TUIC v5**: Support TUIC v5 proxy protocol.
