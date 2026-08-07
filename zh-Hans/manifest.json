@@ -1,0 +1,16 @@
+{
+  "name": "Surfboard Manual",
+  "short_name": "Manual",
+  "icons": [
+    {
+      "src": "/img/logo.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "theme_color": "#63D7C5",
+  "display": "standalone",
+  "scope": "./",
+  "start_url": "./index.html",
+  "description": "Documentation of Surfboard for Android"
+}

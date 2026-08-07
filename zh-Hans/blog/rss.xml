@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+    <channel>
+        <title>Surfboard Manual Blog</title>
+        <link>https://getsurfboard.com/zh-Hans/blog</link>
+        <description>Surfboard Manual Blog</description>
+        <lastBuildDate>Wed, 06 Apr 2022 00:00:00 GMT</lastBuildDate>
+        <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
+        <generator>https://github.com/jpmonette/feed</generator>
+        <language>zh-Hans</language>
+        <item>
+            <title><![CDATA[为什么要开发 Surfboard]]></title>
+            <link>https://getsurfboard.com/zh-Hans/blog/why-develop-surfboard</link>
+            <guid>https://getsurfboard.com/zh-Hans/blog/why-develop-surfboard</guid>
+            <pubDate>Wed, 06 Apr 2022 00:00:00 GMT</pubDate>
+            <description><![CDATA[在这之前]]></description>
+            <content:encoded><![CDATA[<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="在这之前">在这之前<a href="https://getsurfboard.com/zh-Hans/blog/why-develop-surfboard#%E5%9C%A8%E8%BF%99%E4%B9%8B%E5%89%8D" class="hash-link" aria-label="在这之前的直接链接" title="在这之前的直接链接" translate="no">​</a></h3>
+<p>最初，我是 <a href="https://play.google.com/store/apps/details?id=com.github.shadowsocks" target="_blank" rel="noopener noreferrer" class="">Shadowsocks</a> 的忠实用户，几乎 24/7 全天候使用它，以便在受限的网络环境中享受自由开放的互联网。</p>
+<p>后来我注意到，当 Shadowsocks 处于活动状态时，所有传出的 UDP 数据包都会被丢弃（我相信这个问题后来已经解决了）。这意味着每当我想要玩游戏时，我都必须手动禁用 Shadowsocks，玩完后再重新开启——这是一个非常乏味且不便的过程。</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="第一个版本">第一个版本<a href="https://getsurfboard.com/zh-Hans/blog/why-develop-surfboard#%E7%AC%AC%E4%B8%80%E4%B8%AA%E7%89%88%E6%9C%AC" class="hash-link" aria-label="第一个版本的直接链接" title="第一个版本的直接链接" translate="no">​</a></h3>
+<p>这让我开始思考：为什么不根据我的特定需求构建一个 VPN 应用呢？这就是第一个迭代版本 "SS_NG"（Shadowsocks Next Generation 的缩写）诞生的原因。虽然它的 UI 和功能还很简陋，但它完美地实现了我的目标：通过 Shadowsocks 协议转发流量且不阻塞 UDP。它很快就成为了我主要的、常驻后台的 VPN 应用。</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="灵感来源">灵感来源<a href="https://getsurfboard.com/zh-Hans/blog/why-develop-surfboard#%E7%81%B5%E6%84%9F%E6%9D%A5%E6%BA%90" class="hash-link" aria-label="灵感来源的直接链接" title="灵感来源的直接链接" translate="no">​</a></h3>
+<p>后来，在换用 MacBook Pro 和 iPhone 之后，我发现了 Surge。我立刻被它的功能所打动，特别是：</p>
+<ul>
+<li class="">漂亮的设计</li>
+<li class="">全面的功能集</li>
+<li class="">稳定性和性能</li>
+<li class="">细粒度的配置规则</li>
+<li class="">多平台支持</li>
+</ul>
+<p>在我看来，Surge 仍然是 Apple 生态系统中首屈一指的 VPN 应用程序。</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="现在">现在<a href="https://getsurfboard.com/zh-Hans/blog/why-develop-surfboard#%E7%8E%B0%E5%9C%A8" class="hash-link" aria-label="现在的直接链接" title="现在的直接链接" translate="no">​</a></h3>
+<p>当我最终回到 Android 平台时，我意识到还没有一个兼容 Surge 配置的 VPN 应用。这促使我重启了 SS_NG 项目，并以 Surge 的设计理念为核心进行了重构。新的应用程序具有以下特点：</p>
+<ul>
+<li class="">兼容 Surge 配置格式</li>
+<li class="">详细的流量分析和日志记录</li>
+<li class="">支持远程节点、规则和策略组切换</li>
+<li class="">...</li>
+</ul>
+<p>我将这个新应用命名为 "Surfboard"——它的前三个字母与 Surge 相同，同时唤起了在互联网上“冲浪”的意象。今天，Surfboard 已经从一个个人的侧边项目演变成了一个公共工具，供任何追求自由开放互联网体验的人使用。</p>]]></content:encoded>
+            <category>surfboard</category>
+        </item>
+    </channel>
+</rss>

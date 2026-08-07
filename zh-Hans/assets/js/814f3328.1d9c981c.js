@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkmanual=self.webpackChunkmanual||[]).push([[7472],{5513:e=>{e.exports=JSON.parse('{"title":"Recent posts","items":[{"title":"\u4e3a\u4ec0\u4e48\u8981\u5f00\u53d1 Surfboard","permalink":"/zh-Hans/blog/why-develop-surfboard","unlisted":false,"date":"2022-04-06T00:00:00.000Z"}]}')}}]);

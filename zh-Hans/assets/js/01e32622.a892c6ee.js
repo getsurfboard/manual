@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkmanual=self.webpackChunkmanual||[]).push([[5738],{2725:a=>{a.exports=JSON.parse('{"tags":[{"label":"surfboard","permalink":"/zh-Hans/blog/tags/surfboard","count":1}]}')}}]);
