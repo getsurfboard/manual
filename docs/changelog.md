@@ -4,6 +4,19 @@ sidebar_position: 5
 
 # ChangeLog
 
+### mobile-2.34.2
+- **New Features**
+  - **Default Profile**: Fresh installs now include a ready-to-use default profile with built-in ad-blocking rules.
+- **Fixes**
+  - Fixed the snackbar floating above the bottom navigation bar when using 3-button navigation.
+  - Fixed connections hanging when IPv6 is unreachable; they now fail fast.
+  - Fixed rules not updating after the content of a DOMAIN-SET / RULE-SET list changes.
+  - Fixed a stability issue in the native engine.
+- **Improvements**
+  - Improved TCP/UDP forwarding performance and reduced per-packet CPU usage.
+  - Smoother network speed chart without flickering.
+  - Updated built-in GeoIP database.
+
 ### mobile-2.34.1
 - **New Features**
   - **Backup & Restore**: Export app settings and proxy profiles to a password-protected archive and restore them on another device. Cross-version compatible.
