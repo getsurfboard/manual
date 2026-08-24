@@ -4,6 +4,11 @@ sidebar_position: 5
 
 # ChangeLog
 
+### mobile-2.34.3
+- **Fixes**
+  - Fixed SSH Dump crashing the app when enabled.
+  - Fixed crash when opening the file picker on devices without a file manager (e.g. some TV boxes).
+
 ### mobile-2.34.2
 - **New Features**
   - **Default Profile**: Fresh installs now include a ready-to-use default profile with built-in ad-blocking rules.
