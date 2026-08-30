@@ -143,6 +143,7 @@ ProxySS2022 = ss, 192.0.2.1, 8000, encrypt-method=2022-blake3-aes-256-gcm, passw
 | `ws-path` | false | `/` | |
 | `ws-headers` | false | - | Format: `Key:Value|Key2:Value2`. |
 | `vmess-aead` | false | `true` | |
+| `encrypt-method` | false | `aes-128-gcm` | `aes-128-gcm` or `chacha20-ietf-poly1305`. |
 | `udp-relay` | false | `false` | |
 | TLS params | false | - | When `tls=true` and `sni` empty, SNI falls back to `Host` in `ws-headers`. |
 

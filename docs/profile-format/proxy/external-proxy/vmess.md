@@ -44,6 +44,7 @@ ProxyVMess = vmess, 1.2.3.4, 8000, username=0233d11c-15a4-47d3-ade3-48ffca0ce119
 | sni              | -                | false     | Applicable if tls is true.<br/>Definition is unnecessary if the SNI value matches the host value.                                                                            |
 | server-cert-fingerprint-sha256 | -      | false     | Applicable if tls is true.<br/>SHA-256 fingerprint of the server certificate, hex-encoded (64 characters). Used for certificate pinning. Multiple fingerprints can be comma-separated. |
 | vmess-aead       | true<br/>false   | false     | Default value: true.                                                                                                                                                            |
+| encrypt-method   | aes-128-gcm<br/>chacha20-ietf-poly1305 | false     | Default value: aes-128-gcm.                                                                                                                                                     |
 | underlying-proxy | -              | false     | Use a proxy or proxy group to connect another proxy (proxy chain). See [Common Parameters](/docs/profile-format/proxy#common-parameters). |
 
 :::caution

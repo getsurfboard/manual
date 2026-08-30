@@ -44,6 +44,7 @@ ProxyVMess = vmess, 1.2.3.4, 8000, username=0233d11c-15a4-47d3-ade3-48ffca0ce119
 | sni              | -                | 否     | 在 tls 为 true 时适用。<br/>如果 SNI 值与 host 值一致，则无需定义。                                                                            |
 | server-cert-fingerprint-sha256 | -      | 否     | 在 tls 为 true 时适用。<br/>服务器证书的 SHA-256 指纹，十六进制编码（64 个字符）。用于证书固定 (certificate pinning)。多个指纹可用逗号分隔。 |
 | vmess-aead       | true<br/>false   | 否     | 默认值: true。                                                                                                                                                            |
+| encrypt-method   | aes-128-gcm<br/>chacha20-ietf-poly1305 | 否     | 默认值: aes-128-gcm。                                                                                                                                                     |
 | underlying-proxy | -              | 否       | 通过一个代理来连接另一个代理（代理链）。值可以是另一个代理名称或策略组名称。参见 [通用参数](/docs/profile-format/proxy#通用参数)。 |
 
 :::caution 注意
