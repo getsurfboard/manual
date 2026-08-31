@@ -57,5 +57,5 @@ peer = (public-key = {public key}, allowed-ips = "{allowed ip routes}", endpoint
 | mtu size          | 大于零的整数              | 是      |                                           |
 | public key        | base64 编码格式           | 是      |                                           |
 | allowed ip routes | IPv4 或 IPv6 路由格式     | 是      | 指定多个路由时需用引号包裹，例如 `"0.0.0.0/0, ::/0"`。 |
-| endpoint address  | IP:端口 格式              | 是      | 支持 IPv4 和 IPv6 地址。          |
+| endpoint address  | IP:端口 格式              | 是      | 支持 IPv4 和 IPv6 地址。IPv6 必须使用带方括号的 `[addr]:port` 形式，如 `[2001:db8::1]:51820`。 |
 | keepalive seconds | 大于零的整数              | 否     | 0 表示禁用 Keepalive。                 |

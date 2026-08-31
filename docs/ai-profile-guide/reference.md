@@ -249,7 +249,7 @@ peer = (public-key = <BASE64>, preshared-key = <BASE64>, allowed-ips = "0.0.0.0/
 | `self-ip-v6` | false | - | IPv6. |
 | `dns-server` | false | - | Comma-separated IPs. |
 | `mtu` | false | `1280` | |
-| `peer` | true | - | Parenthesized map. `public-key`, `allowed-ips`, `endpoint` mandatory; `preshared-key`, `keepalive` optional. |
+| `peer` | true | - | Parenthesized map. `public-key`, `allowed-ips`, `endpoint` mandatory; `preshared-key`, `keepalive` optional. `endpoint` is `host:port`; IPv6 must be bracketed, e.g. `[2001:db8::1]:51820`. |
 
 WireGuard always supports UDP (`udp-relay` implied `true`).
 

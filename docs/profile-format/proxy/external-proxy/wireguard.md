@@ -57,5 +57,5 @@ peer = (public-key = {public key}, allowed-ips = "{allowed ip routes}", endpoint
 | mtu size          | integer greater than zero | true      |                                           |
 | public key        | base64 encoded format     | true      |                                           |
 | allowed ip routes | IPv4 or IPv6 route format | true      | Use quotes when specifying multiple routes, e.g., `"0.0.0.0/0, ::/0"`. |
-| endpoint address  | IP:PORT format            | true      | Supports IPv4 and IPv6 addresses.          |
+| endpoint address  | IP:PORT format            | true      | Supports IPv4 and IPv6 addresses. IPv6 must use the bracketed `[addr]:port` form, e.g. `[2001:db8::1]:51820`. |
 | keepalive seconds | integer greater than zero | false     | 0 means disable keepalive.                 |
