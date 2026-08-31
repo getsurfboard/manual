@@ -20,7 +20,7 @@ ProxyHysteria2 = hysteria2, 1.2.3.4, 443, password=pwd, download-bandwidth=100, 
 ## Format
 
 ```ini
-{proxy name} = hysteria2, {server}, {port}, password={password}, download-bandwidth={bandwidth}, port-hopping={hopping}, port-hopping-interval={interval}, skip-cert-verify={skip}, sni={sni}, server-cert-fingerprint-sha256={fingerprint}, salamander-password={salamander}, udp-relay={udp}
+{proxy name} = hysteria2, {server}, {port}, password={password}, download-bandwidth={bandwidth}, port-hopping={hopping}, port-hopping-interval={interval}, skip-cert-verify={skip}, sni={sni}, server-cert-fingerprint-sha256={fingerprint}, salamander-password={salamander}, gecko-password={gecko}, udp-relay={udp}
 ```
 
 ## Parameters
@@ -37,6 +37,7 @@ ProxyHysteria2 = hysteria2, 1.2.3.4, 443, password=pwd, download-bandwidth=100, 
 | skip-cert-verify      | true<br/>false | false     | Default value: false. Set to true if the proxy does not have a valid TLS certificate.                                              |
 | sni                   | -              | false     | Definition is unnecessary if the SNI value matches the host value.                                                                 |
 | server-cert-fingerprint-sha256 | -      | false     | SHA-256 fingerprint of the server certificate, hex-encoded (64 characters). Used for certificate pinning. Multiple fingerprints can be comma-separated. |
-| salamander-password   | -              | false     | Enable Salamander obfuscation mode for Hysteria2.                                                                               |
+| salamander-password   | -              | false     | Enable Salamander obfuscation mode for Hysteria2. Mutually exclusive with `gecko-password` (gecko takes precedence if both are set). |
+| gecko-password        | -              | false     | Enable Gecko obfuscation mode for Hysteria2.                                                                               |
 | udp-relay             | true<br/>false | false     | Default value: true. Enable or disable UDP relay.                                                                                  |
 | underlying-proxy | -              | false     | Use a proxy or proxy group to connect another proxy (proxy chain). See [Common Parameters](/docs/profile-format/proxy#common-parameters). |

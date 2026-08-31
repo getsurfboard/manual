@@ -175,6 +175,7 @@ ProxyTrojan = trojan, 192.0.2.1, 443, password=<PASSWORD>, sni=example.com, ws=t
 | `port-hopping` | false | - | **Semicolon-separated** ranges, quoted: `"1234;5000-6000"`. |
 | `port-hopping-interval` | false | - | Seconds. |
 | `salamander-password` | false | - | Salamander obfuscation. |
+| `gecko-password` | false | - | Gecko obfuscation. Takes precedence over `salamander-password` if both are set. |
 | `udp-relay` | false | `true` | |
 | TLS params | false | - | |
 
@@ -389,6 +390,6 @@ Single-proxy share links the app accepts (convert them into `[Proxy]` lines when
 | `vmess://` | v2rayN base64 JSON (`ps`/`add`/`port`/`id`/`tls`/`sni`/`net`/`path`/`host`). Only `net=ws` (or plain TCP) supported. |
 | `trojan://` | Query: `sni`, `type=ws`, `path`, `host`, `allowInsecure`. |
 | `anytls://` | Query: `sni`, `insecure=1`. Default port 443. |
-| `hysteria2://`, `hy2://` | Query: `sni`, `insecure=1`. Port list uses **commas** (`443,5000-6000`) — convert to semicolons in `port-hopping`. `obfs` parameter is **rejected**; use `salamander-password` manually. |
+| `hysteria2://`, `hy2://` | Query: `sni`, `insecure=1`, `obfs=salamander|gecko` + `obfs-password`. Port list uses **commas** (`443,5000-6000`) — convert to semicolons in `port-hopping`. |
 
 Subscription URL schemes: `http(s)://`, `surfboard://`, `surge://`, `surge3://`. Deep links of the form `surfboard:///install-config?url=<encoded>` wrap a subscription URL.

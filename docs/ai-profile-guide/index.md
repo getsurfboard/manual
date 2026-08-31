@@ -175,7 +175,7 @@ Frequent generation mistakes. Check every output against this list.
 - **Listen ports (`http-listen`, `socks5-listen`) must be in 1025-65535.**
 - **`RULE-SET,SYSTEM` and `RULE-SET,LAN` are NOT supported.** `RULE-SET`/`DOMAIN-SET` accept remote `http(s)` URLs only; entries inside a `RULE-SET` file have no policy column.
 - **Logical rules (`AND`/`OR`/`NOT`)**: sub-rules carry no policy; max nesting depth 16; `NOT` takes exactly one sub-rule. If any sub-rule is invalid, the whole rule is dropped (fail-closed).
-- **`hysteria2://` share links with an `obfs` parameter are rejected**; configure Salamander obfuscation manually via `salamander-password` in the conf line instead.
+- **`hysteria2://` share links support `obfs=salamander`/`obfs=gecko` with `obfs-password`**; any other `obfs` value, or `obfs` without `obfs-password`, is rejected. In conf lines use the equivalent `salamander-password` / `gecko-password` parameters.
 - **Legacy SS stream ciphers** (`rc4`, `aes-*-cfb`, `chacha20`, …) only work in debug builds. Prefer AEAD methods in generated profiles.
 - **`evaluate-before-use` and `icon-url` group parameters are silently ignored** — do not rely on them.
 
