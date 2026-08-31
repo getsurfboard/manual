@@ -16,7 +16,7 @@
 <link rel="icon" href="/img/logo.png">
 <link rel="manifest" href="/manifest.json">
 <meta name="theme-color" content="rgb(99, 215, 197)"><link rel="stylesheet" href="/assets/css/styles.ba72db62.css">
-<script src="/assets/js/runtime~main.b293f6f2.js" defer="defer"></script>
+<script src="/assets/js/runtime~main.936109ae.js" defer="defer"></script>
 <script src="/assets/js/main.d434f5d3.js" defer="defer"></script>
 </head>
 <body>
@@ -102,7 +102,7 @@ Read it together with <a class="" href="/docs/ai-profile-guide/reference">Profil
 <li class=""><strong>Listen ports (<code>http-listen</code>, <code>socks5-listen</code>) must be in 1025-65535.</strong></li>
 <li class=""><strong><code>RULE-SET,SYSTEM</code> and <code>RULE-SET,LAN</code> are NOT supported.</strong> <code>RULE-SET</code>/<code>DOMAIN-SET</code> accept remote <code>http(s)</code> URLs only; entries inside a <code>RULE-SET</code> file have no policy column.</li>
 <li class=""><strong>Logical rules (<code>AND</code>/<code>OR</code>/<code>NOT</code>)</strong>: sub-rules carry no policy; max nesting depth 16; <code>NOT</code> takes exactly one sub-rule. If any sub-rule is invalid, the whole rule is dropped (fail-closed).</li>
-<li class=""><strong><code>hysteria2://</code> share links with an <code>obfs</code> parameter are rejected</strong>; configure Salamander obfuscation manually via <code>salamander-password</code> in the conf line instead.</li>
+<li class=""><strong><code>hysteria2://</code> share links support <code>obfs=salamander</code>/<code>obfs=gecko</code> with <code>obfs-password</code></strong>; any other <code>obfs</code> value, or <code>obfs</code> without <code>obfs-password</code>, is rejected. In conf lines use the equivalent <code>salamander-password</code> / <code>gecko-password</code> parameters.</li>
 <li class=""><strong>Legacy SS stream ciphers</strong> (<code>rc4</code>, <code>aes-*-cfb</code>, <code>chacha20</code>, …) only work in debug builds. Prefer AEAD methods in generated profiles.</li>
 <li class=""><strong><code>evaluate-before-use</code> and <code>icon-url</code> group parameters are silently ignored</strong> — do not rely on them.</li>
 </ul>
