@@ -4,6 +4,26 @@ sidebar_position: 5
 
 # ChangeLog
 
+### mobile-2.34.4
+- **New Features**
+  - **Pinned Profile Shortcuts**: Pinned profiles now appear as dynamic launcher shortcuts; long-press the app icon to switch profiles directly.
+  - Hysteria2: support the `gecko-password` parameter.
+  - VMess: support the `encrypt-method` parameter.
+  - Maximum MTU raised from 32000 to 64000.
+- **Fixes**
+  - Fixed screen flicker when starting the VPN via a deep link.
+  - Fixed WireGuard profiles failing to connect when the endpoint is an IPv6 address.
+  - Fixed a rare crash when stopping and immediately restarting the VPN.
+  - Fixed the selected profile occasionally reverting to the previous one after a switch.
+  - Show a toast instead of crashing when the system blocks VPN auto-start.
+  - Fixed crash when the VPN permission dialog cannot be launched.
+  - Fixed crash when opening the file picker.
+  - Fixed a rare crash during dashboard animations.
+  - Fixed VPN being disconnected when exporting a backup.
+  - Fixed timestamp wrapping in the Last Exit Reason section of Developer Options.
+- **Improvements**
+  - Reduced app size.
+
 ### mobile-2.34.3
 - **Fixes**
   - Fixed SSH Dump crashing the app when enabled.
