@@ -12,8 +12,15 @@ Surfboard 支持几种其它的规则类型，用于根据目标端口、源 IP 
 # 将发往目标端口 80 的流量直接转发
 DEST-PORT,80,DIRECT
 
+# 端口表达式：闭区间与比较操作符
+DEST-PORT,8000-9000,DIRECT
+SRC-PORT,>=50000,DIRECT
+
 # 将源自特定本地客户端 IP 的流量直接转发
 SRC-IP,192.168.20.100,DIRECT
+
+# SRC-IP 也支持 CIDR 网段
+SRC-IP,192.168.20.0/24,DIRECT
 
 # 将在特定本地监听端口上接收到的流量直接转发
 IN-PORT,6152,DIRECT
@@ -28,10 +35,18 @@ PROTOCOL,HTTP,DIRECT
 {type},{value},{target_proxy}
 ```
 
+## 端口表达式
+
+`DEST-PORT`、`SRC-PORT` 和 `IN-PORT` 共享同一套值语法：
+
+- 单个端口号：`IN-PORT,6153`
+- 闭区间：`DEST-PORT,10000-20000`
+- 操作符 `>`、`<`、`>=`、`<=`：`SRC-PORT,>=50000`
+
 ## 参数
 
 | 名称         | 值                                                                                                                                            | 是否必填 | 备注                                                                                                                                                                                                  |
 |--------------|--------------------------------------------------------------------------------------------------------------------------------------------------|-----------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| type         | DEST-PORT<br/>SRC-IP<br/>IN-PORT<br/>PROTOCOL                                                                                                    | 是      | `SRC-IP`: 用于根据客户端 IP 区分局域网代理接收到的客户端流量。<br/>`IN-PORT`: 用于根据代理端口区分局域网代理接收到的客户端流量。 |
-| value        | DEST-PORT: 目标端口号。<br/>SRC-IP: 客户端 IP 地址。<br/>IN-PORT: 局域网代理监听端口号。<br/>PROTOCOL: HTTP/HTTPS/TCP/UDP/QUIC。 | 是      | PROTOCOL: 暂不支持 DoH, DoH3 和 DoQ。                                                                                                                                                         |
+| type         | DEST-PORT<br/>SRC-IP<br/>SRC-PORT<br/>IN-PORT<br/>PROTOCOL                                                                                                    | 是      | `SRC-IP`/`SRC-PORT`: 用于根据客户端 IP / 源端口区分局域网代理接收到的客户端流量。<br/>`IN-PORT`: 用于根据代理端口区分局域网代理接收到的客户端流量。 |
+| value        | DEST-PORT: 目标端口表达式。<br/>SRC-IP: 客户端 IP 地址或 CIDR 网段。<br/>SRC-PORT: 客户端源端口表达式。<br/>IN-PORT: 局域网代理监听端口表达式。<br/>PROTOCOL: HTTP/HTTPS/TCP/UDP/QUIC。 | 是      | PROTOCOL: 暂不支持 DoH, DoH3 和 DoQ。                                                                                                                                                         |
 | target proxy | -                                                                                                                                                | 是      | 指定的代理或策略组必须存在于配置文件中。                                                                                                                                                |

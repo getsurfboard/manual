@@ -18,8 +18,14 @@ Reference: https://en.wikipedia.org/wiki/Classless_Inter-Domain_Routing
 # Routes traffic to the 192.168.0.0/16 private network directly
 IP-CIDR,192.168.0.0/16,DIRECT
 
+# A bare IPv4 address is treated as /32
+IP-CIDR,192.0.2.10,DIRECT
+
 # Routes IPv6 traffic to the specified CIDR range
 IP-CIDR6,2001:db8:abcd:8000::/50,DIRECT
+
+# A bare IPv6 address is treated as /128
+IP-CIDR6,2001:db8::1,DIRECT
 ```
 
 ### Format
@@ -33,7 +39,7 @@ IP-CIDR6,2001:db8:abcd:8000::/50,DIRECT
 | Name         | Value                | Mandatory | Note                                                             |
 |--------------|----------------------|-----------|------------------------------------------------------------------|
 | type         | IP-CIDR<br/>IP-CIDR6 | true      | IP-CIDR works on IPv4 traffic.<br/>IP-CIDR6 works on IPv6 traffic. |
-| route        | -                    | true      | Format: \{IP}/\{mask}, where the mask is in CIDR prefix format.                  |
+| route        | -                    | true      | Format: \{IP}/\{mask}, where the mask is in CIDR prefix format.<br/>A bare IP address without mask is also accepted and treated as /32 (IPv4) or /128 (IPv6).                  |
 | target proxy | -                    | true      | The specified proxy or proxy group must exist in the profile.           |
 
 ## GEOIP

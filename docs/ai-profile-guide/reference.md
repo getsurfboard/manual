@@ -315,14 +315,15 @@ Line format: `TYPE,value,policy[,attributes...]`. Evaluated **top-down, first ma
 | `DOMAIN-KEYWORD` | `DOMAIN-KEYWORD,example,Proxy` | Substring match. |
 | `DOMAIN-WILDCARD` | `DOMAIN-WILDCARD,*.example.com,Proxy` | `*`/`?` wildcards. |
 | `DOMAIN-SET` | `DOMAIN-SET,https://example.com/list.txt,Proxy` | Remote URL **only**. File: one domain per line; leading `.` = suffix match, otherwise exact. Optional 4th field `update-interval=<seconds>` for background refresh (min effective 900; applies on next VPN start). |
-| `IP-CIDR` / `IP-CIDR6` | `IP-CIDR,192.0.2.0/24,DIRECT,no-resolve` | CIDR. |
+| `IP-CIDR` / `IP-CIDR6` | `IP-CIDR,192.0.2.0/24,DIRECT,no-resolve` | CIDR. Bare IP without mask accepted: treated as /32 (IPv4) or /128 (IPv6). |
 | `GEOIP` | `GEOIP,CN,DIRECT,no-resolve` | Two-letter country code. |
 | `PROCESS-NAME` | `PROCESS-NAME,com.example.app,Proxy` | Android package name; wildcards supported. |
 | `USER-AGENT` | `USER-AGENT,ExampleApp*,DIRECT` | Wildcard match on HTTP User-Agent. |
 | `SUBNET` | `SUBNET,TYPE:WIFI,DIRECT` | Subtypes: `SSID:`, `BSSID:`, `ROUTER:`, `TYPE:WIFI/WIRED/CELLULAR`, `MCCMNC:`. Requires location permission for SSID/BSSID. |
-| `DEST-PORT` | `DEST-PORT,443,DIRECT` | 1-65535. |
-| `SRC-IP` | `SRC-IP,192.0.2.10,DIRECT` | Exact source IP. |
-| `IN-PORT` | `IN-PORT,6152,DIRECT` | 1-65535. |
+| `DEST-PORT` | `DEST-PORT,443,DIRECT` | Port expression: plain port, closed range (`8000-9000`), or operator (`>`, `<`, `>=`, `<=`; e.g. `>=50000`). Ports 1-65535. |
+| `SRC-IP` | `SRC-IP,192.0.2.10,DIRECT` | Source IP, exact or CIDR (`192.0.2.0/24`). Only matches traffic received via the LAN proxy (http-listen/socks5-listen). |
+| `SRC-PORT` | `SRC-PORT,>=50000,DIRECT` | Client source port expression (same grammar as DEST-PORT). |
+| `IN-PORT` | `IN-PORT,6152,DIRECT` | LAN proxy listen port expression (same grammar as DEST-PORT). Only matches traffic received via the LAN proxy. |
 | `PROTOCOL` | `PROTOCOL,QUIC,REJECT` | `HTTP` (TCP:80), `HTTPS` (TCP:443), `TCP`, `UDP`, `QUIC` (UDP:443). |
 | `RULE-SET` | `RULE-SET,https://example.com/rules.conf,Proxy` | Remote URL **only**. `RULE-SET,SYSTEM`/`RULE-SET,LAN` NOT supported. File lines are rules **without** the policy column (policy inherited). Nested `RULE-SET` forbidden. Optional 4th field `update-interval=<seconds>` for background refresh (min effective 900; applies on next VPN start). |
 | `AND` / `OR` / `NOT` | `AND,((RULE1),(RULE2)),Proxy` | AND/OR take ≥2 sub-rules, NOT exactly 1. Sub-rules have no policy. Max nesting depth 16. No `RULE-SET`/`DOMAIN-SET` inside. Any invalid sub-rule drops the whole rule. |
