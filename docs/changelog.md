@@ -4,6 +4,26 @@ sidebar_position: 5
 
 # ChangeLog
 
+### mobile-2.35.1
+- **New Features**
+  - **External Resource Auto-Update**: RULE-SET, DOMAIN-SET and policy-path resources can declare an `update-interval` and are refreshed automatically in the background.
+  - Rule support for Surge port expressions (`DEST-PORT` / `SRC-PORT` / `IN-PORT` ranges and operators), `SRC-IP` CIDR, and bare IP addresses (treated as a /32 or /128).
+  - Proxy servers with domain endpoints are resolved through `[Host]` rules, improving connection reliability and speed test stability.
+  - SSH Dump now blocks the system HTTP proxy so third-party app traffic stays in the capture; speed tests continue to work normally.
+- **Fixes**
+  - Fixed external resource updates replacing a good cached resource with unusable content (empty body, error page, etc.), which could break profiles.
+  - Fixed certain Shadowsocks nodes failing to connect.
+  - Fixed a crash when importing malformed proxy URLs; unsupported entries are now skipped.
+  - Fixed the app crashing instead of falling back to DIRECT when a proxy strategy failed.
+  - Fixed DNS-over-HTTPS lookups hanging when every configured server failed.
+  - Fixed a stability issue in the native engine under rapid VPN start/stop.
+  - Fixed the speedometer occasionally looping through the system HTTP proxy.
+  - Fixed a crash when stopping the VPN on some devices.
+- **Improvements**
+  - Fixed QUIC connection caching, Snell hangs and buffer handling issues.
+  - Updated the built-in GeoIP database.
+  - Updated dependencies (OkHttp, AppCompat, Netty) and compile against Android SDK 37.
+
 ### mobile-2.35.0
 - **New Features**
   - **External Resource Auto-Update**: RULE-SET, DOMAIN-SET and policy-path resources can declare an `update-interval` and are refreshed automatically in the background.
