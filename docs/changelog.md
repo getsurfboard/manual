@@ -4,6 +4,15 @@ sidebar_position: 5
 
 # ChangeLog
 
+### mobile-2.35.2
+- **Fixes**
+  - Fixed several crashes reported on some devices.
+  - Fixed Hysteria2 port hopping: configurations using it now connect instead of failing or being silently ignored.
+  - Fixed proxy servers whose domain resolves only to IPv6 failing to connect when the IPv4 lookup was slow.
+- **Improvements**
+  - Native crash reports now record the exact crash site, making stability issues easier to diagnose.
+  - Updated the built-in GeoIP database.
+
 ### mobile-2.35.1
 - **New Features**
   - **External Resource Auto-Update**: RULE-SET, DOMAIN-SET and policy-path resources can declare an `update-interval` and are refreshed automatically in the background.
