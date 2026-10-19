@@ -4,6 +4,10 @@ sidebar_position: 1
 
 # `doh-server`
 
+:::warning Legacy key
+`doh-server` is kept for compatibility with existing profiles. It only accepts `https://` URLs and is equivalent to [`encrypted-dns-server`](./encrypted_dns_server.md); the two are merged in memory at parse time, and profile files are not rewritten. Prefer `encrypted-dns-server` in new profiles.
+:::
+
 Specifies the [DoH (DNS over HTTPS)](https://en.wikipedia.org/wiki/DNS_over_HTTPS) servers used by the application to provide encrypted and authenticated DNS resolution.
 
 ## Example

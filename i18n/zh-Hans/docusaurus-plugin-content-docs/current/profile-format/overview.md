@@ -21,8 +21,9 @@ Surge 的配置文件文档可以在 [此处](https://manual.nssurge.com/) 查�
 # DNS 服务器配置。'system' 使用设备的默认 DNS。
 dns-server = system, 8.8.8.8, 8.8.4.4, 9.9.9.9:9953
 
-# 用于加密 DNS 查询的 DNS over HTTPS (DoH) 服务器。
-doh-server = https://9.9.9.9/dns-query, https://1.1.1.1/dns-query
+# 加密 DNS 服务器（DoH / DoH3 / DoQ / DoT / TCP）。传统 DNS 只用于解析这些
+# URL 中的域名。
+encrypted-dns-server = https://9.9.9.9/dns-query, tls://1.1.1.1:853
 
 # 绕过代理的域名或 IP 范围列表。
 skip-proxy = 127.0.0.1, 192.168.0.0/16, 10.0.0.0/8, 172.16.0.0/12, 100.64.0.0/10, localhost, *.local, www.example.com

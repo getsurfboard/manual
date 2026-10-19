@@ -21,8 +21,9 @@ The following example demonstrates a complete profile structure, covering the pr
 # DNS server configuration. 'system' uses the device's default DNS.
 dns-server = system, 8.8.8.8, 8.8.4.4, 9.9.9.9:9953
 
-# DNS over HTTPS (DoH) servers for encrypted DNS queries.
-doh-server = https://9.9.9.9/dns-query, https://1.1.1.1/dns-query
+# Encrypted DNS servers (DoH / DoH3 / DoQ / DoT / TCP). Traditional DNS is only
+# used to resolve the hostnames in these URLs.
+encrypted-dns-server = https://9.9.9.9/dns-query, tls://1.1.1.1:853
 
 # List of domains or IP ranges that bypass the proxy.
 skip-proxy = 127.0.0.1, 192.168.0.0/16, 10.0.0.0/8, 172.16.0.0/12, 100.64.0.0/10, localhost, *.local, www.example.com

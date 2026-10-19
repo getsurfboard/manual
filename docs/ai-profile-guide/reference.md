@@ -34,7 +34,9 @@ All keys optional.
 |-----|-------|---------|------|
 | `ipv6` | `true`/`false` | `true` | Enable IPv6 support. |
 | `dns-server` | Comma-separated list | - | Items: `system`, IPv4, `IPv4:port`, bare IPv6, `[IPv6]:port`. |
-| `doh-server` | Comma-separated URLs | - | e.g. `https://1.1.1.1/dns-query`. |
+| `encrypted-dns-server` | Comma-separated URLs | - | Schemes: `https://` (DoH, 443), `h3://` (DoH3, 443), `quic://` (DoQ, 853), `tls://` (DoT, 853), `tcp://` (plain DNS/TCP, 53; host[:port] only). `off` disables. Multiple servers are raced in parallel. Traditional `dns-server` is only used to resolve these hostnames. |
+| `encrypted-dns-skip-cert-verification` | `true`/`false` | `false` | Skip certificate verification for encrypted DNS. Insecure; testing only. |
+| `doh-server` | Comma-separated `https://` URLs | - | **Legacy** alias of `encrypted-dns-server`, merged in memory at parse time. |
 | `http-listen` | `IP:port` | - | Port MUST be 1025-65535. |
 | `socks5-listen` | `IP:port` | - | Port MUST be 1025-65535. |
 | `skip-proxy` | Comma-separated list | - | Items: IP, `IP/prefix`, `localhost`, wildcard (`*.local`), plain domain. Bypasses proxying. |
@@ -47,7 +49,7 @@ All keys optional.
 ```ini
 [General]
 dns-server = system, 223.5.5.5, [2001:db8::1]:53
-doh-server = https://1.1.1.1/dns-query
+encrypted-dns-server = https://1.1.1.1/dns-query, tls://1.1.1.1:853
 skip-proxy = 192.168.0.0/16, localhost, *.local, example.com
 proxy-test-url = http://www.gstatic.com/generate_204
 test-timeout = 5

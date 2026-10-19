@@ -4,6 +4,10 @@ sidebar_position: 1
 
 # DoH 服务器
 
+:::warning 旧键
+`doh-server` 仅为兼容已有 profile 保留，只接受 `https://` URL，等价于 [`encrypted-dns-server`](./encrypted_dns_server.md)；两者在解析时于内存中合并，不会改写 profile 文件。新 profile 请使用 `encrypted-dns-server`。
+:::
+
 指定应用程序使用的 [DoH (DNS over HTTPS)](https://en.wikipedia.org/wiki/DNS_over_HTTPS) 服务器，以提供加密和经过身份验证的 DNS 解析。
 
 ## 示例
