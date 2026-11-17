@@ -82,7 +82,7 @@ Map user intents to these patterns. Adapt names; keep the structure.
 
 ### 1. "Add my proxy node"
 
-Add one line to `[Proxy]` using the correct protocol row from [reference.md](./reference.md#proxy). If the user pastes a share link (`ss://`, `vmess://`, `trojan://`, `anytls://`, `hysteria2://`/`hy2://`), decode it into a `[Proxy]` line (see [Share Links](./reference.md#share-links)). Then add the node to the relevant groups.
+Add one line to `[Proxy]` using the correct protocol row from [reference.md](./reference.md#proxy). If the user pastes a share link (`ss://`, `vmess://`, `vless://`, `trojan://`, `anytls://`, `hysteria2://`/`hy2://`), decode it into a `[Proxy]` line (see [Share Links](./reference.md#share-links)). Then add the node to the relevant groups.
 
 User: *"add a trojan node, server 203.0.113.10 port 443 password abc, sni cdn.example.com"*
 
@@ -168,7 +168,8 @@ Frequent generation mistakes. Check every output against this list.
 - **`ws-headers` format is `Key:Value|Key2:Value2`** (pipe-separated, colon inside). Not JSON, not commas.
 - **Quote values containing commas, semicolons or spaces**: `port-hopping="1234;5000-6000"`, `include-other-group="GroupA, GroupB"`.
 - **Hysteria2/TUIC `port-hopping` uses `;` between ranges in conf files**, but share links encode multiple ports with `,`. Do not mix them up when converting links.
-- **VMess `username` and TUIC `uuid` MUST be valid UUIDs** — parse-time failure otherwise.
+- **VMess `username` and TUIC `uuid` MUST be valid UUIDs** — parse-time failure otherwise. VLESS accepts a UUID or a 1–30-byte UTF-8 ID.
+- **VLESS:** use exactly one transport selector (`ws`/`grpc`/`xhttp`) or RAW by default. gRPC requires TLS/REALITY and forbids Vision. Vision on WS/HTTPUpgrade/XHTTP requires a server-provided Encryption string. Do not generate incomplete keys. VLESS UDP defaults to enabled. Older REALITY servers are handled by automatic ML-KEM compatibility retry; no extra parameter is needed. See the full VLESS table in the single-page reference.
 - **SS2022 passwords MUST be base64** of exactly 16 bytes (`2022-blake3-aes-128-gcm`) or 32 bytes (`2022-blake3-aes-256-gcm`).
 - **`sni=off` explicitly disables SNI**; omitting `sni` is different from disabling it.
 - **Snell `version` above 4 is silently clamped to 4**; `udp-relay` only works with `version>=3`.
