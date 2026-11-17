@@ -67,7 +67,7 @@ Line format:
 {name} = {protocol}, {server}, {port}, [positional args...,] key=value, ...
 ```
 
-Protocol keywords: `direct`, `reject`, `reject-tinygif`, `http`, `https`, `socks5`, `socks5-tls`, `shadowsocks` (aliases: `ss`, `custom`), `vmess`, `trojan`, `hysteria2`, `tuic-v5`, `anytls`, `snell`, `wireguard`.
+Protocol keywords: `direct`, `reject`, `reject-tinygif`, `http`, `https`, `socks5`, `socks5-tls`, `shadowsocks` (aliases: `ss`, `custom`), `vmess`, `vless`, `trojan`, `hysteria2`, `tuic-v5`, `anytls`, `snell`, `wireguard`.
 
 ### Common Parameters
 
@@ -79,7 +79,7 @@ Valid on all protocols except `direct`/`reject`/`wireguard` (which support only 
 | `underlying-proxy` | Proxy or group name | - | Chain: connect through another proxy. Reference must exist; cycles rejected. |
 | `block-quic` | `off`/`on`/`auto` | `auto` (`off` for `direct`) | Per-node QUIC (UDP/443) blocking. |
 
-TLS parameters, valid on TLS-capable protocols (`https`, `socks5-tls`, `vmess`+`tls`, `trojan`, `hysteria2`, `tuic-v5`, `anytls`):
+TLS parameters, valid on TLS-capable protocols (`https`, `socks5-tls`, `vmess`+`tls`, `vless`+`tls`, `trojan`, `hysteria2`, `tuic-v5`, `anytls`):
 
 | Parameter | Value | Note |
 |-----------|-------|------|
@@ -152,6 +152,77 @@ ProxySS2022 = ss, 192.0.2.1, 8000, encrypt-method=2022-blake3-aes-256-gcm, passw
 ```ini
 ProxyVMess = vmess, 192.0.2.1, 443, username=<UUID>, ws=true, tls=true, ws-path=/v2, ws-headers=Host:cdn.example.com
 ```
+
+### vless
+
+`Name = vless, SERVER, PORT, username=ID[, key=value...]`. UDP is enabled by default.
+
+Quote names containing `=` or commas and values containing commas. Escape literal backslashes as `\\` and double quotes as `\"` inside quoted text; unknown escapes such as `\d` remain literal.
+
+| Parameter | Default | Meaning |
+|---|---|---|
+| `username` | `required` | UUID, or a user ID of 1–30 UTF-8 bytes |
+| `tls` | `false` | Enable TLS; REALITY does not need this flag |
+| `sni` | `server hostname` | TLS/REALITY server name; off disables ordinary TLS SNI |
+| `skip-cert-verify` | `false` | Skip ordinary TLS certificate verification |
+| `server-cert-verify-name` | `SNI/hostname` | Verify the certificate against this name independently of SNI |
+| `server-cert-fingerprint-sha256` | `unset` | 64 hexadecimal digits; pins the leaf certificate instead of system trust |
+| `alpn` | `transport default` | Protocol list; quote multiple entries, for example alpn="h2,http/1.1" |
+| `flow` | `unset` | xtls-rprx-vision or xtls-rprx-vision-udp443; both use block-quic for UDP/443 |
+| `reality-public-key` | `unset` | 32-byte server public key in standard or URL-safe Base64, padding optional; enables REALITY |
+| `reality-short-id` | `empty` | 0–16 hexadecimal digits in pairs; requires reality-public-key |
+| `encryption` | `none` | Copy the complete client encryption string supplied by the server |
+| `udp-relay` | `true` | Enable XUDP forwarding, including multiple destinations |
+| `block-quic` | `auto` | auto, on, off; same shared policy behavior as other protocols |
+| `underlying-proxy` | `unset` | Name of the proxy or selected group used to reach this server |
+| `ws` | `false` | Select WebSocket |
+| `ws-path` | `/` | WebSocket/HTTPUpgrade path |
+| `ws-headers` | `unset` | Pipe-separated Key:Value headers; Host sets the virtual host |
+| `ws-http-upgrade` | `false` | Select HTTPUpgrade; requires ws=true |
+| `grpc` | `false` | Select gRPC; requires TLS or REALITY |
+| `grpc-service-name` | `empty` | Service name or custom /service/method path |
+| `grpc-mode` | `gun` | gun or multi |
+| `grpc-authority` | `sni, then server` | HTTP/2 authority |
+| `xhttp` | `false` | Select XHTTP |
+| `xhttp-path` | `/` | Request path, including an optional query |
+| `xhttp-host` | `sni, then server` | HTTP Host; do not put Host in xhttp-headers |
+| `xhttp-mode` | `auto` | auto, packet-up, stream-up, stream-one |
+| `xhttp-headers` | `unset` | Pipe-separated Key:Value headers; browser User-Agent aliases are accepted |
+| `xhttp-padding-bytes` | `100-1000` | Padding length or range |
+| `xhttp-padding-obfs` | `false` | Obfuscate padding |
+| `xhttp-padding-key` | `x_padding` | Padding query/cookie key |
+| `xhttp-padding-header` | `X-Padding` | Padding header name |
+| `xhttp-padding-placement` | `queryInHeader` | queryInHeader, header, cookie, query |
+| `xhttp-padding-method` | `repeat-x` | repeat-x or tokenish |
+| `xhttp-uplink-method` | `POST` | POST; GET requires packet-up |
+| `xhttp-session-placement` | `path` | path, query, header, cookie |
+| `xhttp-session-key` | `by placement` | Session field name |
+| `xhttp-session-table` | `UUID` | Custom ASCII session alphabet; use with session-length |
+| `xhttp-session-length` | `by alphabet` | Session length/range; provide enough combinations for uniqueness |
+| `xhttp-seq-placement` | `path` | path, query, header, cookie |
+| `xhttp-seq-key` | `by placement` | Sequence field name |
+| `xhttp-uplink-data-placement` | `auto` | auto, body, header, cookie; header/cookie require packet-up |
+| `xhttp-uplink-data-key` | `by placement` | Upload data field name |
+| `xhttp-uplink-chunk-size` | `by placement` | Upload chunk length/range |
+| `xhttp-no-grpc-header` | `false` | Omit the gRPC-style content type |
+| `xhttp-max-each-post-bytes` | `1000000` | Maximum upload bytes per packet-up request |
+| `xhttp-min-posts-interval` | `30` | Minimum milliseconds between packet-up requests |
+| `xhttp-xmux-max-concurrency` | `unset` | Concurrent streams limit/range |
+| `xhttp-xmux-max-connections` | `accepted, inert` | Preserved for compatibility; does not override engine behavior |
+| `xhttp-xmux-max-reuse-times` | `unset` | Connection reuse limit/range |
+| `xhttp-xmux-max-request-times` | `600-900` | Requests per connection limit/range |
+| `xhttp-xmux-max-reusable-secs` | `1800-3000` | Connection age limit/range, seconds |
+| `xhttp-xmux-keep-alive` | `accepted, inert` | Preserved for compatibility; engine manages keep-alive |
+
+| Transport | Security | Vision |
+|---|---|---|
+| RAW/TCP | none, TLS, REALITY | TLS/REALITY or Encryption required |
+| WebSocket | none, TLS | Encryption required |
+| HTTPUpgrade | none, TLS | Encryption required |
+| gRPC | TLS, REALITY | Unsupported |
+| XHTTP | none, TLS, REALITY | Encryption required |
+
+Only one transport selector may be true. REALITY implies secure transport and requires a matching server name. Old REALITY servers have automatic ML-KEM compatibility retry; do not generate an extra fallback parameter or disable authentication. Encryption is independent of TLS and must be copied from the server. Validate the complete Encryption string; never invent credentials. Vision on non-RAW transports requires Encryption; gRPC never supports Vision. Both Vision flow spellings defer UDP/443 blocking to block-quic. XHTTP HTTP/3 requires UDP-capable underlying transport. Unknown server-only XHTTP link fields are ignored; downloadSettings is rejected. The complete protocol reference and examples are in [VLESS](/docs/profile-format/proxy/external-proxy/vless).
 
 ### trojan
 
@@ -255,7 +326,7 @@ peer = (public-key = <BASE64>, preshared-key = <BASE64>, allowed-ips = "0.0.0.0/
 
 WireGuard always supports UDP (`udp-relay` implied `true`).
 
-Canonical docs: [Proxy](/docs/profile-format/proxy) · [shadowsocks](/docs/profile-format/proxy/external-proxy/shadowsocks) · [vmess](/docs/profile-format/proxy/external-proxy/vmess) · [trojan](/docs/profile-format/proxy/external-proxy/trojan) · [hysteria2](/docs/profile-format/proxy/external-proxy/hysteria2) · [tuic-v5](/docs/profile-format/proxy/external-proxy/tuic-v5) · [anytls](/docs/profile-format/proxy/external-proxy/anytls) · [snell](/docs/profile-format/proxy/external-proxy/snell) · [http](/docs/profile-format/proxy/external-proxy/http) · [socks5](/docs/profile-format/proxy/external-proxy/socks5) · [wireguard](/docs/profile-format/proxy/external-proxy/wireguard) · [direct](/docs/profile-format/proxy/built-in-proxy/direct) · [reject](/docs/profile-format/proxy/built-in-proxy/reject)
+Canonical docs: [Proxy](/docs/profile-format/proxy) · [shadowsocks](/docs/profile-format/proxy/external-proxy/shadowsocks) · [vmess](/docs/profile-format/proxy/external-proxy/vmess) · [vless](/docs/profile-format/proxy/external-proxy/vless) · [trojan](/docs/profile-format/proxy/external-proxy/trojan) · [hysteria2](/docs/profile-format/proxy/external-proxy/hysteria2) · [tuic-v5](/docs/profile-format/proxy/external-proxy/tuic-v5) · [anytls](/docs/profile-format/proxy/external-proxy/anytls) · [snell](/docs/profile-format/proxy/external-proxy/snell) · [http](/docs/profile-format/proxy/external-proxy/http) · [socks5](/docs/profile-format/proxy/external-proxy/socks5) · [wireguard](/docs/profile-format/proxy/external-proxy/wireguard) · [direct](/docs/profile-format/proxy/built-in-proxy/direct) · [reject](/docs/profile-format/proxy/built-in-proxy/reject)
 
 ## [Proxy Group]
 
@@ -390,6 +461,7 @@ Single-proxy share links the app accepts (convert them into `[Proxy]` lines when
 | Scheme | Notes |
 |--------|-------|
 | `ss://` | SIP002 (base64url userinfo) and legacy whole-base64 forms. `plugin=obfs-local;obfs=tls;obfs-host=...;obfs-uri=...` maps to obfs parameters. |
+| `vless://` | Standard ID@HOST:PORT and Shadowrocket whole-Base64 none:ID@HOST:PORT. type=tcp/raw/ws/httpupgrade/grpc/xhttp/splithttp; security=none/tls/reality; transport path/host/serviceName/authority/mode; sni/flow/encryption/alpn/pbk/sid/pcs/vcn; allowInsecure/insecure; XHTTP extra client fields. |
 | `vmess://` | v2rayN base64 JSON (`ps`/`add`/`port`/`id`/`tls`/`sni`/`net`/`path`/`host`). Only `net=ws` (or plain TCP) supported. |
 | `trojan://` | Query: `sni`, `type=ws`, `path`, `host`, `allowInsecure`. |
 | `anytls://` | Query: `sni`, `insecure=1`. Default port 443. |

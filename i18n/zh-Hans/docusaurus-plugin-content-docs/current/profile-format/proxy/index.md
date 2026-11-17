@@ -12,6 +12,7 @@
 - [SOCKS5/SOCKS5-TLS](/docs/profile-format/proxy/external-proxy/socks5)
 - [Shadowsocks](/docs/profile-format/proxy/external-proxy/shadowsocks)
 - [VMESS](/docs/profile-format/proxy/external-proxy/vmess)
+- [VLESS](/docs/profile-format/proxy/external-proxy/vless)
 - [Trojan](/docs/profile-format/proxy/external-proxy/trojan)
 - [Wireguard](/docs/profile-format/proxy/external-proxy/wireguard)
 - [Hysteria2](/docs/profile-format/proxy/external-proxy/hysteria2)
