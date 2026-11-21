@@ -4,6 +4,19 @@ sidebar_position: 5
 
 # ChangeLog
 
+### mobile-2.36.0
+- **New Features**
+  - Support VLESS proxies with REALITY, XHTTP, and `vless://` share link imports.
+  - Add encrypted DNS over HTTP/3, QUIC, and TLS, with per-domain server settings. Plain DNS over TCP is also supported.
+  - Add a USB hotspot that routes clients’ IPv4 traffic through Surfboard VPN on Android 9 or later. Supported Realtek USB Wi-Fi adapters include RTL8188EUS (`0BDA:8179`), RTL8811CU (`0BDA:C811`), and RTL8821CU (`0BDA:C820`).
+- **UI & Theme**
+  - Add regional presets and connectivity checks to encrypted DNS settings. Remove the dashboard DNS card and home-screen DNS widget.
+  - View and download a profile’s external rule sets, domain sets, and proxy lists from its menu.
+- **Fixes**
+  - Fix pinned profile names changing when a rename failed.
+  - Fix a WebDAV download failure that could affect local profiles.
+  - Fix requests on the same connection being processed out of order in the web file manager.
+
 ### mobile-2.35.2
 - **Fixes**
   - Fixed several crashes reported on some devices.
